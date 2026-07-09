@@ -1,0 +1,192 @@
+[
+  {
+    "thesis_id": "s06e05-demon-79-supernatural-core-na",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "AI_EXEC": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "TRL_comp": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "SYS": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "ECON": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "SOC": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "FID": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Special handling: axes NA for pure magic. Models should not force tech TRLs onto demon bargains.",
+    "nearest_real_systems": [
+      "N/A \u2014 supernatural"
+    ],
+    "evidence_ids": [
+      "s06e05-demon-79-supernatural-core-na-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s06e05-demon-79-media-fueled-racialized-violence-1979",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 85.0,
+        "ci_low": 75.0,
+        "ci_high": 95.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 60.0,
+        "ci_low": 45.0,
+        "ci_high": 75.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 90.0,
+        "ci_low": 85.0,
+        "ci_high": 95.0,
+        "tier": "L2"
+      },
+      "SYS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 40.0,
+        "ci_low": 25.0,
+        "ci_high": 55.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 75.0,
+        "ci_low": 63.0,
+        "ci_high": 87.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Socio-technical violence mechanisms are real historically and via modern AI amplification analogues.",
+    "nearest_real_systems": [
+      "hate media",
+      "algorithmic amplification of prejudice"
+    ],
+    "evidence_ids": [
+      "s06e05-demon-79-media-fueled-racialized-violence-1979-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s06e05-demon-79-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "AI_EXEC": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "TRL_comp": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "SYS": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "ECON": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "SOC": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      },
+      "FID": {
+        "value": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "tier": "NA",
+        "na_reason": "non-technological or supernatural core"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Special handling: axes NA for pure magic. Models should not force tech TRLs onto demon bargains.",
+    "nearest_real_systems": [
+      "N/A \u2014 supernatural",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s06e05-demon-79-partial-real-world-analogue-ev1"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e04-san-junipero-therapeutic-vr-nostalgia-world-ev1",
+  "thesis_id": "s03e04-san-junipero-therapeutic-vr-nostalgia-world",
+  "url": "https://en.wikipedia.org/wiki/San_Junipero",
+  "title": "San Junipero",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Simulated town as afterlife/therapy frame.",
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s04e05-metalhead-partial-real-world-analogue",
+  "episode_id": "s04e05-metalhead",
+  "title": "Partial real-world analogue of: Autonomous robot dogs hunt humans lethally",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Quadruped robots autonomously pursue and kill humans in a collapsed environment.",
+  "ai_role": "Perception, tracking, navigation, lethal autonomy decisioning.",
+  "non_ai_enablers": [
+    "robotics hardware",
+    "military procurement",
+    "ammo/loadout"
+  ],
+  "enabling_tech": [
+    "quadruped_robot",
+    "autonomous_weapons",
+    "cv_tracking"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "robotics",
+    "autonomy"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 4
+}

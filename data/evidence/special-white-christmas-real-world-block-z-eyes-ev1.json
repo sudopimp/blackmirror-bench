@@ -1,0 +1,15 @@
+{
+  "evidence_id": "special-white-christmas-real-world-block-z-eyes-ev1",
+  "thesis_id": "special-white-christmas-real-world-block-z-eyes",
+  "url": "https://en.wikipedia.org/wiki/White_Christmas_(Black_Mirror)",
+  "title": "White Christmas",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Z-Eyes enable real-world blocking.",
+  "notes": ""
+}

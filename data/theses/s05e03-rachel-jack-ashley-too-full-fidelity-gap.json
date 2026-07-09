@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s05e03-rachel-jack-ashley-too-full-fidelity-gap",
+  "episode_id": "s05e03-rachel-jack-ashley-too",
+  "title": "Full-fidelity gap for: Celebrity consciousness/AI persona trapped in consumer toys",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: A pop star's persona is packaged into AI dolls while the real person is medically controlled by industry.",
+  "ai_role": "Voice/persona models in toys; conversational agents.",
+  "non_ai_enablers": [
+    "entertainment industry contracts",
+    "consumer electronics",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "llm_persona",
+    "voice_clone",
+    "smart_toys"
+  ],
+  "ai_capability_tags": [
+    "llm",
+    "tts",
+    "personalization"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 3
+}

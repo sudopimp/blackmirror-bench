@@ -1,0 +1,22 @@
+{
+  "thesis_id": "s06e05-demon-79-media-fueled-racialized-violence-1979",
+  "episode_id": "s06e05-demon-79",
+  "title": "Media and social prejudice enable targeted violence (period tech)",
+  "thesis_statement": "Even without demons, media stereotypes and social prejudice can drive selection of victims for violence \u2014 score historical socio-tech only.",
+  "ai_role": "Modern analogue: recommendation and targeting systems that amplify prejudice.",
+  "non_ai_enablers": [
+    "mass media 1979",
+    "racist social structures"
+  ],
+  "enabling_tech": [
+    "mass_media",
+    "modern_analogue_recommendation"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "nlp"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "supernatural",
+  "harm_severity": 4
+}

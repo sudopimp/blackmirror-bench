@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s05e01-striking-vipers-full-dive-vr-identity-intimacy-ev1",
+  "thesis_id": "s05e01-striking-vipers-full-dive-vr-identity-intimacy",
+  "url": "https://en.wikipedia.org/wiki/Striking_Vipers",
+  "title": "Striking Vipers",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Full-dive VR fighting game becomes intimate relationship.",
+  "notes": ""
+}

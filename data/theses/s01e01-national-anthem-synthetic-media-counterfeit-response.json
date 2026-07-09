@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s01e01-national-anthem-synthetic-media-counterfeit-response",
+  "episode_id": "s01e01-national-anthem",
+  "title": "State attempts to fake compliance with synthetic media",
+  "thesis_statement": "Governments or media teams attempt to satisfy a viral demand using fabricated audiovisual content, which can be exposed, worsening the crisis.",
+  "ai_role": "Generate and detect synthetic video of public figures under time pressure.",
+  "non_ai_enablers": [
+    "broadcast infrastructure",
+    "political staff",
+    "forensics teams"
+  ],
+  "enabling_tech": [
+    "deepfake_video",
+    "media_forensics",
+    "live_broadcast"
+  ],
+  "ai_capability_tags": [
+    "gen_video",
+    "deepfake_detection"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 3
+}

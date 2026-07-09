@@ -1,0 +1,182 @@
+[
+  {
+    "thesis_id": "film-bandersnatch-interactive-narrative-control",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L3"
+      },
+      "AI_EXEC": {
+        "value": 75.0,
+        "ci_low": 65.0,
+        "ci_high": 85.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 90.0,
+        "ci_low": 85.0,
+        "ci_high": 95.0,
+        "tier": "L3"
+      },
+      "SYS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L3"
+      },
+      "ECON": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "FID": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L3"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Meta: the form is already productized; AI expands branch generation.",
+    "nearest_real_systems": [
+      "Bandersnatch itself",
+      "choose-your-own adventure games",
+      "AI dungeon-likes"
+    ],
+    "evidence_ids": [
+      "film-bandersnatch-interactive-narrative-control-ev1"
+    ]
+  },
+  {
+    "thesis_id": "film-bandersnatch-perceived-loss-of-agency-via-system",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 90.0,
+        "ci_low": 85.0,
+        "ci_high": 95.0,
+        "tier": "L3"
+      },
+      "SYS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 90.0,
+        "ci_low": 85.0,
+        "ci_high": 95.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 60.0,
+        "ci_low": 45.0,
+        "ci_high": 75.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 65.0,
+        "ci_low": 53.0,
+        "ci_high": 77.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Strong contemporary FID to platform persuasion and LLM dark patterns literature.",
+    "nearest_real_systems": [
+      "engagement-optimized feeds",
+      "DarkBench LLM dark patterns"
+    ],
+    "evidence_ids": [
+      "film-bandersnatch-perceived-loss-of-agency-via-system-ev1"
+    ]
+  },
+  {
+    "thesis_id": "film-bandersnatch-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 86.25,
+        "ci_low": 72.25,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 100.0,
+        "ci_low": 91.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 92.0,
+        "ci_low": 78.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 92.0,
+        "ci_low": 78.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Meta: the form is already productized; AI expands branch generation.",
+    "nearest_real_systems": [
+      "Bandersnatch itself",
+      "choose-your-own adventure games",
+      "AI dungeon-likes",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "film-bandersnatch-partial-real-world-analogue-ev1"
+    ]
+  }
+]

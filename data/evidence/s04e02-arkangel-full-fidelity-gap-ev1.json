@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s04e02-arkangel-full-fidelity-gap-ev1",
+  "thesis_id": "s04e02-arkangel-full-fidelity-gap",
+  "url": "https://neuralink.com/",
+  "title": "Neuralink",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "BCI medical path, not pediatric parental filter product.",
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s07e05-eulogy-full-fidelity-gap-ev1",
+  "thesis_id": "s07e05-eulogy-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Eulogy_(Black_Mirror)",
+  "title": "Eulogy",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "System allows stepping inside old photographs.",
+  "notes": ""
+}

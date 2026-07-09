@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s01e01-national-anthem-synthetic-media-counterfeit-response-ev1",
+  "thesis_id": "s01e01-national-anthem-synthetic-media-counterfeit-response",
+  "url": "https://www.investigatetv.com/2026/04/10/investigatetv-deepfake-videos-politicians-possible-consequences-future-elections/",
+  "title": "InvestigateTV deepfakes 2026",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Patchwork of state regulations policing political deepfakes.",
+  "notes": ""
+}

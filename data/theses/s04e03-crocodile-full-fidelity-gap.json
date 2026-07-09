@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s04e03-crocodile-full-fidelity-gap",
+  "episode_id": "s04e03-crocodile",
+  "title": "Full-fidelity gap for: Device extracts audiovisual memories for insurance investigation",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: Investigators use a machine to pull memories from witnesses, creating perfect records that escalate cover-up violence.",
+  "ai_role": "Memory decoding from neural signals (speculative); video reconstruction.",
+  "non_ai_enablers": [
+    "insurance investigation",
+    "criminal cover-ups",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "memory_extraction",
+    "bci",
+    "forensic_av"
+  ],
+  "ai_capability_tags": [
+    "bci_decode",
+    "video_reconstruction"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 4
+}

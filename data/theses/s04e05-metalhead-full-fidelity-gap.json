@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s04e05-metalhead-full-fidelity-gap",
+  "episode_id": "s04e05-metalhead",
+  "title": "Full-fidelity gap for: Autonomous robot dogs hunt humans lethally",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: Quadruped robots autonomously pursue and kill humans in a collapsed environment.",
+  "ai_role": "Perception, tracking, navigation, lethal autonomy decisioning.",
+  "non_ai_enablers": [
+    "robotics hardware",
+    "military procurement",
+    "ammo/loadout",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "quadruped_robot",
+    "autonomous_weapons",
+    "cv_tracking"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "robotics",
+    "autonomy"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 5
+}

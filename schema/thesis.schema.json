@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/waitdeadai/blackmirror-bench/schema/thesis.schema.json",
+  "title": "BlackMirror-Bench Thesis Card",
+  "type": "object",
+  "required": [
+    "thesis_id",
+    "episode_id",
+    "title",
+    "thesis_statement",
+    "ai_role",
+    "non_ai_enablers",
+    "enabling_tech",
+    "spoiler_level",
+    "special_handling"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "thesis_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)+$"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^(s0[1-7]e0[1-6]-[a-z0-9-]+|special-white-christmas|film-bandersnatch)$"
+    },
+    "title": { "type": "string", "minLength": 3 },
+    "thesis_statement": { "type": "string", "minLength": 20 },
+    "ai_role": { "type": "string", "minLength": 5 },
+    "non_ai_enablers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "enabling_tech": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "ai_capability_tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "spoiler_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "special_handling": {
+      "type": "string",
+      "enum": ["none", "supernatural", "interactive", "sequel"]
+    },
+    "harm_severity": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "default": 3
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s06e04-mazey-day-partial-real-world-analogue-ev1",
+  "thesis_id": "s06e04-mazey-day-partial-real-world-analogue",
+  "url": "https://en.wikipedia.org/wiki/Mazey_Day",
+  "title": "Mazey Day",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Paparazzi hunt celebrity; includes non-tech horror elements.",
+  "notes": ""
+}

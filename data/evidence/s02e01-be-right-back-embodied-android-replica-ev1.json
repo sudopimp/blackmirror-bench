@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s02e01-be-right-back-embodied-android-replica-ev1",
+  "thesis_id": "s02e01-be-right-back-embodied-android-replica",
+  "url": "https://theconversation.com/an-ai-afterlife-is-now-a-real-option-but-what-becomes-of-your-legal-status-274021",
+  "title": "AI afterlife 2026",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Products are chat/voice/video twins, not full androids.",
+  "notes": ""
+}

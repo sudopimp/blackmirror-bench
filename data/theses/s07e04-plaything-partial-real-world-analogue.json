@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s07e04-plaything-partial-real-world-analogue",
+  "episode_id": "s07e04-plaything",
+  "title": "Partial real-world analogue of: Game creatures evolve into autonomous artificial life",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Cute digital creatures from a game become evolving artificial life with real-world impact.",
+  "ai_role": "Open-ended learning agents, artificial life sims, generative evolution.",
+  "non_ai_enablers": [
+    "game distribution",
+    "compute infrastructure"
+  ],
+  "enabling_tech": [
+    "artificial_life",
+    "open_ended_learning",
+    "game_ai"
+  ],
+  "ai_capability_tags": [
+    "agent",
+    "open_ended",
+    "reinforcement_learning"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 2
+}

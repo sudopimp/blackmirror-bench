@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s07e02-bete-noire-partial-real-world-analogue-ev1",
+  "thesis_id": "s07e02-bete-noire-partial-real-world-analogue",
+  "url": "https://www.imdb.com/title/tt2085059/episodes/?season=7",
+  "title": "B\u00eate Noire S7",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Verity unnerves Maria with reality inconsistencies.",
+  "notes": ""
+}

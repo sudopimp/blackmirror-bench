@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s02e03-waldo-moment-partial-real-world-analogue-ev1",
+  "thesis_id": "s02e03-waldo-moment-partial-real-world-analogue",
+  "url": "https://www.investigatetv.com/2026/04/10/investigatetv-deepfake-videos-politicians-possible-consequences-future-elections/",
+  "title": "Political deepfakes 2026",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Deepfakes of political figures are mainstream concern.",
+  "notes": ""
+}

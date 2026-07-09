@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s04e01-uss-callister-dna-derived-digital-clone-vr",
+  "episode_id": "s04e01-uss-callister",
+  "title": "Digital clones from DNA populate private VR prison game",
+  "thesis_statement": "A creator builds a private game world populated by conscious digital copies of colleagues derived from DNA samples.",
+  "ai_role": "World simulation, NPC autonomy \u2014 DNA\u2192mind is fiction; persona from data is partial.",
+  "non_ai_enablers": [
+    "VR gaming",
+    "DNA collection",
+    "employment power abuse"
+  ],
+  "enabling_tech": [
+    "vr_world",
+    "mind_upload",
+    "dna_to_phenotype_fiction",
+    "game_ai"
+  ],
+  "ai_capability_tags": [
+    "agent",
+    "world_model",
+    "llm"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

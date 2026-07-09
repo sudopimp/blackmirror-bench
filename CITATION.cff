@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use BlackMirror-Bench, please cite it."
+title: "BlackMirror-Bench: Socio-Technical Feasibility and Model Calibration Benchmark"
+type: software
+authors:
+  - name: "waitdeadai"
+    website: "https://github.com/waitdeadai"
+version: "1.0.0"
+date-released: "2026-07-09"
+license: Apache-2.0
+repository-code: "https://github.com/waitdeadai/blackmirror-bench"
+abstract: >
+  Open benchmark scoring how executable each Black Mirror episode thesis is
+  in 2026 with multi-axis evidence-backed data, and evaluating whether SOTA
+  models recover those scores without hype or fabricated evidence.
+keywords:
+  - benchmark
+  - large language models
+  - socio-technical systems
+  - AI evaluation
+  - Black Mirror
+  - feasibility
+  - calibration

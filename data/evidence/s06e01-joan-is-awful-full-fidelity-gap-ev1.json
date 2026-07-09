@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s06e01-joan-is-awful-full-fidelity-gap-ev1",
+  "thesis_id": "s06e01-joan-is-awful-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Joan_Is_Awful",
+  "title": "Joan Is Awful",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Streaming service turns Joan's life into a show.",
+  "notes": ""
+}

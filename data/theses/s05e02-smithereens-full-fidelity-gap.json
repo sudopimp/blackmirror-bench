@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s05e02-smithereens-full-fidelity-gap",
+  "episode_id": "s05e02-smithereens",
+  "title": "Full-fidelity gap for: Attention platform holds psychological power over users and state",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: A social platform's addiction design and data power create crises where individual trauma and corporate control collide.",
+  "ai_role": "Engagement ranking, notification optimization, crisis PR analytics.",
+  "non_ai_enablers": [
+    "smartphone ubiquity",
+    "corporate power",
+    "law enforcement process",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "social_media",
+    "recommendation_systems",
+    "push_notifications"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "engagement_optimization"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 3
+}

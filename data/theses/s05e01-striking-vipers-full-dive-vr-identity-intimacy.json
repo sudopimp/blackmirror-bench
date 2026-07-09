@@ -1,0 +1,23 @@
+{
+  "thesis_id": "s05e01-striking-vipers-full-dive-vr-identity-intimacy",
+  "episode_id": "s05e01-striking-vipers",
+  "title": "Full-dive VR enables alternate-body intimate relationships",
+  "thesis_statement": "Friends use immersive VR with full sensory fidelity to live alternate physical identities and relationships.",
+  "ai_role": "World simulation, haptics control, social multiplayer agents.",
+  "non_ai_enablers": [
+    "VR/haptics hardware",
+    "relationship norms"
+  ],
+  "enabling_tech": [
+    "full_dive_vr",
+    "haptics",
+    "multiplayer_vr"
+  ],
+  "ai_capability_tags": [
+    "world_model",
+    "embodied"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 2
+}

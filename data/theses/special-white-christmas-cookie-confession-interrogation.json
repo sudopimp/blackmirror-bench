@@ -1,0 +1,24 @@
+{
+  "thesis_id": "special-white-christmas-cookie-confession-interrogation",
+  "episode_id": "special-white-christmas",
+  "title": "Digital clone used for police confession extraction",
+  "thesis_statement": "Law enforcement interrogates a digital copy rather than the biological person to obtain confessions.",
+  "ai_role": "Persona simulation under stress; dialogue agents.",
+  "non_ai_enablers": [
+    "criminal procedure",
+    "evidence law",
+    "ethics of copies"
+  ],
+  "enabling_tech": [
+    "mind_upload",
+    "llm_persona",
+    "interrogation_systems"
+  ],
+  "ai_capability_tags": [
+    "llm",
+    "agent"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

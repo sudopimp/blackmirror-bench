@@ -1,0 +1,25 @@
+{
+  "thesis_id": "special-white-christmas-cookie-mind-clone-assistant",
+  "episode_id": "special-white-christmas",
+  "title": "Digital consciousness cookie as enslaved personal assistant",
+  "thesis_statement": "A high-fidelity digital copy of a person's mind is extracted and forced to operate as an assistant, including subjective time torture.",
+  "ai_role": "LLM persona is weak partial analogue; true mind upload is not.",
+  "non_ai_enablers": [
+    "hypothetical brain scan",
+    "property law over copies",
+    "torture ethics"
+  ],
+  "enabling_tech": [
+    "mind_upload",
+    "llm_persona",
+    "subjective_time_control"
+  ],
+  "ai_capability_tags": [
+    "llm",
+    "personalization",
+    "agent"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

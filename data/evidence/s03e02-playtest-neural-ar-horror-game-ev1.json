@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e02-playtest-neural-ar-horror-game-ev1",
+  "thesis_id": "s03e02-playtest-neural-ar-horror-game",
+  "url": "https://neuralink.com/",
+  "title": "Neuralink",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Medical BCI progress, not consumer fear-game implants.",
+  "notes": ""
+}

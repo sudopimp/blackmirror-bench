@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s07e05-eulogy-step-into-photograph-memory",
+  "episode_id": "s07e05-eulogy",
+  "title": "System lets users enter reconstructed photographs as spaces",
+  "thesis_statement": "A device reconstructs navigable 3D/experiential spaces from old photographs for grief and memory.",
+  "ai_role": "3D reconstruction from images, generative fill, multimodal memory agents.",
+  "non_ai_enablers": [
+    "photo archives",
+    "grief practices"
+  ],
+  "enabling_tech": [
+    "photogrammetry",
+    "generative_3d",
+    "memory_interface"
+  ],
+  "ai_capability_tags": [
+    "vision",
+    "gen_3d",
+    "multimodal"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 1
+}

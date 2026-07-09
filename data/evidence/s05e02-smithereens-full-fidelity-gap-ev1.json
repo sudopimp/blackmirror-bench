@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s05e02-smithereens-full-fidelity-gap-ev1",
+  "thesis_id": "s05e02-smithereens-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Smithereens_(Black_Mirror)",
+  "title": "Smithereens",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Hostage crisis involving social media company Smithereen.",
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s07e03-hotel-reverie-full-fidelity-gap",
+  "episode_id": "s07e03-hotel-reverie",
+  "title": "Full-fidelity gap for: Actor trapped in high-fidelity interactive film simulation",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: A performer enters a simulated vintage film world and must follow the script to exit safely.",
+  "ai_role": "World models, interactive narrative agents, real-time scene generation.",
+  "non_ai_enablers": [
+    "film production",
+    "immersive entertainment hardware",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "immersive_sim",
+    "interactive_film",
+    "world_model"
+  ],
+  "ai_capability_tags": [
+    "world_model",
+    "gen_media",
+    "agent"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 2
+}

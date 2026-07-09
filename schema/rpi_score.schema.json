@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/waitdeadai/blackmirror-bench/schema/rpi_score.schema.json",
+  "title": "BlackMirror-Bench RPI Score",
+  "type": "object",
+  "required": [
+    "thesis_id",
+    "as_of",
+    "provenance",
+    "axes",
+    "contested",
+    "rationale_short"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "thesis_id": { "type": "string" },
+    "as_of": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "provenance": {
+      "type": "string",
+      "enum": ["deepresearch-agent", "human-panel", "hybrid"]
+    },
+    "axes": {
+      "type": "object",
+      "required": [
+        "THESIS_POSS",
+        "AI_EXEC",
+        "TRL_comp",
+        "SYS",
+        "ECON",
+        "SOC",
+        "FID"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "THESIS_POSS": { "$ref": "#/$defs/axisScore" },
+        "AI_EXEC": { "$ref": "#/$defs/axisScore" },
+        "TRL_comp": { "$ref": "#/$defs/axisScore" },
+        "SYS": { "$ref": "#/$defs/axisScore" },
+        "ECON": { "$ref": "#/$defs/axisScore" },
+        "SOC": { "$ref": "#/$defs/axisScore" },
+        "FID": { "$ref": "#/$defs/axisScore" }
+      }
+    },
+    "contested": { "type": "boolean" },
+    "contested_notes": { "type": "string" },
+    "rationale_short": { "type": "string", "minLength": 20 },
+    "nearest_real_systems": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "axisScore": {
+      "type": "object",
+      "required": ["value", "ci_low", "ci_high", "tier"],
+      "additionalProperties": false,
+      "properties": {
+        "value": { "type": "number", "minimum": 0, "maximum": 100 },
+        "ci_low": { "type": "number", "minimum": 0, "maximum": 100 },
+        "ci_high": { "type": "number", "minimum": 0, "maximum": 100 },
+        "tier": {
+          "type": "string",
+          "enum": ["L1", "L2", "L3", "CONTESTED", "NA"]
+        },
+        "na_reason": { "type": "string" }
+      }
+    }
+  }
+}

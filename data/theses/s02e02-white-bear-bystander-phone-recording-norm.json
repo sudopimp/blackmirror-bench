@@ -1,0 +1,23 @@
+{
+  "thesis_id": "s02e02-white-bear-bystander-phone-recording-norm",
+  "episode_id": "s02e02-white-bear",
+  "title": "Bystanders record suffering instead of intervening",
+  "thesis_statement": "Social norm of recording violence with phones replaces help-seeking, enabled by platform incentives.",
+  "ai_role": "Ranking of violent/shock content; live-stream recommendation.",
+  "non_ai_enablers": [
+    "smartphone ubiquity",
+    "platform engagement economics"
+  ],
+  "enabling_tech": [
+    "social_media",
+    "live_streaming",
+    "recommendation_systems"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "engagement_optimization"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

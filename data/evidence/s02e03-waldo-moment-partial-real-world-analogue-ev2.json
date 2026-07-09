@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s02e03-waldo-moment-partial-real-world-analogue-ev2",
+  "thesis_id": "s02e03-waldo-moment-partial-real-world-analogue",
+  "url": "https://www.learningpeople.com/uk/career-insights/blog/black-mirror-s-most-accurate-tech-predictions-and-what-s-still-sci-fi/",
+  "title": "BM tech predictions",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Waldo linked to deepfake and AI-generated political content.",
+  "notes": ""
+}

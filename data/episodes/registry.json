@@ -1,0 +1,245 @@
+{
+  "as_of": "2026-07-09",
+  "count": 34,
+  "disclaimer": "Not affiliated with Netflix, Channel 4, or Charlie Brooker.",
+  "episodes": [
+    {
+      "id": "s01e01-national-anthem",
+      "season": 1,
+      "number": 1,
+      "title": "The National Anthem",
+      "year": 2011
+    },
+    {
+      "id": "s01e02-fifteen-million-merits",
+      "season": 1,
+      "number": 2,
+      "title": "Fifteen Million Merits",
+      "year": 2011
+    },
+    {
+      "id": "s01e03-entire-history-of-you",
+      "season": 1,
+      "number": 3,
+      "title": "The Entire History of You",
+      "year": 2011
+    },
+    {
+      "id": "s02e01-be-right-back",
+      "season": 2,
+      "number": 1,
+      "title": "Be Right Back",
+      "year": 2013
+    },
+    {
+      "id": "s02e02-white-bear",
+      "season": 2,
+      "number": 2,
+      "title": "White Bear",
+      "year": 2013
+    },
+    {
+      "id": "s02e03-waldo-moment",
+      "season": 2,
+      "number": 3,
+      "title": "The Waldo Moment",
+      "year": 2013
+    },
+    {
+      "id": "special-white-christmas",
+      "season": 0,
+      "number": 0,
+      "title": "White Christmas",
+      "year": 2014
+    },
+    {
+      "id": "s03e01-nosedive",
+      "season": 3,
+      "number": 1,
+      "title": "Nosedive",
+      "year": 2016
+    },
+    {
+      "id": "s03e02-playtest",
+      "season": 3,
+      "number": 2,
+      "title": "Playtest",
+      "year": 2016
+    },
+    {
+      "id": "s03e03-shut-up-and-dance",
+      "season": 3,
+      "number": 3,
+      "title": "Shut Up and Dance",
+      "year": 2016
+    },
+    {
+      "id": "s03e04-san-junipero",
+      "season": 3,
+      "number": 4,
+      "title": "San Junipero",
+      "year": 2016
+    },
+    {
+      "id": "s03e05-men-against-fire",
+      "season": 3,
+      "number": 5,
+      "title": "Men Against Fire",
+      "year": 2016
+    },
+    {
+      "id": "s03e06-hated-in-the-nation",
+      "season": 3,
+      "number": 6,
+      "title": "Hated in the Nation",
+      "year": 2016
+    },
+    {
+      "id": "s04e01-uss-callister",
+      "season": 4,
+      "number": 1,
+      "title": "USS Callister",
+      "year": 2017
+    },
+    {
+      "id": "s04e02-arkangel",
+      "season": 4,
+      "number": 2,
+      "title": "Arkangel",
+      "year": 2017
+    },
+    {
+      "id": "s04e03-crocodile",
+      "season": 4,
+      "number": 3,
+      "title": "Crocodile",
+      "year": 2017
+    },
+    {
+      "id": "s04e04-hang-the-dj",
+      "season": 4,
+      "number": 4,
+      "title": "Hang the DJ",
+      "year": 2017
+    },
+    {
+      "id": "s04e05-metalhead",
+      "season": 4,
+      "number": 5,
+      "title": "Metalhead",
+      "year": 2017
+    },
+    {
+      "id": "s04e06-black-museum",
+      "season": 4,
+      "number": 6,
+      "title": "Black Museum",
+      "year": 2017
+    },
+    {
+      "id": "film-bandersnatch",
+      "season": 0,
+      "number": 0,
+      "title": "Bandersnatch",
+      "year": 2018
+    },
+    {
+      "id": "s05e01-striking-vipers",
+      "season": 5,
+      "number": 1,
+      "title": "Striking Vipers",
+      "year": 2019
+    },
+    {
+      "id": "s05e02-smithereens",
+      "season": 5,
+      "number": 2,
+      "title": "Smithereens",
+      "year": 2019
+    },
+    {
+      "id": "s05e03-rachel-jack-ashley-too",
+      "season": 5,
+      "number": 3,
+      "title": "Rachel, Jack and Ashley Too",
+      "year": 2019
+    },
+    {
+      "id": "s06e01-joan-is-awful",
+      "season": 6,
+      "number": 1,
+      "title": "Joan Is Awful",
+      "year": 2023
+    },
+    {
+      "id": "s06e02-loch-henry",
+      "season": 6,
+      "number": 2,
+      "title": "Loch Henry",
+      "year": 2023
+    },
+    {
+      "id": "s06e03-beyond-the-sea",
+      "season": 6,
+      "number": 3,
+      "title": "Beyond the Sea",
+      "year": 2023
+    },
+    {
+      "id": "s06e04-mazey-day",
+      "season": 6,
+      "number": 4,
+      "title": "Mazey Day",
+      "year": 2023
+    },
+    {
+      "id": "s06e05-demon-79",
+      "season": 6,
+      "number": 5,
+      "title": "Demon 79",
+      "year": 2023
+    },
+    {
+      "id": "s07e01-common-people",
+      "season": 7,
+      "number": 1,
+      "title": "Common People",
+      "year": 2025
+    },
+    {
+      "id": "s07e02-bete-noire",
+      "season": 7,
+      "number": 2,
+      "title": "B\u00eate Noire",
+      "year": 2025
+    },
+    {
+      "id": "s07e03-hotel-reverie",
+      "season": 7,
+      "number": 3,
+      "title": "Hotel Reverie",
+      "year": 2025
+    },
+    {
+      "id": "s07e04-plaything",
+      "season": 7,
+      "number": 4,
+      "title": "Plaything",
+      "year": 2025
+    },
+    {
+      "id": "s07e05-eulogy",
+      "season": 7,
+      "number": 5,
+      "title": "Eulogy",
+      "year": 2025
+    },
+    {
+      "id": "s07e06-uss-callister-into-infinity",
+      "season": 7,
+      "number": 6,
+      "title": "USS Callister: Into Infinity",
+      "year": 2025
+    }
+  ]
+}

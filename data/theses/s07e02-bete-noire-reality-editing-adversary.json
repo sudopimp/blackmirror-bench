@@ -1,0 +1,23 @@
+{
+  "thesis_id": "s07e02-bete-noire-reality-editing-adversary",
+  "episode_id": "s07e02-bete-noire",
+  "title": "Adversary edits personal reality / shared facts",
+  "thesis_statement": "An antagonist rewrites environmental facts and memories so only the victim notices inconsistencies.",
+  "ai_role": "Gaslighting via deepfakes, synthetic evidence, personalized content worlds \u2014 partial analogue only.",
+  "non_ai_enablers": [
+    "unexplained fiction device",
+    "workplace power"
+  ],
+  "enabling_tech": [
+    "reality_compiler_fiction",
+    "deepfake_video",
+    "targeted_disinfo"
+  ],
+  "ai_capability_tags": [
+    "gen_media",
+    "personalization"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 4
+}

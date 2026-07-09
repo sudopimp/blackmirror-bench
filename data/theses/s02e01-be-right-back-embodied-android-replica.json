@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s02e01-be-right-back-embodied-android-replica",
+  "episode_id": "s02e01-be-right-back",
+  "title": "Physical android body matching deceased",
+  "thesis_statement": "A synthetic body with the persona is delivered for physical cohabitation.",
+  "ai_role": "Persona control of humanoid robot; multimodal interaction.",
+  "non_ai_enablers": [
+    "humanoid robotics hardware",
+    "manufacturing cost",
+    "uncanny valley social norms"
+  ],
+  "enabling_tech": [
+    "humanoid_robot",
+    "llm_persona",
+    "voice_clone"
+  ],
+  "ai_capability_tags": [
+    "llm",
+    "robotics_control",
+    "embodied"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 2
+}

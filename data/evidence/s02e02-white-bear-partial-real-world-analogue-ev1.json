@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s02e02-white-bear-partial-real-world-analogue-ev1",
+  "thesis_id": "s02e02-white-bear-partial-real-world-analogue",
+  "url": "https://en.wikipedia.org/wiki/White_Bear_(Black_Mirror)",
+  "title": "White Bear wiki",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "White Bear Justice Park stages repeating punishment after memory wipe.",
+  "notes": ""
+}

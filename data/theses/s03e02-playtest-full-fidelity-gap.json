@@ -1,0 +1,27 @@
+{
+  "thesis_id": "s03e02-playtest-full-fidelity-gap",
+  "episode_id": "s03e02-playtest",
+  "title": "Full-fidelity gap for: Neural AR game personalizes horror from user data",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: An experimental game implants or interfaces to read fears from personal data and generate adaptive AR horror.",
+  "ai_role": "Personalization from scraped data, generative horror content, biometric feedback loops.",
+  "non_ai_enablers": [
+    "experimental medical devices",
+    "game QA ethics",
+    "travel identity theft",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "ar_gaming",
+    "bci",
+    "generative_content",
+    "data_brokerage"
+  ],
+  "ai_capability_tags": [
+    "gen_media",
+    "personalization",
+    "bci_decode"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 4
+}

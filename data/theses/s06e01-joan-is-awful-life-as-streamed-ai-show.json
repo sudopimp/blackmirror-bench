@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s06e01-joan-is-awful-life-as-streamed-ai-show",
+  "episode_id": "s06e01-joan-is-awful",
+  "title": "Personal life turned into AI-generated streaming show via contracts",
+  "thesis_statement": "Terms of service allow a platform to convert a person's life into a near-real-time AI-generated show starring deepfake actors.",
+  "ai_role": "Generative video of real events, deepfake celebrities, automated showrunning.",
+  "non_ai_enablers": [
+    "adhesion contracts",
+    "streaming platforms",
+    "surveillance data"
+  ],
+  "enabling_tech": [
+    "gen_video",
+    "deepfake_video",
+    "contract_surveillance",
+    "recommendation_systems"
+  ],
+  "ai_capability_tags": [
+    "gen_video",
+    "llm",
+    "multimodal"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 3
+}

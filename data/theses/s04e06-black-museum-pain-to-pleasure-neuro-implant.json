@@ -1,0 +1,21 @@
+{
+  "thesis_id": "s04e06-black-museum-pain-to-pleasure-neuro-implant",
+  "episode_id": "s04e06-black-museum",
+  "title": "Neuro implant redirects pain signals to pleasure",
+  "thesis_statement": "Medical implant converts patient pain into pleasure sensations with addictive consequences.",
+  "ai_role": "Adaptive stimulation control (limited); mostly neuroengineering.",
+  "non_ai_enablers": [
+    "neuromodulation devices",
+    "FDA pathways"
+  ],
+  "enabling_tech": [
+    "neuromodulation",
+    "implantable_stimulator"
+  ],
+  "ai_capability_tags": [
+    "closed_loop_control"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 4
+}

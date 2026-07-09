@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s07e06-uss-callister-into-infinity-partial-real-world-analogue",
+  "episode_id": "s07e06-uss-callister-into-infinity",
+  "title": "Partial real-world analogue of: Persistent multiplayer world of digital consciousnesses",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Digital crew persists after creator's death in an unbounded multiplayer space under threat from other players.",
+  "ai_role": "Persistent world agents, multiplayer matchmaking, generative space.",
+  "non_ai_enablers": [
+    "game servers",
+    "player economies"
+  ],
+  "enabling_tech": [
+    "vr_world",
+    "persistent_sim",
+    "mind_upload",
+    "multiplayer"
+  ],
+  "ai_capability_tags": [
+    "agent",
+    "world_model",
+    "multi_agent"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "sequel",
+  "harm_severity": 3
+}

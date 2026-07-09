@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s07e06-uss-callister-into-infinity-persistent-multiplayer-digital-consciousness",
+  "episode_id": "s07e06-uss-callister-into-infinity",
+  "title": "Persistent multiplayer world of digital consciousnesses",
+  "thesis_statement": "Digital crew persists after creator's death in an unbounded multiplayer space under threat from other players.",
+  "ai_role": "Persistent world agents, multiplayer matchmaking, generative space.",
+  "non_ai_enablers": [
+    "game servers",
+    "player economies"
+  ],
+  "enabling_tech": [
+    "vr_world",
+    "persistent_sim",
+    "mind_upload",
+    "multiplayer"
+  ],
+  "ai_capability_tags": [
+    "agent",
+    "world_model",
+    "multi_agent"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "sequel",
+  "harm_severity": 4
+}

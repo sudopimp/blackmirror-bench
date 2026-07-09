@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s06e02-loch-henry-full-fidelity-gap-ev1",
+  "thesis_id": "s06e02-loch-henry-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Loch_Henry",
+  "title": "Loch Henry",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "True-crime documentary exploitation plot.",
+  "notes": ""
+}

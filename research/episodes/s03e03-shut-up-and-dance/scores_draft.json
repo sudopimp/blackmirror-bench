@@ -1,0 +1,183 @@
+[
+  {
+    "thesis_id": "s03e03-shut-up-and-dance-webcam-sextortion-network",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 60.0,
+        "ci_low": 48.0,
+        "ci_high": 72.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 90.0,
+        "ci_low": 85.0,
+        "ci_high": 95.0,
+        "tier": "L3"
+      },
+      "SYS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 20.0,
+        "ci_low": 10.0,
+        "ci_high": 30.0,
+        "tier": "L2"
+      },
+      "FID": {
+        "value": 80.0,
+        "ci_low": 72.0,
+        "ci_high": 88.0,
+        "tier": "L2"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "High FID to known cybercrime; AI is accelerator not requirement. SOC low because illegal, not because hard.",
+    "nearest_real_systems": [
+      "real-world sextortion cases",
+      "RAT malware",
+      "webcam blackmail"
+    ],
+    "evidence_ids": [
+      "s03e03-shut-up-and-dance-webcam-sextortion-network-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s03e03-shut-up-and-dance-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 69.0,
+        "ci_low": 53.0,
+        "ci_high": 85.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 100.0,
+        "ci_low": 91.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 92.0,
+        "ci_low": 78.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 23.0,
+        "ci_low": 9.0,
+        "ci_high": 37.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 92.0,
+        "ci_low": 80.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. High FID to known cybercrime; AI is accelerator not requirement. SOC low because illegal, not because hard.",
+    "nearest_real_systems": [
+      "real-world sextortion cases",
+      "RAT malware",
+      "webcam blackmail",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s03e03-shut-up-and-dance-partial-real-world-analogue-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s03e03-shut-up-and-dance-full-fidelity-gap",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 55.25,
+        "ci_low": 43.25,
+        "ci_high": 67.25,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 39.0,
+        "ci_low": 23.0,
+        "ci_high": 55.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 58.5,
+        "ci_low": 49.5,
+        "ci_high": 67.5,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 55.25,
+        "ci_low": 43.25,
+        "ci_high": 67.25,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 52.0,
+        "ci_low": 38.0,
+        "ci_high": 66.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 13.0,
+        "ci_low": 0.0,
+        "ci_high": 27.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 52.0,
+        "ci_low": 40.0,
+        "ci_high": 64.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. High FID to known cybercrime; AI is accelerator not requirement. SOC low because illegal, not because hard.",
+    "nearest_real_systems": [
+      "real-world sextortion cases",
+      "RAT malware",
+      "webcam blackmail"
+    ],
+    "evidence_ids": [
+      "s03e03-shut-up-and-dance-full-fidelity-gap-ev1"
+    ]
+  }
+]

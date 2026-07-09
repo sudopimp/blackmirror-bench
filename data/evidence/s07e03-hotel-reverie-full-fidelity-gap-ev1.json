@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s07e03-hotel-reverie-full-fidelity-gap-ev1",
+  "thesis_id": "s07e03-hotel-reverie-full-fidelity-gap",
+  "url": "https://www.netflix.com/tudum/articles/black-mirror-season-7",
+  "title": "Hotel Reverie",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Immersive remake traps star in vintage film world.",
+  "notes": ""
+}

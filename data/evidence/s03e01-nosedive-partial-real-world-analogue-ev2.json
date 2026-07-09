@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e01-nosedive-partial-real-world-analogue-ev2",
+  "thesis_id": "s03e01-nosedive-partial-real-world-analogue",
+  "url": "https://www.newstatesman.com/science-tech/2018/04/no-china-isn-t-black-mirror-social-credit-scores-are-more-complex-and-sinister",
+  "title": "NS critique",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "China systems more complex than Nosedive meme.",
+  "notes": ""
+}

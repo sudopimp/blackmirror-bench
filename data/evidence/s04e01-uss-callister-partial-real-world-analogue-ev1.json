@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s04e01-uss-callister-partial-real-world-analogue-ev1",
+  "thesis_id": "s04e01-uss-callister-partial-real-world-analogue",
+  "url": "https://en.wikipedia.org/wiki/USS_Callister",
+  "title": "USS Callister",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Daly creates digital copies of coworkers in VR.",
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s06e05-demon-79-media-fueled-racialized-violence-1979-ev1",
+  "thesis_id": "s06e05-demon-79-media-fueled-racialized-violence-1979",
+  "url": "https://en.wikipedia.org/wiki/Demon_79",
+  "title": "Demon 79",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Period setting with media and social violence themes alongside supernatural plot.",
+  "notes": ""
+}

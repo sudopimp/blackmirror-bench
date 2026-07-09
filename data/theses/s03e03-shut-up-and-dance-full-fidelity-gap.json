@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s03e03-shut-up-and-dance-full-fidelity-gap",
+  "episode_id": "s03e03-shut-up-and-dance",
+  "title": "Full-fidelity gap for: Blackmail network uses remote device compromise",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: Attackers capture compromising footage via malware and coerce victims into escalating crimes under threat of exposure.",
+  "ai_role": "Target selection, automated phishing, deepfake enhancement of blackmail material (optional).",
+  "non_ai_enablers": [
+    "malware economy",
+    "social engineering",
+    "criminal markets",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "malware",
+    "webcam_hijack",
+    "anonymity_networks",
+    "deepfake_optional"
+  ],
+  "ai_capability_tags": [
+    "phishing_automation",
+    "gen_image"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

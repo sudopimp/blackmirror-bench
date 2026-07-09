@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s03e06-hated-in-the-nation-partial-real-world-analogue",
+  "episode_id": "s03e06-hated-in-the-nation",
+  "title": "Partial real-world analogue of: Autonomous insect-scale drone swarm for lethal targeting",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Government bee-replacement drones are weaponized to assassinate people identified via social media hate lists.",
+  "ai_role": "Target tracking, face ID, swarm coordination, social graph analysis.",
+  "non_ai_enablers": [
+    "micro-UAV hardware",
+    "government surveillance programs"
+  ],
+  "enabling_tech": [
+    "micro_drone",
+    "swarm_robotics",
+    "facial_recognition",
+    "social_graph"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "multi_agent",
+    "graph_ml"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 4
+}

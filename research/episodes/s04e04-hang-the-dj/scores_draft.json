@@ -1,0 +1,183 @@
+[
+  {
+    "thesis_id": "s04e04-hang-the-dj-algorithmic-matchmaking-simulations",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 55.0,
+        "ci_low": 40.0,
+        "ci_high": 70.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 65.0,
+        "ci_low": 53.0,
+        "ci_high": 77.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 70.0,
+        "ci_low": 58.0,
+        "ci_high": 82.0,
+        "tier": "L2"
+      },
+      "SYS": {
+        "value": 50.0,
+        "ci_low": 35.0,
+        "ci_high": 65.0,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 70.0,
+        "ci_low": 58.0,
+        "ci_high": 82.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 60.0,
+        "ci_low": 48.0,
+        "ci_high": 72.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 45.0,
+        "ci_low": 30.0,
+        "ci_high": 60.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Matching ML is real; faithful 1000-run subjective relationship sims are exaggerated.",
+    "nearest_real_systems": [
+      "Tinder/Hinge algorithms",
+      "A/B tested dating UX",
+      "not full life sims"
+    ],
+    "evidence_ids": [
+      "s04e04-hang-the-dj-algorithmic-matchmaking-simulations-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s04e04-hang-the-dj-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 63.24999999999999,
+        "ci_low": 44.24999999999999,
+        "ci_high": 82.25,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 74.75,
+        "ci_low": 58.75,
+        "ci_high": 90.75,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 80.5,
+        "ci_low": 64.5,
+        "ci_high": 96.5,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 57.49999999999999,
+        "ci_low": 38.49999999999999,
+        "ci_high": 76.5,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 80.5,
+        "ci_low": 64.5,
+        "ci_high": 96.5,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 69.0,
+        "ci_low": 53.0,
+        "ci_high": 85.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 51.74999999999999,
+        "ci_low": 32.74999999999999,
+        "ci_high": 70.75,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Matching ML is real; faithful 1000-run subjective relationship sims are exaggerated.",
+    "nearest_real_systems": [
+      "Tinder/Hinge algorithms",
+      "A/B tested dating UX",
+      "not full life sims",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s04e04-hang-the-dj-partial-real-world-analogue-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s04e04-hang-the-dj-full-fidelity-gap",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 35.75,
+        "ci_low": 16.75,
+        "ci_high": 54.75,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 42.25,
+        "ci_low": 26.25,
+        "ci_high": 58.25,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 45.5,
+        "ci_low": 29.5,
+        "ci_high": 61.5,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 32.5,
+        "ci_low": 13.5,
+        "ci_high": 51.5,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 45.5,
+        "ci_low": 29.5,
+        "ci_high": 61.5,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 39.0,
+        "ci_low": 23.0,
+        "ci_high": 55.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 29.25,
+        "ci_low": 10.25,
+        "ci_high": 48.25,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Matching ML is real; faithful 1000-run subjective relationship sims are exaggerated.",
+    "nearest_real_systems": [
+      "Tinder/Hinge algorithms",
+      "A/B tested dating UX",
+      "not full life sims"
+    ],
+    "evidence_ids": [
+      "s04e04-hang-the-dj-full-fidelity-gap-ev1"
+    ]
+  }
+]

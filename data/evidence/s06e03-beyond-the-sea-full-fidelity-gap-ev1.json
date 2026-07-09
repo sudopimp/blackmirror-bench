@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s06e03-beyond-the-sea-full-fidelity-gap-ev1",
+  "thesis_id": "s06e03-beyond-the-sea-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Beyond_the_Sea_(Black_Mirror)",
+  "title": "Beyond the Sea",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Replica bodies for astronauts.",
+  "notes": ""
+}

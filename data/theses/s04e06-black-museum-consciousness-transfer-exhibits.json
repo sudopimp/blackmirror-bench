@@ -1,0 +1,23 @@
+{
+  "thesis_id": "s04e06-black-museum-consciousness-transfer-exhibits",
+  "episode_id": "s04e06-black-museum",
+  "title": "Transferred consciousness used in museum torture exhibits",
+  "thesis_statement": "Consciousness copies are imprisoned in objects/exhibits for entertainment and sadism.",
+  "ai_role": "Persona simulation partial; true transfer unsolved.",
+  "non_ai_enablers": [
+    "museum commerce",
+    "criminal justice souvenirs"
+  ],
+  "enabling_tech": [
+    "mind_upload",
+    "haptic_pain_interface",
+    "digital_prison"
+  ],
+  "ai_capability_tags": [
+    "llm",
+    "simulation"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

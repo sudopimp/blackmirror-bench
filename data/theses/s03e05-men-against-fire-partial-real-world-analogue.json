@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s03e05-men-against-fire-partial-real-world-analogue",
+  "episode_id": "s03e05-men-against-fire",
+  "title": "Partial real-world analogue of: Military AR HUD alters perception of enemies",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Implanted or helmet systems modify soldiers' visual/auditory perception so targets appear non-human, enabling killing and controlling PTSD narrative.",
+  "ai_role": "Real-time CV classification, generative overlay, biometric feedback control.",
+  "non_ai_enablers": [
+    "military doctrine",
+    "medical implants",
+    "war crimes law"
+  ],
+  "enabling_tech": [
+    "military_ar",
+    "bci",
+    "target_classification",
+    "perceptual_manipulation"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "ar",
+    "classification"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 4
+}

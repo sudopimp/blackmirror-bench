@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s06e04-mazey-day-full-fidelity-gap",
+  "episode_id": "s06e04-mazey-day",
+  "title": "Full-fidelity gap for: Extreme paparazzi optics and pursuit tech destroy privacy",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: Military-grade optics and pursuit culture enable invasive celebrity hunting with violent consequences.",
+  "ai_role": "Face recognition at distance, tracking, media distribution ranking.",
+  "non_ai_enablers": [
+    "tabloid markets",
+    "long-lens photography",
+    "vehicle pursuit",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "long_range_optics",
+    "facial_recognition",
+    "media_distribution"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "tracking"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 3
+}

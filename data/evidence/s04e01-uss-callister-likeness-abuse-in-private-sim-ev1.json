@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s04e01-uss-callister-likeness-abuse-in-private-sim-ev1",
+  "thesis_id": "s04e01-uss-callister-likeness-abuse-in-private-sim",
+  "url": "https://www.investigatetv.com/2026/04/10/investigatetv-deepfake-videos-politicians-possible-consequences-future-elections/",
+  "title": "Deepfake prevalence",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Synthetic media of real people is widely feasible.",
+  "notes": ""
+}

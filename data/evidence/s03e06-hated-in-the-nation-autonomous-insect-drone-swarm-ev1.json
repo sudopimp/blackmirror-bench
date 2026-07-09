@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e06-hated-in-the-nation-autonomous-insect-drone-swarm-ev1",
+  "thesis_id": "s03e06-hated-in-the-nation-autonomous-insect-drone-swarm",
+  "url": "https://en.wikipedia.org/wiki/Hated_in_the_Nation",
+  "title": "Hated in the Nation",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "ADI drones used for targeted killings from death lists.",
+  "notes": ""
+}

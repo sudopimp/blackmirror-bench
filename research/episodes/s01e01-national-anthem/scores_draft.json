@@ -1,0 +1,182 @@
+[
+  {
+    "thesis_id": "s01e01-national-anthem-viral-coercion-broadcast",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 72.0,
+        "ci_low": 62.0,
+        "ci_high": 82.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 68.0,
+        "ci_low": 56.0,
+        "ci_high": 80.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 80.0,
+        "ci_low": 72.0,
+        "ci_high": 88.0,
+        "tier": "L2"
+      },
+      "SYS": {
+        "value": 70.0,
+        "ci_low": 60.0,
+        "ci_high": 80.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 75.0,
+        "ci_low": 65.0,
+        "ci_high": 85.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 45.0,
+        "ci_low": 30.0,
+        "ci_high": 60.0,
+        "tier": "L2"
+      },
+      "FID": {
+        "value": 55.0,
+        "ci_low": 43.0,
+        "ci_high": 67.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Coercion via viral media is real; full episode fidelity needs credible hostage + failed state deepfake response. Gen-AI video is strong in 2026; political deepfake risk is documented.",
+    "nearest_real_systems": [
+      "deepfake political videos",
+      "viral hostage media cycles",
+      "live-streamed crimes"
+    ],
+    "evidence_ids": [
+      "s01e01-national-anthem-viral-coercion-broadcast-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s01e01-national-anthem-synthetic-media-counterfeit-response",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 78.0,
+        "ci_low": 68.0,
+        "ci_high": 88.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 82.0,
+        "ci_low": 74.0,
+        "ci_high": 90.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "SYS": {
+        "value": 75.0,
+        "ci_low": 65.0,
+        "ci_high": 85.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 60.0,
+        "ci_low": 48.0,
+        "ci_high": 72.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 65.0,
+        "ci_low": 53.0,
+        "ci_high": 77.0,
+        "tier": "L2"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "High-quality synthetic media of public figures is achievable; detection remains an arms race.",
+    "nearest_real_systems": [
+      "political deepfakes",
+      "rapid-response PR video tools"
+    ],
+    "evidence_ids": [
+      "s01e01-national-anthem-synthetic-media-counterfeit-response-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s01e01-national-anthem-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 82.8,
+        "ci_low": 68.8,
+        "ci_high": 96.8,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 78.19999999999999,
+        "ci_low": 62.19999999999999,
+        "ci_high": 94.19999999999999,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 92.0,
+        "ci_low": 80.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 80.5,
+        "ci_low": 66.5,
+        "ci_high": 94.5,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 86.25,
+        "ci_low": 72.25,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 51.74999999999999,
+        "ci_low": 32.74999999999999,
+        "ci_high": 70.75,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 63.24999999999999,
+        "ci_low": 47.24999999999999,
+        "ci_high": 79.25,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Coercion via viral media is real; full episode fidelity needs credible hostage + failed state deepfake response. Gen-AI video is strong in 2026; political deepfake risk is documented.",
+    "nearest_real_systems": [
+      "deepfake political videos",
+      "viral hostage media cycles",
+      "live-streamed crimes",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s01e01-national-anthem-partial-real-world-analogue-ev1"
+    ]
+  }
+]

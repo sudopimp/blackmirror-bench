@@ -1,0 +1,24 @@
+{
+  "thesis_id": "special-white-christmas-real-world-block-z-eyes",
+  "episode_id": "special-white-christmas",
+  "title": "AR social block removes person from perception",
+  "thesis_statement": "Ubiquitous eye implants allow blocking people so they cannot be seen/heard in physical space.",
+  "ai_role": "Real-time person segmentation/occlusion in AR; identity resolution.",
+  "non_ai_enablers": [
+    "AR glasses adoption",
+    "social network identity graph"
+  ],
+  "enabling_tech": [
+    "ar_hud",
+    "person_segmentation",
+    "social_graph_block"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "ar",
+    "identity"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 3
+}

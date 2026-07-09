@@ -1,0 +1,27 @@
+{
+  "thesis_id": "s01e01-national-anthem-partial-real-world-analogue",
+  "episode_id": "s01e01-national-anthem",
+  "title": "Partial real-world analogue of: Viral hostage demand forces televised political humiliation",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Networked social media and always-on news can coerce a head of state into a live televised degrading act under hostage threat, with fabricated footage failing under scrutiny.",
+  "ai_role": "Deepfake generation, virality prediction, automated news amplification, synthetic media detection (failure mode).",
+  "non_ai_enablers": [
+    "live television",
+    "hostage crime",
+    "smartphone cameras",
+    "public relations crisis ops"
+  ],
+  "enabling_tech": [
+    "social_media",
+    "live_broadcast",
+    "deepfake_video",
+    "content_virality"
+  ],
+  "ai_capability_tags": [
+    "gen_video",
+    "recommendation",
+    "moderation"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

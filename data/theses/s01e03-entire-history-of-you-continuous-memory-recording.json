@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s01e03-entire-history-of-you-continuous-memory-recording",
+  "episode_id": "s01e03-entire-history-of-you",
+  "title": "Always-on personal audiovisual memory implant (Grain)",
+  "thesis_statement": "Individuals implant devices that continuously record sight/sound and allow replay and external display of memories.",
+  "ai_role": "Search over life logs, face recognition, selective redaction, memory indexing.",
+  "non_ai_enablers": [
+    "neural implants",
+    "storage hardware",
+    "social norms of recording"
+  ],
+  "enabling_tech": [
+    "bci",
+    "wearable_camera",
+    "life_logging",
+    "on_device_storage"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "speech",
+    "retrieval"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

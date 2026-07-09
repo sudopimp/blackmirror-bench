@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s01e03-entire-history-of-you-memory-as-relationship-weapon",
+  "episode_id": "s01e03-entire-history-of-you",
+  "title": "Replayed memories used for interpersonal interrogation",
+  "thesis_statement": "Perfect replay of past interactions enables coercive jealousy and destruction of trust in relationships.",
+  "ai_role": "Selective retrieval, emotion detection on recorded media, highlight extraction.",
+  "non_ai_enablers": [
+    "relationship norms",
+    "legal evidence rules",
+    "alcohol/impairment"
+  ],
+  "enabling_tech": [
+    "life_logging",
+    "video_search",
+    "consumer_surveillance"
+  ],
+  "ai_capability_tags": [
+    "retrieval",
+    "multimodal"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 3
+}

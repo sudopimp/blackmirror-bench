@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s01e02-fifteen-million-merits-coopted-dissent-as-content-ev1",
+  "thesis_id": "s01e02-fifteen-million-merits-coopted-dissent-as-content",
+  "url": "https://en.wikipedia.org/wiki/List_of_Black_Mirror_episodes",
+  "title": "Episode synopsis reference",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Bing's anti-system monologue becomes a regular show.",
+  "notes": ""
+}

@@ -1,0 +1,27 @@
+{
+  "thesis_id": "s01e02-fifteen-million-merits-attention-economy-gamified-labor",
+  "episode_id": "s01e02-fifteen-million-merits",
+  "title": "Gamified labor fuels attention economy entertainment",
+  "thesis_statement": "Populations perform monotonous digital/physical labor for platform currency spent on entertainment, while dissent is monetized as content.",
+  "ai_role": "Recommendation engines, ad targeting, talent-show algorithmic curation, engagement optimization.",
+  "non_ai_enablers": [
+    "gig labor",
+    "streaming platforms",
+    "virtual currencies",
+    "reality TV formats"
+  ],
+  "enabling_tech": [
+    "recommendation_systems",
+    "virtual_currency",
+    "always_on_screens",
+    "creator_platforms"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "engagement_optimization",
+    "content_moderation"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

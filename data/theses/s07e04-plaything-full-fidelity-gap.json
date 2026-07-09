@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s07e04-plaything-full-fidelity-gap",
+  "episode_id": "s07e04-plaything",
+  "title": "Full-fidelity gap for: Game creatures evolve into autonomous artificial life",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: Cute digital creatures from a game become evolving artificial life with real-world impact.",
+  "ai_role": "Open-ended learning agents, artificial life sims, generative evolution.",
+  "non_ai_enablers": [
+    "game distribution",
+    "compute infrastructure",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "artificial_life",
+    "open_ended_learning",
+    "game_ai"
+  ],
+  "ai_capability_tags": [
+    "agent",
+    "open_ended",
+    "reinforcement_learning"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 3
+}

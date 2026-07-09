@@ -1,0 +1,183 @@
+[
+  {
+    "thesis_id": "s04e03-crocodile-memory-extraction-investigation",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 25.0,
+        "ci_low": 13.0,
+        "ci_high": 37.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 18.0,
+        "ci_low": 8.0,
+        "ci_high": 28.0,
+        "tier": "L2"
+      },
+      "SYS": {
+        "value": 10.0,
+        "ci_low": 2.0,
+        "ci_high": 18.0,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 20.0,
+        "ci_low": 8.0,
+        "ci_high": 32.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 20.0,
+        "ci_low": 8.0,
+        "ci_high": 32.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 12.0,
+        "ci_low": 4.0,
+        "ci_high": 20.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Forensic digital evidence is real; neural memory extraction at episode fidelity is not.",
+    "nearest_real_systems": [
+      "CCTV forensics",
+      "phone data warrants",
+      "not memory machines"
+    ],
+    "evidence_ids": [
+      "s04e03-crocodile-memory-extraction-investigation-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s04e03-crocodile-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 17.25,
+        "ci_low": 3.25,
+        "ci_high": 31.25,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 28.749999999999996,
+        "ci_low": 12.749999999999996,
+        "ci_high": 44.75,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 20.7,
+        "ci_low": 6.699999999999999,
+        "ci_high": 34.7,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 11.5,
+        "ci_low": 0.0,
+        "ci_high": 23.5,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 23.0,
+        "ci_low": 7.0,
+        "ci_high": 39.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 23.0,
+        "ci_low": 7.0,
+        "ci_high": 39.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 13.799999999999999,
+        "ci_low": 1.799999999999999,
+        "ci_high": 25.799999999999997,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Forensic digital evidence is real; neural memory extraction at episode fidelity is not.",
+    "nearest_real_systems": [
+      "CCTV forensics",
+      "phone data warrants",
+      "not memory machines",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s04e03-crocodile-partial-real-world-analogue-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s04e03-crocodile-full-fidelity-gap",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 9.75,
+        "ci_low": 0.0,
+        "ci_high": 23.75,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 16.25,
+        "ci_low": 0.25,
+        "ci_high": 32.25,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 11.700000000000001,
+        "ci_low": 0.0,
+        "ci_high": 25.700000000000003,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 6.5,
+        "ci_low": 0.0,
+        "ci_high": 18.5,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 13.0,
+        "ci_low": 0.0,
+        "ci_high": 29.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 13.0,
+        "ci_low": 0.0,
+        "ci_high": 29.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 7.800000000000001,
+        "ci_low": 0.0,
+        "ci_high": 19.8,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Forensic digital evidence is real; neural memory extraction at episode fidelity is not.",
+    "nearest_real_systems": [
+      "CCTV forensics",
+      "phone data warrants",
+      "not memory machines"
+    ],
+    "evidence_ids": [
+      "s04e03-crocodile-full-fidelity-gap-ev1"
+    ]
+  }
+]

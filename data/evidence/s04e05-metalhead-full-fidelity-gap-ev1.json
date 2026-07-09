@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s04e05-metalhead-full-fidelity-gap-ev1",
+  "thesis_id": "s04e05-metalhead-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Metalhead_(Black_Mirror)",
+  "title": "Metalhead",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Robot dogs hunt survivors.",
+  "notes": ""
+}

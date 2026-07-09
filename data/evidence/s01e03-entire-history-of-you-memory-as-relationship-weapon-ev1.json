@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s01e03-entire-history-of-you-memory-as-relationship-weapon-ev1",
+  "thesis_id": "s01e03-entire-history-of-you-memory-as-relationship-weapon",
+  "url": "https://en.wikipedia.org/wiki/The_Entire_History_of_You",
+  "title": "Entire History of You",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Grain enables replaying memories during relationship conflict.",
+  "notes": ""
+}

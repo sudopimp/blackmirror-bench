@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s06e03-beyond-the-sea-partial-real-world-analogue",
+  "episode_id": "s06e03-beyond-the-sea",
+  "title": "Partial real-world analogue of: Humans operate replica bodies remotely across distance",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Astronauts' consciousness links to Earth replica bodies for dual lives; violence against replicas has catastrophic effects.",
+  "ai_role": "Teleoperation, latency compensation, body control policies.",
+  "non_ai_enablers": [
+    "replica hardware",
+    "space isolation",
+    "cult violence"
+  ],
+  "enabling_tech": [
+    "telepresence",
+    "android_body",
+    "high_bandwidth_link"
+  ],
+  "ai_capability_tags": [
+    "robotics_control",
+    "teleop"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

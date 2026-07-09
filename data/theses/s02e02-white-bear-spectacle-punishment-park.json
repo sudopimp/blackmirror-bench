@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s02e02-white-bear-spectacle-punishment-park",
+  "episode_id": "s02e02-white-bear",
+  "title": "Criminal punishment as recurring public entertainment park",
+  "thesis_statement": "A justice system wipes memory daily and re-stages punishment as a theme-park spectacle filmed by onlookers.",
+  "ai_role": "Crowd management analytics, personalized torment scripting, facial recognition of visitors.",
+  "non_ai_enablers": [
+    "carceral state",
+    "theme park logistics",
+    "memory-altering medical tech"
+  ],
+  "enabling_tech": [
+    "surveillance",
+    "crowd_analytics",
+    "memory_modification"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "recommendation"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

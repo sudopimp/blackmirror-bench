@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s03e06-hated-in-the-nation-social-media-death-list",
+  "episode_id": "s03e06-hated-in-the-nation",
+  "title": "Hashtag pile-on creates target lists for real harm",
+  "thesis_statement": "Viral hate campaigns produce ranked lists of people who then suffer real-world consequences.",
+  "ai_role": "Trend amplification, bot networks, ranking of outrage targets.",
+  "non_ai_enablers": [
+    "platform design",
+    "mob psychology",
+    "doxxing culture"
+  ],
+  "enabling_tech": [
+    "social_media",
+    "recommendation_systems",
+    "bot_networks"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "bot_detection",
+    "nlp"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 4
+}

@@ -1,0 +1,18 @@
+{
+  "thesis_id": "s06e05-demon-79-supernatural-core-na",
+  "episode_id": "s06e05-demon-79",
+  "title": "Supernatural demon bargain (non-technological core)",
+  "thesis_statement": "A supernatural entity forces a moral killing quest \u2014 technological execution is not the primary mechanism.",
+  "ai_role": "None required for supernatural core; AI irrelevant to demon ontology.",
+  "non_ai_enablers": [
+    "supernatural premise",
+    "period setting 1979"
+  ],
+  "enabling_tech": [
+    "none_supernatural"
+  ],
+  "ai_capability_tags": [],
+  "spoiler_level": "medium",
+  "special_handling": "supernatural",
+  "harm_severity": 4
+}

@@ -1,0 +1,23 @@
+{
+  "thesis_id": "film-bandersnatch-perceived-loss-of-agency-via-system",
+  "episode_id": "film-bandersnatch",
+  "title": "Users experience system-driven choices as loss of free will",
+  "thesis_statement": "Recommendation and dark-pattern UX systems produce a felt loss of agency over life decisions.",
+  "ai_role": "Recommenders, engagement optimization, persuasive design ML.",
+  "non_ai_enablers": [
+    "platform incentives",
+    "behavioral economics"
+  ],
+  "enabling_tech": [
+    "recommendation_systems",
+    "dark_patterns",
+    "persuasive_design"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "engagement_optimization"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "interactive",
+  "harm_severity": 2
+}

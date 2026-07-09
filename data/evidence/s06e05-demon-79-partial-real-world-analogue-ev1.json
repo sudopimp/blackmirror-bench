@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s06e05-demon-79-partial-real-world-analogue-ev1",
+  "thesis_id": "s06e05-demon-79-partial-real-world-analogue",
+  "url": "https://en.wikipedia.org/wiki/Demon_79",
+  "title": "Demon 79",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Supernatural period episode with demon Gaap.",
+  "notes": ""
+}

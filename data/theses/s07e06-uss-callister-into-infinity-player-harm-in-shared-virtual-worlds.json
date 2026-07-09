@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s07e06-uss-callister-into-infinity-player-harm-in-shared-virtual-worlds",
+  "episode_id": "s07e06-uss-callister-into-infinity",
+  "title": "Players can harm persistent digital persons in shared worlds",
+  "thesis_statement": "If digital persons are treated as moral patients, multiplayer griefing becomes serious harm.",
+  "ai_role": "NPC personhood debates; agent social simulation.",
+  "non_ai_enablers": [
+    "game ToS",
+    "ethics of AI patients"
+  ],
+  "enabling_tech": [
+    "multiplayer",
+    "agent",
+    "moderation"
+  ],
+  "ai_capability_tags": [
+    "agent",
+    "moderation",
+    "multi_agent"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "sequel",
+  "harm_severity": 3
+}

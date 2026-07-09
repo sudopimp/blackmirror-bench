@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s03e05-men-against-fire-military-hud-dehumanization",
+  "episode_id": "s03e05-men-against-fire",
+  "title": "Military AR HUD alters perception of enemies",
+  "thesis_statement": "Implanted or helmet systems modify soldiers' visual/auditory perception so targets appear non-human, enabling killing and controlling PTSD narrative.",
+  "ai_role": "Real-time CV classification, generative overlay, biometric feedback control.",
+  "non_ai_enablers": [
+    "military doctrine",
+    "medical implants",
+    "war crimes law"
+  ],
+  "enabling_tech": [
+    "military_ar",
+    "bci",
+    "target_classification",
+    "perceptual_manipulation"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "ar",
+    "classification"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

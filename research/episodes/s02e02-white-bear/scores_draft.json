@@ -1,0 +1,182 @@
+[
+  {
+    "thesis_id": "s02e02-white-bear-spectacle-punishment-park",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 20.0,
+        "ci_low": 8.0,
+        "ci_high": 32.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 40.0,
+        "ci_low": 25.0,
+        "ci_high": 55.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 25.0,
+        "ci_low": 13.0,
+        "ci_high": 37.0,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 30.0,
+        "ci_low": 15.0,
+        "ci_high": 45.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 10.0,
+        "ci_low": 2.0,
+        "ci_high": 18.0,
+        "tier": "L2"
+      },
+      "FID": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Spectacle + phones are real; daily memory wipe + state torture park is not deployable socio-legally or medically.",
+    "nearest_real_systems": [
+      "true-crime entertainment",
+      "public shaming culture",
+      "not memory-wipe parks"
+    ],
+    "evidence_ids": [
+      "s02e02-white-bear-spectacle-punishment-park-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s02e02-white-bear-bystander-phone-recording-norm",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 95.0,
+        "ci_low": 90.0,
+        "ci_high": 100.0,
+        "tier": "L3"
+      },
+      "SYS": {
+        "value": 90.0,
+        "ci_low": 85.0,
+        "ci_high": 95.0,
+        "tier": "L3"
+      },
+      "ECON": {
+        "value": 90.0,
+        "ci_low": 85.0,
+        "ci_high": 95.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 70.0,
+        "ci_low": 58.0,
+        "ci_high": 82.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 80.0,
+        "ci_low": 70.0,
+        "ci_high": 90.0,
+        "tier": "L2"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Well-documented social pattern; AI amplifies via ranking.",
+    "nearest_real_systems": [
+      "smartphone bystander videos",
+      "live crime streams"
+    ],
+    "evidence_ids": [
+      "s02e02-white-bear-bystander-phone-recording-norm-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s02e02-white-bear-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 23.0,
+        "ci_low": 7.0,
+        "ci_high": 39.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 46.0,
+        "ci_low": 27.0,
+        "ci_high": 65.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 28.749999999999996,
+        "ci_low": 12.749999999999996,
+        "ci_high": 44.75,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 17.25,
+        "ci_low": 3.25,
+        "ci_high": 31.25,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 34.5,
+        "ci_low": 15.5,
+        "ci_high": 53.5,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 11.5,
+        "ci_low": 0.0,
+        "ci_high": 23.5,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 17.25,
+        "ci_low": 3.25,
+        "ci_high": 31.25,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Spectacle + phones are real; daily memory wipe + state torture park is not deployable socio-legally or medically.",
+    "nearest_real_systems": [
+      "true-crime entertainment",
+      "public shaming culture",
+      "not memory-wipe parks",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s02e02-white-bear-partial-real-world-analogue-ev1"
+    ]
+  }
+]

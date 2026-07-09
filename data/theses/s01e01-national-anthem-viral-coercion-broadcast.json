@@ -1,0 +1,27 @@
+{
+  "thesis_id": "s01e01-national-anthem-viral-coercion-broadcast",
+  "episode_id": "s01e01-national-anthem",
+  "title": "Viral hostage demand forces televised political humiliation",
+  "thesis_statement": "Networked social media and always-on news can coerce a head of state into a live televised degrading act under hostage threat, with fabricated footage failing under scrutiny.",
+  "ai_role": "Deepfake generation, virality prediction, automated news amplification, synthetic media detection (failure mode).",
+  "non_ai_enablers": [
+    "live television",
+    "hostage crime",
+    "smartphone cameras",
+    "public relations crisis ops"
+  ],
+  "enabling_tech": [
+    "social_media",
+    "live_broadcast",
+    "deepfake_video",
+    "content_virality"
+  ],
+  "ai_capability_tags": [
+    "gen_video",
+    "recommendation",
+    "moderation"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 4
+}

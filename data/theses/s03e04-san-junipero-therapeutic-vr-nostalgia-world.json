@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s03e04-san-junipero-therapeutic-vr-nostalgia-world",
+  "episode_id": "s03e04-san-junipero",
+  "title": "Therapeutic immersive nostalgia worlds for elderly",
+  "thesis_statement": "Care facilities use immersive VR of past eras for quality of life without claiming true upload.",
+  "ai_role": "Generative world content, adaptive NPC conversation, personalization from life history.",
+  "non_ai_enablers": [
+    "elder care institutions",
+    "VR hardware"
+  ],
+  "enabling_tech": [
+    "vr_world",
+    "generative_content",
+    "llm_persona"
+  ],
+  "ai_capability_tags": [
+    "gen_media",
+    "llm",
+    "vr"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 1
+}

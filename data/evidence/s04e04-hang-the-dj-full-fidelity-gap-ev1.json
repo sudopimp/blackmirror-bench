@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s04e04-hang-the-dj-full-fidelity-gap-ev1",
+  "thesis_id": "s04e04-hang-the-dj-full-fidelity-gap",
+  "url": "https://www.digitalnative.tech/p/black-mirror-euphoria-and-technologys",
+  "title": "Hang the DJ analysis",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Commentary on algorithmic dating and simulated matching.",
+  "notes": ""
+}

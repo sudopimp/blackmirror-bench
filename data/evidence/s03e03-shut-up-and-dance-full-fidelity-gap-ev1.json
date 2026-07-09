@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e03-shut-up-and-dance-full-fidelity-gap-ev1",
+  "thesis_id": "s03e03-shut-up-and-dance-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Shut_Up_and_Dance_(Black_Mirror)",
+  "title": "Shut Up and Dance",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Blackmail via computer compromise.",
+  "notes": ""
+}

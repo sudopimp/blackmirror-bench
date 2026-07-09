@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e01-nosedive-full-fidelity-gap-ev1",
+  "thesis_id": "s03e01-nosedive-full-fidelity-gap",
+  "url": "https://www.morson.com/black-mirror-china-social-credit-system",
+  "title": "Nosedive vs social credit",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Comparisons of Nosedive to social credit; partial analogies.",
+  "notes": ""
+}

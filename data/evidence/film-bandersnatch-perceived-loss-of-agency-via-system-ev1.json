@@ -1,0 +1,15 @@
+{
+  "evidence_id": "film-bandersnatch-perceived-loss-of-agency-via-system-ev1",
+  "thesis_id": "film-bandersnatch-perceived-loss-of-agency-via-system",
+  "url": "https://github.com/waitdeadai/llm-dark-patterns",
+  "title": "llm-dark-patterns",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Suite addressing LLM dark patterns including engagement and false success.",
+  "notes": ""
+}

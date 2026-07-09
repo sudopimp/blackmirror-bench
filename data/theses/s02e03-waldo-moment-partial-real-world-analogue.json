@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s02e03-waldo-moment-partial-real-world-analogue",
+  "episode_id": "s02e03-waldo-moment",
+  "title": "Partial real-world analogue of: Animated/AI media character runs political campaign",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: A comedically controlled virtual character becomes a serious political force, later used as authoritarian face.",
+  "ai_role": "Real-time avatar, scripted talking points, deepfake politician, influencer-bots.",
+  "non_ai_enablers": [
+    "electoral law",
+    "broadcast debates",
+    "populist media markets"
+  ],
+  "enabling_tech": [
+    "cgi_avatar",
+    "deepfake_video",
+    "social_media_campaigns"
+  ],
+  "ai_capability_tags": [
+    "gen_video",
+    "llm",
+    "political_microtargeting"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

@@ -1,0 +1,23 @@
+{
+  "thesis_id": "s04e06-black-museum-partial-real-world-analogue",
+  "episode_id": "s04e06-black-museum",
+  "title": "Partial real-world analogue of: Transferred consciousness used in museum torture exhibits",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Consciousness copies are imprisoned in objects/exhibits for entertainment and sadism.",
+  "ai_role": "Persona simulation partial; true transfer unsolved.",
+  "non_ai_enablers": [
+    "museum commerce",
+    "criminal justice souvenirs"
+  ],
+  "enabling_tech": [
+    "mind_upload",
+    "haptic_pain_interface",
+    "digital_prison"
+  ],
+  "ai_capability_tags": [
+    "llm",
+    "simulation"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 4
+}

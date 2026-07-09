@@ -1,0 +1,27 @@
+{
+  "thesis_id": "s07e01-common-people-full-fidelity-gap",
+  "episode_id": "s07e01-common-people",
+  "title": "Full-fidelity gap for: Subscription medical platform keeps person alive at escalating cost",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: A commercial system (Rivermind) sustains a patient's life via high-tech service tiers with ads and paywalls degrading quality of lived experience.",
+  "ai_role": "Personalization of ads into consciousness stream, predictive medical ops, churn optimization.",
+  "non_ai_enablers": [
+    "healthcare markets",
+    "medical devices",
+    "insurance",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "digital_health",
+    "brain_interface_medical",
+    "ad_insertion",
+    "subscription_platforms"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "personalization",
+    "medical_ml"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 4
+}

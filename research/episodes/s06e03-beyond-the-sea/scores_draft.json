@@ -1,0 +1,180 @@
+[
+  {
+    "thesis_id": "s06e03-beyond-the-sea-remote-replica-body-operation",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 20.0,
+        "ci_low": 8.0,
+        "ci_high": 32.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 35.0,
+        "ci_low": 20.0,
+        "ci_high": 50.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 25.0,
+        "ci_low": 13.0,
+        "ci_high": 37.0,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 12.0,
+        "ci_low": 4.0,
+        "ci_high": 20.0,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 25.0,
+        "ci_low": 13.0,
+        "ci_high": 37.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Telepresence partial; full human replica dual-life system is far.",
+    "nearest_real_systems": [
+      "telepresence robots",
+      "not full human replicas"
+    ],
+    "evidence_ids": [
+      "s06e03-beyond-the-sea-remote-replica-body-operation-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s06e03-beyond-the-sea-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 23.0,
+        "ci_low": 7.0,
+        "ci_high": 39.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 40.25,
+        "ci_low": 21.25,
+        "ci_high": 59.25,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 28.749999999999996,
+        "ci_low": 12.749999999999996,
+        "ci_high": 44.75,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 13.799999999999999,
+        "ci_low": 1.799999999999999,
+        "ci_high": 25.799999999999997,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 17.25,
+        "ci_low": 3.25,
+        "ci_high": 31.25,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 28.749999999999996,
+        "ci_low": 12.749999999999996,
+        "ci_high": 44.75,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 17.25,
+        "ci_low": 3.25,
+        "ci_high": 31.25,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Telepresence partial; full human replica dual-life system is far.",
+    "nearest_real_systems": [
+      "telepresence robots",
+      "not full human replicas",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s06e03-beyond-the-sea-partial-real-world-analogue-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s06e03-beyond-the-sea-full-fidelity-gap",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 13.0,
+        "ci_low": 0.0,
+        "ci_high": 29.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 22.75,
+        "ci_low": 3.75,
+        "ci_high": 41.75,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 16.25,
+        "ci_low": 0.25,
+        "ci_high": 32.25,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 7.800000000000001,
+        "ci_low": 0.0,
+        "ci_high": 19.8,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 9.75,
+        "ci_low": 0.0,
+        "ci_high": 23.75,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 16.25,
+        "ci_low": 0.25,
+        "ci_high": 32.25,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 9.75,
+        "ci_low": 0.0,
+        "ci_high": 23.75,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Telepresence partial; full human replica dual-life system is far.",
+    "nearest_real_systems": [
+      "telepresence robots",
+      "not full human replicas"
+    ],
+    "evidence_ids": [
+      "s06e03-beyond-the-sea-full-fidelity-gap-ev1"
+    ]
+  }
+]

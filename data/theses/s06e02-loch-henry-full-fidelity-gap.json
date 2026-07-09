@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s06e02-loch-henry-full-fidelity-gap",
+  "episode_id": "s06e02-loch-henry",
+  "title": "Full-fidelity gap for: True-crime media extracts trauma for platform engagement",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: Creators and platforms convert real local trauma into bingeable true-crime content with secondary victimization.",
+  "ai_role": "Recommendation of crime content, automated trailer gen, audience targeting.",
+  "non_ai_enablers": [
+    "documentary production",
+    "tourism",
+    "victim privacy gaps",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "streaming_platforms",
+    "recommendation_systems",
+    "gen_media"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "gen_video"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 3
+}

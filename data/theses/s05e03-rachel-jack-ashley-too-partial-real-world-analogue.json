@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s05e03-rachel-jack-ashley-too-partial-real-world-analogue",
+  "episode_id": "s05e03-rachel-jack-ashley-too",
+  "title": "Partial real-world analogue of: Celebrity consciousness/AI persona trapped in consumer toys",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: A pop star's persona is packaged into AI dolls while the real person is medically controlled by industry.",
+  "ai_role": "Voice/persona models in toys; conversational agents.",
+  "non_ai_enablers": [
+    "entertainment industry contracts",
+    "consumer electronics"
+  ],
+  "enabling_tech": [
+    "llm_persona",
+    "voice_clone",
+    "smart_toys"
+  ],
+  "ai_capability_tags": [
+    "llm",
+    "tts",
+    "personalization"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 2
+}

@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s04e02-arkangel-parental-neural-surveillance-filter",
+  "episode_id": "s04e02-arkangel",
+  "title": "Parental implant filters child's perception and tracks location",
+  "thesis_statement": "A parent-controlled implant blocks distressing stimuli, shows live feed, and enables content filters that damage autonomy.",
+  "ai_role": "Content classification, distress detection, live video analytics.",
+  "non_ai_enablers": [
+    "pediatric implant ethics",
+    "parental rights law",
+    "child development"
+  ],
+  "enabling_tech": [
+    "bci",
+    "parental_controls",
+    "content_filter",
+    "location_tracking"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "content_moderation",
+    "biometrics"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 4
+}

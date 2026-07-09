@@ -1,0 +1,15 @@
+{
+  "evidence_id": "film-bandersnatch-interactive-narrative-control-ev1",
+  "thesis_id": "film-bandersnatch-interactive-narrative-control",
+  "url": "https://en.wikipedia.org/wiki/Black_Mirror:_Bandersnatch",
+  "title": "Bandersnatch",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Interactive film with branching choices on Netflix.",
+  "notes": ""
+}

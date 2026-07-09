@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s06e02-loch-henry-partial-real-world-analogue",
+  "episode_id": "s06e02-loch-henry",
+  "title": "Partial real-world analogue of: True-crime media extracts trauma for platform engagement",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Creators and platforms convert real local trauma into bingeable true-crime content with secondary victimization.",
+  "ai_role": "Recommendation of crime content, automated trailer gen, audience targeting.",
+  "non_ai_enablers": [
+    "documentary production",
+    "tourism",
+    "victim privacy gaps"
+  ],
+  "enabling_tech": [
+    "streaming_platforms",
+    "recommendation_systems",
+    "gen_media"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "gen_video"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 2
+}

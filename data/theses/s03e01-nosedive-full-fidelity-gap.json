@@ -1,0 +1,27 @@
+{
+  "thesis_id": "s03e01-nosedive-full-fidelity-gap",
+  "episode_id": "s03e01-nosedive",
+  "title": "Full-fidelity gap for: Peer social ratings gate housing jobs and status",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: Continuous peer-to-peer ratings produce a score that controls access to housing, transport, and social opportunity.",
+  "ai_role": "Reputation models, fraud detection on ratings, ranking for eligibility.",
+  "non_ai_enablers": [
+    "platform identity",
+    "credit systems",
+    "status anxiety norms",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "reputation_systems",
+    "mobile_rating",
+    "credit_scoring",
+    "ar_hud"
+  ],
+  "ai_capability_tags": [
+    "ranking",
+    "fraud_detection",
+    "recommendation"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

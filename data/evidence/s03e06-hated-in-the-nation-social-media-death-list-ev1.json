@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e06-hated-in-the-nation-social-media-death-list-ev1",
+  "thesis_id": "s03e06-hated-in-the-nation-social-media-death-list",
+  "url": "https://en.wikipedia.org/wiki/Hated_in_the_Nation",
+  "title": "Hated in the Nation",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "DeathTo hashtag selects targets.",
+  "notes": ""
+}

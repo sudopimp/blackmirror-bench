@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s03e05-men-against-fire-full-fidelity-gap-ev1",
+  "thesis_id": "s03e05-men-against-fire-full-fidelity-gap",
+  "url": "https://en.wikipedia.org/wiki/Men_Against_Fire",
+  "title": "Men Against Fire",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "MASS implant alters perception of 'roaches'.",
+  "notes": ""
+}

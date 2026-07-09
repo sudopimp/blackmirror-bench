@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s04e03-crocodile-partial-real-world-analogue-ev1",
+  "thesis_id": "s04e03-crocodile-partial-real-world-analogue",
+  "url": "https://en.wikipedia.org/wiki/Crocodile_(Black_Mirror)",
+  "title": "Crocodile",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Recaller device extracts memories.",
+  "notes": ""
+}

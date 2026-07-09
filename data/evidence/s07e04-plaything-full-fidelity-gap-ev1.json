@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s07e04-plaything-full-fidelity-gap-ev1",
+  "thesis_id": "s07e04-plaything-full-fidelity-gap",
+  "url": "https://www.imdb.com/title/tt2085059/episodes/?season=7",
+  "title": "Plaything",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "1990s game with evolving artificial lifeforms.",
+  "notes": ""
+}

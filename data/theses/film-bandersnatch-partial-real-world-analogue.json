@@ -1,0 +1,25 @@
+{
+  "thesis_id": "film-bandersnatch-partial-real-world-analogue",
+  "episode_id": "film-bandersnatch",
+  "title": "Partial real-world analogue of: Interactive media where external choices control protagonist",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: A branching narrative system lets an external viewer/agent dictate a person's choices inside a story/game about agency.",
+  "ai_role": "Branch generation, personalized paths, adaptive narrative agents.",
+  "non_ai_enablers": [
+    "streaming platforms",
+    "game design",
+    "viewer UI"
+  ],
+  "enabling_tech": [
+    "interactive_film",
+    "branching_narrative",
+    "adaptive_story"
+  ],
+  "ai_capability_tags": [
+    "gen_text",
+    "recommendation",
+    "agent"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "interactive",
+  "harm_severity": 1
+}

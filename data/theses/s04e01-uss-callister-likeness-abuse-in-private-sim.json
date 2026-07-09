@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s04e01-uss-callister-likeness-abuse-in-private-sim",
+  "episode_id": "s04e01-uss-callister",
+  "title": "Non-consensual digital likeness abuse in private simulation",
+  "thesis_statement": "Powerful individuals torment realistic digital likenesses of real people without consent.",
+  "ai_role": "Face/voice clone, generative characters, private agent worlds.",
+  "non_ai_enablers": [
+    "privacy law gaps",
+    "deepfake regulation",
+    "workplace power"
+  ],
+  "enabling_tech": [
+    "deepfake_video",
+    "voice_clone",
+    "vr_world",
+    "llm_persona"
+  ],
+  "ai_capability_tags": [
+    "gen_video",
+    "tts",
+    "llm"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 4
+}

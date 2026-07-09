@@ -1,0 +1,23 @@
+{
+  "thesis_id": "s04e03-crocodile-partial-real-world-analogue",
+  "episode_id": "s04e03-crocodile",
+  "title": "Partial real-world analogue of: Device extracts audiovisual memories for insurance investigation",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Investigators use a machine to pull memories from witnesses, creating perfect records that escalate cover-up violence.",
+  "ai_role": "Memory decoding from neural signals (speculative); video reconstruction.",
+  "non_ai_enablers": [
+    "insurance investigation",
+    "criminal cover-ups"
+  ],
+  "enabling_tech": [
+    "memory_extraction",
+    "bci",
+    "forensic_av"
+  ],
+  "ai_capability_tags": [
+    "bci_decode",
+    "video_reconstruction"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

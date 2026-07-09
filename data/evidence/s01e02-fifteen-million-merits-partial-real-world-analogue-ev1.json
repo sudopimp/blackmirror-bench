@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s01e02-fifteen-million-merits-partial-real-world-analogue-ev1",
+  "thesis_id": "s01e02-fifteen-million-merits-partial-real-world-analogue",
+  "url": "https://en.wikipedia.org/wiki/List_of_Black_Mirror_episodes",
+  "title": "Black Mirror episode list",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Fifteen Million Merits depicts merit-based labor and entertainment economy.",
+  "notes": ""
+}

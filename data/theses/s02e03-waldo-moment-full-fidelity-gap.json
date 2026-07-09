@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s02e03-waldo-moment-full-fidelity-gap",
+  "episode_id": "s02e03-waldo-moment",
+  "title": "Full-fidelity gap for: Animated/AI media character runs political campaign",
+  "thesis_statement": "Full episode-faithful execution of the complete socio-technical outcome, not merely components: A comedically controlled virtual character becomes a serious political force, later used as authoritarian face.",
+  "ai_role": "Real-time avatar, scripted talking points, deepfake politician, influencer-bots.",
+  "non_ai_enablers": [
+    "electoral law",
+    "broadcast debates",
+    "populist media markets",
+    "full population-scale integration"
+  ],
+  "enabling_tech": [
+    "cgi_avatar",
+    "deepfake_video",
+    "social_media_campaigns"
+  ],
+  "ai_capability_tags": [
+    "gen_video",
+    "llm",
+    "political_microtargeting"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 4
+}

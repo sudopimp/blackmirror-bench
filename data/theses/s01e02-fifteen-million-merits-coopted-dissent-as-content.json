@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s01e02-fifteen-million-merits-coopted-dissent-as-content",
+  "episode_id": "s01e02-fifteen-million-merits",
+  "title": "Anti-system protest becomes monetized programming",
+  "thesis_statement": "Authentic rage against the platform is packaged into a regular show that stabilizes the system.",
+  "ai_role": "Trend detection, content packaging, audience segmentation for protest-as-entertainment.",
+  "non_ai_enablers": [
+    "TV production",
+    "advertising markets",
+    "platform ToS"
+  ],
+  "enabling_tech": [
+    "recommendation_systems",
+    "creator_platforms",
+    "brand_safety_ml"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "content_classification"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 2
+}

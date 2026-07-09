@@ -1,0 +1,185 @@
+[
+  {
+    "thesis_id": "s02e01-be-right-back-griefbot-persona-from-data",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 88.0,
+        "ci_low": 80.0,
+        "ci_high": 96.0,
+        "tier": "L3"
+      },
+      "AI_EXEC": {
+        "value": 90.0,
+        "ci_low": 84.0,
+        "ci_high": 96.0,
+        "tier": "L3"
+      },
+      "TRL_comp": {
+        "value": 90.0,
+        "ci_low": 84.0,
+        "ci_high": 96.0,
+        "tier": "L3"
+      },
+      "SYS": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 55.0,
+        "ci_low": 40.0,
+        "ci_high": 70.0,
+        "tier": "L2"
+      },
+      "FID": {
+        "value": 75.0,
+        "ci_low": 65.0,
+        "ci_high": 85.0,
+        "tier": "L2"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Digital afterlife industry is commercial in 2026; chat/voice fidelity is high relative to 2013 episode.",
+    "nearest_real_systems": [
+      "griefbots",
+      "deathbots",
+      "digital twin afterlife products 2025-26"
+    ],
+    "evidence_ids": [
+      "s02e01-be-right-back-griefbot-persona-from-data-ev1",
+      "s02e01-be-right-back-griefbot-persona-from-data-ev2"
+    ]
+  },
+  {
+    "thesis_id": "s02e01-be-right-back-embodied-android-replica",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 25.0,
+        "ci_low": 13.0,
+        "ci_high": 37.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 45.0,
+        "ci_low": 33.0,
+        "ci_high": 57.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 30.0,
+        "ci_low": 18.0,
+        "ci_high": 42.0,
+        "tier": "L2"
+      },
+      "SYS": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 30.0,
+        "ci_low": 15.0,
+        "ci_high": 45.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 15.0,
+        "ci_low": 5.0,
+        "ci_high": 25.0,
+        "tier": "L2"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "AI persona ready; reliable humanoid product body at episode fidelity is far. Split scores are intentional honesty.",
+    "nearest_real_systems": [
+      "lab humanoids",
+      "telepresence robots",
+      "not consumer deceased replicas"
+    ],
+    "evidence_ids": [
+      "s02e01-be-right-back-embodied-android-replica-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s02e01-be-right-back-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 100.0,
+        "ci_low": 88.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 100.0,
+        "ci_low": 90.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 100.0,
+        "ci_low": 90.0,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 63.24999999999999,
+        "ci_low": 44.24999999999999,
+        "ci_high": 82.25,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 86.25,
+        "ci_low": 72.25,
+        "ci_high": 100.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Digital afterlife industry is commercial in 2026; chat/voice fidelity is high relative to 2013 episode.",
+    "nearest_real_systems": [
+      "griefbots",
+      "deathbots",
+      "digital twin afterlife products 2025-26",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s02e01-be-right-back-partial-real-world-analogue-ev1",
+      "s02e01-be-right-back-partial-real-world-analogue-ev2"
+    ]
+  }
+]

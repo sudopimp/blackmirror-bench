@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s03e06-hated-in-the-nation-autonomous-insect-drone-swarm",
+  "episode_id": "s03e06-hated-in-the-nation",
+  "title": "Autonomous insect-scale drone swarm for lethal targeting",
+  "thesis_statement": "Government bee-replacement drones are weaponized to assassinate people identified via social media hate lists.",
+  "ai_role": "Target tracking, face ID, swarm coordination, social graph analysis.",
+  "non_ai_enablers": [
+    "micro-UAV hardware",
+    "government surveillance programs"
+  ],
+  "enabling_tech": [
+    "micro_drone",
+    "swarm_robotics",
+    "facial_recognition",
+    "social_graph"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "multi_agent",
+    "graph_ml"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 5
+}

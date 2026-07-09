@@ -1,0 +1,23 @@
+{
+  "thesis_id": "s07e02-bete-noire-partial-real-world-analogue",
+  "episode_id": "s07e02-bete-noire",
+  "title": "Partial real-world analogue of: Adversary edits personal reality / shared facts",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: An antagonist rewrites environmental facts and memories so only the victim notices inconsistencies.",
+  "ai_role": "Gaslighting via deepfakes, synthetic evidence, personalized content worlds \u2014 partial analogue only.",
+  "non_ai_enablers": [
+    "unexplained fiction device",
+    "workplace power"
+  ],
+  "enabling_tech": [
+    "reality_compiler_fiction",
+    "deepfake_video",
+    "targeted_disinfo"
+  ],
+  "ai_capability_tags": [
+    "gen_media",
+    "personalization"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 3
+}

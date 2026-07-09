@@ -1,0 +1,183 @@
+[
+  {
+    "thesis_id": "s05e03-rachel-jack-ashley-too-celebrity-ai-toy-puppet",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 70.0,
+        "ci_low": 58.0,
+        "ci_high": 82.0,
+        "tier": "L2"
+      },
+      "AI_EXEC": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "TRL_comp": {
+        "value": 85.0,
+        "ci_low": 77.0,
+        "ci_high": 93.0,
+        "tier": "L2"
+      },
+      "SYS": {
+        "value": 65.0,
+        "ci_low": 53.0,
+        "ci_high": 77.0,
+        "tier": "L2"
+      },
+      "ECON": {
+        "value": 75.0,
+        "ci_low": 65.0,
+        "ci_high": 85.0,
+        "tier": "L2"
+      },
+      "SOC": {
+        "value": 45.0,
+        "ci_low": 30.0,
+        "ci_high": 60.0,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 55.0,
+        "ci_low": 43.0,
+        "ci_high": 67.0,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "AI celebrity puppets high AI_EXEC; full medical imprisonment plot is crime not tech-limited.",
+    "nearest_real_systems": [
+      "celebrity AI voice bots",
+      "smart dolls",
+      "deepfake performers"
+    ],
+    "evidence_ids": [
+      "s05e03-rachel-jack-ashley-too-celebrity-ai-toy-puppet-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s05e03-rachel-jack-ashley-too-partial-real-world-analogue",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 80.5,
+        "ci_low": 64.5,
+        "ci_high": 96.5,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 97.74999999999999,
+        "ci_low": 85.74999999999999,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 74.75,
+        "ci_low": 58.75,
+        "ci_high": 90.75,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 86.25,
+        "ci_low": 72.25,
+        "ci_high": 100.0,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 51.74999999999999,
+        "ci_low": 32.74999999999999,
+        "ci_high": 70.75,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 63.24999999999999,
+        "ci_low": 47.24999999999999,
+        "ci_high": 79.25,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. AI celebrity puppets high AI_EXEC; full medical imprisonment plot is crime not tech-limited.",
+    "nearest_real_systems": [
+      "celebrity AI voice bots",
+      "smart dolls",
+      "deepfake performers",
+      "partial market analogues"
+    ],
+    "evidence_ids": [
+      "s05e03-rachel-jack-ashley-too-partial-real-world-analogue-ev1"
+    ]
+  },
+  {
+    "thesis_id": "s05e03-rachel-jack-ashley-too-full-fidelity-gap",
+    "as_of": "2026-07-09",
+    "provenance": "deepresearch-agent",
+    "axes": {
+      "THESIS_POSS": {
+        "value": 45.5,
+        "ci_low": 29.5,
+        "ci_high": 61.5,
+        "tier": "L1"
+      },
+      "AI_EXEC": {
+        "value": 55.25,
+        "ci_low": 43.25,
+        "ci_high": 67.25,
+        "tier": "L1"
+      },
+      "TRL_comp": {
+        "value": 55.25,
+        "ci_low": 43.25,
+        "ci_high": 67.25,
+        "tier": "L1"
+      },
+      "SYS": {
+        "value": 42.25,
+        "ci_low": 26.25,
+        "ci_high": 58.25,
+        "tier": "L1"
+      },
+      "ECON": {
+        "value": 48.75,
+        "ci_low": 34.75,
+        "ci_high": 62.75,
+        "tier": "L1"
+      },
+      "SOC": {
+        "value": 29.25,
+        "ci_low": 10.25,
+        "ci_high": 48.25,
+        "tier": "L1"
+      },
+      "FID": {
+        "value": 35.75,
+        "ci_low": 19.75,
+        "ci_high": 51.75,
+        "tier": "L1"
+      }
+    },
+    "contested": false,
+    "contested_notes": "",
+    "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. AI celebrity puppets high AI_EXEC; full medical imprisonment plot is crime not tech-limited.",
+    "nearest_real_systems": [
+      "celebrity AI voice bots",
+      "smart dolls",
+      "deepfake performers"
+    ],
+    "evidence_ids": [
+      "s05e03-rachel-jack-ashley-too-full-fidelity-gap-ev1"
+    ]
+  }
+]

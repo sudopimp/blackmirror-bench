@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s03e04-san-junipero-consciousness-upload-afterlife",
+  "episode_id": "s03e04-san-junipero",
+  "title": "Upload consciousness to permanent VR afterlife",
+  "thesis_statement": "Dying people transfer minds into a simulated resort world for indefinite post-biological life.",
+  "ai_role": "World simulation, NPC/agent inhabitants, avatar control \u2014 not true upload.",
+  "non_ai_enablers": [
+    "unsolved consciousness science",
+    "end-of-life law",
+    "server longevity"
+  ],
+  "enabling_tech": [
+    "mind_upload",
+    "vr_world",
+    "neural_mapping"
+  ],
+  "ai_capability_tags": [
+    "world_model",
+    "vr",
+    "agent"
+  ],
+  "spoiler_level": "medium",
+  "special_handling": "none",
+  "harm_severity": 2
+}

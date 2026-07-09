@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s04e06-black-museum-partial-real-world-analogue-ev1",
+  "thesis_id": "s04e06-black-museum-partial-real-world-analogue",
+  "url": "https://en.wikipedia.org/wiki/Black_Museum_(Black_Mirror)",
+  "title": "Black Museum",
+  "accessed_at": "2026-07-09",
+  "tier": "L1",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "Consciousness technology exhibits.",
+  "notes": ""
+}

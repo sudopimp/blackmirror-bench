@@ -1,0 +1,25 @@
+{
+  "thesis_id": "s04e05-metalhead-autonomous-lethal-robot-dogs",
+  "episode_id": "s04e05-metalhead",
+  "title": "Autonomous robot dogs hunt humans lethally",
+  "thesis_statement": "Quadruped robots autonomously pursue and kill humans in a collapsed environment.",
+  "ai_role": "Perception, tracking, navigation, lethal autonomy decisioning.",
+  "non_ai_enablers": [
+    "robotics hardware",
+    "military procurement",
+    "ammo/loadout"
+  ],
+  "enabling_tech": [
+    "quadruped_robot",
+    "autonomous_weapons",
+    "cv_tracking"
+  ],
+  "ai_capability_tags": [
+    "cv",
+    "robotics",
+    "autonomy"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 5
+}

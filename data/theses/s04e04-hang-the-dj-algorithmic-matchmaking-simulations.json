@@ -1,0 +1,24 @@
+{
+  "thesis_id": "s04e04-hang-the-dj-algorithmic-matchmaking-simulations",
+  "episode_id": "s04e04-hang-the-dj",
+  "title": "Dating system runs thousands of relationship simulations",
+  "thesis_statement": "A matchmaking service evaluates couples via massive simulated relationships and outputs match confidence.",
+  "ai_role": "Preference models, simulation of social dynamics, multi-agent relationship modeling.",
+  "non_ai_enablers": [
+    "dating app markets",
+    "user consent to experiments"
+  ],
+  "enabling_tech": [
+    "matchmaking_ml",
+    "multi_agent_sim",
+    "mobile_dating"
+  ],
+  "ai_capability_tags": [
+    "recommendation",
+    "multi_agent",
+    "personalization"
+  ],
+  "spoiler_level": "high",
+  "special_handling": "none",
+  "harm_severity": 2
+}

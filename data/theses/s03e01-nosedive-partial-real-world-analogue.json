@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s03e01-nosedive-partial-real-world-analogue",
+  "episode_id": "s03e01-nosedive",
+  "title": "Partial real-world analogue of: Peer social ratings gate housing jobs and status",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: Continuous peer-to-peer ratings produce a score that controls access to housing, transport, and social opportunity.",
+  "ai_role": "Reputation models, fraud detection on ratings, ranking for eligibility.",
+  "non_ai_enablers": [
+    "platform identity",
+    "credit systems",
+    "status anxiety norms"
+  ],
+  "enabling_tech": [
+    "reputation_systems",
+    "mobile_rating",
+    "credit_scoring",
+    "ar_hud"
+  ],
+  "ai_capability_tags": [
+    "ranking",
+    "fraud_detection",
+    "recommendation"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 2
+}

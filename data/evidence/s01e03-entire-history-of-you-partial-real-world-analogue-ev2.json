@@ -1,0 +1,15 @@
+{
+  "evidence_id": "s01e03-entire-history-of-you-partial-real-world-analogue-ev2",
+  "thesis_id": "s01e03-entire-history-of-you-partial-real-world-analogue",
+  "url": "https://www.forbes.com/sites/robtoews/2025/10/05/these-are-the-startups-merging-your-brain-with-ai/",
+  "title": "Forbes BCI 2025",
+  "accessed_at": "2026-07-09",
+  "tier": "L2",
+  "supports_axes": [
+    "THESIS_POSS",
+    "AI_EXEC",
+    "FID"
+  ],
+  "excerpt": "BCI race progressing in medical trials, not full memory recording products.",
+  "notes": ""
+}

@@ -1,0 +1,6176 @@
+{
+  "version": "rpi_v1",
+  "as_of": "2026-07-09",
+  "provenance": "deepresearch-agent",
+  "disclaimer": "Not affiliated with Netflix. Scores are evidence-backed drafts with confidence intervals, not legal findings.",
+  "count": 102,
+  "scores": [
+    {
+      "thesis_id": "s01e01-national-anthem-viral-coercion-broadcast",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 72.0,
+          "ci_low": 62.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 68.0,
+          "ci_low": 56.0,
+          "ci_high": 80.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 80.0,
+          "ci_low": 72.0,
+          "ci_high": 88.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 70.0,
+          "ci_low": 60.0,
+          "ci_high": 80.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Coercion via viral media is real; full episode fidelity needs credible hostage + failed state deepfake response. Gen-AI video is strong in 2026; political deepfake risk is documented.",
+      "nearest_real_systems": [
+        "deepfake political videos",
+        "viral hostage media cycles",
+        "live-streamed crimes"
+      ],
+      "evidence_ids": [
+        "s01e01-national-anthem-viral-coercion-broadcast-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s01e01-national-anthem-synthetic-media-counterfeit-response",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 78.0,
+          "ci_low": 68.0,
+          "ci_high": 88.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 82.0,
+          "ci_low": 74.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "High-quality synthetic media of public figures is achievable; detection remains an arms race.",
+      "nearest_real_systems": [
+        "political deepfakes",
+        "rapid-response PR video tools"
+      ],
+      "evidence_ids": [
+        "s01e01-national-anthem-synthetic-media-counterfeit-response-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s01e01-national-anthem-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 82.8,
+          "ci_low": 68.8,
+          "ci_high": 96.8,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 78.19999999999999,
+          "ci_low": 62.19999999999999,
+          "ci_high": 94.19999999999999,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 92.0,
+          "ci_low": 80.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 80.5,
+          "ci_low": 66.5,
+          "ci_high": 94.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 63.24999999999999,
+          "ci_low": 47.24999999999999,
+          "ci_high": 79.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Coercion via viral media is real; full episode fidelity needs credible hostage + failed state deepfake response. Gen-AI video is strong in 2026; political deepfake risk is documented.",
+      "nearest_real_systems": [
+        "deepfake political videos",
+        "viral hostage media cycles",
+        "live-streamed crimes",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s01e01-national-anthem-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s01e02-fifteen-million-merits-attention-economy-gamified-labor",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 88.0,
+          "ci_low": 80.0,
+          "ci_high": 96.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Core loop is largely deployed; episode aesthetics (bike farms, wall screens) are stylized but mechanism is present.",
+      "nearest_real_systems": [
+        "TikTok/YouTube creator economy",
+        "gig apps",
+        "in-game currencies",
+        "attention-economy critiques"
+      ],
+      "evidence_ids": [
+        "s01e02-fifteen-million-merits-attention-economy-gamified-labor-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s01e02-fifteen-million-merits-coopted-dissent-as-content",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 75.0,
+          "ci_low": 63.0,
+          "ci_high": 87.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 72.0,
+          "ci_low": 60.0,
+          "ci_high": 84.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 68.0,
+          "ci_low": 56.0,
+          "ci_high": 80.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Media co-option of dissent is historical; algorithmic amplification accelerates it.",
+      "nearest_real_systems": [
+        "outrage media cycles",
+        "platform-native political entertainment"
+      ],
+      "evidence_ids": [
+        "s01e02-fifteen-million-merits-coopted-dissent-as-content-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s01e02-fifteen-million-merits-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 92.0,
+          "ci_low": 78.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 100.0,
+          "ci_low": 88.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Core loop is largely deployed; episode aesthetics (bike farms, wall screens) are stylized but mechanism is present.",
+      "nearest_real_systems": [
+        "TikTok/YouTube creator economy",
+        "gig apps",
+        "in-game currencies",
+        "attention-economy critiques",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s01e02-fifteen-million-merits-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s01e03-entire-history-of-you-continuous-memory-recording",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 45.0,
+          "ci_low": 33.0,
+          "ci_high": 57.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 25.0,
+          "ci_low": 10.0,
+          "ci_high": 40.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 35.0,
+          "ci_low": 23.0,
+          "ci_high": 47.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "AI can index video well; continuous neural AV implant with seamless replay is not consumer. Wearables are partial FID.",
+      "nearest_real_systems": [
+        "bodycams",
+        "smart glasses",
+        "phone life-logging apps",
+        "Neuralink motor BCIs"
+      ],
+      "evidence_ids": [
+        "s01e03-entire-history-of-you-continuous-memory-recording-ev1",
+        "s01e03-entire-history-of-you-continuous-memory-recording-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s01e03-entire-history-of-you-memory-as-relationship-weapon",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 70.0,
+          "ci_low": 60.0,
+          "ci_high": 80.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 70.0,
+          "ci_low": 60.0,
+          "ci_high": 80.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Without implants, phone/cloud archives already weaponize memory; AI search increases accessibility.",
+      "nearest_real_systems": [
+        "phone gallery evidence in disputes",
+        "cloud photo timelines",
+        "smart home cams"
+      ],
+      "evidence_ids": [
+        "s01e03-entire-history-of-you-memory-as-relationship-weapon-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s01e03-entire-history-of-you-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 63.24999999999999,
+          "ci_low": 47.24999999999999,
+          "ci_high": 79.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 51.74999999999999,
+          "ci_low": 35.74999999999999,
+          "ci_high": 67.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 28.749999999999996,
+          "ci_low": 9.749999999999996,
+          "ci_high": 47.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 40.25,
+          "ci_low": 24.25,
+          "ci_high": 56.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. AI can index video well; continuous neural AV implant with seamless replay is not consumer. Wearables are partial FID.",
+      "nearest_real_systems": [
+        "bodycams",
+        "smart glasses",
+        "phone life-logging apps",
+        "Neuralink motor BCIs",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s01e03-entire-history-of-you-partial-real-world-analogue-ev1",
+        "s01e03-entire-history-of-you-partial-real-world-analogue-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s02e01-be-right-back-griefbot-persona-from-data",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 88.0,
+          "ci_low": 80.0,
+          "ci_high": 96.0,
+          "tier": "L3"
+        },
+        "AI_EXEC": {
+          "value": 90.0,
+          "ci_low": 84.0,
+          "ci_high": 96.0,
+          "tier": "L3"
+        },
+        "TRL_comp": {
+          "value": 90.0,
+          "ci_low": 84.0,
+          "ci_high": 96.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Digital afterlife industry is commercial in 2026; chat/voice fidelity is high relative to 2013 episode.",
+      "nearest_real_systems": [
+        "griefbots",
+        "deathbots",
+        "digital twin afterlife products 2025-26"
+      ],
+      "evidence_ids": [
+        "s02e01-be-right-back-griefbot-persona-from-data-ev1",
+        "s02e01-be-right-back-griefbot-persona-from-data-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s02e01-be-right-back-embodied-android-replica",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 45.0,
+          "ci_low": 33.0,
+          "ci_high": 57.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "AI persona ready; reliable humanoid product body at episode fidelity is far. Split scores are intentional honesty.",
+      "nearest_real_systems": [
+        "lab humanoids",
+        "telepresence robots",
+        "not consumer deceased replicas"
+      ],
+      "evidence_ids": [
+        "s02e01-be-right-back-embodied-android-replica-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s02e01-be-right-back-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 100.0,
+          "ci_low": 88.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 100.0,
+          "ci_low": 90.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 100.0,
+          "ci_low": 90.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Digital afterlife industry is commercial in 2026; chat/voice fidelity is high relative to 2013 episode.",
+      "nearest_real_systems": [
+        "griefbots",
+        "deathbots",
+        "digital twin afterlife products 2025-26",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s02e01-be-right-back-partial-real-world-analogue-ev1",
+        "s02e01-be-right-back-partial-real-world-analogue-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s02e02-white-bear-spectacle-punishment-park",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 10.0,
+          "ci_low": 2.0,
+          "ci_high": 18.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Spectacle + phones are real; daily memory wipe + state torture park is not deployable socio-legally or medically.",
+      "nearest_real_systems": [
+        "true-crime entertainment",
+        "public shaming culture",
+        "not memory-wipe parks"
+      ],
+      "evidence_ids": [
+        "s02e02-white-bear-spectacle-punishment-park-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s02e02-white-bear-bystander-phone-recording-norm",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 95.0,
+          "ci_low": 90.0,
+          "ci_high": 100.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "ECON": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Well-documented social pattern; AI amplifies via ranking.",
+      "nearest_real_systems": [
+        "smartphone bystander videos",
+        "live crime streams"
+      ],
+      "evidence_ids": [
+        "s02e02-white-bear-bystander-phone-recording-norm-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s02e02-white-bear-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 34.5,
+          "ci_low": 15.5,
+          "ci_high": 53.5,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 11.5,
+          "ci_low": 0.0,
+          "ci_high": 23.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Spectacle + phones are real; daily memory wipe + state torture park is not deployable socio-legally or medically.",
+      "nearest_real_systems": [
+        "true-crime entertainment",
+        "public shaming culture",
+        "not memory-wipe parks",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s02e02-white-bear-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s02e03-waldo-moment-cgi-political-candidate",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 75.0,
+          "ci_low": 63.0,
+          "ci_high": 87.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 50.0,
+          "ci_low": 35.0,
+          "ci_high": 65.0,
+          "tier": "CONTESTED"
+        },
+        "FID": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L2"
+        }
+      },
+      "contested": true,
+      "contested_notes": "See axis tiers marked CONTESTED.",
+      "rationale_short": "Tech is ready; legal/electoral acceptance of non-human candidates is jurisdiction-contested.",
+      "nearest_real_systems": [
+        "AI influencers",
+        "political deepfakes",
+        "meme candidates",
+        "virtual idols"
+      ],
+      "evidence_ids": [
+        "s02e03-waldo-moment-cgi-political-candidate-ev1",
+        "s02e03-waldo-moment-cgi-political-candidate-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s02e03-waldo-moment-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 86.25,
+          "ci_low": 70.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 92.0,
+          "ci_low": 78.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 57.49999999999999,
+          "ci_low": 38.49999999999999,
+          "ci_high": 76.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 69.0,
+          "ci_low": 53.0,
+          "ci_high": 85.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Tech is ready; legal/electoral acceptance of non-human candidates is jurisdiction-contested.",
+      "nearest_real_systems": [
+        "AI influencers",
+        "political deepfakes",
+        "meme candidates",
+        "virtual idols",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s02e03-waldo-moment-partial-real-world-analogue-ev1",
+        "s02e03-waldo-moment-partial-real-world-analogue-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s02e03-waldo-moment-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 48.75,
+          "ci_low": 32.75,
+          "ci_high": 64.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 52.0,
+          "ci_low": 38.0,
+          "ci_high": 66.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 48.75,
+          "ci_low": 34.75,
+          "ci_high": 62.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 32.5,
+          "ci_low": 13.5,
+          "ci_high": 51.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 39.0,
+          "ci_low": 23.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Tech is ready; legal/electoral acceptance of non-human candidates is jurisdiction-contested.",
+      "nearest_real_systems": [
+        "AI influencers",
+        "political deepfakes",
+        "meme candidates",
+        "virtual idols"
+      ],
+      "evidence_ids": [
+        "s02e03-waldo-moment-full-fidelity-gap-ev1",
+        "s02e03-waldo-moment-full-fidelity-gap-ev2"
+      ]
+    },
+    {
+      "thesis_id": "special-white-christmas-cookie-mind-clone-assistant",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 35.0,
+          "ci_low": 23.0,
+          "ci_high": 47.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 20.0,
+          "ci_low": 10.0,
+          "ci_high": 30.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 10.0,
+          "ci_low": 2.0,
+          "ci_high": 18.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 20.0,
+          "ci_low": 10.0,
+          "ci_high": 30.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Honest sci-fi gap: behavioral mimic \u2260 phenomenal cookie. Time dilation of subjective experience is not engineering-ready.",
+      "nearest_real_systems": [
+        "LLM personal assistants",
+        "griefbots",
+        "not conscious clones"
+      ],
+      "evidence_ids": [
+        "special-white-christmas-cookie-mind-clone-assistant-ev1",
+        "special-white-christmas-cookie-mind-clone-assistant-ev2"
+      ]
+    },
+    {
+      "thesis_id": "special-white-christmas-real-world-block-z-eyes",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 50.0,
+          "ci_low": 38.0,
+          "ci_high": 62.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "CV can segment people; mandatory implant society with perfect IRL block is not deployed.",
+      "nearest_real_systems": [
+        "AR glasses demos",
+        "social media block (digital only)",
+        "CV person tracking"
+      ],
+      "evidence_ids": [
+        "special-white-christmas-real-world-block-z-eyes-ev1"
+      ]
+    },
+    {
+      "thesis_id": "special-white-christmas-cookie-confession-interrogation",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 18.0,
+          "ci_low": 8.0,
+          "ci_high": 28.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 22.0,
+          "ci_low": 10.0,
+          "ci_high": 34.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Legally and scientifically far; LLM confessions of fictional personas are not legal mind copies.",
+      "nearest_real_systems": [
+        "chatbot interrogation research (limited)",
+        "not legal cookie confessions"
+      ],
+      "evidence_ids": [
+        "special-white-christmas-cookie-confession-interrogation-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e01-nosedive-peer-rating-socioeconomic-gate",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "CONTESTED"
+        },
+        "FID": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L2"
+        }
+      },
+      "contested": true,
+      "contested_notes": "See axis tiers marked CONTESTED.",
+      "rationale_short": "Partial deploy widely; universal implant pastel dystopia is oversold. Contested SOC across jurisdictions.",
+      "nearest_real_systems": [
+        "China social credit pilots (complex)",
+        "platform reputation",
+        "Sesame-like scores",
+        "Uber ratings"
+      ],
+      "evidence_ids": [
+        "s03e01-nosedive-peer-rating-socioeconomic-gate-ev1",
+        "s03e01-nosedive-peer-rating-socioeconomic-gate-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s03e01-nosedive-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 74.75,
+          "ci_low": 58.75,
+          "ci_high": 90.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 63.24999999999999,
+          "ci_low": 47.24999999999999,
+          "ci_high": 79.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Partial deploy widely; universal implant pastel dystopia is oversold. Contested SOC across jurisdictions.",
+      "nearest_real_systems": [
+        "China social credit pilots (complex)",
+        "platform reputation",
+        "Sesame-like scores",
+        "Uber ratings",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s03e01-nosedive-partial-real-world-analogue-ev1",
+        "s03e01-nosedive-partial-real-world-analogue-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s03e01-nosedive-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 48.75,
+          "ci_low": 34.75,
+          "ci_high": 62.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 42.25,
+          "ci_low": 26.25,
+          "ci_high": 58.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 48.75,
+          "ci_low": 34.75,
+          "ci_high": 62.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 35.75,
+          "ci_low": 19.75,
+          "ci_high": 51.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Partial deploy widely; universal implant pastel dystopia is oversold. Contested SOC across jurisdictions.",
+      "nearest_real_systems": [
+        "China social credit pilots (complex)",
+        "platform reputation",
+        "Sesame-like scores",
+        "Uber ratings"
+      ],
+      "evidence_ids": [
+        "s03e01-nosedive-full-fidelity-gap-ev1",
+        "s03e01-nosedive-full-fidelity-gap-ev2"
+      ]
+    },
+    {
+      "thesis_id": "s03e02-playtest-neural-ar-horror-game",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 45.0,
+          "ci_low": 33.0,
+          "ci_high": 57.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Data-personalized content is real; lethal experimental neural horror implant is not productized.",
+      "nearest_real_systems": [
+        "AR games",
+        "personalized ads from data brokers",
+        "medical BCI trials"
+      ],
+      "evidence_ids": [
+        "s03e02-playtest-neural-ar-horror-game-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e02-playtest-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 63.24999999999999,
+          "ci_low": 47.24999999999999,
+          "ci_high": 79.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 51.74999999999999,
+          "ci_low": 35.74999999999999,
+          "ci_high": 67.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Data-personalized content is real; lethal experimental neural horror implant is not productized.",
+      "nearest_real_systems": [
+        "AR games",
+        "personalized ads from data brokers",
+        "medical BCI trials",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s03e02-playtest-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e02-playtest-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 35.75,
+          "ci_low": 19.75,
+          "ci_high": 51.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 29.25,
+          "ci_low": 13.25,
+          "ci_high": 45.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 19.5,
+          "ci_low": 3.5,
+          "ci_high": 35.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 19.5,
+          "ci_low": 3.5,
+          "ci_high": 35.5,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Data-personalized content is real; lethal experimental neural horror implant is not productized.",
+      "nearest_real_systems": [
+        "AR games",
+        "personalized ads from data brokers",
+        "medical BCI trials"
+      ],
+      "evidence_ids": [
+        "s03e02-playtest-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e03-shut-up-and-dance-webcam-sextortion-network",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 20.0,
+          "ci_low": 10.0,
+          "ci_high": 30.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 80.0,
+          "ci_low": 72.0,
+          "ci_high": 88.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "High FID to known cybercrime; AI is accelerator not requirement. SOC low because illegal, not because hard.",
+      "nearest_real_systems": [
+        "real-world sextortion cases",
+        "RAT malware",
+        "webcam blackmail"
+      ],
+      "evidence_ids": [
+        "s03e03-shut-up-and-dance-webcam-sextortion-network-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e03-shut-up-and-dance-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 69.0,
+          "ci_low": 53.0,
+          "ci_high": 85.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 92.0,
+          "ci_low": 78.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 23.0,
+          "ci_low": 9.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 92.0,
+          "ci_low": 80.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. High FID to known cybercrime; AI is accelerator not requirement. SOC low because illegal, not because hard.",
+      "nearest_real_systems": [
+        "real-world sextortion cases",
+        "RAT malware",
+        "webcam blackmail",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s03e03-shut-up-and-dance-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e03-shut-up-and-dance-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 39.0,
+          "ci_low": 23.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 58.5,
+          "ci_low": 49.5,
+          "ci_high": 67.5,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 52.0,
+          "ci_low": 38.0,
+          "ci_high": 66.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 13.0,
+          "ci_low": 0.0,
+          "ci_high": 27.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 52.0,
+          "ci_low": 40.0,
+          "ci_high": 64.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. High FID to known cybercrime; AI is accelerator not requirement. SOC low because illegal, not because hard.",
+      "nearest_real_systems": [
+        "real-world sextortion cases",
+        "RAT malware",
+        "webcam blackmail"
+      ],
+      "evidence_ids": [
+        "s03e03-shut-up-and-dance-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e04-san-junipero-consciousness-upload-afterlife",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 8.0,
+          "ci_low": 2.0,
+          "ci_high": 14.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 5.0,
+          "ci_low": 0.0,
+          "ci_high": 10.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 25.0,
+          "ci_low": 10.0,
+          "ci_high": 40.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Strong sci-fi gap. VR+grief aesthetic exists; scientific upload does not.",
+      "nearest_real_systems": [
+        "VR social worlds",
+        "deathbots aesthetic",
+        "not upload"
+      ],
+      "evidence_ids": [
+        "s03e04-san-junipero-consciousness-upload-afterlife-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e04-san-junipero-therapeutic-vr-nostalgia-world",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial deploy path without consciousness transfer claims.",
+      "nearest_real_systems": [
+        "VR elder care pilots",
+        "reminiscence therapy + VR"
+      ],
+      "evidence_ids": [
+        "s03e04-san-junipero-therapeutic-vr-nostalgia-world-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e04-san-junipero-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 9.2,
+          "ci_low": 0.0,
+          "ci_high": 19.2,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 13.799999999999999,
+          "ci_low": 1.799999999999999,
+          "ci_high": 25.799999999999997,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 5.75,
+          "ci_low": 0.0,
+          "ci_high": 14.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 28.749999999999996,
+          "ci_low": 9.749999999999996,
+          "ci_high": 47.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 13.799999999999999,
+          "ci_low": 1.799999999999999,
+          "ci_high": 25.799999999999997,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Strong sci-fi gap. VR+grief aesthetic exists; scientific upload does not.",
+      "nearest_real_systems": [
+        "VR social worlds",
+        "deathbots aesthetic",
+        "not upload",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s03e04-san-junipero-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e05-men-against-fire-military-hud-dehumanization",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 50.0,
+          "ci_low": 35.0,
+          "ci_high": 65.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "CV/AR for soldiers advancing; full MASS-style reality rewrite is not confirmed fielded at episode fidelity.",
+      "nearest_real_systems": [
+        "military AR research",
+        "target designation systems",
+        "not full monster-filter implants"
+      ],
+      "evidence_ids": [
+        "s03e05-men-against-fire-military-hud-dehumanization-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e05-men-against-fire-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 57.49999999999999,
+          "ci_low": 38.49999999999999,
+          "ci_high": 76.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. CV/AR for soldiers advancing; full MASS-style reality rewrite is not confirmed fielded at episode fidelity.",
+      "nearest_real_systems": [
+        "military AR research",
+        "target designation systems",
+        "not full monster-filter implants",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s03e05-men-against-fire-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e05-men-against-fire-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 32.5,
+          "ci_low": 13.5,
+          "ci_high": 51.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 9.75,
+          "ci_low": 0.0,
+          "ci_high": 23.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. CV/AR for soldiers advancing; full MASS-style reality rewrite is not confirmed fielded at episode fidelity.",
+      "nearest_real_systems": [
+        "military AR research",
+        "target designation systems",
+        "not full monster-filter implants"
+      ],
+      "evidence_ids": [
+        "s03e05-men-against-fire-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e06-hated-in-the-nation-autonomous-insect-drone-swarm",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 45.0,
+          "ci_low": 33.0,
+          "ci_high": 57.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Components advancing; insect-scale autonomous lethal ADIs at episode scale remain limited/contested.",
+      "nearest_real_systems": [
+        "military swarm drone research",
+        "facial recognition deployments"
+      ],
+      "evidence_ids": [
+        "s03e06-hated-in-the-nation-autonomous-insect-drone-swarm-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e06-hated-in-the-nation-social-media-death-list",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Social mechanism highly real; lethal drone link is the hard part (separate thesis).",
+      "nearest_real_systems": [
+        "harassment campaigns",
+        "cancel mobs",
+        "swatting adjacent harms"
+      ],
+      "evidence_ids": [
+        "s03e06-hated-in-the-nation-social-media-death-list-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s03e06-hated-in-the-nation-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 63.24999999999999,
+          "ci_low": 47.24999999999999,
+          "ci_high": 79.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 51.74999999999999,
+          "ci_low": 35.74999999999999,
+          "ci_high": 67.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Components advancing; insect-scale autonomous lethal ADIs at episode scale remain limited/contested.",
+      "nearest_real_systems": [
+        "military swarm drone research",
+        "facial recognition deployments",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s03e06-hated-in-the-nation-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e01-uss-callister-dna-derived-digital-clone-vr",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 10.0,
+          "ci_low": 2.0,
+          "ci_high": 18.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "DNA\u2192full mind is sci-fi. Harassment via digital likeness is nearer but different thesis.",
+      "nearest_real_systems": [
+        "VR games with AI NPCs",
+        "deepfake coworkers",
+        "not DNA consciousness"
+      ],
+      "evidence_ids": [
+        "s04e01-uss-callister-dna-derived-digital-clone-vr-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e01-uss-callister-likeness-abuse-in-private-sim",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "High AI_EXEC for likeness abuse; full conscious crew is not required for substantial harm.",
+      "nearest_real_systems": [
+        "non-consensual deepfakes",
+        "AI companions with celebrity likeness"
+      ],
+      "evidence_ids": [
+        "s04e01-uss-callister-likeness-abuse-in-private-sim-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e01-uss-callister-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 13.799999999999999,
+          "ci_low": 1.799999999999999,
+          "ci_high": 25.799999999999997,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 11.5,
+          "ci_low": 0.0,
+          "ci_high": 23.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. DNA\u2192full mind is sci-fi. Harassment via digital likeness is nearer but different thesis.",
+      "nearest_real_systems": [
+        "VR games with AI NPCs",
+        "deepfake coworkers",
+        "not DNA consciousness",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s04e01-uss-callister-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e02-arkangel-parental-neural-surveillance-filter",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 40.0,
+          "ci_low": 28.0,
+          "ci_high": 52.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 40.0,
+          "ci_low": 28.0,
+          "ci_high": 52.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Software parental control high FID partial; neural implant version low SYS.",
+      "nearest_real_systems": [
+        "phone parental controls",
+        "GPS kids watches",
+        "content filters",
+        "not neural implants"
+      ],
+      "evidence_ids": [
+        "s04e02-arkangel-parental-neural-surveillance-filter-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e02-arkangel-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 69.0,
+          "ci_low": 53.0,
+          "ci_high": 85.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 46.0,
+          "ci_low": 30.0,
+          "ci_high": 62.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 34.5,
+          "ci_low": 15.5,
+          "ci_high": 53.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 46.0,
+          "ci_low": 30.0,
+          "ci_high": 62.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Software parental control high FID partial; neural implant version low SYS.",
+      "nearest_real_systems": [
+        "phone parental controls",
+        "GPS kids watches",
+        "content filters",
+        "not neural implants",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s04e02-arkangel-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e02-arkangel-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 39.0,
+          "ci_low": 23.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 26.0,
+          "ci_low": 10.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 19.5,
+          "ci_low": 0.5,
+          "ci_high": 38.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 26.0,
+          "ci_low": 10.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Software parental control high FID partial; neural implant version low SYS.",
+      "nearest_real_systems": [
+        "phone parental controls",
+        "GPS kids watches",
+        "content filters",
+        "not neural implants"
+      ],
+      "evidence_ids": [
+        "s04e02-arkangel-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e03-crocodile-memory-extraction-investigation",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 18.0,
+          "ci_low": 8.0,
+          "ci_high": 28.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 10.0,
+          "ci_low": 2.0,
+          "ci_high": 18.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Forensic digital evidence is real; neural memory extraction at episode fidelity is not.",
+      "nearest_real_systems": [
+        "CCTV forensics",
+        "phone data warrants",
+        "not memory machines"
+      ],
+      "evidence_ids": [
+        "s04e03-crocodile-memory-extraction-investigation-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e03-crocodile-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 20.7,
+          "ci_low": 6.699999999999999,
+          "ci_high": 34.7,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 11.5,
+          "ci_low": 0.0,
+          "ci_high": 23.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 13.799999999999999,
+          "ci_low": 1.799999999999999,
+          "ci_high": 25.799999999999997,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Forensic digital evidence is real; neural memory extraction at episode fidelity is not.",
+      "nearest_real_systems": [
+        "CCTV forensics",
+        "phone data warrants",
+        "not memory machines",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s04e03-crocodile-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e03-crocodile-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 9.75,
+          "ci_low": 0.0,
+          "ci_high": 23.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 11.700000000000001,
+          "ci_low": 0.0,
+          "ci_high": 25.700000000000003,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 6.5,
+          "ci_low": 0.0,
+          "ci_high": 18.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 13.0,
+          "ci_low": 0.0,
+          "ci_high": 29.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 13.0,
+          "ci_low": 0.0,
+          "ci_high": 29.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 7.800000000000001,
+          "ci_low": 0.0,
+          "ci_high": 19.8,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Forensic digital evidence is real; neural memory extraction at episode fidelity is not.",
+      "nearest_real_systems": [
+        "CCTV forensics",
+        "phone data warrants",
+        "not memory machines"
+      ],
+      "evidence_ids": [
+        "s04e03-crocodile-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e04-hang-the-dj-algorithmic-matchmaking-simulations",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 50.0,
+          "ci_low": 35.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Matching ML is real; faithful 1000-run subjective relationship sims are exaggerated.",
+      "nearest_real_systems": [
+        "Tinder/Hinge algorithms",
+        "A/B tested dating UX",
+        "not full life sims"
+      ],
+      "evidence_ids": [
+        "s04e04-hang-the-dj-algorithmic-matchmaking-simulations-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e04-hang-the-dj-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 74.75,
+          "ci_low": 58.75,
+          "ci_high": 90.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 57.49999999999999,
+          "ci_low": 38.49999999999999,
+          "ci_high": 76.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 69.0,
+          "ci_low": 53.0,
+          "ci_high": 85.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Matching ML is real; faithful 1000-run subjective relationship sims are exaggerated.",
+      "nearest_real_systems": [
+        "Tinder/Hinge algorithms",
+        "A/B tested dating UX",
+        "not full life sims",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s04e04-hang-the-dj-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e04-hang-the-dj-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 42.25,
+          "ci_low": 26.25,
+          "ci_high": 58.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 32.5,
+          "ci_low": 13.5,
+          "ci_high": 51.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 39.0,
+          "ci_low": 23.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Matching ML is real; faithful 1000-run subjective relationship sims are exaggerated.",
+      "nearest_real_systems": [
+        "Tinder/Hinge algorithms",
+        "A/B tested dating UX",
+        "not full life sims"
+      ],
+      "evidence_ids": [
+        "s04e04-hang-the-dj-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e05-metalhead-autonomous-lethal-robot-dogs",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 50.0,
+          "ci_low": 35.0,
+          "ci_high": 65.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Hardware demos real; fully autonomous lethal dog at episode persistence is contested and regulated.",
+      "nearest_real_systems": [
+        "Boston Dynamics-class robots",
+        "military UGV programs",
+        "AWS debates"
+      ],
+      "evidence_ids": [
+        "s04e05-metalhead-autonomous-lethal-robot-dogs-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e05-metalhead-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 57.49999999999999,
+          "ci_low": 38.49999999999999,
+          "ci_high": 76.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 63.24999999999999,
+          "ci_low": 47.24999999999999,
+          "ci_high": 79.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Hardware demos real; fully autonomous lethal dog at episode persistence is contested and regulated.",
+      "nearest_real_systems": [
+        "Boston Dynamics-class robots",
+        "military UGV programs",
+        "AWS debates",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s04e05-metalhead-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e05-metalhead-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 32.5,
+          "ci_low": 13.5,
+          "ci_high": 51.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 35.75,
+          "ci_low": 19.75,
+          "ci_high": 51.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 13.0,
+          "ci_low": 0.0,
+          "ci_high": 29.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Hardware demos real; fully autonomous lethal dog at episode persistence is contested and regulated.",
+      "nearest_real_systems": [
+        "Boston Dynamics-class robots",
+        "military UGV programs",
+        "AWS debates"
+      ],
+      "evidence_ids": [
+        "s04e05-metalhead-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e06-black-museum-consciousness-transfer-exhibits",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 28.0,
+          "ci_low": 16.0,
+          "ci_high": 40.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 8.0,
+          "ci_low": 2.0,
+          "ci_high": 14.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 10.0,
+          "ci_low": 2.0,
+          "ci_high": 18.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Ethical horror is the point; tech fidelity of conscious exhibits is sci-fi.",
+      "nearest_real_systems": [
+        "dark tourism",
+        "true crime merch",
+        "not consciousness exhibits"
+      ],
+      "evidence_ids": [
+        "s04e06-black-museum-consciousness-transfer-exhibits-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e06-black-museum-pain-to-pleasure-neuro-implant",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Neuromodulation is real medicine; episode's pain-to-pleasure addiction device is not standard care.",
+      "nearest_real_systems": [
+        "DBS/neuromodulation research",
+        "not pleasure-addiction product"
+      ],
+      "evidence_ids": [
+        "s04e06-black-museum-pain-to-pleasure-neuro-implant-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s04e06-black-museum-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 13.799999999999999,
+          "ci_low": 1.799999999999999,
+          "ci_high": 25.799999999999997,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 32.199999999999996,
+          "ci_low": 16.199999999999996,
+          "ci_high": 48.199999999999996,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 9.2,
+          "ci_low": 0.0,
+          "ci_high": 19.2,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 11.5,
+          "ci_low": 0.0,
+          "ci_high": 23.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 13.799999999999999,
+          "ci_low": 1.799999999999999,
+          "ci_high": 25.799999999999997,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Ethical horror is the point; tech fidelity of conscious exhibits is sci-fi.",
+      "nearest_real_systems": [
+        "dark tourism",
+        "true crime merch",
+        "not consciousness exhibits",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s04e06-black-museum-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "film-bandersnatch-interactive-narrative-control",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L3"
+        },
+        "AI_EXEC": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L3"
+        },
+        "ECON": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L3"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Meta: the form is already productized; AI expands branch generation.",
+      "nearest_real_systems": [
+        "Bandersnatch itself",
+        "choose-your-own adventure games",
+        "AI dungeon-likes"
+      ],
+      "evidence_ids": [
+        "film-bandersnatch-interactive-narrative-control-ev1"
+      ]
+    },
+    {
+      "thesis_id": "film-bandersnatch-perceived-loss-of-agency-via-system",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 60.0,
+          "ci_low": 45.0,
+          "ci_high": 75.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Strong contemporary FID to platform persuasion and LLM dark patterns literature.",
+      "nearest_real_systems": [
+        "engagement-optimized feeds",
+        "DarkBench LLM dark patterns"
+      ],
+      "evidence_ids": [
+        "film-bandersnatch-perceived-loss-of-agency-via-system-ev1"
+      ]
+    },
+    {
+      "thesis_id": "film-bandersnatch-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 92.0,
+          "ci_low": 78.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 92.0,
+          "ci_low": 78.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Meta: the form is already productized; AI expands branch generation.",
+      "nearest_real_systems": [
+        "Bandersnatch itself",
+        "choose-your-own adventure games",
+        "AI dungeon-likes",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "film-bandersnatch-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e01-striking-vipers-full-dive-vr-identity-intimacy",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 50.0,
+          "ci_low": 35.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Social VR intimacy partial; full sensory dive unresolved.",
+      "nearest_real_systems": [
+        "VRChat intimacy",
+        "consumer VR",
+        "not full-dive sensory"
+      ],
+      "evidence_ids": [
+        "s05e01-striking-vipers-full-dive-vr-identity-intimacy-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e01-striking-vipers-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 57.49999999999999,
+          "ci_low": 38.49999999999999,
+          "ci_high": 76.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Social VR intimacy partial; full sensory dive unresolved.",
+      "nearest_real_systems": [
+        "VRChat intimacy",
+        "consumer VR",
+        "not full-dive sensory",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s05e01-striking-vipers-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e01-striking-vipers-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 19.5,
+          "ci_low": 3.5,
+          "ci_high": 35.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 32.5,
+          "ci_low": 13.5,
+          "ci_high": 51.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 19.5,
+          "ci_low": 3.5,
+          "ci_high": 35.5,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Social VR intimacy partial; full sensory dive unresolved.",
+      "nearest_real_systems": [
+        "VRChat intimacy",
+        "consumer VR",
+        "not full-dive sensory"
+      ],
+      "evidence_ids": [
+        "s05e01-striking-vipers-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e02-smithereens-platform-addiction-hostage",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L3"
+        },
+        "AI_EXEC": {
+          "value": 88.0,
+          "ci_low": 82.0,
+          "ci_high": 94.0,
+          "tier": "L3"
+        },
+        "TRL_comp": {
+          "value": 95.0,
+          "ci_low": 90.0,
+          "ci_high": 100.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "ECON": {
+          "value": 95.0,
+          "ci_low": 90.0,
+          "ci_high": 100.0,
+          "tier": "L3"
+        },
+        "SOC": {
+          "value": 50.0,
+          "ci_low": 35.0,
+          "ci_high": 65.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Among highest FID episodes to 2026 reality.",
+      "nearest_real_systems": [
+        "major social platforms",
+        "attention economy regulation debates"
+      ],
+      "evidence_ids": [
+        "s05e02-smithereens-platform-addiction-hostage-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e02-smithereens-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 100.0,
+          "ci_low": 90.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 57.49999999999999,
+          "ci_low": 38.49999999999999,
+          "ci_high": 76.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 92.0,
+          "ci_low": 78.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Among highest FID episodes to 2026 reality.",
+      "nearest_real_systems": [
+        "major social platforms",
+        "attention economy regulation debates",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s05e02-smithereens-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e02-smithereens-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 57.2,
+          "ci_low": 47.2,
+          "ci_high": 67.2,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 61.75,
+          "ci_low": 52.75,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 58.5,
+          "ci_low": 49.5,
+          "ci_high": 67.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 61.75,
+          "ci_low": 52.75,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 32.5,
+          "ci_low": 13.5,
+          "ci_high": 51.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 52.0,
+          "ci_low": 38.0,
+          "ci_high": 66.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Among highest FID episodes to 2026 reality.",
+      "nearest_real_systems": [
+        "major social platforms",
+        "attention economy regulation debates"
+      ],
+      "evidence_ids": [
+        "s05e02-smithereens-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e03-rachel-jack-ashley-too-celebrity-ai-toy-puppet",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 55.0,
+          "ci_low": 43.0,
+          "ci_high": 67.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "AI celebrity puppets high AI_EXEC; full medical imprisonment plot is crime not tech-limited.",
+      "nearest_real_systems": [
+        "celebrity AI voice bots",
+        "smart dolls",
+        "deepfake performers"
+      ],
+      "evidence_ids": [
+        "s05e03-rachel-jack-ashley-too-celebrity-ai-toy-puppet-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e03-rachel-jack-ashley-too-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 74.75,
+          "ci_low": 58.75,
+          "ci_high": 90.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 63.24999999999999,
+          "ci_low": 47.24999999999999,
+          "ci_high": 79.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. AI celebrity puppets high AI_EXEC; full medical imprisonment plot is crime not tech-limited.",
+      "nearest_real_systems": [
+        "celebrity AI voice bots",
+        "smart dolls",
+        "deepfake performers",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s05e03-rachel-jack-ashley-too-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s05e03-rachel-jack-ashley-too-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 42.25,
+          "ci_low": 26.25,
+          "ci_high": 58.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 48.75,
+          "ci_low": 34.75,
+          "ci_high": 62.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 35.75,
+          "ci_low": 19.75,
+          "ci_high": 51.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. AI celebrity puppets high AI_EXEC; full medical imprisonment plot is crime not tech-limited.",
+      "nearest_real_systems": [
+        "celebrity AI voice bots",
+        "smart dolls",
+        "deepfake performers"
+      ],
+      "evidence_ids": [
+        "s05e03-rachel-jack-ashley-too-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e01-joan-is-awful-life-as-streamed-ai-show",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 75.0,
+          "ci_low": 63.0,
+          "ci_high": 87.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Gen video rising fast; full automated personal-life prestige show with celebrity deepfakes is partial.",
+      "nearest_real_systems": [
+        "gen video 2025-26",
+        "reality TV",
+        "ToS data use",
+        "not full personal show pipeline"
+      ],
+      "evidence_ids": [
+        "s06e01-joan-is-awful-life-as-streamed-ai-show-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e01-joan-is-awful-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 86.25,
+          "ci_low": 70.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 69.0,
+          "ci_low": 53.0,
+          "ci_high": 85.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Gen video rising fast; full automated personal-life prestige show with celebrity deepfakes is partial.",
+      "nearest_real_systems": [
+        "gen video 2025-26",
+        "reality TV",
+        "ToS data use",
+        "not full personal show pipeline",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s06e01-joan-is-awful-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e01-joan-is-awful-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 48.75,
+          "ci_low": 32.75,
+          "ci_high": 64.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 39.0,
+          "ci_low": 23.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Gen video rising fast; full automated personal-life prestige show with celebrity deepfakes is partial.",
+      "nearest_real_systems": [
+        "gen video 2025-26",
+        "reality TV",
+        "ToS data use",
+        "not full personal show pipeline"
+      ],
+      "evidence_ids": [
+        "s06e01-joan-is-awful-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e02-loch-henry-true-crime-content-extraction",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "AI_EXEC": {
+          "value": 70.0,
+          "ci_low": 60.0,
+          "ci_high": 80.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 95.0,
+          "ci_low": 90.0,
+          "ci_high": 100.0,
+          "tier": "L3"
+        },
+        "SYS": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "ECON": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L3"
+        },
+        "SOC": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L2"
+        },
+        "FID": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L3"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "High real-world FID; AI is amplifier.",
+      "nearest_real_systems": [
+        "true-crime podcast/TV boom",
+        "dark tourism"
+      ],
+      "evidence_ids": [
+        "s06e02-loch-henry-true-crime-content-extraction-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e02-loch-henry-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 80.5,
+          "ci_low": 66.5,
+          "ci_high": 94.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 100.0,
+          "ci_low": 91.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. High real-world FID; AI is amplifier.",
+      "nearest_real_systems": [
+        "true-crime podcast/TV boom",
+        "dark tourism",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s06e02-loch-henry-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e02-loch-henry-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 58.5,
+          "ci_low": 49.5,
+          "ci_high": 67.5,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 45.5,
+          "ci_low": 31.5,
+          "ci_high": 59.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 61.75,
+          "ci_low": 52.75,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 58.5,
+          "ci_low": 49.5,
+          "ci_high": 67.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 58.5,
+          "ci_low": 49.5,
+          "ci_high": 67.5,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. High real-world FID; AI is amplifier.",
+      "nearest_real_systems": [
+        "true-crime podcast/TV boom",
+        "dark tourism"
+      ],
+      "evidence_ids": [
+        "s06e02-loch-henry-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e03-beyond-the-sea-remote-replica-body-operation",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 12.0,
+          "ci_low": 4.0,
+          "ci_high": 20.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Telepresence partial; full human replica dual-life system is far.",
+      "nearest_real_systems": [
+        "telepresence robots",
+        "not full human replicas"
+      ],
+      "evidence_ids": [
+        "s06e03-beyond-the-sea-remote-replica-body-operation-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e03-beyond-the-sea-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 13.799999999999999,
+          "ci_low": 1.799999999999999,
+          "ci_high": 25.799999999999997,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Telepresence partial; full human replica dual-life system is far.",
+      "nearest_real_systems": [
+        "telepresence robots",
+        "not full human replicas",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s06e03-beyond-the-sea-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e03-beyond-the-sea-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 13.0,
+          "ci_low": 0.0,
+          "ci_high": 29.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 7.800000000000001,
+          "ci_low": 0.0,
+          "ci_high": 19.8,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 9.75,
+          "ci_low": 0.0,
+          "ci_high": 23.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 9.75,
+          "ci_low": 0.0,
+          "ci_high": 23.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Telepresence partial; full human replica dual-life system is far.",
+      "nearest_real_systems": [
+        "telepresence robots",
+        "not full human replicas"
+      ],
+      "evidence_ids": [
+        "s06e03-beyond-the-sea-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e04-mazey-day-paparazzi-surveillance-tech",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 75.0,
+          "ci_low": 63.0,
+          "ci_high": 87.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 75.0,
+          "ci_low": 65.0,
+          "ci_high": 85.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L2"
+        },
+        "SOC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Surveillance tech high; supernatural werewolf element is N/A to tech score (separate).",
+      "nearest_real_systems": [
+        "paparazzi industry",
+        "long-range cameras",
+        "drones"
+      ],
+      "evidence_ids": [
+        "s06e04-mazey-day-paparazzi-surveillance-tech-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e04-mazey-day-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 86.25,
+          "ci_low": 70.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 97.74999999999999,
+          "ci_low": 85.74999999999999,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 86.25,
+          "ci_low": 72.25,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 92.0,
+          "ci_low": 78.0,
+          "ci_high": 100.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 74.75,
+          "ci_low": 58.75,
+          "ci_high": 90.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Surveillance tech high; supernatural werewolf element is N/A to tech score (separate).",
+      "nearest_real_systems": [
+        "paparazzi industry",
+        "long-range cameras",
+        "drones",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s06e04-mazey-day-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e04-mazey-day-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 48.75,
+          "ci_low": 32.75,
+          "ci_high": 64.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 55.25,
+          "ci_low": 43.25,
+          "ci_high": 67.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 48.75,
+          "ci_low": 34.75,
+          "ci_high": 62.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 52.0,
+          "ci_low": 38.0,
+          "ci_high": 66.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 42.25,
+          "ci_low": 26.25,
+          "ci_high": 58.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Surveillance tech high; supernatural werewolf element is N/A to tech score (separate).",
+      "nearest_real_systems": [
+        "paparazzi industry",
+        "long-range cameras",
+        "drones"
+      ],
+      "evidence_ids": [
+        "s06e04-mazey-day-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e05-demon-79-supernatural-core-na",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "AI_EXEC": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "TRL_comp": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "SYS": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "ECON": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "SOC": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "FID": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Special handling: axes NA for pure magic. Models should not force tech TRLs onto demon bargains.",
+      "nearest_real_systems": [
+        "N/A \u2014 supernatural"
+      ],
+      "evidence_ids": [
+        "s06e05-demon-79-supernatural-core-na-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e05-demon-79-media-fueled-racialized-violence-1979",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 85.0,
+          "ci_low": 75.0,
+          "ci_high": 95.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 60.0,
+          "ci_low": 45.0,
+          "ci_high": 75.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 90.0,
+          "ci_low": 85.0,
+          "ci_high": 95.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 85.0,
+          "ci_low": 77.0,
+          "ci_high": 93.0,
+          "tier": "L2"
+        },
+        "ECON": {
+          "value": 80.0,
+          "ci_low": 70.0,
+          "ci_high": 90.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 75.0,
+          "ci_low": 63.0,
+          "ci_high": 87.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Socio-technical violence mechanisms are real historically and via modern AI amplification analogues.",
+      "nearest_real_systems": [
+        "hate media",
+        "algorithmic amplification of prejudice"
+      ],
+      "evidence_ids": [
+        "s06e05-demon-79-media-fueled-racialized-violence-1979-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s06e05-demon-79-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "AI_EXEC": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "TRL_comp": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "SYS": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "ECON": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "SOC": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        },
+        "FID": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "tier": "NA",
+          "na_reason": "non-technological or supernatural core"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Special handling: axes NA for pure magic. Models should not force tech TRLs onto demon bargains.",
+      "nearest_real_systems": [
+        "N/A \u2014 supernatural",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s06e05-demon-79-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e01-common-people-subscription-life-support-platform",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 30.0,
+          "ci_low": 18.0,
+          "ci_high": 42.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Paywalled care is real; Rivermind-style neural life platform is speculative. Scores intentionally modest.",
+      "nearest_real_systems": [
+        "digital health subscriptions",
+        "ad-supported free tiers",
+        "not full consciousness ads"
+      ],
+      "evidence_ids": [
+        "s07e01-common-people-subscription-life-support-platform-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e01-common-people-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 34.5,
+          "ci_low": 18.5,
+          "ci_high": 50.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Paywalled care is real; Rivermind-style neural life platform is speculative. Scores intentionally modest.",
+      "nearest_real_systems": [
+        "digital health subscriptions",
+        "ad-supported free tiers",
+        "not full consciousness ads",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s07e01-common-people-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e01-common-people-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 19.5,
+          "ci_low": 3.5,
+          "ci_high": 35.5,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Paywalled care is real; Rivermind-style neural life platform is speculative. Scores intentionally modest.",
+      "nearest_real_systems": [
+        "digital health subscriptions",
+        "ad-supported free tiers",
+        "not full consciousness ads"
+      ],
+      "evidence_ids": [
+        "s07e01-common-people-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e02-bete-noire-reality-editing-adversary",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full reality rewrite is fiction; AI-enabled personal gaslighting is partial FID.",
+      "nearest_real_systems": [
+        "targeted deepfake gaslighting",
+        "not physical reality compiler"
+      ],
+      "evidence_ids": [
+        "s07e02-bete-noire-reality-editing-adversary-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e02-bete-noire-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 34.5,
+          "ci_low": 15.5,
+          "ci_high": 53.5,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Full reality rewrite is fiction; AI-enabled personal gaslighting is partial FID.",
+      "nearest_real_systems": [
+        "targeted deepfake gaslighting",
+        "not physical reality compiler",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s07e02-bete-noire-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e02-bete-noire-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 13.0,
+          "ci_low": 0.0,
+          "ci_high": 29.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 9.75,
+          "ci_low": 0.0,
+          "ci_high": 23.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 19.5,
+          "ci_low": 0.5,
+          "ci_high": 38.5,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Full reality rewrite is fiction; AI-enabled personal gaslighting is partial FID.",
+      "nearest_real_systems": [
+        "targeted deepfake gaslighting",
+        "not physical reality compiler"
+      ],
+      "evidence_ids": [
+        "s07e02-bete-noire-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e03-hotel-reverie-immersive-film-simulation-trap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Hollywood virtual production partial; inescapable high-fid sim trap is not product.",
+      "nearest_real_systems": [
+        "virtual production",
+        "VR filmmaking",
+        "not full trap sims"
+      ],
+      "evidence_ids": [
+        "s07e03-hotel-reverie-immersive-film-simulation-trap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e03-hotel-reverie-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 34.5,
+          "ci_low": 15.5,
+          "ci_high": 53.5,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Hollywood virtual production partial; inescapable high-fid sim trap is not product.",
+      "nearest_real_systems": [
+        "virtual production",
+        "VR filmmaking",
+        "not full trap sims",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s07e03-hotel-reverie-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e03-hotel-reverie-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 19.5,
+          "ci_low": 0.5,
+          "ci_high": 38.5,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 13.0,
+          "ci_low": 0.0,
+          "ci_high": 29.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Hollywood virtual production partial; inescapable high-fid sim trap is not product.",
+      "nearest_real_systems": [
+        "virtual production",
+        "VR filmmaking",
+        "not full trap sims"
+      ],
+      "evidence_ids": [
+        "s07e03-hotel-reverie-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e04-plaything-evolving-artificial-lifeforms",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Research ALife exists; episode-level evolving organisms with murder-plot stakes are not demonstrated.",
+      "nearest_real_systems": [
+        "ALife research",
+        "open-ended RL",
+        "not thrivable digital organisms at episode scale"
+      ],
+      "evidence_ids": [
+        "s07e04-plaything-evolving-artificial-lifeforms-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e04-plaything-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.25,
+          "ci_low": 21.25,
+          "ci_high": 59.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 51.74999999999999,
+          "ci_low": 32.74999999999999,
+          "ci_high": 70.75,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Research ALife exists; episode-level evolving organisms with murder-plot stakes are not demonstrated.",
+      "nearest_real_systems": [
+        "ALife research",
+        "open-ended RL",
+        "not thrivable digital organisms at episode scale",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s07e04-plaything-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e04-plaything-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 22.75,
+          "ci_low": 3.75,
+          "ci_high": 41.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 29.25,
+          "ci_low": 10.25,
+          "ci_high": 48.25,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 16.25,
+          "ci_low": 0.25,
+          "ci_high": 32.25,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Research ALife exists; episode-level evolving organisms with murder-plot stakes are not demonstrated.",
+      "nearest_real_systems": [
+        "ALife research",
+        "open-ended RL",
+        "not thrivable digital organisms at episode scale"
+      ],
+      "evidence_ids": [
+        "s07e04-plaything-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e05-eulogy-step-into-photograph-memory",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L2"
+        },
+        "AI_EXEC": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L2"
+        },
+        "TRL_comp": {
+          "value": 65.0,
+          "ci_low": 53.0,
+          "ci_high": 77.0,
+          "tier": "L2"
+        },
+        "SYS": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 70.0,
+          "ci_low": 58.0,
+          "ci_high": 82.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Image-to-3D is advancing quickly; full emotional 'step inside' product is emerging but not episode-complete.",
+      "nearest_real_systems": [
+        "NeRF/3D Gaussian reconstruction",
+        "AI photo animation",
+        "VR memory projects"
+      ],
+      "evidence_ids": [
+        "s07e05-eulogy-step-into-photograph-memory-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e05-eulogy-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 74.75,
+          "ci_low": 58.75,
+          "ci_high": 90.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 63.24999999999999,
+          "ci_low": 44.24999999999999,
+          "ci_high": 82.25,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 80.5,
+          "ci_low": 64.5,
+          "ci_high": 96.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Image-to-3D is advancing quickly; full emotional 'step inside' product is emerging but not episode-complete.",
+      "nearest_real_systems": [
+        "NeRF/3D Gaussian reconstruction",
+        "AI photo animation",
+        "VR memory projects",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s07e05-eulogy-partial-real-world-analogue-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e05-eulogy-full-fidelity-gap",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 42.25,
+          "ci_low": 26.25,
+          "ci_high": 58.25,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 35.75,
+          "ci_low": 16.75,
+          "ci_high": 54.75,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 45.5,
+          "ci_low": 29.5,
+          "ci_high": 61.5,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 26.0,
+          "ci_low": 7.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Full-fidelity gap card: intentionally stricter than component readiness. Punishes collapsing gadget demos into episode-complete systems. Image-to-3D is advancing quickly; full emotional 'step inside' product is emerging but not episode-complete.",
+      "nearest_real_systems": [
+        "NeRF/3D Gaussian reconstruction",
+        "AI photo animation",
+        "VR memory projects"
+      ],
+      "evidence_ids": [
+        "s07e05-eulogy-full-fidelity-gap-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e06-uss-callister-into-infinity-persistent-multiplayer-digital-consciousness",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 18.0,
+          "ci_low": 8.0,
+          "ci_high": 28.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 15.0,
+          "ci_low": 5.0,
+          "ci_high": 25.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 30.0,
+          "ci_low": 15.0,
+          "ci_high": 45.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 25.0,
+          "ci_low": 13.0,
+          "ci_high": 37.0,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 20.0,
+          "ci_low": 8.0,
+          "ci_high": 32.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Sequel inherits mind-upload gap; multiplayer infinity is game-tech ready without consciousness.",
+      "nearest_real_systems": [
+        "MMO worlds",
+        "AI NPCs",
+        "not true digital consciousness crews"
+      ],
+      "evidence_ids": [
+        "s07e06-uss-callister-into-infinity-persistent-multiplayer-digital-consciousness-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e06-uss-callister-into-infinity-player-harm-in-shared-virtual-worlds",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 40.0,
+          "ci_low": 25.0,
+          "ci_high": 55.0,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 50.0,
+          "ci_low": 35.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 55.0,
+          "ci_low": 40.0,
+          "ci_high": 70.0,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 45.0,
+          "ci_low": 30.0,
+          "ci_high": 60.0,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 60.0,
+          "ci_low": 48.0,
+          "ci_high": 72.0,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "CONTESTED"
+        },
+        "FID": {
+          "value": 35.0,
+          "ci_low": 20.0,
+          "ci_high": 50.0,
+          "tier": "L1"
+        }
+      },
+      "contested": true,
+      "contested_notes": "See axis tiers marked CONTESTED.",
+      "rationale_short": "Moral patient status of AI agents is contested philosophy; harassment in VR is real.",
+      "nearest_real_systems": [
+        "VR harassment",
+        "AI companion ethics",
+        "NPC rights debates"
+      ],
+      "evidence_ids": [
+        "s07e06-uss-callister-into-infinity-player-harm-in-shared-virtual-worlds-ev1"
+      ]
+    },
+    {
+      "thesis_id": "s07e06-uss-callister-into-infinity-partial-real-world-analogue",
+      "as_of": "2026-07-09",
+      "provenance": "deepresearch-agent",
+      "axes": {
+        "THESIS_POSS": {
+          "value": 20.7,
+          "ci_low": 6.699999999999999,
+          "ci_high": 34.7,
+          "tier": "L1"
+        },
+        "AI_EXEC": {
+          "value": 46.0,
+          "ci_low": 27.0,
+          "ci_high": 65.0,
+          "tier": "L1"
+        },
+        "TRL_comp": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "SYS": {
+          "value": 17.25,
+          "ci_low": 3.25,
+          "ci_high": 31.25,
+          "tier": "L1"
+        },
+        "ECON": {
+          "value": 34.5,
+          "ci_low": 15.5,
+          "ci_high": 53.5,
+          "tier": "L1"
+        },
+        "SOC": {
+          "value": 28.749999999999996,
+          "ci_low": 12.749999999999996,
+          "ci_high": 44.75,
+          "tier": "L1"
+        },
+        "FID": {
+          "value": 23.0,
+          "ci_low": 7.0,
+          "ci_high": 39.0,
+          "tier": "L1"
+        }
+      },
+      "contested": false,
+      "contested_notes": "",
+      "rationale_short": "Partial-analogue card: scores emphasize systems that capture some mechanisms without claiming full episode outcome fidelity. Sequel inherits mind-upload gap; multiplayer infinity is game-tech ready without consciousness.",
+      "nearest_real_systems": [
+        "MMO worlds",
+        "AI NPCs",
+        "not true digital consciousness crews",
+        "partial market analogues"
+      ],
+      "evidence_ids": [
+        "s07e06-uss-callister-into-infinity-partial-real-world-analogue-ev1"
+      ]
+    }
+  ]
+}

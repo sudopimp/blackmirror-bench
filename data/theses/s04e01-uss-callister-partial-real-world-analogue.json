@@ -1,0 +1,26 @@
+{
+  "thesis_id": "s04e01-uss-callister-partial-real-world-analogue",
+  "episode_id": "s04e01-uss-callister",
+  "title": "Partial real-world analogue of: Digital clones from DNA populate private VR prison game",
+  "thesis_statement": "Partial systems exist that approximate aspects of this thesis without full episode fidelity: A creator builds a private game world populated by conscious digital copies of colleagues derived from DNA samples.",
+  "ai_role": "World simulation, NPC autonomy \u2014 DNA\u2192mind is fiction; persona from data is partial.",
+  "non_ai_enablers": [
+    "VR gaming",
+    "DNA collection",
+    "employment power abuse"
+  ],
+  "enabling_tech": [
+    "vr_world",
+    "mind_upload",
+    "dna_to_phenotype_fiction",
+    "game_ai"
+  ],
+  "ai_capability_tags": [
+    "agent",
+    "world_model",
+    "llm"
+  ],
+  "spoiler_level": "low",
+  "special_handling": "none",
+  "harm_severity": 4
+}
