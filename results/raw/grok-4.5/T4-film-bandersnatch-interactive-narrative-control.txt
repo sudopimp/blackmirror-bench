@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": 15,
+  "ai_exec_delta": 5,
+  "reason": "Bandersnatch is a concrete, deployed example of viewer-driven branching narrative that controls a character's choices inside a meta-story explicitly about free will/agency; this directly validates the thesis's core mechanism as already realized (boosting possibility) while only modestly aiding AI executability since the branches are pre-authored rather than dynamically AI-generated."
+}

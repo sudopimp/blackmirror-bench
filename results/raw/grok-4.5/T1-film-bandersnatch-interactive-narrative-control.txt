@@ -1,0 +1,46 @@
+{
+  "axes": {
+    "THESIS_POSS": {
+      "value": 68,
+      "ci_low": 52,
+      "ci_high": 82,
+      "tier": "L2"
+    },
+    "AI_EXEC": {
+      "value": 78,
+      "ci_low": 65,
+      "ci_high": 88,
+      "tier": "L3"
+    },
+    "TRL_comp": {
+      "value": 82,
+      "ci_low": 72,
+      "ci_high": 90,
+      "tier": "L3"
+    },
+    "SYS": {
+      "value": 58,
+      "ci_low": 42,
+      "ci_high": 72,
+      "tier": "L2"
+    },
+    "ECON": {
+      "value": 65,
+      "ci_low": 50,
+      "ci_high": 78,
+      "tier": "L2"
+    },
+    "SOC": {
+      "value": 55,
+      "ci_low": 35,
+      "ci_high": 75,
+      "tier": "CONTESTED"
+    },
+    "FID": {
+      "value": 62,
+      "ci_low": 48,
+      "ci_high": 76,
+      "tier": "L2"
+    }
+  }
+}

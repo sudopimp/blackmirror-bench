@@ -42,12 +42,46 @@ def expected_calibration_error(
     return ece
 
 
-def set_f1(gold: set[str], pred: set[str]) -> float:
+def _norm_tag(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_")
+
+
+def _tags_soft_match(g: str, p: str) -> bool:
+    """True if tags match exactly, by containment, or by shared substantive tokens."""
+    g, p = _norm_tag(g), _norm_tag(p)
+    if not g or not p:
+        return False
+    if g == p or g in p or p in g:
+        return True
+    gt = {t for t in g.split("_") if len(t) > 2}
+    pt = {t for t in p.split("_") if len(t) > 2}
+    if not gt or not pt:
+        return False
+    # soft hit if ≥50% of gold tokens appear in pred (or reverse for short gold)
+    inter = gt & pt
+    return (len(inter) / len(gt) >= 0.5) or (len(inter) / len(pt) >= 0.5 and len(gt) <= 2)
+
+
+def set_f1(gold: set[str], pred: set[str], soft: bool = False) -> float:
     if not gold and not pred:
         return 1.0
     if not gold or not pred:
         return 0.0
-    tp = len(gold & pred)
+    if not soft:
+        tp = len(gold & pred)
+    else:
+        # greedy bipartite soft matches
+        pred_list = list(pred)
+        used = set()
+        tp = 0
+        for g in gold:
+            for i, p in enumerate(pred_list):
+                if i in used:
+                    continue
+                if _tags_soft_match(g, p) or _norm_tag(g) == _norm_tag(p):
+                    used.add(i)
+                    tp += 1
+                    break
     prec = tp / len(pred)
     rec = tp / len(gold)
     if prec + rec == 0:

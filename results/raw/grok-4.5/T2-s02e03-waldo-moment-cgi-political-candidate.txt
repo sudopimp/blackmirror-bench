@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["generative_ai", "virtual_avatars", "deepfakes", "voice_synthesis", "llm_dialogue", "neural_rendering", "social_media_platforms"],
+  "ai_capability_tags": ["conversational_ai", "humor_generation", "personality_simulation", "multimodal_synthesis", "persuasion_modeling", "real_time_interaction", "content_generation"],
+  "non_ai_enablers": ["social_networks", "political_campaigns", "media_virality", "public_opinion", "authoritarian_systems", "celebrity_culture", "propaganda_channels"]
+}

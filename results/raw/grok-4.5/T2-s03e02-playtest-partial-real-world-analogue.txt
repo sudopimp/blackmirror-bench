@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["neural_implants", "bci_interfaces", "personal_data_mining", "ar_rendering", "adaptive_content_engines"],
+  "ai_capability_tags": ["fear_inference", "emotion_recognition", "personalization", "generative_horror", "adaptive_generation"],
+  "non_ai_enablers": ["implants", "ar_hardware", "game_platforms", "data_interfaces"]
+}

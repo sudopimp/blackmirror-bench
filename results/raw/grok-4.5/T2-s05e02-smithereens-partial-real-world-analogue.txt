@@ -1,0 +1,7 @@
+```json
+{
+  "enabling_tech": ["social_platforms", "recommendation_engines", "big_data_analytics", "user_tracking_systems", "mobile_apps"],
+  "ai_capability_tags": ["engagement_optimization", "behavioral_prediction", "personalized_feeds", "addiction_modeling", "content_ranking"],
+  "non_ai_enablers": ["corporate_control", "data_power_asymmetry", "psychological_dark_patterns", "network_effects", "regulatory_gaps"]
+}
+```

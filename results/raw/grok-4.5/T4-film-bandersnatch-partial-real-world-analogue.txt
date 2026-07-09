@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": 0.25,
+  "ai_exec_delta": 0.05,
+  "reason": "Bandersnatch is a real branching interactive narrative where external viewer choices dictate character actions in a story explicitly about free will/agency; strongly confirms partial systems exist (boosts THESIS_POSS). AI_EXEC rises only marginally as the system is pre-authored human-choice branches rather than dynamic AI agent control, but the architecture is reusable by an AI agent."
+}

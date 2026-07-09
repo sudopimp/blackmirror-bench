@@ -1,0 +1,27 @@
+{
+  "enabling_tech": [
+    "neural_implants",
+    "sensory_recording_devices",
+    "brain_computer_interfaces",
+    "neural_stimulation",
+    "high_density_storage",
+    "wireless_data_links",
+    "external_display_interfaces"
+  ],
+  "ai_capability_tags": [
+    "computer_vision",
+    "audio_processing",
+    "neural_signal_decoding",
+    "memory_reconstruction",
+    "generative_replay",
+    "real_time_compression"
+  ],
+  "non_ai_enablers": [
+    "biocompatible_materials",
+    "electronics_miniaturization",
+    "implant_power_systems",
+    "surgical_implantation",
+    "high_bandwidth_comms",
+    "secure_data_protocols"
+  ]
+}

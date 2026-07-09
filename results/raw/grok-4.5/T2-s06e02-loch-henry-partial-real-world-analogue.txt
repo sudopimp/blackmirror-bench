@@ -1,0 +1,28 @@
+{
+  "enabling_tech": [
+    "streaming_platforms",
+    "social_media",
+    "recommendation_engines",
+    "content_management_systems",
+    "video_editing_tools",
+    "podcast_platforms",
+    "analytics_dashboards"
+  ],
+  "ai_capability_tags": [
+    "personalized_recommendations",
+    "engagement_optimization",
+    "content_curation",
+    "user_behavior_prediction",
+    "nlp_summarization",
+    "automated_tagging"
+  ],
+  "non_ai_enablers": [
+    "true_crime_creators",
+    "platform_monetization",
+    "audience_demand",
+    "public_records_access",
+    "binge_culture",
+    "local_news_sourcing",
+    "secondary_victimization"
+  ]
+}

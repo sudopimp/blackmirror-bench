@@ -1,0 +1,23 @@
+{
+  "enabling_tech": [
+    "persistent_virtual_worlds",
+    "multiplayer_game_engines",
+    "ai_npc_frameworks",
+    "cloud_server_persistence",
+    "digital_legacy_platforms"
+  ],
+  "ai_capability_tags": [
+    "autonomous_agents",
+    "long_term_memory",
+    "multi_agent_coordination",
+    "adaptive_behavior",
+    "generative_npc_dialogue"
+  ],
+  "non_ai_enablers": [
+    "unbounded_open_worlds",
+    "pvp_threat_systems",
+    "scalable_networking",
+    "digital_inheritance_mechanisms",
+    "always_on_server_infra"
+  ]
+}

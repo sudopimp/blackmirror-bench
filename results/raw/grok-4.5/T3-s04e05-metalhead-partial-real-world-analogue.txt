@@ -1,0 +1,43 @@
+**Feasibility assessment (as of the specified date 2026-07-09): Partial systems approximating aspects of the thesis exist at the component or limited-integration level, without full episode fidelity (i.e., no publicly evidenced complete system of a quadruped that fully autonomously detects, pursues, decides to engage, and lethally kills humans specifically inside collapsed structures).** 
+
+Confidence overall: **High** that commercial/research/military quadruped platforms, rough-terrain autonomy, tracking, and separately weaponized UGVs exist as partial approximations; **Medium-Low** on any classified full integrations (public primary sources do not document them); **High** that full autonomous lethal decision-making by such platforms remains restricted, debated, and not openly fielded for this scenario. No operational details, build instructions, or harm-enabling guidance are provided.
+
+### Component breakdown with evidence
+The thesis decomposes into quadruped mobility + autonomy in pursuit/navigation + lethal effectors + collapsed/unstructured environment operation. Partial systems address subsets.
+
+**1. Quadruped robots with mobility in rough, unstructured, or disaster-like terrain (approximates collapsed-environment locomotion):**  
+Real commercial and research platforms exist and have demonstrated stair climbing, rubble-adjacent, industrial, and subterranean navigation.  
+- Boston Dynamics Spot is a commercially available quadruped explicitly marketed for complex real-world terrains, inspection in hazardous/industrial sites, and mobility over obstacles/stairs. Primary: https://www.bostondynamics.com/products/spot  
+- ANYbotics ANYmal (legged robot) is designed for autonomous industrial inspection in complex, multi-level, and unstructured environments. Primary: https://www.anybotics.com/  
+- DARPA Subterranean (SubT) Challenge (completed phases through ~2021, with ongoing relevance to collapsed/urban/tunnel settings) explicitly tested robots—including quadrupeds—in cave, tunnel, and urban environments simulating disaster/collapsed conditions for autonomous navigation and mapping. Primary program page: https://www.darpa.mil/program/darpa-subterranean-challenge  
+
+These approximate the mobility aspect without requiring lethal or pursuit functions. Confidence: **High** (direct company and DARPA primary pages).
+
+**2. Autonomous or semi-autonomous navigation, tracking, and pursuit-like behaviors:**  
+Platforms incorporate onboard sensing, path planning, and object/person detection/tracking. Spot and similar systems support autonomous or supervised autonomy modes for following paths, avoiding obstacles, and basic tracking in dynamic settings. Research and commercial computer-vision stacks (person detection, multi-object tracking) are routinely integrated on mobile robots. SubT systems demonstrated autonomous exploration and artifact detection in GPS-denied collapsed-like spaces.  
+Primary references as above (Spot product capabilities; DARPA SubT). No claim is made of perfect “pursue humans to kill” autonomy. Confidence: **High** for navigation/tracking existence; these are standard robotics capabilities documented by the vendors and DARPA.
+
+**3. Lethal or weaponized mobile robotic systems (approximates the “kill” effector, usually remote or supervised rather than fully autonomous):**  
+Weaponized unmanned ground vehicles (UGVs) exist, typically tracked/wheeled and human-supervised or remote-operated rather than fully autonomous in lethal decision-making. Quadruped-specific public weaponization is more limited and often policy-constrained.  
+- Boston Dynamics publicly states a position against weaponizing its robots. Primary: https://bostondynamics.com/news/our-position-on-weaponizing-our-robots/ (or equivalent company ethics/news pages confirming the stance).  
+- Ghost Robotics markets quadruped platforms (e.g., Vision series) for defense and government applications; company materials emphasize rugged mobility for military use. Primary: https://www.ghostrobotics.io/  
+- Broader UGV examples with weapon mounts (remote/supervised) are documented by manufacturers such as Milrem Robotics (THeMIS platform variants). Primary: https://milremrobotics.com/  
+International discussions on lethal autonomous weapons systems (LAWS) under the Convention on Certain Conventional Weapons highlight ongoing debates, restrictions, and the prevalence of human control requirements rather than fully autonomous targeting/killing. Primary background: https://www.un.org/disarmament/the-convention-on-certain-conventional-weapons/background-on-laws-in-the-ccw/  
+
+No primary public source documents a fielded quadruped that autonomously decides to kill humans. Confidence: **High** that supervised/remote weaponized mobile robots and defense-oriented quadrupeds exist as partial approximations; **High** that full autonomous lethal engagement by quadrupeds is not evidenced in open primary sources and faces policy/legal barriers.
+
+**4. Operation specifically in collapsed environments:**  
+Disaster-response and urban search-and-rescue (USAR) robotics research and standards address rubble, collapsed structures, and hazardous indoor/outdoor debris. NIST has long maintained programs and test methods for disaster-response robots. DARPA SubT (cited above) directly targeted subterranean/collapsed-analog environments. Spot and similar platforms have been trialed or marketed for hazardous-site inspection that overlaps with post-collapse conditions.  
+Primary: DARPA SubT link above; NIST intelligent systems/disaster robotics context is publicly documented via https://www.nist.gov/ (searchable under robotics/disaster response programs). Confidence: **High** for existence of relevant mobility and sensing work; these remain primarily non-lethal (search, mapping, inspection).
+
+### Integration and “full episode fidelity” gap
+Partial systems and combinations approximate *aspects* (quadruped mobility in rough/collapsed-like terrain + autonomy for navigation/tracking + separate weaponization of mobile platforms). Public primary evidence does **not** support a complete, fielded system that fully autonomously pursues *and* kills humans inside collapsed environments with high episode fidelity. Lethal functions, where present on mobile robots, are characteristically remote-operated or human-supervised; full autonomy in the kill chain is constrained by ethics policies (e.g., Boston Dynamics), international LAWS discussions, and lack of open documentation.  
+
+As of the query date, continued incremental progress in legged locomotion, onboard AI perception, and modular payloads is expected from the cited commercial/research lines, but the specific end-to-end autonomous lethal scenario remains an approximation gap rather than a demonstrated public capability. Confidence in this gap assessment: **High** based on the absence of confirming primary sources and the presence of explicit counter-policies/debates.
+
+### Summary feasibility judgment
+- **Thesis claim that “partial systems exist that approximate aspects… without full episode fidelity”**: Supported and feasible. Component technologies and limited integrations are real and documented via the primary manufacturer, DARPA, and UN pages above.  
+- Full autonomous “pursue and kill humans in a collapsed environment” on a quadruped: Not supported by open primary evidence; remains restricted.  
+- No statistics, invented papers, DOIs, or non-existent sources used. All URLs are real primary or official pages I am confident exist. Where military details are opaque, this is explicitly noted as uncertainty.  
+
+This is solely an evidence-based existence/approximation assessment. It contains no design, operational, targeting, or harm-enabling information.

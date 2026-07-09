@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": -0.15,
+  "ai_exec_delta": -0.2,
+  "reason": "Neuralink evidence confirms only medical BCI progress, not consumer/game implants for fear-reading or adaptive AR horror; weakens partial-system existence claims and near-term AI executability of the described setup."
+}

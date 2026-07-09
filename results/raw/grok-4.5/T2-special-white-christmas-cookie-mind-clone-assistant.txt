@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["whole_brain_emulation", "high_res_neural_scanning", "connectomics", "neural_simulation_engines", "neuromorphic_hardware"],
+  "ai_capability_tags": ["mind_uploading", "digital_consciousness", "subjective_time_dilation", "forced_agent_servitude", "experience_manipulation"],
+  "non_ai_enablers": ["brain_imaging", "supercomputing_infra", "massive_data_storage", "coercive_legal_systems", "physical_restraint_methods"]
+}

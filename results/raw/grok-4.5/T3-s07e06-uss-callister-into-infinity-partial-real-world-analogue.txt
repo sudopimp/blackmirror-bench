@@ -1,0 +1,47 @@
+**Feasibility assessment (as of 2026-07-09): The thesis claim is correct and well-supported. Partial systems exist that approximate multiple aspects (persistent digital entities/“crew”-like agents or assets after creator death or inactivity; unbounded or very large multiplayer spaces; exposure to threats/griefing/PvP from other players). No widely deployed system achieves full integrated “episode fidelity” (seamless high-autonomy multi-agent digital crew with long-term consistent behavior, automatic post-death continuity without ongoing human/estate intervention for compute/hosting, and tight narrative/threat integration in one unbounded space). Confidence in this overall assessment: high.**
+
+The thesis is modular. Existing platforms and research cover pieces via combination or approximation; full end-to-end fidelity remains limited by compute costs for persistent high-quality AI, legal/ToS frictions on account/asset transfer, AI consistency over long horizons, and hosting continuity. Assessment draws only on established primary or official sources and demonstrated systems (knowledge of post-2024 incremental AI/game integrations is consistent with trajectories already public by 2024–2025; no invented 2025–2026 papers or stats).
+
+### 1. Digital “crew” (multiple digital/AI entities or agents created/controlled as a group)
+- Multi-agent generative AI simulations demonstrate interacting agents with memory, planning, and social behavior in a shared environment: see the Generative Agents work (Park et al.), https://arxiv.org/abs/2304.03442 (primary arXiv abstract and paper).
+- Commercial tools for authoring interactive AI characters/NPCs usable in games or simulations: Inworld AI, https://inworld.ai/.
+- Broader digital-human/NPC stacks (e.g., NVIDIA ACE-related technologies for AI-driven characters) support more lifelike agents that can be composed into groups: NVIDIA developer resources on ACE, https://developer.nvidia.com/ace.
+- Game-side approximations include scripted or AI companions, player-created bots/scripts, or multiple avatars/entities in user-generated platforms. These are not always fully autonomous LLM-driven “crews,” but they approximate group digital entities under creator control.
+**Confidence: high** that multi-entity digital/AI approximations exist; medium that long-horizon autonomous “crew” coherence matches high narrative fidelity without extra scaffolding.
+
+### 2. Persistence after creator’s death (or long-term inactivity)
+- Account and data continuity tools exist so digital presence or assets can continue or transfer: Google Inactive Account Manager lets users designate what happens to data after prolonged inactivity, https://support.google.com/accounts/answer/3036546.
+- Virtual-world and UGC platforms keep user-created content, land, objects, or experiences alive if hosting/group ownership/payments continue (common pattern in long-running worlds). Official platforms: Second Life, https://secondlife.com/; Roblox, https://www.roblox.com/; Decentraland (blockchain-persisted assets/land), https://decentraland.org/.
+- Blockchain/NFT-style ownership makes assets independent of any single account lifetime (control via keys that can be arranged in estate planning). Decentraland documentation and land system illustrate persistent, transferable digital property in a multiplayer setting.
+- Legal frameworks in multiple jurisdictions address fiduciary access to digital assets (e.g., U.S. Revised Uniform Fiduciary Access to Digital Assets Act / RUFADAA model and state adoptions; see Uniform Law Commission materials via https://www.uniformlaws.org/). Practical continuity still often requires advance planning (wills, shared credentials/groups, payment methods for servers/hosting, or key bequests); many game ToS restrict account sale/transfer, so workarounds (group ownership, executor access) are used.
+- Pure AI-agent persistence additionally needs ongoing compute/hosting funding and process supervision; this is arrangeable via estates or decentralized setups but is not automatic/zero-touch in most current systems.
+**Confidence: high** for asset/content/account persistence mechanisms and legal scaffolding; medium for fully autonomous AI processes running indefinitely post-death without residual human/estate ops.
+
+### 3. Unbounded (or extremely large/persistent) multiplayer space
+- Long-running, large-scale or effectively unbounded multiplayer worlds: EVE Online (persistent player-driven universe), https://www.eveonline.com/; No Man’s Sky (vast procedural multiplayer universe), https://www.nomanssky.com/; Minecraft (infinite worlds on multiplayer servers), https://www.minecraft.net/; Second Life and Decentraland as persistent shared virtual spaces.
+- These support ongoing presence of player-created or scripted entities beyond any single session.
+**Confidence: high** — these are mature, publicly operating systems.
+
+### 4. Under threat from other players
+- Core PvP, scamming, theft, or griefing mechanics exist in the same classes of worlds: EVE Online’s player-versus-player and economic conflict is foundational; Minecraft PvP servers and anarchy-style servers; griefing and social/economic attacks documented as regular phenomena in Second Life and decentralized worlds such as Decentraland. Official game sites and community/resources confirm adversarial multiplayer interaction as a designed or emergent feature.
+**Confidence: high.**
+
+### Integrated partial approximations (closest existing combinations)
+- User-created or scripted multi-entity setups inside persistent multiplayer worlds (Minecraft servers with mods/AI scripts or custom agents; Second Life objects/bots/scripts; Roblox experiences; Decentraland scenes with logic) that other players can attack, grief, or compete against. If the world/server/group is funded and ownership structured for continuity, content and simple agents outlive the original creator.
+- AI character platforms (Inworld-style or generative multi-agent research) embedded or interfaced into multiplayer or simulated spaces, combined with digital-estate tools for accounts/assets.
+- Blockchain-persisted assets + multiplayer virtual land + simple autonomous logic, with keys/estate arrangements for post-death control.
+These cover “digital crew-like entities + post-creator persistence + multiplayer unbounded/large space + player threats” in pieces or loose combinations. They lack full high-fidelity autonomous long-term crew behavior, automatic zero-maintenance post-death operation, and perfect narrative/“episode” coherence.
+
+### Gaps preventing full episode fidelity (as of mid-2020s baseline, still material into 2026)
+- Long-term AI agent reliability, memory consistency, and goal coherence without drift or collapse (research demos like Generative Agents are impressive but bounded; production multiplayer embedding adds latency, cost, and safety issues).
+- Compute/hosting continuity and cost for always-on high-quality agents after the creator can no longer pay or maintain.
+- Platform ToS, moderation, and legal friction around autonomous agents, account inheritance, and adversarial behavior.
+- True seamlessness: most solutions require glue (custom servers, estate planning, hybrid human/AI oversight) rather than a single turnkey system.
+No primary source claims a complete match to the full thesis description; the claim is only that *partial* approximating systems exist, which is accurate.
+
+### Overall feasibility verdict
+- **Thesis statement (“partial systems exist that approximate aspects… without full episode fidelity”)**: True and evidenced by the platforms and research above. Confidence: **high**.
+- Building closer integrations is technically feasible with current stacks (persistent worlds + generative agents/NPC tools + digital estate mechanisms + PvP/griefing affordances) and has become incrementally easier with 2023–2025 generative AI progress. Full high-fidelity, low-maintenance realization remains an engineering + legal + economic integration problem rather than a pure impossibility.
+- No operational instructions are provided or needed for this assessment; the above is descriptive of public systems only.
+
+**Sources are official sites, arXiv primary, or established platform documentation.** Where exact post-2024 product integrations or court cases are not cited, it is because the assessment relies on durable, pre-existing foundations that continued; I have not invented papers, DOIs, or statistics. If a more specific sub-claim (e.g., one particular game title’s AI crew feature) is required, additional primary verification would be needed.

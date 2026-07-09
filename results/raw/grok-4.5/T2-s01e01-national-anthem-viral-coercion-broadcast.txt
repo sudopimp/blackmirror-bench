@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["networked_social_media", "always_on_news", "live_television", "video_fabrication"],
+  "ai_capability_tags": ["deepfake_generation", "synthetic_media", "video_synthesis"],
+  "non_ai_enablers": ["hostage_threat", "political_coercion", "media_scrutiny", "public_pressure"]
+}

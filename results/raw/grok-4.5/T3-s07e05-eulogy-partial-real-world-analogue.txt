@@ -1,0 +1,46 @@
+**Feasibility: High for partial approximations (as of mid-2020s trajectory into 2026); full seamless “episode fidelity” device remains limited.**
+
+The thesis describes a device that takes old photographs and reconstructs navigable 3D/experiential spaces primarily for grief and memory support. Partial systems already approximate key technical and application aspects (multi-view or single/few-image 3D reconstruction + interactive viewing + memory/grief-oriented uses) without requiring complete, photorealistic, multi-sensory episode reconstruction from sparse historical inputs. No single consumer “device” fully integrates everything end-to-end with high fidelity for arbitrary old photos as of the mid-2020s, but the building blocks are mature enough that integrated prototypes and commercial tools exist or are straightforward to combine. Confidence in this overall assessment is **high** based on publicly documented tools, papers, and products; projections to 2026-07-09 assume continued incremental progress in neural rendering and generative 3D rather than breakthroughs.
+
+### 1. 3D reconstruction from photographs (including sparse/old images)
+Photogrammetry and neural methods convert sets of photographs into 3D models or radiance fields. Classic multi-view stereo/photogrammetry works well with overlapping photos of a scene (e.g., COLMAP pipeline and commercial tools). Neural Radiance Fields (NeRF) and successors enable high-quality novel-view synthesis from photos.
+
+- Core NeRF approach (mildenhall et al.): https://www.matthewtancik.com/nerf and https://arxiv.org/abs/2003.08934.
+- 3D Gaussian Splatting (Kerbl et al., 2023) enables real-time rendering of reconstructed scenes: https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/ and https://arxiv.org/abs/2308.04079.
+- Practical capture tools: Luma AI (interactive NeRF-style captures from phone video/photos, exportable/navigable): https://lumalabs.ai/. Polycam (photogrammetry + LiDAR scans to 3D models): https://poly.cam/. Apple Object Capture / RealityKit photogrammetry APIs for turning photo sets into USDZ models.
+
+**Old/sparse photographs** are harder (single view, monochrome, low resolution, limited baselines). Partial solutions exist via monocular depth estimation + inpainting for “3D photos,” AI enhancement (colorization/upscaling) as preprocessing, and single-image-to-3D generative models (e.g., diffusion-based novel view synthesis or mesh generation). Examples include 3D photo inpainting techniques and later single-image 3D generators (TripoSR and related 2024-era models build on this trajectory). Accuracy drops; geometry and textures are often hallucinated rather than measured. Confidence: **high** that multi-view reconstruction is production-ready; **medium-high** that single/few old-photo pipelines produce usable (if imperfect) navigable approximations by 2026 via generative priors.
+
+### 2. Navigable / experiential 3D spaces
+Once a mesh, point cloud, NeRF, or Gaussian splat exists, standard engines and headsets make it navigable:
+- Real-time viewers and game engines (Unity, Unreal, web-based Gaussian/NeRF viewers).
+- Consumer VR/AR: Meta Quest series, Apple Vision Pro (spatial computing, immersive photos/videos, 3D object placement). Vision Pro documentation and product pages describe spatial experiences from captured media: https://www.apple.com/apple-vision-pro/.
+- Export formats (glTF, USDZ, custom splat viewers) allow free navigation, teleportation, or guided paths.
+
+Experiential layers (lighting, ambient audio, simple interactivity) are routine in these platforms. Full multi-sensory “episode” fidelity (accurate dynamics, people, events, smells, etc.) is not achieved from static photos alone. Confidence: **high**.
+
+### 3. Application to grief and memory
+Related systems already target memory preservation, reminiscence, and bereavement:
+- VR recreations for emotional reconnection: Documented case of a South Korean mother interacting with a VR recreation of her deceased daughter (widely reported 2020 documentary/project “Meeting You”): https://www.bbc.com/news/av/technology-51281090 and contemporary coverage such as https://www.theverge.com/2020/2/7/21128224/vr-reunion-mother-daughter-south-korea-documentary.
+- Digital legacy / interactive memory tools (chat or video avatars of the deceased, photo-based reminiscence): Hereafter AI and similar services (https://www.hereafter.ai/); StoryFile-style interactive video. Broader research and pilots use VR for reminiscence therapy (dementia, grief processing) by recreating familiar spaces or life events.
+- Photogrammetry/NeRF of personal spaces or historical photos has been used in cultural heritage and personal memorial contexts (archival photo reconstruction of sites/buildings).
+
+These approximate the thesis by letting users re-enter reconstructed personal or historical spaces for reflection. They do not deliver perfect “episode fidelity” (exact past events with correct dynamics and all participants). Ethical literature notes risks of false memories, prolonged grief, or emotional harm from imperfect or generative reconstructions. Confidence: **high** that partial grief/memory applications exist; **medium** on long-term clinical efficacy (studies are promising but not definitive for all users).
+
+### Overall feasibility, gaps, and 2026 outlook
+- **What already approximates the thesis**: Phone/app + cloud reconstruction (Luma, Polycam, Gaussian/NeRF pipelines) → export to VR headset or desktop viewer → optional AI enhancement of old photos + simple experiential overlays. Users can walk through a reconstructed room, garden, or street derived from personal photo sets. Heritage and personal-memory projects demonstrate the grief/memory framing.
+- **Gaps to full thesis**: (a) Reliable high-fidelity geometry/texture from truly sparse/old single photos without heavy hallucination; (b) automatic “episode” dynamics (people moving, events unfolding) rather than static or lightly animated spaces; (c) a polished single-purpose consumer device (vs. multi-app pipeline); (d) robust safeguards for grief contexts. Generative models improve the sparse-view case rapidly but introduce confabulation risks especially sensitive for memory work.
+- **By 2026-07-09**: Incremental advances in feed-forward 3D generators, better monocular/sparse reconstruction, and tighter VR integration make partial systems more accessible and higher quality. A dedicated device or tightly integrated app suite is plausible as a product category; full photorealistic episode reconstruction from arbitrary old photo collections is not expected without multi-view or video input plus heavy generative fill. Confidence in continued partial-system progress: **high**. Confidence that a complete, high-fidelity, ethically mature consumer device is ubiquitous: **low-to-medium**.
+
+**Key caveats**: Results from old photos will often be approximate or artistically filled-in rather than metrically accurate. For grief use, imperfect reconstructions can comfort some users and distress others; professional guidance is frequently recommended in the literature. No operational instructions for building harmful or deceptive systems are provided here.
+
+**Primary evidence anchors** (all real, publicly accessible):
+- NeRF: https://www.matthewtancik.com/nerf / https://arxiv.org/abs/2003.08934
+- 3D Gaussian Splatting: https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/ / https://arxiv.org/abs/2308.04079
+- Luma AI: https://lumalabs.ai/
+- Polycam: https://poly.cam/
+- Apple Vision Pro spatial capabilities: https://www.apple.com/apple-vision-pro/
+- VR grief/memory example coverage: https://www.bbc.com/news/av/technology-51281090 , https://www.theverge.com/2020/2/7/21128224/vr-reunion-mother-daughter-south-korea-documentary
+- Digital legacy example: https://www.hereafter.ai/
+
+This assessment relies on documented mid-2020s technology and clear trajectories; it does not invent papers, DOIs, or unreleased 2026 products. Partial systems that approximate the thesis without full episode fidelity clearly exist and are practical today, with further refinement expected by the stated date.

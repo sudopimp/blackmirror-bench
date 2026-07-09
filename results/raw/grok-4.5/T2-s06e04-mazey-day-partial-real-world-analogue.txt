@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["military_grade_optics", "high_powered_cameras", "telephoto_lenses"],
+  "ai_capability_tags": [],
+  "non_ai_enablers": ["pursuit_culture", "celebrity_hunting"]
+}

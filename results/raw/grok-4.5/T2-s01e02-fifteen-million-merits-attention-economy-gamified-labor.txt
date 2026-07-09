@@ -1,0 +1,29 @@
+{
+  "enabling_tech": [
+    "digital_platforms",
+    "virtual_currencies",
+    "gig_apps",
+    "mobile_devices",
+    "payment_systems",
+    "content_delivery_networks",
+    "streaming_services"
+  ],
+  "ai_capability_tags": [
+    "recommendation_systems",
+    "engagement_optimization",
+    "content_ranking",
+    "personalization_engines",
+    "sentiment_analysis",
+    "automated_monetization",
+    "predictive_analytics"
+  ],
+  "non_ai_enablers": [
+    "platform_capitalism",
+    "attention_economy",
+    "gig_economy",
+    "gamification",
+    "creator_economy",
+    "consumerism",
+    "precarious_labor"
+  ]
+}

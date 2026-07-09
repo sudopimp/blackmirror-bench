@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["neural_memory_extractor", "brain_computer_interface", "high_fidelity_recorder"],
+  "ai_capability_tags": ["memory_decoding", "neural_reconstruction", "perfect_record_generation"],
+  "non_ai_enablers": ["investigative_protocols", "witness_access", "coverup_dynamics", "violence_escalation"]
+}

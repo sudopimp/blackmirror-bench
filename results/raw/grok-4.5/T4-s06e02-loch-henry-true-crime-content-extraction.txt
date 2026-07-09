@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": 0.2,
+  "ai_exec_delta": 0.1,
+  "reason": "Loch Henry (Black Mirror) is a direct fictional dramatization of creators exploiting real local trauma/murders into bingeable true-crime docs causing secondary victimization, culturally validating and slightly boosting thesis plausibility plus AI narrative generation/analysis potential."
+}

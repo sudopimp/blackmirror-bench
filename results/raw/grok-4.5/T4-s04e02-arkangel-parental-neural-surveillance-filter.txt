@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": -3,
+  "ai_exec_delta": -1,
+  "reason": "Neuralink evidence confirms medical BCI focus (e.g., paralysis restoration), not pediatric parental-control implants or content filters; reduces thesis feasibility and AI-driven product execution path."
+}

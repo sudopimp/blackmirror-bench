@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": -0.3,
+  "ai_exec_delta": -0.15,
+  "reason": "Neuralink BCI evidence shows clinical focus on restoring digital/motor control interfaces, explicitly not continuous AV sensory recording or memory grain/replay, which undercuts near-term feasibility of the continuous implant-memory thesis and reduces AI-executability of such systems."
+}

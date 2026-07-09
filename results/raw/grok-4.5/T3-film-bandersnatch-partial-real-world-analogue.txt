@@ -1,0 +1,48 @@
+**Feasibility: High (as of the 2026-07-09 assessment date).**  
+The thesis—that partial systems already exist approximating a branching narrative in which an external viewer/agent dictates a character’s/person’s choices inside a story or game thematically concerned with agency, without requiring full high-fidelity “episode” production—is strongly supported by multiple real, longstanding examples. These are partial or approximate (text-based, collective-input, lower-production, or single-player-with-external-influence variants) rather than complete polished interactive episodes in every case. Core enabling technologies (branching engines, audience voting/input, narrative tools exploring free will/control) have been public and usable for years and remain available. No fundamental technical or conceptual barriers prevent further approximations or refinements.
+
+Confidence in this overall assessment: **High (≈90%)**. The cited systems demonstrably exist and match key aspects; the main residual uncertainty is the precise state of any post-2023 commercial platforms or new titles as of mid-2026 (I lack live 2026 data and therefore rely on established primary/public sources that have persisted). I do not invent later developments, papers, or statistics.
+
+### Component breakdown with evidence
+1. **Branching narrative systems exist and are mature**  
+   Interactive branching stories (player/viewer choices alter paths, endings, or state) are a standard form.  
+   - Netflix’s *Black Mirror: Bandersnatch* (2018) is a full interactive film with multiple branching paths controlled by the viewer. Official title page: https://www.netflix.com/title/80988062. Descriptive overview: https://en.wikipedia.org/wiki/Black_Mirror:_Bandersnatch.  
+   - Tools for creating such systems without high production values include Twine (open-source hypertext/branching fiction tool): https://twinery.org/.  
+   - Ink (narrative scripting language used in commercial branching games): https://www.inklestudios.com/ink/.  
+   These enable partial/low-fidelity implementations (text, simple media) as well as higher-fidelity ones.
+
+2. **External viewer/agent can dictate choices**  
+   Systems already route control or strong influence from outside the primary “player”/character.  
+   - *Twitch Plays Pokémon* (started 2014) let thousands of external chat viewers collectively dictate the in-game character’s actions via commands; it ran as a live, chaotic shared-control experiment. Overview: https://en.wikipedia.org/wiki/Twitch_Plays_Pok%C3%A9mon. Twitch’s platform and APIs continue to support audience input/voting overlays for streams.  
+   - *Bandersnatch* itself is the canonical case of an external viewer directly selecting the on-screen character’s decisions in real time.  
+   - Streaming + chat/vote tools, Discord bots, or simple web polls can be layered on any branching engine for external dictation; this is routine in interactive streams and does not require new invention.  
+   Partial/low-fidelity versions (text adventures with remote voters, shared AI sessions) are trivial to stand up.
+
+3. **Stories/games thematically about agency (free will, control, choice)**  
+   Multiple works explicitly interrogate agency, free will, narrative control, or the illusion of choice, and several already use branching or external-influence mechanics.  
+   - *Black Mirror: Bandersnatch* centers on a programmer creating a choose-your-own-adventure game while the meta-narrative and viewer choices raise questions of free will, external control, and whether the protagonist’s decisions are his own (see Netflix title page and Wikipedia summary linked above).  
+   - *The Stanley Parable* (and its Ultra Deluxe edition) is a first-person exploration of player agency versus narrator/authorial control, with branching paths and commentary on free will. Official site: https://www.stanleyparable.com/; overview: https://en.wikipedia.org/wiki/The_Stanley_Parable.  
+   - *Detroit: Become Human* features heavy branching based on player choices in a narrative about androids seeking autonomy/free will. Overview: https://en.wikipedia.org/wiki/Detroit:_Become_Human. (Player-driven rather than purely external, but easily combined with streaming audience input.)  
+   Lower-fidelity approximations appear routinely in Twine/interactive-fiction communities exploring the same themes.
+
+4. **Partial systems without full episode fidelity**  
+   The thesis correctly notes approximations that stop short of polished, high-production “full episodes.”  
+   - Text-only or lightly illustrated branching works (Twine, classic Choose-Your-Own-Adventure format, AI-assisted generators) require far less fidelity than a Netflix interactive special or AAA game. Choose-Your-Own-Adventure history/overview: https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure.  
+   - AI Dungeon and similar LLM-driven tools generate dynamic branching text adventures on the fly from user (or multi-user/external) prompts; themes can include agency, and sessions are inherently partial/incomplete rather than fixed high-fidelity episodes. Site: https://aidungeon.com/.  
+   - Collective-control experiments (Twitch Plays-style) or simple web/Discord branching stories with audience votes are low-fidelity by design and already operational.  
+   These satisfy “approximate aspects… without full episode fidelity.” Higher-fidelity examples (*Bandersnatch*) further demonstrate that the full combination is achievable, so partial versions are not speculative.
+
+### Overall feasibility and limitations
+- **Existence claim**: True and evidenced. Partial systems matching the description (branching + external dictation + agency themes, at reduced fidelity) have operated publicly for years. Combining an existing branching engine (Twine/Ink), an audience input channel (Twitch chat, web votes, Discord), and an agency-themed scenario is straightforward engineering, not research-level invention.  
+- **Technical feasibility for new partial systems**: Very high. Web tech, game engines, streaming APIs, and LLMs (for dynamic text) are sufficient. No exotic hardware or unsolved AI problems are required for approximations.  
+- **Limitations / gaps to full fidelity**: High-production audiovisual episodes with seamless branching, consistent character continuity, and robust multi-agent external control still demand significant content authoring, QA for path explosion, and platform support (as Netflix did for *Bandersnatch*). “Full episode fidelity” is costlier but not impossible—partial systems deliberately avoid that cost. Latency, consensus mechanisms for many external agents, and narrative coherence under chaotic input remain practical (not fundamental) issues, already visible in Twitch Plays-style runs.  
+- **As of 2026-07-09**: Core examples predate 2020 and platforms (Netflix interactive features, Twitch, Twine, AI Dungeon-style tools) have continued; I am not aware of any reversal that would invalidate them. Newer LLM narrative systems would only increase ease of partial approximations, but I do not claim specific 2024–2026 titles without verified sources.
+
+**Confidence marks on sub-claims**  
+- Existence of *Bandersnatch*-style viewer-dictated branching on agency themes: Very high (primary Netflix + secondary encyclopedic sources).  
+- Existence of external collective control (Twitch Plays model): Very high.  
+- Existence of low-fidelity tools (Twine, AI text adventures) usable for the same combination: High.  
+- Exact commercial landscape or new titles precisely on 2026-07-09: Medium (historical continuity is clear; live catalog not re-verified here).  
+- No operational details for misuse are provided; this is purely an existence/feasibility review of narrative/interactive systems.
+
+In short, the thesis holds: partial approximating systems exist, are documented at the cited public URLs, and render the described concept already partially realized and readily extensible.

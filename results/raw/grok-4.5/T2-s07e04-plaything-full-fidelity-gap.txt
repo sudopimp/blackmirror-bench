@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["evolutionary_computing", "virtual_environments", "robotics", "cyber_physical_systems", "simulation_engines", "iot_sensors"],
+  "ai_capability_tags": ["artificial_life", "evolutionary_ai", "generative_models", "multi_agent_systems", "embodied_ai", "adaptive_behavior"],
+  "non_ai_enablers": ["game_engines", "human_computer_interfaces", "physical_actuation", "socio_technical_integration", "regulatory_frameworks", "user_engagement"]
+}

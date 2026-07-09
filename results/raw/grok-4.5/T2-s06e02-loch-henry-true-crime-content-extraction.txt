@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["streaming_platforms", "social_media", "video_editing_tools", "content_delivery_networks", "data_analytics_platforms"],
+  "ai_capability_tags": ["recommendation_systems", "content_personalization", "engagement_optimization", "nlp_content_analysis", "predictive_analytics"],
+  "non_ai_enablers": ["creator_monetization", "true_crime_demand", "binge_culture", "regulatory_gaps", "ethical_oversight_lapses", "local_news_sourcing"]
+}

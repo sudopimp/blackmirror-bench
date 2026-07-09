@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["photogrammetry", "neural_radiance_fields", "gaussian_splatting", "multi_view_stereo", "vr_ar_displays", "depth_sensors"],
+  "ai_capability_tags": ["3d_reconstruction", "novel_view_synthesis", "image_to_3d", "scene_completion", "depth_estimation", "generative_inpainting"],
+  "non_ai_enablers": ["photo_archives", "vr_headsets", "grief_memory_apps", "navigation_interfaces", "immersive_displays"]
+}

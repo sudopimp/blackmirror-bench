@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["neural_implant", "bci", "wireless_comms", "sensor_arrays", "neural_actuators"],
+  "ai_capability_tags": ["content_filtering", "distress_detection", "stimulus_classification", "real_time_processing", "emotion_recognition"],
+  "non_ai_enablers": ["parental_remote_control", "live_feed_transmission", "biocompatible_materials", "power_management", "authentication_system"]
+}

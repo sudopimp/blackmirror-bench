@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": 0.15,
+  "ai_exec_delta": 0.2,
+  "reason": "Mainstream deepfake concerns for politicians raise plausibility of AI virtual characters gaining political traction (and later authoritarian use), while confirming stronger AI generation/execution capabilities for realistic political media."
+}

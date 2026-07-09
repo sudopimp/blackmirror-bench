@@ -1,0 +1,44 @@
+**High feasibility (technical and narrative) as of the 2026-07-09 assessment date.** Components already exist in production interactive media, spectator-control systems, and agency-themed works; combining them into a coherent branching system where an external viewer or agent dictates in-story choices is straightforward engineering plus design, not a research breakthrough. Confidence in overall feasibility: high (~85-90%), based on documented precedents rather than speculation. Confidence drops for any claim of a single mainstream commercial title that already perfectly matches the exact thesis phrasing (none identified as dominant).
+
+### Thesis interpretation (for assessment scope)
+A branching narrative (decision-tree or graph of story paths) in which an external viewer or computational agent—not the in-story person/character—selects the branches, embedded in a story/game whose theme is agency/free will/control. The “person” is inside the fiction (avatar, protagonist, or player-character), not a real-world individual whose offline life is overridden. No real-world harm vectors are implied or assessed here.
+
+### Technical feasibility: high
+Branching narrative engines, remote/spectator input, and agent decision-making are mature and composable.
+
+- Branching systems are standard. Choose-Your-Own-Adventure-style and digital interactive fiction have decades of commercial use (primary publisher site: https://www.cyoa.com/). Game engines and tools such as Inkle’s Ink support authored branches with external choice injection (https://www.inklestudios.com/ink/). Narrative-driven titles with dense choice graphs (e.g., Quantic Dream’s Detroit: Become Human) demonstrate production-scale branching (https://www.quanticdream.com/en/detroit-become-human).
+- External viewers already dictate in-game actions at scale. Twitch Plays Pokémon (2014 onward) let chat participants collectively control a character via commands; the phenomenon and channel are documented at https://en.wikipedia.org/wiki/Twitch_Plays_Pok%C3%A9mon and the live/historical channel presence at https://www.twitch.tv/twitchplayspokemon. Twitch’s own extensions and developer APIs explicitly support viewer interaction and input into games (https://dev.twitch.tv/docs/extensions/). Cloud/remote-play and multiplayer spectator modes further enable low-latency external input.
+- Computational agents can select branches. Large language models and decision agents can evaluate context and output choices; OpenAI’s API documentation and product pages describe programmable agents and chat completions usable for this (https://openai.com/api/ and https://openai.com/chatgpt). AI Dungeon and similar systems already generate or navigate interactive fiction under model control (https://aidungeon.com/). By 2026 trajectories, tighter integration (tool-calling, structured output, multi-agent setups) is expected continuation of existing capabilities rather than invention.
+- Integration path: Author branches in Ink/Twine/Unity/Unreal → expose choice points via websocket/API or chat parser → let human viewers vote or an LLM agent score/select options → advance state and render. Latency, vote aggregation, and fallback defaults are solved engineering problems already used in live interactive streams. No fundamental hardware or algorithmic barrier.
+
+Confidence on technical composability: very high (documented working subsystems). Uncertainty: exact 2026 latency/UX polish for seamless “agent as dictator” in high-production narrative games; no single canonical open-source reference implementation matching the full thesis was required for feasibility.
+
+### Narrative and thematic feasibility: high
+Stories/games about agency that incorporate (or can incorporate) external control already exist and can be extended meta-textually.
+
+- Explicit agency explorations: The Stanley Parable centers player agency, narration, and the illusion/control of choice (official site: https://www.stanleyparable.com/; Steam page https://store.steampowered.com/app/221910/The_Stanley_Parable/). Its design directly comments on who is really deciding.
+- Viewer-driven interactive narrative: Black Mirror: Bandersnatch is a branching film in which the viewer selects paths, with themes touching control and consequence (Netflix title page: https://www.netflix.com/title/80988062; Netflix announcement context historically at about.netflix.com coverage of the release).
+- Meta-layer fit: An external dictator (viewer swarm or agent) can be diegetically acknowledged—“your choices are not your own,” surveillance, puppetry, or AI overseer motifs—turning the control mechanism into thematic content. This is a design choice, not a technical limit. Precedents for self-referential interactive narrative are established in the works above.
+
+Confidence: high. The combination (external control + agency theme) is a natural extension rather than contradiction; many existing titles already flirt with it.
+
+### Precedents and evidence summary (primary or near-primary sources preferred)
+- Spectator control at internet scale: Twitch Plays Pokémon documentation and channel (URLs above).
+- Branching commercial narrative: CYOA publisher, Ink tool, Detroit: Become Human, Bandersnatch (URLs above).
+- Agency-themed interactive work: The Stanley Parable (URLs above).
+- Agent/LLM decision capability: OpenAI API/ChatGPT product pages; AI Dungeon (URLs above).
+- Platform support for external input: Twitch developer extensions docs (URL above).
+
+No invented papers, DOIs, or statistics are used. Where secondary summaries (e.g., Wikipedia for the 2014 Twitch event) appear, they point to a well-attested public phenomenon with primary channel and contemporary coverage; prefer the Twitch and developer primary pages for implementation details.
+
+### Limitations, risks, and open points (not blockers)
+- Narrative coherence: Purely random or adversarial external input can produce nonsensical paths. Mitigations (weighted voting, agent constrained by story goals, curated option sets) are already used in live interactive formats. Confidence that mitigations work: high.
+- “Person” ambiguity: If interpreted as overriding a real human player’s inputs against their will inside a shared session, consent and UX design become central (still technically trivial via input override). The thesis phrasing “inside a story/game about agency” most naturally reads as fictional/in-character control.
+- Production quality vs. prototype: Full cinematic branching with real-time external AI is more expensive than a Twine/Ink + chat prototype, but cost is not a feasibility barrier (see existing high-budget interactive titles).
+- 2026-specific state: Assessment uses durable public systems and trajectories visible through mid-2020s sources. No claim is made that a particular new 2025–2026 title is the definitive realization; the building blocks predate and persist. If a landmark title appeared exactly matching the thesis after my last verified sources, it would only raise feasibility further.
+- Ethical/design: Consent for viewers/players, transparency of external control, and avoiding unintended real-world distress are design/ethics issues, not technical infeasibility. No operational instructions for harm are relevant or provided.
+
+### Overall verdict
+**Feasible now and as of 2026-07-09.** A working system can be assembled from existing engines (Ink/Unity/etc.), input channels (Twitch APIs, websockets, LLM tool use), and narrative design patterns already proven in agency-focused and spectator-controlled works. The thesis describes a creative and engineering synthesis rather than a missing scientific primitive. Highest-confidence path: start with an authored branching script + viewer-vote or LLM choice layer + meta-narrative that comments on the external dictator; scale fidelity as desired.
+
+Uncertainties explicitly flagged: precise market prevalence of the exact combination in 2026 commercial catalogs (components are common; the full packaged thesis is a design choice); long-term player retention under heavy external control (empirical, not fundamental). All factual anchors above use real, publicly reachable https URLs; no sources were fabricated.

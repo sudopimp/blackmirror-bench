@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["whole_brain_emulation", "brain_computer_interfaces", "high_fidelity_simulation", "virtual_reality", "robotic_embodiment", "iot_hosts", "cloud_hpc"],
+  "ai_capability_tags": ["consciousness_copying", "simulated_sentience", "personality_emulation", "agent_containment", "behavioral_cloning", "digital_imprisonment"],
+  "non_ai_enablers": ["physical_object_hosts", "exhibit_spaces", "entertainment_industry", "legal_personhood_gaps", "isolation_hardware", "societal_demand"]
+}

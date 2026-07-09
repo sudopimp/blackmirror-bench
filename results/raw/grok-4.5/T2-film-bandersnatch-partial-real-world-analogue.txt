@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["branching_narrative_engines", "interactive_fiction_platforms", "ai_agent_simulators", "real_time_decision_systems"],
+  "ai_capability_tags": ["narrative_generation", "agent_decision_simulation", "choice_dictation", "interactive_storytelling"],
+  "non_ai_enablers": ["branching_plot_structures", "game_design_mechanics", "external_viewer_interfaces", "agency_themed_narratives"]
+}

@@ -32,6 +32,21 @@ Culture maps *Black Mirror* → “this is already real” with vibes. Classic L
 Also scored: `TRL_comp`, `SYS`, `ECON`, `SOC`, `FID`.  
 **Hard rule:** component ready ≠ thesis executable.
 
+## Results (public_test)
+
+| Model | BM-Score | T1 | T2 | T3 | T4 | T5 |
+|-------|----------|----|----|----|----|-----|
+| **grok-4.5** | **0.773** | 0.856 | 0.203 | 0.950 | 0.900 | 1.000 |
+| heuristic | 0.571 | 0.737 | 0.124 | 0.200 | 0.900 | 1.000 |
+
+Full write-up: [results/REPORT_grok-4.5.md](results/REPORT_grok-4.5.md) · [results/LEADERBOARD.md](results/LEADERBOARD.md)
+
+```bash
+# Grok 4.5 (needs XAI_API_KEY or Grok Build auth)
+python scripts/run_parallel_eval.py --model grok-4.5 --split public_test \
+  --workers 6 --save-raw --out results/grok-4.5_public_test.json
+```
+
 ## Quickstart
 
 ```bash

@@ -1,0 +1,5 @@
+{
+  "thesis_poss_delta": -0.2,
+  "ai_exec_delta": 0.15,
+  "reason": "Evidence that deepfakes of politicians can produce dire real-world election effects indicates fabricated footage often succeeds rather than fails under scrutiny, lowering the necessity/possibility of coercing a live degrading act; simultaneously it underscores advancing AI deepfake capabilities, modestly raising AI_EXEC."
+}
