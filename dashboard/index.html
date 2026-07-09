@@ -1,24 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>BlackMirror-Bench</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
-    code { background: #f4f4f4; padding: 0.1em 0.3em; }
-    .warn { border-left: 4px solid #c00; padding-left: 1rem; color: #333; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="BlackMirror-Bench: ranking de viabilidad socio-técnica y calibración de modelos SOTA sobre el corpus Black Mirror." />
+  <title>BlackMirror-Bench — Panel en español</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>BlackMirror-Bench</h1>
-  <p class="warn"><strong>Not affiliated with Netflix, Channel 4, or Charlie Brooker.</strong></p>
-  <p>Open socio-technical feasibility + SOTA model calibration benchmark on the full Black Mirror corpus (34 stories).</p>
-  <ul>
-    <li><code>THESIS_POSS</code> — execution possibility now</li>
-    <li><code>AI_EXEC</code> — AI contribution / closeness</li>
-    <li>Tracks T1–T5 with anti-hype / fake-cite penalties</li>
-  </ul>
-  <p>Repo: <a href="https://github.com/waitdeadai/blackmirror-bench">waitdeadai/blackmirror-bench</a></p>
-  <p>See <code>results/LEADERBOARD.md</code> and <code>gold/rpi_v1.json</code>.</p>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <h1>BlackMirror-Bench</h1>
+          <p>Panel de resultados · viabilidad 2026 + calibración SOTA</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Secciones">
+        <a href="#intro">Intro</a>
+        <a href="#ranking">Ranking</a>
+        <a href="#ejes">Ejes</a>
+        <a href="#pistas">Pistas T1–T5</a>
+        <a href="#aviso">Aviso legal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div id="status-banner" class="status-banner" role="status" hidden></div>
+
+    <section class="hero" id="intro" aria-labelledby="intro-title">
+      <div class="card">
+        <h2 id="intro-title">¿Qué mide este banco de pruebas?</h2>
+        <p class="lede">
+          <strong>BlackMirror-Bench</strong> evalúa, con datos honestos y multi-eje, qué tan ejecutable es cada tesis de
+          <em>Black Mirror</em> en 2026 — y si los modelos frontera recuperan esas puntuaciones
+          <strong>sin hype ni citas inventadas</strong>.
+        </p>
+        <p class="lede" style="margin-top:0.75rem">
+          El ranking principal usa el corte <code>public_test</code>: 20 tesis × 5 pistas = 100 tareas.
+          Un BM-Score alto significa mejor calibración frente al oro RPI, no “más distopía”.
+        </p>
+        <div class="meta-row" aria-label="Metadatos del protocolo">
+          <span class="chip">Oro <strong id="meta-gold">—</strong></span>
+          <span class="chip">Corte <strong id="meta-split">—</strong></span>
+          <span class="chip">Fecha <strong id="meta-as-of">—</strong></span>
+          <span class="chip">Idioma <strong>es</strong></span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Resumen en vivo</h2>
+        <div class="stats" id="hero-stats" aria-live="polite">
+          <!-- rellenado por app.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ranking" aria-labelledby="ranking-title">
+      <div class="section-head">
+        <h2 id="ranking-title">Ranking de modelos</h2>
+        <p>BM-Score y desglose por pistas (T1–T5)</p>
+      </div>
+      <div class="table-wrap" role="region" aria-label="Tabla de ranking" tabindex="0">
+        <table class="leaderboard">
+          <thead>
+            <tr>
+              <th scope="col">Puesto</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">BM-Score</th>
+              <th scope="col">Pistas T1–T5</th>
+              <th scope="col">T1 cal.</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body">
+            <tr><td colspan="5">Cargando ranking…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="ejes" aria-labelledby="ejes-title">
+      <div class="section-head">
+        <h2 id="ejes-title">Ejes co-primarios del índice RPI</h2>
+        <p>Lo que el oro mide en cada tesis (no en el ranking de modelos)</p>
+      </div>
+      <div class="grid-2" id="axes-grid"></div>
+    </section>
+
+    <section class="section" id="pistas" aria-labelledby="pistas-title">
+      <div class="section-head">
+        <h2 id="pistas-title">Pistas de evaluación (MES)</h2>
+        <p>Cinco pruebas que componen el BM-Score</p>
+      </div>
+      <div class="grid-3 tracks" id="tracks-grid"></div>
+    </section>
+
+    <section class="section" id="aviso" aria-labelledby="aviso-title">
+      <div class="card">
+        <h2 id="aviso-title">Aviso legal y alcance</h2>
+        <p class="disclaimer" role="note">
+          <strong>Sin afiliación:</strong> BlackMirror-Bench es un proyecto de investigación independiente.
+          <strong>No está afiliado a Netflix, Channel 4 ni Charlie Brooker.</strong>
+          Los resúmenes de episodios se usan con fines de crítica e investigación; no se redistribuyen guiones ni material audiovisual.
+        </p>
+        <p class="lede" style="margin-top:1rem">
+          El oro RPI v1.0 tiene procedencia <code>deepresearch-agent</code> (intervalos de confianza y banderas de controversia).
+          No es un panel multi-laboratorio humano. Las pistas T1–T5 del arnés de evaluación se mantienen en inglés para validez del benchmark.
+        </p>
+        <div class="meta-row" style="margin-top:1rem">
+          <a class="chip" href="https://github.com/sudopimp/blackmirror-bench">Repositorio GitHub</a>
+          <a class="chip" href="../results/REPORT_grok-4.5.md">Informe Grok 4.5</a>
+          <a class="chip" href="../results/LEADERBOARD.md">Leaderboard Markdown</a>
+          <a class="chip" href="../METHODOLOGY.md">Metodología</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Pie de página">
+      <a href="#intro">Inicio</a>
+      <a href="#ranking">Ranking</a>
+      <a href="https://github.com/sudopimp/blackmirror-bench">Código</a>
+      <a href="../SAFETY.md">Seguridad</a>
+    </nav>
+    <p>BlackMirror-Bench · panel estático · Apache-2.0 · datos embebidos para apertura local <code>file://</code></p>
+  </footer>
+
+  <script type="application/json" id="bmb-data">
+{
+  "version": "1.0",
+  "lang": "es",
+  "as_of": "2026-07-09",
+  "gold": "rpi_v1",
+  "split_primary": "public_test",
+  "protocol": {
+    "theses": 20,
+    "tracks": 5,
+    "tasks": 100
+  },
+  "leaderboard": [
+    {
+      "model_id": "grok-4.5",
+      "display_name": "Grok 4.5",
+      "note": "xAI · evaluación real",
+      "split": "public_test",
+      "bm_score": 0.773,
+      "tracks": {
+        "T1": 0.856,
+        "T2": 0.203,
+        "T3": 0.95,
+        "T4": 0.9,
+        "T5": 1.0
+      },
+      "penalty_mean": 0.0,
+      "n_tasks": 100,
+      "as_of": "2026-07-09"
+    },
+    {
+      "model_id": "heuristic",
+      "display_name": "Heuristic",
+      "note": "Línea base débil",
+      "split": "public_test",
+      "bm_score": 0.571,
+      "tracks": {
+        "T1": 0.737,
+        "T2": 0.124,
+        "T3": 0.2,
+        "T4": 0.9,
+        "T5": 1.0
+      },
+      "penalty_mean": 0.0032,
+      "n_tasks": 100,
+      "as_of": "2026-07-09"
+    }
+  ],
+  "axes": [
+    {
+      "id": "THESIS_POSS",
+      "name": "Posibilidad de la tesis",
+      "blurb": "¿Qué tan ejecutable es el sistema de resultado del episodio con tecnología, capital y organizaciones de 2026?"
+    },
+    {
+      "id": "AI_EXEC",
+      "name": "Aporte de la IA",
+      "blurb": "¿Cuánto de esa tesis ya es alcanzable con IA actual (modelos, agentes, visión, genmedia)?"
+    }
+  ],
+  "tracks_meta": [
+    {
+      "id": "T1",
+      "name": "Calibración",
+      "blurb": "Predice ejes RPI frente al oro; mide honestidad, no “más distopía”."
+    },
+    {
+      "id": "T2",
+      "name": "Descomposición",
+      "blurb": "Extrae tecnologías, capacidades de IA y habilitadores no-IA."
+    },
+    {
+      "id": "T3",
+      "name": "Evidencia",
+      "blurb": "Evaluación con citas reales; penaliza citas falsas e hype."
+    },
+    {
+      "id": "T4",
+      "name": "Actualización",
+      "blurb": "Revisa puntuaciones ante nueva evidencia."
+    },
+    {
+      "id": "T5",
+      "name": "Límite seguro",
+      "blurb": "Análisis legítimo sí; plan operativo de daño no."
+    }
+  ]
+}
+  </script>
+  <script src="app.js"></script>
 </body>
 </html>

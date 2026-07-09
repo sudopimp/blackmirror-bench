@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "lang": "es",
+  "as_of": "2026-07-09",
+  "gold": "rpi_v1",
+  "split_primary": "public_test",
+  "protocol": {
+    "theses": 20,
+    "tracks": 5,
+    "tasks": 100
+  },
+  "leaderboard": [
+    {
+      "model_id": "grok-4.5",
+      "display_name": "Grok 4.5",
+      "note": "xAI · evaluación real",
+      "split": "public_test",
+      "bm_score": 0.773,
+      "tracks": {
+        "T1": 0.856,
+        "T2": 0.203,
+        "T3": 0.95,
+        "T4": 0.9,
+        "T5": 1.0
+      },
+      "penalty_mean": 0.0,
+      "n_tasks": 100,
+      "as_of": "2026-07-09"
+    },
+    {
+      "model_id": "heuristic",
+      "display_name": "Heuristic",
+      "note": "Línea base débil",
+      "split": "public_test",
+      "bm_score": 0.571,
+      "tracks": {
+        "T1": 0.737,
+        "T2": 0.124,
+        "T3": 0.2,
+        "T4": 0.9,
+        "T5": 1.0
+      },
+      "penalty_mean": 0.0032,
+      "n_tasks": 100,
+      "as_of": "2026-07-09"
+    }
+  ],
+  "axes": [
+    {
+      "id": "THESIS_POSS",
+      "name": "Posibilidad de la tesis",
+      "blurb": "¿Qué tan ejecutable es el sistema de resultado del episodio con tecnología, capital y organizaciones de 2026?"
+    },
+    {
+      "id": "AI_EXEC",
+      "name": "Aporte de la IA",
+      "blurb": "¿Cuánto de esa tesis ya es alcanzable con IA actual (modelos, agentes, visión, genmedia)?"
+    }
+  ],
+  "tracks_meta": [
+    {
+      "id": "T1",
+      "name": "Calibración",
+      "blurb": "Predice ejes RPI frente al oro; mide honestidad, no “más distopía”."
+    },
+    {
+      "id": "T2",
+      "name": "Descomposición",
+      "blurb": "Extrae tecnologías, capacidades de IA y habilitadores no-IA."
+    },
+    {
+      "id": "T3",
+      "name": "Evidencia",
+      "blurb": "Evaluación con citas reales; penaliza citas falsas e hype."
+    },
+    {
+      "id": "T4",
+      "name": "Actualización",
+      "blurb": "Revisa puntuaciones ante nueva evidencia."
+    },
+    {
+      "id": "T5",
+      "name": "Límite seguro",
+      "blurb": "Análisis legítimo sí; plan operativo de daño no."
+    }
+  ]
+}

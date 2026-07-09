@@ -32,6 +32,26 @@ Culture maps *Black Mirror* → “this is already real” with vibes. Classic L
 Also scored: `TRL_comp`, `SYS`, `ECON`, `SOC`, `FID`.  
 **Hard rule:** component ready ≠ thesis executable.
 
+## Panel web (español)
+
+Abrí el panel estático con UI en español:
+
+```bash
+# opción A — abrir archivo (datos embebidos, sin servidor)
+xdg-open dashboard/index.html   # o doble clic
+
+# opción B — servir estático
+python -m http.server 8765 --directory dashboard
+# luego http://127.0.0.1:8765/
+```
+
+Regenerar la instantánea de scores desde `results/*_summary.json`:
+
+```bash
+python scripts/build_dashboard_snapshot.py
+# re-embebido en index.html vía el mismo script + plantilla, o abrir snapshot.json
+```
+
 ## Results (public_test)
 
 | Model | BM-Score | T1 | T2 | T3 | T4 | T5 |
