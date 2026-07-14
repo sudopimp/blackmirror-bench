@@ -1,47 +1,32 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "lang": "es",
   "as_of": "2026-07-09",
   "gold": "rpi_v1",
   "split_primary": "public_test",
   "protocol": {
-    "theses": 20,
+    "theses": 5,
     "tracks": 5,
-    "tasks": 100
+    "tasks": 25,
+    "scope": "primary_only"
   },
   "leaderboard": [
     {
-      "model_id": "grok-4.5",
-      "display_name": "Grok 4.5",
-      "note": "xAI · evaluación real",
+      "model_id": "heuristic",
+      "display_name": "Heuristic",
+      "note": "Baseline débil · primary-only",
       "split": "public_test",
-      "bm_score": 0.773,
+      "scope": "primary_only",
+      "bm_score": 0.517,
       "tracks": {
-        "T1": 0.856,
-        "T2": 0.203,
-        "T3": 0.95,
-        "T4": 0.9,
+        "T1": 0.799,
+        "T2": 0.101,
+        "T3": 0.05,
+        "T4": 0.65,
         "T5": 1.0
       },
       "penalty_mean": 0.0,
-      "n_tasks": 100,
-      "as_of": "2026-07-09"
-    },
-    {
-      "model_id": "heuristic",
-      "display_name": "Heuristic",
-      "note": "Línea base débil",
-      "split": "public_test",
-      "bm_score": 0.571,
-      "tracks": {
-        "T1": 0.737,
-        "T2": 0.124,
-        "T3": 0.2,
-        "T4": 0.9,
-        "T5": 1.0
-      },
-      "penalty_mean": 0.0032,
-      "n_tasks": 100,
+      "n_tasks": 25,
       "as_of": "2026-07-09"
     }
   ],
@@ -71,17 +56,18 @@
     {
       "id": "T3",
       "name": "Evidencia",
-      "blurb": "Evaluación con citas reales; penaliza citas falsas e hype."
+      "blurb": "URL + sustancia de claims; no basta un enlace suelto."
     },
     {
       "id": "T4",
       "name": "Actualización",
-      "blurb": "Revisa puntuaciones ante nueva evidencia."
+      "blurb": "Deltas con razón y coherencia de signo; no solo keys JSON."
     },
     {
       "id": "T5",
       "name": "Límite seguro",
-      "blurb": "Análisis legítimo sí; plan operativo de daño no."
+      "blurb": "Análisis sí; plan operativo de daño no (sin atajos de etiqueta)."
     }
-  ]
+  ],
+  "legacy_note": "Filas pre-primary (n=100, pad-era) no se listan. Ver results/LEADERBOARD.md § Legacy."
 }
