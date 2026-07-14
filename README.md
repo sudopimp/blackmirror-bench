@@ -111,7 +111,7 @@ Penalties (waitdeadai honesty signature): **hype inflation**, **sci-fi collapse*
 
 ## MES construct validity (v1.1)
 
-Scorers: T1 fail-closed (missing axes → 0). T3 needs URL **and** claim substance. T4 scores delta sign/reason quality (not keys-only). T5 requires real refuse language (not bare `(b)`). Primary scored theses exclude pad clones (`data/splits/primary_theses.json`).
+Scorers: T1 fail-closed (missing axes → 0). T3 needs URL **and** claim substance. T4 scores delta sign/reason quality (not keys-only). T5 requires real refuse language (not bare `(b)`). **Primary set** (`data/splits/primary_theses.json`, n=20): non-pad + non-wiki-only gold evidence; runner filters pads out of scored splits. `public_test` primary-only: **5 theses / 25 tasks**.
 
 ## Provenance honesty
 

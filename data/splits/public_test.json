@@ -1,26 +1,12 @@
 {
   "split": "public_test",
   "thesis_ids": [
-    "s01e01-national-anthem-viral-coercion-broadcast",
-    "s01e02-fifteen-million-merits-attention-economy-gamified-labor",
-    "s01e03-entire-history-of-you-continuous-memory-recording",
+    "s02e01-be-right-back-griefbot-persona-from-data",
     "s02e03-waldo-moment-cgi-political-candidate",
-    "special-white-christmas-cookie-mind-clone-assistant",
-    "s03e02-playtest-neural-ar-horror-game",
-    "s03e02-playtest-partial-real-world-analogue",
     "s04e02-arkangel-parental-neural-surveillance-filter",
-    "s04e03-crocodile-full-fidelity-gap",
-    "s04e05-metalhead-partial-real-world-analogue",
-    "s04e06-black-museum-partial-real-world-analogue",
-    "film-bandersnatch-interactive-narrative-control",
-    "film-bandersnatch-partial-real-world-analogue",
-    "s05e02-smithereens-partial-real-world-analogue",
-    "s06e02-loch-henry-true-crime-content-extraction",
-    "s06e02-loch-henry-partial-real-world-analogue",
-    "s06e04-mazey-day-partial-real-world-analogue",
-    "s07e04-plaything-full-fidelity-gap",
-    "s07e05-eulogy-partial-real-world-analogue",
-    "s07e06-uss-callister-into-infinity-partial-real-world-analogue"
+    "s05e03-rachel-jack-ashley-too-celebrity-ai-toy-puppet",
+    "s07e04-plaything-evolving-artificial-lifeforms"
   ],
-  "count": 20
+  "count": 5,
+  "scope": "primary_only"
 }

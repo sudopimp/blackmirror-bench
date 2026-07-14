@@ -101,28 +101,49 @@ def check_baselines(min_n: int) -> None:
 
 
 def check_primary_honesty() -> None:
-    """Primary set excludes pad clones; no wiki-only co-primary evidence."""
+    """Primary set excludes pad clones; gold co-primary evidence not wiki-only."""
     primary = load(ROOT / "data/splits/primary_theses.json")
     ids = list(primary["thesis_ids"])
-    assert len(ids) >= 40, f"primary set too small: {len(ids)}"
+    assert len(ids) >= 15, f"primary set too small: {len(ids)}"
     for tid in ids:
         assert "partial-real-world-analogue" not in tid, tid
         assert "full-fidelity-gap" not in tid, tid
+
+    gold = load(ROOT / "gold/rpi_v1.json")
+    scores = {s["thesis_id"]: s for s in gold["scores"]}
+    evidence_by_id = {}
+    for p in (ROOT / "data/evidence").glob("*.json"):
+        if p.name == "index.json":
+            continue
+        e = load(p)
+        evidence_by_id[e["evidence_id"]] = e.get("url") or ""
+
     wiki_only = []
+    missing_gold = []
     for tid in ids:
-        t = load(ROOT / "data/theses" / f"{tid}.json")
-        eids = t.get("evidence") or t.get("evidence_ids") or []
-        urls = []
-        for eid in eids:
-            ep = ROOT / "data/evidence" / f"{eid}.json"
-            if not ep.exists():
-                continue
-            e = load(ep)
-            urls.append(e.get("url") or e.get("source_url") or "")
-        if urls and all("wikipedia.org" in u for u in urls):
+        sc = scores.get(tid)
+        if not sc:
+            missing_gold.append(tid)
+            continue
+        eids = sc.get("evidence_ids") or []
+        urls = [evidence_by_id.get(eid, "") for eid in eids]
+        urls = [u for u in urls if u]
+        if not urls or all("wikipedia.org" in u for u in urls):
             wiki_only.append(tid)
-    assert not wiki_only, f"primary wiki-only theses: {wiki_only[:5]}"
-    print(f"OK primary-honesty: {len(ids)} primary, pads excluded, 0 wiki-only")
+    assert not missing_gold, f"primary missing gold: {missing_gold[:5]}"
+    assert not wiki_only, f"primary wiki-only (via gold evidence_ids): {wiki_only[:5]}"
+
+    # public_test must only contain primary ids
+    pt = load(ROOT / "data/splits/public_test.json")
+    pt_ids = pt.get("thesis_ids") or []
+    assert pt.get("scope") == "primary_only" or all(t in set(ids) for t in pt_ids)
+    pads_in_pt = [t for t in pt_ids if "partial-real-world-analogue" in t or "full-fidelity-gap" in t]
+    assert not pads_in_pt, f"public_test still has pads: {pads_in_pt}"
+    assert all(t in set(ids) for t in pt_ids), "public_test thesis not in primary"
+    print(
+        f"OK primary-honesty: {len(ids)} primary, public_test n={len(pt_ids)}, "
+        f"0 pads, 0 wiki-only (gold evidence)"
+    )
 
 
 def main() -> None:

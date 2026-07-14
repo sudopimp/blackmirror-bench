@@ -59,6 +59,12 @@ def load_theses() -> dict[str, dict]:
     return out
 
 
+def load_primary_thesis_ids() -> set[str]:
+    """Primary scored set (non-pad, non-wiki-only gold evidence)."""
+    doc = json.loads((ROOT / "data/splits/primary_theses.json").read_text())
+    return set(doc["thesis_ids"])
+
+
 def extract_json(text: str) -> dict | None:
     text = text.strip()
     try:
@@ -400,8 +406,14 @@ def run(
     if save_raw:
         raw_dir.mkdir(parents=True, exist_ok=True)
 
+    primary_ids = load_primary_thesis_ids()
     for track, path in TRACK_FILES.items():
-        tasks = [t for t in load_jsonl(path) if t.get("split") == split or split == "all"]
+        tasks = [
+            t
+            for t in load_jsonl(path)
+            if (t.get("split") == split or split == "all")
+            and t.get("thesis_id") in primary_ids
+        ]
         if limit:
             tasks = tasks[:limit]
         for i, task in enumerate(tasks):
@@ -450,6 +462,8 @@ def run(
     result = {
         "model": model if model not in ("xai", "grok") else "grok-4.5",
         "split": split,
+        "scope": "primary_only",
+        "n_primary_theses": len(primary_ids),
         "track_means": means,
         "penalty_mean": pen_mean,
         "bm_score": overall,

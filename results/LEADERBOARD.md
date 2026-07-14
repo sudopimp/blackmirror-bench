@@ -1,7 +1,7 @@
 # BlackMirror-Bench Leaderboard
 
 **Gold:** `rpi_v1` · **as_of:** 2026-07-09  
-**Primary protocol:** `public_test` · 20 theses · 5 tracks · 100 tasks  
+**Primary protocol:** `public_test` · **primary-only** · 5 theses · 5 tracks · 25 tasks · pads excluded
 
 | Model | Split | BM-Score | T1 | T2 | T3 | T4 | T5 | n | Notes |
 |-------|-------|----------|----|----|----|----|----|---|-------|
