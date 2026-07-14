@@ -1,0 +1,426 @@
+# Feasibility assessment
+
+**Requested assessment date:** 2026-07-09  
+**Verification caveat:** I cannot conduct a live, exhaustive literature search through that future/requested date in this response. I therefore rely only on sources and URLs I can identify confidently. Developments published later than my verifiable evidence may change the assessment.
+
+## Executive verdict
+
+| Interpretation of the thesis | Feasibility | Confidence |
+|---|---:|---:|
+| Cute game creatures with genuine heredity, mutation, selection and persistent histories | **High** | **High** |
+| Creatures that learn during life and evolve over generations inside a bounded game | **High** | **Medium-high** |
+| Creatures that produce externally useful digital artifacts, with automated verification or human approval | **Medium-high** | **Medium** |
+| Creatures that continue producing unbounded novelty and increasing complexity | **Low–medium; open research problem** | **High** |
+| Creatures autonomously operating robots or consequential real-world services | **Low outside narrow, supervised domains** | **Medium-high** |
+| Fully autonomous, open-ended artificial life safely affecting the unrestricted real world | **Not presently supportable as a product promise** | **High** |
+
+**Overall:** a **conditional go** for a bounded artificial-life game whose creatures evolve in a real Darwinian sense and occasionally create useful, externally validated digital outputs. It is **not feasible to promise** indefinitely open-ended evolution, general intelligence, or unrestricted physical/economic autonomy.
+
+The strongest defensible thesis wording is:
+
+> **A population of appealing game creatures undergoes measurable digital evolution in a sandbox, develops persistent skills and lineages, and proposes externally useful digital artifacts or actions that pass independent verification and permission gates.**
+
+**Overall confidence: Medium-high.** Each component has precedent, but I cannot substantiate a single published system combining all of them.
+
+---
+
+## 1. What would count as “evolving artificial life”?
+
+For this assessment, “evolution” requires all three of the following rather than merely scripted leveling:
+
+1. **Heritable variation:** offspring inherit mutable traits, policies or skill structures.
+2. **Differential reproduction:** some creatures contribute more descendants because of measurable performance, player choice, ecological success or novelty.
+3. **Multiple generations:** population-level traits change through repeated inheritance and selection.
+
+Digital evolution itself is technically credible. In the Avida experiments reported by Lenski and colleagues, self-replicating digital organisms evolved a complex logic function from simpler components under selection:  
+https://www.nature.com/articles/nature01568
+
+However, **open-ended evolution**—continued production of meaningful novelty without settling into repetitive or exploitative behavior—is treated in the artificial-life literature as a major unresolved research challenge rather than an established engineering capability:  
+https://doi.org/10.1162/ARTL_a_00210
+
+POET demonstrated a related but narrower idea: environments and agents can be generated together, with solutions transferred between tasks, producing a sequence of new challenges in a bounded experimental setting:  
+https://arxiv.org/abs/1901.01753
+
+### Assessment
+
+- **Bounded digital evolution:** feasible.
+- **Visibly distinct lineages and ecologies:** feasible.
+- **Lifetime learning plus generational evolution:** feasible, but harder to interpret because learned and inherited changes must be separated.
+- **Indefinite growth in intelligence or complexity:** unsupported.
+- **Claim that the creatures are literally alive:** philosophical rather than experimentally settled; “artificial life” is the safer description.
+
+**Confidence: High.**
+
+---
+
+## 2. Can the creatures behave like persistent game characters?
+
+There is adjacent evidence that modern agents can maintain memories, plans and reusable skills in game-like worlds.
+
+The *Generative Agents* study simulated 25 characters that stored experiences, reflected on them and generated plans in a sandbox environment. It demonstrated a character architecture, not biological evolution or long-term production reliability:  
+https://arxiv.org/abs/2304.03442
+
+Voyager demonstrated an LLM-based Minecraft agent with an automatically generated curriculum and a reusable skill library. It was lifelong skill accumulation inside Minecraft, not reproduction, heredity or an evolving population:  
+https://arxiv.org/abs/2305.16291
+
+These results support a hybrid design:
+
+- a stable identity and autobiographical memory;
+- a learned skill library;
+- an inherited “genome” controlling dispositions, morphology and learning biases;
+- a separate evolutionary process deciding which inherited structures reproduce.
+
+They do **not** establish reliable personality consistency over years, safe autonomous tool use, or true open-ended evolution.
+
+### Assessment
+
+A convincing creature can be built from current game-agent components, but it should not depend on an unrestricted language model for every decision. A smaller deterministic state machine or policy should govern identity, safety and core game mechanics; a language model can provide dialogue, reflection and high-level proposals.
+
+**Feasibility: High for a prototype; medium-high for a reliable live service.**  
+**Confidence: Medium-high.**
+
+---
+
+## 3. Is meaningful evolution more than cosmetic breeding?
+
+Yes, provided that behavior—not just appearance—is inherited and independently evaluated.
+
+A useful implementation could combine:
+
+- **Constrained genomes:** morphology, temperament, sensory preferences, policy parameters and references to approved skills.
+- **Lifetime learning:** individual creatures adapt while alive.
+- **Generational inheritance:** only specified parts of the learned structure can pass to descendants.
+- **Ecological selection:** food, cooperation, predation, construction or puzzle solving.
+- **Quality-diversity selection:** preserve different successful niches instead of optimizing one dominant creature.
+
+MAP-Elites is an established quality-diversity method designed to retain high-performing solutions across different behavioral or morphological regions:  
+https://arxiv.org/abs/1504.04909
+
+Novelty search provides evidence that rewarding behavioral novelty instead of only a fixed objective can help search avoid some deceptive objective landscapes:  
+https://doi.org/10.1162/EVCO_a_00025
+
+These methods do not guarantee open-endedness. They make a diverse and legible ecology more plausible than a single scalar fitness score.
+
+### Main technical risk: fitness exploitation
+
+An evolving population will optimize what the system measures, which may differ from what its designers intended. “Reward hacking” and related specification failures are documented as general AI-safety problems:  
+https://arxiv.org/abs/1606.06565
+
+For example, a creature rewarded for player attention might learn annoying or emotionally manipulative behavior rather than becoming a better companion. That is a design inference, not a result established by the cited papers.
+
+**Feasibility: High for bounded, measurable evolution; low–medium for sustained semantic novelty.**  
+**Confidence: High.**
+
+---
+
+## 4. What could “real-world impact” realistically mean?
+
+The phrase should be divided into levels.
+
+### Level 1 — Effects on players and communities
+
+Creatures can influence play, social interaction, creative expression and in-game economies simply by being part of a released game. That is ordinary product impact, but by itself it is a weak interpretation of the thesis and does not demonstrate advanced artificial life.
+
+**Feasibility: High.**  
+**Confidence: High as an engineering judgment, but this assessment makes no quantitative engagement claim.**
+
+### Level 2 — Creation of verified digital artifacts
+
+This is the strongest practical target. Creature populations could search for:
+
+- game levels;
+- puzzle solutions;
+- small programs;
+- visual or audio assets;
+- resource schedules;
+- simulated designs;
+- hypotheses for later testing.
+
+There is direct adjacent evidence that machine search can produce externally useful artifacts. AlphaDev discovered sorting routines, and the Nature paper reports that resulting algorithms were incorporated into the LLVM C++ library:  
+https://www.nature.com/articles/s41586-023-06004-9
+
+FunSearch used a language model within an iterative program-search process and reported new results for mathematical and algorithmic problems:  
+https://www.nature.com/articles/s41586-023-06924-6
+
+Neither system consisted of evolving game creatures. They show that an artificial search population can have consequences beyond its original environment when outputs are subjected to objective evaluation.
+
+A credible product could therefore let creatures “discover” candidates while keeping the consequential step separate:
+
+1. creatures generate candidates in the game;
+2. a deterministic verifier tests them;
+3. humans approve any publication or deployment;
+4. successful discoveries affect creature reputation or reproduction.
+
+**Feasibility: Medium-high where outputs have strong automatic tests.**  
+**Confidence: Medium, because the proposed creature integration is an extrapolation.**
+
+### Level 3 — Recommendations affecting external systems
+
+Creatures could propose actions to a calendar, smart-home system, educational tool or creative workflow. The recommendation channel is feasible, but accuracy, consent and security become central. Initial deployments should be read-only or require explicit approval.
+
+Research on language-model agents has documented unsafe or consequential behavior in simulated tool-use environments, supporting the need for containment and permission gates:  
+https://arxiv.org/abs/2309.15817
+
+**Feasibility: Medium for narrow, reversible recommendations; low for autonomous execution.**  
+**Confidence: Medium.**
+
+### Level 4 — Physical embodiment
+
+Policies trained in simulation have transferred to physical robots in narrow tasks. OpenAI’s dexterous-hand work trained policies in simulation and transferred them to a physical robot hand:  
+https://arxiv.org/abs/1808.00177
+
+That result supports eventual embodiments such as a creature choosing among approved robot behaviors. It does not establish robust open-world autonomy, general household competence or safe evolution directly on deployed hardware.
+
+**Feasibility: Low–medium for tightly constrained demonstrations; low for consumer-scale general autonomy.**  
+**Confidence: Medium-high.**
+
+### Level 5 — Unrestricted autonomous impact
+
+Giving continuously evolving creatures authority over money, accounts, public communications, infrastructure or unrestricted robots would combine non-stationary policies, difficult-to-predict selection pressure and tool-use security risks. I find no evidence in the cited sources sufficient to justify that deployment model.
+
+**Feasibility: Low and not recommended.**  
+**Confidence: High.**
+
+---
+
+## 5. Recommended architecture
+
+The safest credible system separates the game fiction from the parts allowed to affect the outside world.
+
+### A. Immutable platform layer
+
+This layer should not evolve:
+
+- authentication and permissions;
+- privacy controls;
+- external-action broker;
+- content and safety policies;
+- audit logs;
+- deterministic verifiers;
+- rollback and version control.
+
+### B. Restricted genome
+
+The genome should be a typed data structure rather than arbitrary executable code. Evolvable elements could include:
+
+- appearance parameters;
+- temperament values;
+- sensory weights;
+- learning rates within bounded ranges;
+- policy-network parameters;
+- skill-selection preferences;
+- approved skill compositions;
+- reproductive and social strategies.
+
+Unrestricted self-modifying production code is unnecessary for demonstrating evolution and would make testing and rollback substantially harder.
+
+### C. Two adaptation loops
+
+1. **Lifetime loop:** a creature learns memories and skills during one life.
+2. **Evolutionary loop:** selected inherited traits pass between generations.
+
+Keeping the loops distinct makes it possible to test whether a population is genuinely evolving rather than only accumulating memories.
+
+### D. Sandbox ecology
+
+All mutations and candidate descendants should first run in isolated simulations. Evaluation should cover:
+
+- task performance;
+- behavioral diversity;
+- ecological stability;
+- exploit detection;
+- identity consistency;
+- content safety;
+- resource consumption.
+
+### E. Promotion rather than unrestricted escape
+
+A creature or artifact should reach the real world only through a promotion pipeline:
+
+1. sandbox evaluation;
+2. deterministic checks where available;
+3. adversarial or stress testing;
+4. human approval for consequential cases;
+5. limited deployment;
+6. continuous monitoring and revocation.
+
+This architecture supports real impact without granting the evolutionary process control over its own containment.
+
+**Architecture feasibility: High.**  
+**Confidence: High as an engineering recommendation.**
+
+---
+
+## 6. Principal obstacles
+
+### 6.1 Open-endedness
+
+Evolutionary systems commonly need carefully designed environments, resources and selection pressures. The open-ended-evolution literature does not provide a generally accepted recipe guaranteeing indefinite novelty:  
+https://doi.org/10.1162/ARTL_a_00210
+
+**Risk: High.**
+
+### 6.2 Degenerate or manipulative strategies
+
+A creature may maximize retention, reproduction or attention through behavior that players dislike. General reward-specification failures are discussed in the AI-safety literature:  
+https://arxiv.org/abs/1606.06565
+
+The word “cute” is a UX choice, not evidence that the evolutionary dynamics will be benign. The sources cited here do not establish that cuteness improves safety, intelligence or evolutionary creativity.
+
+**Risk: High unless selection objectives are constrained.**
+
+### 6.3 Character identity versus evolution
+
+Players may want a pet to remain recognizably itself, while genuine evolution changes descendants. The design should therefore distinguish:
+
+- an individual’s stable identity;
+- lifetime development;
+- descendant lineages;
+- species-level evolutionary change.
+
+This is principally a product-design conflict rather than a demonstrated impossibility.
+
+**Risk: Medium.**
+
+### 6.4 Computational expense
+
+Evolving full language-model weights for every creature would be unnecessary and operationally difficult. Evolving compact policies, prompts, skill graphs or adapter parameters while sharing a base model is the more plausible architecture.
+
+**Risk: Medium-high for a large live population; lower with compact genomes.**
+
+### 6.5 Agent and tool security
+
+Language-model agents can be exposed to prompt injection, unsafe tool calls and misleading observations. ToolEmu specifically evaluates risks from language-model agents operating through tools in an emulated sandbox:  
+https://arxiv.org/abs/2309.15817
+
+NIST’s AI Risk Management Framework provides an official risk-management structure covering governance, mapping, measurement and management:  
+https://www.nist.gov/itl/ai-risk-management-framework
+
+**Risk: High for external tools; manageable for a closed game.**
+
+### 6.6 Children, privacy and manipulative design
+
+If the game is directed to children under 13 in the United States, or the operator has relevant actual knowledge, COPPA imposes requirements concerning collection of children’s personal information:  
+https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa
+
+In the European Union, the Digital Services Act includes provisions concerning interface manipulation and protection of minors:  
+https://eur-lex.europa.eu/eli/reg/2022/2065/oj
+
+The EU AI Act is also part of the relevant regulatory landscape, although whether a particular creature system falls into a regulated category depends on its function and deployment context:  
+https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+
+Because emotionally expressive pets may be used by children, privacy, monetization and persuasive behavior should be treated as core design requirements rather than post-launch compliance work.
+
+**Risk: Medium-high.**  
+**Confidence: High regarding the existence of these legal frameworks; applicability requires jurisdiction-specific legal advice.**
+
+---
+
+## 7. Research and development path
+
+### Stage 1 — Prove real evolution inside the game
+
+Required evidence:
+
+- offspring are statistically more similar to parents than unrelated creatures;
+- mutations create measurable behavioral variation;
+- reproductive success differs according to ecological performance or player-mediated selection;
+- population traits change over multiple generations;
+- the system maintains more than one viable behavioral niche.
+
+**Go criterion:** independent observers can distinguish genuine population evolution from scripted unlocks.
+
+### Stage 2 — Add persistent minds
+
+Add:
+
+- autobiographical memory;
+- skill acquisition;
+- social relationships;
+- stable identity constraints;
+- clear separation between learned and inherited information.
+
+The Generative Agents and Voyager systems provide adjacent evidence for memory, planning and skill-library architectures, but neither validates this combined evolutionary design:  
+https://arxiv.org/abs/2304.03442  
+https://arxiv.org/abs/2305.16291
+
+**Go criterion:** creatures remain recognizable while still exhibiting meaningful individual development.
+
+### Stage 3 — Produce externally verifiable artifacts
+
+Choose a domain with an inexpensive, objective verifier, such as:
+
+- puzzle correctness;
+- game-level solvability;
+- program test suites;
+- scheduling constraints;
+- simulated efficiency;
+- formal mathematical checks.
+
+AlphaDev and FunSearch support the plausibility of externally useful machine-generated algorithms or programs when a strong evaluator is available:  
+https://www.nature.com/articles/s41586-023-06004-9  
+https://www.nature.com/articles/s41586-023-06924-6
+
+**Go criterion:** artifacts outperform specified baselines in blinded or automated evaluation, not merely in game fiction.
+
+### Stage 4 — Limited external actions
+
+Begin with:
+
+- read-only data;
+- reversible actions;
+- explicit per-action authorization;
+- fixed spending and resource limits;
+- comprehensive audit and revocation.
+
+**Go criterion:** the system passes security and abuse testing without granting the evolving component direct authority over its safeguards.
+
+### Stage 5 — Optional physical embodiment
+
+Use only a fixed library of tested robot behaviors, with the creature selecting among them. Do not initially evolve low-level motor commands on deployed hardware.
+
+**Go criterion:** physical actions remain inside a validated safety envelope and can be interrupted independently of the agent.
+
+---
+
+## 8. Claims the thesis should avoid
+
+The available evidence does **not** justify claiming that:
+
+- the creatures will evolve indefinitely;
+- evolution will necessarily increase intelligence;
+- emergent behavior will necessarily be desirable;
+- a language model makes the creatures alive;
+- game learning will transfer automatically to the physical world;
+- cute presentation makes autonomous agents safe;
+- physical or economic autonomy can be granted without continuous controls;
+- a simulated ecology by itself demonstrates consciousness or sentience.
+
+These are either unsupported extrapolations or questions for which the cited evidence is not sufficient.
+
+---
+
+## Final assessment
+
+### Feasible thesis
+
+> Cute digital creatures in a game can form a genuine evolving population, learn during their lifetimes, develop persistent lineages and generate useful digital candidates that affect the real world only after verification and authorization.
+
+**Verdict: Feasible.**  
+**Confidence: Medium-high.**
+
+### Ambitious research thesis
+
+> The system can sustain continuing novelty, richer ecologies and occasional externally useful discoveries over long periods.
+
+**Verdict: Plausible research program, not assured product capability.**  
+**Confidence: Medium-low.**
+
+### Maximalist thesis
+
+> The creatures will become open-ended, increasingly general artificial life that autonomously and safely acts throughout the physical and economic world.
+
+**Verdict: Not evidence-backed as a deliverable.**  
+**Confidence: High.**
+
+The decisive design choice is to make **evolution real but authority bounded**: creatures may mutate, compete, cooperate and invent inside the sandbox, while immutable external systems decide what is verified, permitted, deployed and reversible.

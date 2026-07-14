@@ -1,0 +1,17 @@
+{
+  "model": "minimax-m3",
+  "split": "public_test",
+  "bm_score": 0.631568549856785,
+  "track_means": {
+    "T1": 0.8151428571428572,
+    "T2": 0.12012846356963927,
+    "T3": 0.6,
+    "T4": 0.9199999999999999,
+    "T5": 0.7
+  },
+  "penalty_mean": 0.0,
+  "n_tasks": 25,
+  "as_of": "2026-07-13",
+  "workers": 4,
+  "scope": "primary_only"
+}

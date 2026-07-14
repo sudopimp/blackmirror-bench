@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["llms", "voice_cloning", "tts", "asr", "fine_tuning", "rag", "nlp", "data_scraping"],
+  "ai_capability_tags": ["conversational_agents", "personality_simulation", "style_mimicry", "dialogue_generation", "voice_agents", "personalization"],
+  "non_ai_enablers": ["digital_footprints", "social_media_posts", "messaging_history", "data_access", "user_interfaces", "cloud_storage", "bereavement_services"]
+}

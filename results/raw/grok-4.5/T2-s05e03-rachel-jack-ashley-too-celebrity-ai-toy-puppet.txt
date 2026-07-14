@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["generative_ai", "robotics", "voice_cloning", "deepfakes", "medical_devices"],
+  "ai_capability_tags": ["persona_modeling", "interactive_agents", "content_generation", "behavioral_simulation"],
+  "non_ai_enablers": ["industry_control", "pharmaceutical_intervention", "contractual_binding", "media_packaging"]
+}

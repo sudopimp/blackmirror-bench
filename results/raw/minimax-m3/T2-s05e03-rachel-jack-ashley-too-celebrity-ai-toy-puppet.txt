@@ -1,0 +1,26 @@
+```json
+{
+  "enabling_tech": [
+    "ai_doll_hardware",
+    "voice_synthesis",
+    "face_image_generative_models",
+    "embedded_speech_models",
+    "consumer_robotics"
+  ],
+  "ai_capability_tags": [
+    "persona_replication",
+    "voice_cloning",
+    "appearance_synthesis",
+    "conversational_roleplay",
+    "behavioral_modeling"
+  ],
+  "non_ai_enablers": [
+    "industry_power_structure",
+    "medical_pharmaceutical_control",
+    "celebrity_commodification",
+    "label_contract_leverage",
+    "marketing_machinery",
+    "regulatory_gap"
+  ]
+}
+```

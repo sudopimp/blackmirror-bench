@@ -12,10 +12,21 @@ SPLITS = ROOT / "data" / "splits"
 OUT = ROOT / "dashboard" / "snapshot.json"
 
 # Primary leaderboard: only primary-only public_test summaries with matching n_tasks.
-# Order: real models first if present, then heuristic baseline.
+# Ranked by BM-Score after load. Include real models + weak baseline.
 CANDIDATES = [
-    ("heuristic_public_test_summary.json", "Heuristic", "Baseline débil · primary-only"),
-    ("grok-4.5_public_test_primary_summary.json", "Grok 4.5", "xAI · primary-only re-score"),
+    ("heuristic_public_test_summary.json", "Heuristic", "Baseline débil · reglas fijas"),
+    ("grok-4.5_public_test_primary_summary.json", "Grok 4.5", "xAI · primary-only"),
+    ("minimax-m3_public_test_primary_summary.json", "MiniMax M3", "MiniMax · primary-only"),
+    (
+        "codex-gpt-5.6-sol_public_test_primary_summary.json",
+        "Codex GPT-5.6 Sol",
+        "OpenAI ChatGPT OAuth · reasoning high",
+    ),
+    (
+        "zai-glm-4.5_public_test_primary_summary.json",
+        "z.ai GLM-4.5",
+        "Zhipu · primary-only",
+    ),
 ]
 
 

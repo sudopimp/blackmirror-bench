@@ -553,3 +553,70 @@ table.leaderboard tbody tr.is-top {
     transition: none;
   }
 }
+
+/* Horizontal BM-Score chart (invite graphic) */
+.bm-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.bm-row {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 11rem) 1fr 3.5rem;
+  gap: 0.65rem;
+  align-items: center;
+}
+.bm-label {
+  display: flex;
+  gap: 0.4rem;
+  align-items: baseline;
+  min-width: 0;
+}
+.bm-rank {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+.bm-name {
+  font-weight: 600;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bm-bar-track {
+  height: 1.05rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.bm-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  box-shadow: 0 0 18px rgba(110, 231, 255, 0.25);
+  transition: width 0.6s ease;
+}
+.bm-row.is-leader .bm-bar-fill {
+  background: linear-gradient(90deg, var(--accent-3), var(--accent));
+}
+.bm-score {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: right;
+  color: var(--accent);
+}
+.bm-row.is-leader .bm-score {
+  color: var(--accent-3);
+}
+@media (max-width: 560px) {
+  .bm-row {
+    grid-template-columns: 1fr 3.2rem;
+    grid-template-rows: auto auto;
+  }
+  .bm-label { grid-column: 1 / -1; }
+  .bm-bar-track { grid-column: 1; }
+}

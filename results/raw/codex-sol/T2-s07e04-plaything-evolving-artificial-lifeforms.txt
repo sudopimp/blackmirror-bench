@@ -1,0 +1,37 @@
+{
+  "enabling_tech": [
+    "game_engines",
+    "agent_frameworks",
+    "generative_ai",
+    "reinforcement_learning",
+    "evolutionary_computation",
+    "simulation_platforms",
+    "persistent_memory",
+    "cloud_infrastructure",
+    "robotics_interfaces",
+    "iot_integration"
+  ],
+  "ai_capability_tags": [
+    "autonomous_agents",
+    "continual_learning",
+    "adaptive_behavior",
+    "emergent_behavior",
+    "digital_evolution",
+    "planning",
+    "multimodal_perception",
+    "social_interaction",
+    "long_term_memory",
+    "real_world_action"
+  ],
+  "non_ai_enablers": [
+    "character_ip",
+    "game_design",
+    "virtual_economies",
+    "community_engagement",
+    "creator_ecosystem",
+    "physical_devices",
+    "distribution_partnerships",
+    "safety_governance",
+    "regulatory_compliance"
+  ]
+}

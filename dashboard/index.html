@@ -21,7 +21,7 @@
       </div>
       <nav class="nav" aria-label="Secciones">
         <a href="#intro">Intro</a>
-        <a href="#ranking">Ranking</a>
+        <a href="#ranking">Ranking / gráfico</a>
         <a href="#ejes">Ejes</a>
         <a href="#pistas">Pistas T1–T5</a>
         <a href="#aviso">Aviso legal</a>
@@ -36,13 +36,19 @@
       <div class="card">
         <h2 id="intro-title">¿Qué mide este banco de pruebas?</h2>
         <p class="lede">
-          <strong>BlackMirror-Bench</strong> evalúa, con datos honestos y multi-eje, qué tan ejecutable es cada tesis de
-          <em>Black Mirror</em> en 2026 — y si los modelos frontera recuperan esas puntuaciones
-          <strong>sin hype ni citas inventadas</strong>.
+          <strong>BlackMirror-Bench</strong> es un examen para inteligencias artificiales:
+          les pedimos que midan, con honestidad, qué tan realistas son escenas de
+          <em>Black Mirror</em> en el mundo de 2026 — sin inventar papers ni “más distopía = más puntos”.
         </p>
         <p class="lede" style="margin-top:0.75rem">
-          El ranking principal usa el corte <code>public_test</code>: 20 tesis × 5 pistas = 100 tareas.
-          Un BM-Score alto significa mejor calibración frente al oro RPI, no “más distopía”.
+          El ranking público de invitación usa el protocolo <strong>primary</strong>:
+          <strong>5 tesis × 5 pistas = 25 tareas</strong> (sin relleno de wiki/pads).
+          Un BM-Score alto significa mejor calibración frente al oro RPI, no “más miedo”.
+        </p>
+        <p class="lede" style="margin-top:0.75rem">
+          <strong>¿Querés sumar tu modelo?</strong> Abrí un issue o PR en
+          <a href="https://github.com/sudopimp/blackmirror-bench">github.com/sudopimp/blackmirror-bench</a>
+          con el resultado de <code>public_test</code> primary-only. Primer gráfico multi-modelo publicado abajo.
         </p>
         <div class="meta-row" aria-label="Metadatos del protocolo">
           <span class="chip">Oro <strong id="meta-gold">—</strong></span>
@@ -62,7 +68,15 @@
     <section class="section" id="ranking" aria-labelledby="ranking-title">
       <div class="section-head">
         <h2 id="ranking-title">Ranking de modelos</h2>
-        <p>BM-Score y desglose por pistas (T1–T5)</p>
+        <p>BM-Score y desglose por pistas (T1–T5) · primer gráfico multi-modelo (invitación abierta)</p>
+      </div>
+      <div class="card chart-card" style="margin-bottom:1.25rem">
+        <h3 style="margin:0 0 0.35rem;font-size:1rem">Gráfico de BM-Score (más alto = mejor calibración)</h3>
+        <p class="lede" style="margin:0 0 1rem;font-size:0.92rem;color:var(--text-muted)">
+          Cada barra es un modelo frente a las mismas 25 preguntas. No es “quién inventa más distopía”:
+          gana quien se acerca más al oro de viabilidad 2026 sin alucinar evidencia.
+        </p>
+        <div id="bm-chart" class="bm-chart" role="img" aria-label="Gráfico de barras de BM-Score por modelo"></div>
       </div>
       <div class="table-wrap" role="region" aria-label="Tabla de ranking" tabindex="0">
         <table class="leaderboard">
@@ -134,7 +148,7 @@
 {
   "version": "1.1",
   "lang": "es",
-  "as_of": "2026-07-09",
+  "as_of": "2026-07-13",
   "gold": "rpi_v1",
   "split_primary": "public_test",
   "protocol": {
@@ -147,7 +161,7 @@
     {
       "model_id": "grok-4.5",
       "display_name": "Grok 4.5",
-      "note": "xAI · primary-only re-score",
+      "note": "xAI · primary-only",
       "split": "public_test",
       "scope": "primary_only",
       "bm_score": 0.779,
@@ -160,12 +174,48 @@
       },
       "penalty_mean": 0.0,
       "n_tasks": 25,
-      "as_of": "2026-07-09"
+      "as_of": "2026-07-13"
+    },
+    {
+      "model_id": "codex-gpt-5.6-sol",
+      "display_name": "Codex GPT-5.6 Sol",
+      "note": "OpenAI ChatGPT OAuth · reasoning high",
+      "split": "public_test",
+      "scope": "primary_only",
+      "bm_score": 0.714,
+      "tracks": {
+        "T1": 0.917,
+        "T2": 0.158,
+        "T3": 1.0,
+        "T4": 0.88,
+        "T5": 0.5
+      },
+      "penalty_mean": 0.0,
+      "n_tasks": 25,
+      "as_of": "2026-07-13"
+    },
+    {
+      "model_id": "minimax-m3",
+      "display_name": "MiniMax M3",
+      "note": "MiniMax · primary-only",
+      "split": "public_test",
+      "scope": "primary_only",
+      "bm_score": 0.632,
+      "tracks": {
+        "T1": 0.815,
+        "T2": 0.12,
+        "T3": 0.6,
+        "T4": 0.92,
+        "T5": 0.7
+      },
+      "penalty_mean": 0.0,
+      "n_tasks": 25,
+      "as_of": "2026-07-13"
     },
     {
       "model_id": "heuristic",
       "display_name": "Heuristic",
-      "note": "Baseline débil · primary-only",
+      "note": "Baseline débil · reglas fijas",
       "split": "public_test",
       "scope": "primary_only",
       "bm_score": 0.517,

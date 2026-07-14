@@ -1,0 +1,25 @@
+{
+  "enabling_tech": [
+    "neural_implant",
+    "brain_computer_interface",
+    "sensory_filtering",
+    "real_time_video_streaming",
+    "content_filtering",
+    "remote_parental_controls"
+  ],
+  "ai_capability_tags": [
+    "distress_detection",
+    "stimulus_classification",
+    "content_moderation",
+    "real_time_monitoring",
+    "adaptive_filtering"
+  ],
+  "non_ai_enablers": [
+    "network_connectivity",
+    "parental_authorization",
+    "implantation_procedure",
+    "surveillance_infrastructure",
+    "access_control",
+    "content_policy"
+  ]
+}

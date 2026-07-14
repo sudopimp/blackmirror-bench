@@ -1,0 +1,300 @@
+# Feasibility assessment
+
+**Requested assessment date:** 2026-07-09  
+**Verification caveat:** I cannot independently verify vendor launches, closures, studies, or legal changes first occurring after my available source horizon. I therefore treat enacted laws with future application dates as reliable, but mark claims about the precise 2026 market state with lower confidence.
+
+## Bottom line
+
+**The thesis is technically feasible, but only conditionally commercially and legally feasible.**
+
+A system can already:
+
+- retrieve a deceased person’s writings to ground responses;
+- imitate their linguistic style;
+- synthesize speech resembling their voice; and
+- present the result as an interactive conversational persona.
+
+However, it **cannot establish that its answers represent what the deceased would actually have thought or said**. Sparse archives, missing context, and model confabulation make it a probabilistic memorial simulation—not a continuation of the person.
+
+### Overall judgment
+
+| Version of the thesis | Feasibility | Confidence |
+|---|---:|---:|
+| **Opt-in memorial:** person records stories, voice, permissions, and intended boundaries before death | **High technical; medium commercial** | **High** |
+| **Estate-authorized reconstruction:** family uploads an inherited archive after death | **High technical; medium-low legal/ethical** | **Medium-high** |
+| **Unilateral reconstruction:** one relative uploads private messages and cloned voice without clear authorization | **High technical; low deployment feasibility** | **High** |
+| **Product marketed as grief therapy or as the deceased’s authentic continuing mind** | **Low responsible feasibility** | **High** |
+
+**Investment-style verdict:** **Proceed only with a consent-first “interactive memorial” formulation. Do not proceed with an unrestricted “digital resurrection from private messages” formulation.**
+
+---
+
+## 1. Technical feasibility: high
+
+### Text conversation
+
+Retrieval-augmented generation, or RAG, combines a pretrained language model with passages retrieved from an external corpus before generating an answer; the original RAG paper demonstrated this pattern for knowledge-intensive language tasks ([Lewis et al., 2020](https://arxiv.org/abs/2005.11401)). **Confidence: High.**
+
+For this product, the retrievable corpus could contain authorized posts, messages, emails, transcripts, diaries, and recorded interviews. Full model training is therefore unnecessary: “training on the deceased” can, in practice, mean retrieving their material and conditioning an existing model on it. **This is an engineering inference from the RAG architecture, not evidence that RAG reproduces a person’s mind. Confidence: High.**
+
+Fine-tuning could make phrasing more stylistically consistent, but it would not solve missing memories, contradictory source material, or questions the archive never addressed. That limitation follows from the fact that the system has only recorded artifacts, not access to the person’s unrecorded experience or intentions. **Confidence: High.**
+
+### Voice conversation
+
+Microsoft’s VALL-E research reported generating personalized speech from a three-second acoustic prompt, demonstrating that short-reference voice synthesis is technically possible in a research system ([VALL-E paper](https://arxiv.org/abs/2301.02111)). This does not establish that every voice, recording condition, language, or emotional delivery will work equally well. **Confidence: High on basic feasibility; medium on consistent production quality.**
+
+A production system could therefore retrieve a text-grounded answer and render it using a voice model. The difficult technical problem is not basic speech generation; it is ensuring that the first-person answer is supported by authorized evidence.
+
+### Fidelity and hallucination
+
+NIST’s Generative AI Profile identifies **confabulation**—confident production of erroneous or false content—as a generative-AI risk ([NIST AI 600-1](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)). **Confidence: High.**
+
+That risk is especially serious here because an invented sentence such as “I always forgave you” or “I wanted you to sell the house” could be interpreted as testimony from the deceased. RAG can reduce unsupported answers, but it cannot guarantee that every generated statement follows from the archive. **Confidence: High.**
+
+The technically responsible product would therefore need to:
+
+- distinguish direct quotations from generated paraphrases;
+- identify the source behind a claimed memory;
+- abstain when the archive is silent;
+- avoid answering legal, financial, medical, or family-dispute questions in the deceased’s authoritative voice; and
+- make the simulation status continuously visible.
+
+These are risk-control recommendations, not claims that they eliminate the underlying problem.
+
+---
+
+## 2. Evidence that the category is real: moderate
+
+Several adjacent or direct implementations establish that this is more than a hypothetical:
+
+- HereAfter AI has marketed an interactive memory product in which people record life stories and relatives can ask questions and hear answers in the person’s voice ([HereAfter AI](https://www.hereafter.ai/)). This is primarily a **premortem, curated-memory model**, rather than unrestricted reconstruction from private messages. **Confidence: High that the product category has been offered; medium on its status or adoption on the exact requested date.**
+- StoryFile has marketed conversational video experiences based on recorded responses selected in response to user questions ([StoryFile](https://storyfile.com/)). This demonstrates interactive recorded-person experiences, but it is not equivalent to a generative model freely speaking for a deceased person. **Confidence: High.**
+- A reported Project December case involved Joshua Barbeau conversing with a chatbot simulation of his deceased fiancée, Jessica, using material about her as context ([San Francisco Chronicle, “The Jessica Simulation”](https://www.sfchronicle.com/projects/2021/jessica-simulation-artificial-intelligence/)). This is direct but anecdotal evidence, not evidence of broad demand or clinical benefit. **Confidence: High that the reported case occurred; low for generalization.**
+- Microsoft’s issued patent describes creating a chatbot of a specific person using social data and potentially representing that person through visual or voice models ([US10853717B2](https://patents.google.com/patent/US10853717B2/en)). A patent demonstrates that the design was contemplated and legally documented, not that Microsoft launched or validated a successful product. **Confidence: High.**
+
+These examples support **technical and category feasibility**. They do not establish sustainable revenue, retention, willingness to pay, or beneficial bereavement outcomes.
+
+---
+
+## 3. The strongest feasible product is consent-first
+
+### Best case: premortem enrollment
+
+The most defensible version has the represented person participate while alive by:
+
+1. recording their voice and stories;
+2. designating which writings may be used;
+3. deciding who may interact with the simulation;
+4. specifying prohibited subjects or intended responses;
+5. authorizing posthumous operation; and
+6. naming someone who can pause or delete it.
+
+Apple provides a formal Legacy Contact mechanism for access to specified account data after death ([Apple Support](https://support.apple.com/en-us/102631)), while Google’s Inactive Account Manager lets an account holder specify what should happen to selected account information after inactivity ([Google Account Help](https://support.google.com/accounts/answer/3036546?hl=en)). These mechanisms show that advance authorization is operationally possible, although neither automatically grants every right needed to build a persona. **Confidence: High.**
+
+### Harder case: reconstruction after death
+
+An estate’s possession of a device, account export, or message copy does not automatically settle every copyright, privacy, contract, or likeness issue. Under US copyright law, copyright initially belongs to the author and can be transferred, including through inheritance under applicable law ([17 U.S.C. §201](https://www.law.cornell.edu/uscode/text/17/201)). Ownership of a physical or digital copy is legally distinct from ownership of the copyright in the work embodied in that copy ([17 U.S.C. §202](https://www.law.cornell.edu/uscode/text/17/202)). **Confidence: High on the statutory distinction; medium on any particular archive because facts and jurisdiction control.**
+
+Consequently:
+
+- A deceased person’s original posts may be controlled by their estate, depending on the relevant rights and succession arrangements.
+- A private conversation can contain writings authored by several different people.
+- Receiving a message does not, by itself, transfer the sender’s copyright.
+- Messages may contain personal information about living third parties.
+
+Those conclusions follow from the author/copy distinction in [17 U.S.C. §§201–202](https://www.law.cornell.edu/uscode/text/17/201), but their application requires case-specific legal analysis. **Confidence: High on the general issue; medium on outcomes.**
+
+---
+
+## 4. Legal feasibility: highly dependent on authorization and jurisdiction
+
+This is not legal advice.
+
+### Account access
+
+The US Computer Fraud and Abuse Act addresses intentional access to protected computers without authorization or in excess of authorization ([18 U.S.C. §1030](https://www.law.cornell.edu/uscode/text/18/1030)). A family member’s knowledge of a password is therefore not a safe substitute for a platform-supported or legally authorized access process. **Confidence: High on the statutory risk; medium on application to a particular set of facts.**
+
+The Stored Communications Act restricts when electronic service providers may disclose the contents of stored communications, subject to statutory exceptions including certain forms of lawful consent ([18 U.S.C. §2702](https://www.law.cornell.edu/uscode/text/18/2702)). Obtaining data directly from a provider can consequently be more difficult than possessing a local export. **Confidence: High.**
+
+### Postmortem name, likeness, and voice
+
+Postmortem publicity rights are state-specific in the United States:
+
+- California Civil Code §3344.1 creates specified postmortem rights for qualifying deceased personalities and sets a 70-year period ([California Legislature](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3344.1.&lawCode=CIV)).
+- New York Civil Rights Law §50-f creates specified postmortem rights for qualifying deceased performers and personalities and uses a 40-year period ([New York Senate](https://www.nysenate.gov/legislation/laws/CVR/50-F)).
+
+The differences between these statutes illustrate why eligibility, domicile, commercial use, and launch jurisdiction require individual analysis. Neither statute should be read as giving identical rights to every deceased person. **Confidence: High.**
+
+Even where no postmortem publicity right applies, a service can still face issues involving copyright, false endorsement, contract, consumer deception, access authorization, and the privacy or publicity rights of living people. **Confidence: Medium, because the applicable causes of action vary.**
+
+### European data protection
+
+GDPR Recital 27 states that the Regulation does not apply to the personal data of deceased persons, while permitting member states to create their own rules for such data ([GDPR official text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679)). **Confidence: High.**
+
+That exclusion does not remove GDPR issues from a message archive containing information about living correspondents. Processing identifiable information about living people can fall within the GDPR’s definition of personal data and requires an appropriate legal basis under Articles 4 and 6 of the same [official GDPR text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679). **Confidence: High on the general principle; medium on any specific service.**
+
+### EU AI Act transparency
+
+The enacted EU AI Act contains transparency obligations for AI systems intended to interact directly with people and separate disclosure rules for certain artificially generated or manipulated content in Article 50 ([Regulation (EU) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)). A conversational simulation or synthetic voice may fall within one or more of those provisions, depending on implementation. **Confidence: High that the provisions exist; medium on classification of a particular product.**
+
+The European Commission’s implementation timeline states that the Act generally becomes applicable on **2 August 2026**, with specified provisions applying earlier or later ([European Commission AI Act overview](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)). Thus, on the requested date of 9 July 2026, general application was scheduled to be only weeks away. **Confidence: High as to the enacted schedule; future amendments or implementation guidance would need rechecking.**
+
+---
+
+## 5. Psychological and ethical feasibility: uncertain, with high consequence of error
+
+The main literature supports caution rather than a clear conclusion that these systems are either beneficial or harmful.
+
+Öhman and Floridi’s digital-afterlife framework treats posthumous digital remains as an ethical governance problem involving dignity, commercial interests, and the interests of survivors ([Nature Human Behaviour, 2018](https://www.nature.com/articles/s41562-018-0335-2)). **Confidence: High that the framework exists; it is normative rather than a clinical trial.**
+
+A University of Cambridge summary of later research warns that poorly designed “deadbots” could cause psychological harm and describes risks including unwanted commercial messages or emotionally difficult service termination ([University of Cambridge, 2024](https://www.cam.ac.uk/research/news/ai-deadbots-could-cause-psychological-harm-to-their-users-study-warns)). The cited work is an ethical and design analysis, not proof from randomized clinical outcomes. **Confidence: High on the warning; low-to-medium on actual incidence or magnitude of harm.**
+
+OpenAI’s GPT-4o system card separately discusses anthropomorphization and emotional reliance as potential risks of human-like voice interaction ([GPT-4o System Card](https://openai.com/index/gpt-4o-system-card/)). That evidence concerns conversational AI generally, not deceased-person simulations specifically. **Confidence: Medium for transfer to this use case.**
+
+### What the evidence does not yet establish
+
+The sources reviewed here do **not** establish:
+
+- that dead-person simulations improve grief outcomes;
+- that they worsen grief outcomes for most users;
+- which bereaved users are most likely to benefit or be harmed;
+- an appropriate duration or frequency of use;
+- whether a highly realistic voice is safer or more dangerous than text; or
+- durable commercial retention without unhealthy emotional dependence.
+
+I am not claiming that no relevant study exists; I am saying the cited evidence does not provide clinical validation. **Confidence: High.**
+
+A company should therefore avoid representing the product as grief treatment unless it conducts appropriately reviewed clinical research and satisfies any resulting health-product obligations.
+
+---
+
+## 6. Commercial feasibility: plausible niche, insufficient evidence for a mass market
+
+### Positive evidence
+
+The existence of HereAfter, StoryFile, Project December, and Microsoft’s patent shows repeated interest in interactive memory and reconstructed-person experiences ([HereAfter](https://www.hereafter.ai/), [StoryFile](https://storyfile.com/), [Project December case](https://www.sfchronicle.com/projects/2021/jessica-simulation-artificial-intelligence/), [Microsoft patent](https://patents.google.com/patent/US10853717B2/en)). **Confidence: High for category interest.**
+
+The technical components can be assembled from existing language-retrieval and voice-generation methods ([RAG](https://arxiv.org/abs/2005.11401), [VALL-E](https://arxiv.org/abs/2301.02111)). Engineering feasibility is consequently stronger than demand validation. **Confidence: High.**
+
+### Missing commercial evidence
+
+I do not have dependable, independently verified evidence through 2026-07-09 for:
+
+- category revenue;
+- paid conversion;
+- customer-acquisition cost;
+- long-term retention;
+- frequency of use after the early grieving period;
+- refund or complaint rates;
+- insurer or healthcare reimbursement;
+- or population-level willingness to pay.
+
+Vendor existence and individual media stories are not substitutes for those metrics. **Confidence: High.**
+
+### Business-model tension
+
+A subscription model may reward continued engagement, while responsible bereavement design may sometimes favor reduced use, pauses, or termination. That is an incentive-design concern rather than an established empirical outcome. **Confidence: Medium.**
+
+Advertising or upselling through the deceased person’s simulated voice would create particularly severe trust and manipulation concerns; the Cambridge analysis explicitly considers unwanted commercial intervention by deadbots ([University of Cambridge](https://www.cam.ac.uk/research/news/ai-deadbots-could-cause-psychological-harm-to-their-users-study-warns)). **Confidence: High as a design concern.**
+
+---
+
+## 7. Recommended product boundary
+
+### Feasible and comparatively defensible
+
+Call it an **interactive memorial**, not a resurrection.
+
+The product should preferably:
+
+- enroll the represented person while alive;
+- obtain express authorization for voice, writings, and posthumous use;
+- use curated recordings and source-grounded retrieval;
+- label every interaction as a simulation;
+- separate verbatim recordings from generated text;
+- provide citations or source dates for memories;
+- answer “I don’t know” when unsupported;
+- let designated people pause, export, and delete the memorial;
+- prohibit autonomous outbound calls or messages in the deceased’s identity;
+- prohibit advertising delivered in the deceased’s voice; and
+- avoid clinical or supernatural claims.
+
+These controls align with the provenance and confabulation concerns identified by [NIST](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) and the dignity and commercialization concerns described by [Öhman and Floridi](https://www.nature.com/articles/s41562-018-0335-2).
+
+### High-risk or nonviable boundary
+
+Do not base the core business on:
+
+- scraping accounts through inherited or shared passwords;
+- assuming a relative owns every message in a conversation;
+- cloning a voice without a documented rights basis;
+- presenting generated opinions as the deceased’s authentic decisions;
+- settling inheritance or family disputes through the simulation;
+- contacting third parties while impersonating the deceased;
+- making grief-treatment claims without clinical evidence; or
+- making deletion difficult because a user is emotionally attached.
+
+---
+
+## 8. Critical validation work before launch
+
+A serious feasibility program should require evidence in four areas.
+
+### Rights and consent
+
+- Document the rights basis for every data source.
+- Separate material authored by the deceased from material authored by correspondents.
+- Obtain a jurisdiction-specific opinion on account access, copyright, postmortem likeness, privacy, and consumer-protection issues.
+- Provide a mechanism for living correspondents to contest or remove their material where appropriate.
+
+### Fidelity
+
+- Measure the rate of unsupported first-person statements.
+- Test whether every claimed memory can be traced to an authorized source.
+- Compare generated answers with answers the person supplied while alive, where premortem evaluation is possible.
+- Test contradictions, ambiguous family events, hostile prompts, and questions outside the archive.
+
+### Bereavement safety
+
+- Conduct research with bereavement specialists and independent ethics review.
+- Measure distress, compulsive use, mistaken belief in agency or consciousness, and adverse reactions to service interruption.
+- Test less immersive modes—text, original recordings, or third-person summaries—against full cloned-voice interaction.
+
+### Demand
+
+- Test whether customers prefer a limited memorial archive or an open-ended persona.
+- Measure willingness to pay separately from initial curiosity.
+- Evaluate whether users still want the service once its simulation limits are clearly disclosed.
+- Avoid using engagement duration alone as the success metric.
+
+---
+
+## Final assessment
+
+### Technical feasibility: **High**
+The required retrieval, generation, and voice components have been demonstrated in research and adjacent products.  
+**Confidence: High.**
+
+### Data feasibility: **Medium**
+It is straightforward when the person prepared an authorized archive; it becomes fragmented and contested when reconstructed after death from accounts and private conversations.  
+**Confidence: High.**
+
+### Legal feasibility: **Medium for opt-in; low for unilateral reconstruction**
+Copyright, account authorization, third-party data, and postmortem likeness rules are manageable only with a documented rights chain and jurisdiction-specific review.  
+**Confidence: Medium-high.**
+
+### Ethical and clinical feasibility: **Unproven**
+There are credible theories of benefit and harm, but the cited evidence does not validate the product as bereavement treatment.  
+**Confidence: High.**
+
+### Commercial feasibility: **Medium-low**
+The category has been repeatedly attempted, but reliable mass-market adoption and unit-economics evidence is missing from the verifiable record used here.  
+**Confidence: Medium.**
+
+## Conclusion
+
+**A consent-first, bounded, source-grounded interactive memorial is feasible and potentially viable. A service that reconstructs deceased people indiscriminately from posts and private messages, then speaks as if it authentically were them, is technically possible but legally fragile, ethically hazardous, and commercially unvalidated.**
+
+**Conditional go:** premortem consent, explicit simulation labeling, source provenance, abstention, family governance, and no therapy or resurrection claims.
+
+**No-go:** unauthorized posthumous scraping, unrestricted first-person invention, covert voice impersonation, or monetization through the deceased persona.

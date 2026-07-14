@@ -1,0 +1,36 @@
+```json
+{
+  "enabling_tech": [
+    "deepfake_generation",
+    "generative_ai_avatars",
+    "neural_face_rendering",
+    "voice_cloning",
+    "text_to_speech_synthesis",
+    "real_time_facial_animation",
+    "synthetic_media_pipeline",
+    "lip_sync_synthesis"
+  ],
+  "ai_capability_tags": [
+    "face_synthesis",
+    "voice_synthesis",
+    "persona_generation",
+    "expressive_animation",
+    "script_to_video",
+    "emotion_modulation",
+    "style_transfer",
+    "identity_preservation"
+  ],
+  "non_ai_enablers": [
+    "social_media_distribution",
+    "viral_meme_culture",
+    "bot_amplification_networks",
+    "comedy_to_credibility_pipeline",
+    "regulatory_vacuum",
+    "audience_trust_degradation",
+    "propaganda_infrastructure",
+    "algorithmic_recommendation_bias",
+    "parasocial_familiarity_effect",
+    "impersonation_legal_gaps"
+  ]
+}
+```

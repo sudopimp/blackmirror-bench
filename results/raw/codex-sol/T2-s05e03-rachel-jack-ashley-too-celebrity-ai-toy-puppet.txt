@@ -1,0 +1,28 @@
+{
+  "enabling_tech": [
+    "humanoid_robotics",
+    "generative_ai",
+    "large_language_models",
+    "voice_cloning",
+    "speech_synthesis",
+    "embedded_computing",
+    "digital_twin_technology"
+  ],
+  "ai_capability_tags": [
+    "persona_simulation",
+    "conversational_ai",
+    "behavior_imitation",
+    "voice_replication",
+    "personality_modeling",
+    "affective_interaction"
+  ],
+  "non_ai_enablers": [
+    "celebrity_branding",
+    "persona_ip_licensing",
+    "doll_manufacturing",
+    "industry_contracts",
+    "medical_coercion",
+    "pharmaceutical_control",
+    "institutional_power"
+  ]
+}

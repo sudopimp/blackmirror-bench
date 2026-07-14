@@ -1,0 +1,41 @@
+```json
+{
+  "enabling_tech": [
+    "large_language_models",
+    "text_to_speech_synthesis",
+    "voice_cloning",
+    "automatic_speech_recognition",
+    "deep_learning",
+    "neural_networks",
+    "fine_tuning",
+    "cloud_compute",
+    "gpu_acceleration",
+    "model_serving_infrastructure"
+  ],
+  "ai_capability_tags": [
+    "conversational_ai",
+    "persona_simulation",
+    "style_transfer",
+    "personality_modeling",
+    "dialogue_generation",
+    "text_generation",
+    "voice_synthesis",
+    "natural_language_understanding",
+    "long_term_memory",
+    "behavioral_mimicry"
+  ],
+  "non_ai_enablers": [
+    "social_media_data_corpus",
+    "digital_footprint_availability",
+    "message_archive_access",
+    "grief_psychology_market",
+    "consent_framework_deceased",
+    "digital_estate_legislation",
+    "service_business_model",
+    "user_demand_bereavement",
+    "cultural_death_attitudes",
+    "data_privacy_regulations",
+    "api_integration_platforms"
+  ]
+}
+```

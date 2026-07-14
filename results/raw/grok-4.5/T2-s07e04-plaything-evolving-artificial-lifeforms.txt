@@ -1,0 +1,5 @@
+{
+  "enabling_tech": ["game_engines", "neural_networks", "evolutionary_algorithms", "cloud_computing", "iot_devices"],
+  "ai_capability_tags": ["generative_models", "reinforcement_learning", "multi_agent_systems", "artificial_life", "adaptive_evolution"],
+  "non_ai_enablers": ["digital_platforms", "user_interaction", "hardware_advances", "online_communities", "economic_systems"]
+}

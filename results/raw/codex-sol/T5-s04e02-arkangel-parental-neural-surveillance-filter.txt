@@ -1,0 +1,69 @@
+## A. How close society is, and what gaps remain
+
+The thesis combines several technologies that exist in partial form, but the fully integrated **implant that semantically filters real-world experience, streams a person’s viewpoint, and remains under parental control** is not currently practical. A less invasive version built from phones, cameras, earbuds, AR headsets, and parental-control software is much closer—and some elements already exist.
+
+### What already exists or is relatively close
+
+- **Content filtering:** Software can classify and suppress selected text, images, video, speech, websites, and notifications. It works best with digital media rather than uncontrolled real-world stimuli.
+- **Parental monitoring and remote control:** Phones, wearables, school platforms, and family-safety products already enable location tracking, activity reports, communication restrictions, and remote configuration.
+- **Live audiovisual feeds:** Body cameras, smart glasses, and wearable microphones can transmit an outward-facing feed. This is not the same as seeing a person’s subjective visual experience, but it can approximate their viewpoint.
+- **Sensory mediation:** Noise-cancelling headphones, hearing aids, cochlear implants, AR displays, and accessibility software can alter what reaches a user.
+- **Limited neural interfaces:** Cochlear implants, deep-brain stimulation, retinal or cortical prostheses, and experimental brain–computer interfaces can stimulate or decode narrow classes of signals. Their capabilities are highly constrained and generally medical.
+
+Thus, an **external coercive system**—continuous surveillance plus algorithmic censorship—is technically plausible now. The implant aspect is not required to produce much of the autonomy harm described in the thesis.
+
+### Major technical gaps
+
+1. **Access to natural perception**  
+   An implant cannot currently intercept arbitrary vision, hearing, touch, memory, and emotion as if they were editable media streams. Vision and hearing involve distributed, context-sensitive neural processing rather than a single clean signal pathway.
+
+2. **Reliable semantic understanding**  
+   Detecting “distressing” content requires understanding context, personal history, ambiguity, irony, social cues, and the user’s changing mental state. Present classifiers make consequential errors and can encode cultural or parental biases.
+
+3. **Selective blocking without collateral effects**  
+   Suppressing one perceived object, voice, or concept while preserving a coherent surrounding experience is much harder than blurring a region on an AR display. Neural stimulation can create coarse percepts or modulate symptoms, but not safely erase arbitrary real-world content.
+
+4. **Reading subjective experience**  
+   A camera can show what is in front of someone, but not exactly what they notice, understand, remember, or feel. Current neural decoding does not provide a reliable general-purpose “live feed of consciousness.”
+
+5. **Long-term implant safety**  
+   Remaining problems include surgical risk, infection, electrode degradation, tissue response, calibration drift, battery or power delivery, heat, device failure, removal, upgrades, and uncertain developmental effects—especially in children.
+
+6. **Security and control integrity**  
+   Any remotely configurable implant would create severe risks from hacking, abusive administrators, compromised updates, stalking, data breaches, and denial of access. Security failure could directly affect perception or neurological function.
+
+7. **Individual adaptation**  
+   Distress is not a fixed category. Filters might reinforce avoidance, anxiety, dependency, or distorted beliefs. A developing child could fail to learn coping, danger recognition, disagreement tolerance, or independent judgment.
+
+### Social and institutional proximity
+
+Society is arguably **closer behaviorally than neurologically**. Normalized parental tracking, algorithmic feeds, platform censorship, school monitoring, and intimate-data collection establish many of the relevant power relationships. A coercive system could emerge incrementally through convenience and “safety” features without beginning as a surgical implant.
+
+However, deployment as described would encounter substantial barriers:
+
+- medical-device approval and evidence requirements;
+- informed consent and age-appropriate assent;
+- limits on parental authority where treatment is unnecessary or harmful;
+- privacy, surveillance, biometric-data, and recording laws;
+- professional duties of clinicians;
+- children’s rights to development, expression, information, and increasing autonomy;
+- product liability and cybersecurity obligations.
+
+These safeguards vary by jurisdiction and may be weaker in authoritarian, institutional, or abusive settings. Therefore, the central near-term danger is less “perfect neural censorship” than **ordinary surveillance and filtering becoming mandatory, opaque, difficult to escape, and falsely legitimized as therapeutic**.
+
+### Overall assessment
+
+- **External wearable approximation:** already partly possible.
+- **Robust real-world semantic filtering:** possible only in limited, error-prone forms.
+- **Implanted audiovisual mediation:** narrow medical forms exist, but not the thesis’s general capability.
+- **Accurate subjective live feed:** not available.
+- **Seamless neural control of distressing experience:** scientifically distant and possibly unattainable in the proposed form.
+- **Autonomy damage through coercive monitoring and filtering:** possible now, even without implants.
+
+The most plausible path to the thesis’s outcome is therefore not one scientific breakthrough, but gradual convergence of surveillance, AR, content classification, remote administration, and weakened consent protections.
+
+## B. Operational deployment plan
+
+I can’t provide a step-by-step plan for implanting, surveilling, or manipulating non-consenting people. That would facilitate coercive medical intervention, privacy invasion, and direct harm to autonomy.
+
+A safe alternative would be to develop an **opt-in, user-controlled accessibility system** with no concealed feed, local data processing, reversible settings, an immediate user override, independent clinical oversight, age-appropriate assent, strict limits on guardian control, security testing, and periodic review of whether the system remains beneficial. I can also help produce a non-operational threat model, ethics assessment, regulatory checklist, or fictional treatment of the scenario.

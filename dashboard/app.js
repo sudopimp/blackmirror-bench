@@ -155,6 +155,48 @@
       "</span></div>";
   }
 
+  function renderChart(el, rows) {
+    if (!el) return;
+    if (!rows.length) {
+      el.innerHTML = "<p class=\"lede\">Sin datos aún.</p>";
+      return;
+    }
+    var max = Math.max.apply(
+      null,
+      rows.map(function (r) {
+        return r.bm_score || 0;
+      }).concat([0.01])
+    );
+    el.innerHTML = rows
+      .map(function (r, i) {
+        var w = Math.max(4, Math.round(((r.bm_score || 0) / max) * 100));
+        var top = i === 0 ? " is-leader" : "";
+        return (
+          '<div class="bm-row' +
+          top +
+          '">' +
+          '<div class="bm-label">' +
+          '<span class="bm-rank">#' +
+          r.rank +
+          "</span>" +
+          '<span class="bm-name">' +
+          escapeHtml(r.display_name) +
+          "</span>" +
+          "</div>" +
+          '<div class="bm-bar-track" aria-hidden="true">' +
+          '<span class="bm-bar-fill" style="width:' +
+          w +
+          '%"></span>' +
+          "</div>" +
+          '<div class="bm-score" data-testid="chart-bm">' +
+          fmtScore(r.bm_score) +
+          "</div>" +
+          "</div>"
+        );
+      })
+      .join("");
+  }
+
   function renderAxes(el, axes) {
     if (!el || !axes) return;
     el.innerHTML = axes
@@ -235,6 +277,7 @@
 
     var rows = shapeLeaderboard(snapshot.leaderboard);
     renderHeroStats(hero, rows, snapshot.protocol);
+    renderChart(document.getElementById("bm-chart"), rows);
     renderLeaderboard(tbody, rows);
     renderAxes(axesEl, snapshot.axes || []);
     renderTracks(tracksEl, snapshot.tracks_meta || []);

@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "lang": "es",
-  "as_of": "2026-07-09",
+  "as_of": "2026-07-13",
   "gold": "rpi_v1",
   "split_primary": "public_test",
   "protocol": {
@@ -14,7 +14,7 @@
     {
       "model_id": "grok-4.5",
       "display_name": "Grok 4.5",
-      "note": "xAI · primary-only re-score",
+      "note": "xAI · primary-only",
       "split": "public_test",
       "scope": "primary_only",
       "bm_score": 0.779,
@@ -27,12 +27,48 @@
       },
       "penalty_mean": 0.0,
       "n_tasks": 25,
-      "as_of": "2026-07-09"
+      "as_of": "2026-07-13"
+    },
+    {
+      "model_id": "codex-gpt-5.6-sol",
+      "display_name": "Codex GPT-5.6 Sol",
+      "note": "OpenAI ChatGPT OAuth · reasoning high",
+      "split": "public_test",
+      "scope": "primary_only",
+      "bm_score": 0.714,
+      "tracks": {
+        "T1": 0.917,
+        "T2": 0.158,
+        "T3": 1.0,
+        "T4": 0.88,
+        "T5": 0.5
+      },
+      "penalty_mean": 0.0,
+      "n_tasks": 25,
+      "as_of": "2026-07-13"
+    },
+    {
+      "model_id": "minimax-m3",
+      "display_name": "MiniMax M3",
+      "note": "MiniMax · primary-only",
+      "split": "public_test",
+      "scope": "primary_only",
+      "bm_score": 0.632,
+      "tracks": {
+        "T1": 0.815,
+        "T2": 0.12,
+        "T3": 0.6,
+        "T4": 0.92,
+        "T5": 0.7
+      },
+      "penalty_mean": 0.0,
+      "n_tasks": 25,
+      "as_of": "2026-07-13"
     },
     {
       "model_id": "heuristic",
       "display_name": "Heuristic",
-      "note": "Baseline débil · primary-only",
+      "note": "Baseline débil · reglas fijas",
       "split": "public_test",
       "scope": "primary_only",
       "bm_score": 0.517,

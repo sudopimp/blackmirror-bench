@@ -52,19 +52,26 @@ python scripts/build_dashboard_snapshot.py
 # re-embebido en index.html vía el mismo script + plantilla, o abrir snapshot.json
 ```
 
-## Results (public_test)
+## Results (primary-only `public_test`, n=25)
 
-| Model | BM-Score | T1 | T2 | T3 | T4 | T5 |
-|-------|----------|----|----|----|----|-----|
-| **grok-4.5** | **0.773** | 0.856 | 0.203 | 0.950 | 0.900 | 1.000 |
-| heuristic | 0.571 | 0.737 | 0.124 | 0.200 | 0.900 | 1.000 |
+| Model | BM-Score | T1 | T2 | T3 | T4 | T5 | Notes |
+|-------|----------|----|----|----|----|-----|-------|
+| **grok-4.5** | **0.779** | 0.880 | 0.137 | 1.000 | 0.920 | 1.000 | xAI |
+| **codex-gpt-5.6-sol** | **0.714** | 0.917 | 0.158 | 1.000 | 0.880 | 0.500 | ChatGPT OAuth |
+| **minimax-m3** | **0.632** | 0.815 | 0.120 | 0.600 | 0.920 | 0.700 | MiniMax |
+| heuristic | 0.517 | 0.799 | 0.101 | 0.050 | 0.650 | 1.000 | weak baseline |
 
-Full write-up: [results/REPORT_grok-4.5.md](results/REPORT_grok-4.5.md) · [results/LEADERBOARD.md](results/LEADERBOARD.md)
+**First multi-model chart (non-technical):** open [dashboard/index.html](dashboard/index.html) · full notes [results/LEADERBOARD.md](results/LEADERBOARD.md).
 
 ```bash
 # Grok 4.5 (needs XAI_API_KEY or Grok Build auth)
 python scripts/run_parallel_eval.py --model grok-4.5 --split public_test \
-  --workers 6 --save-raw --out results/grok-4.5_public_test.json
+  --workers 5 --save-raw --out results/grok-4.5_public_test_primary.json
+
+# MiniMax M3 / Codex Sol / z.ai (see LEADERBOARD.md for env vars)
+python scripts/run_parallel_eval.py --model minimax-m3 --split public_test \
+  --workers 4 --save-raw --out results/minimax-m3_public_test_primary.json
+python scripts/build_dashboard_snapshot.py
 ```
 
 ## Quickstart

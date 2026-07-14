@@ -1,0 +1,17 @@
+{
+  "model": "codex-gpt-5.6-sol",
+  "split": "public_test",
+  "bm_score": 0.7136286144637632,
+  "track_means": {
+    "T1": 0.9165714285714286,
+    "T2": 0.15828592946167316,
+    "T3": 1.0,
+    "T4": 0.8800000000000001,
+    "T5": 0.5
+  },
+  "penalty_mean": 0.0,
+  "n_tasks": 25,
+  "as_of": "2026-07-13",
+  "workers": 3,
+  "scope": "primary_only"
+}

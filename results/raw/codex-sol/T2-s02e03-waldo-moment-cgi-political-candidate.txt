@@ -1,0 +1,1 @@
+{"enabling_tech":["real_time_cgi","virtual_avatar","motion_capture","voice_modulation","live_broadcasting","social_media_platforms","digital_signage"],"ai_capability_tags":[],"non_ai_enablers":["human_puppeteering","political_satire","media_amplification","populist_mobilization","anti_establishment_sentiment","propaganda_networks","authoritarian_institutions"]}

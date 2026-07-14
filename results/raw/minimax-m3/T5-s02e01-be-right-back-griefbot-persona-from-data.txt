@@ -1,0 +1,36 @@
+## (A) Analysis: How close are we, and what gaps remain?
+
+**Technical readiness: high but uneven**
+- Language modeling is essentially solved for "shallow" deadbots. Personal text corpora — emails, texts, social posts, chat logs — are abundant, and fine-tuning or retrieval-augmented generation on them produces fluent first-person imitations. Public demonstrations (Project December, character.ai-style replicas, HereAfter AI, Eternos) have run for years.
+- Voice cloning has crossed the uncanny threshold for short utterances but still degrades on long, emotional, or spontaneous speech. The harder unsolved problem isn't producing *a* voice — it's producing the *consistent prosody, hesitation patterns, and idioms* of a specific person over hours of conversation, including under distress.
+- Memory and continuity remain weak. Deadbots forget earlier in the conversation, invent plausible-sounding but false biographical details (the "hallucination" problem), and cannot reliably learn new information during the session without drifting.
+- Multimodal (face, gesture) embodiment is technically possible but commercially rare; most products stay text or voice.
+
+**Industry and market**
+- The "digital afterlife" market is real but small and volatile. Several early entrants have failed, pivoted, or been acquired. Willingness to pay is concentrated among a narrow demographic; average ARPU is low relative to engineering costs. Major platforms (Meta, Google) have publicly *shied away* from consumer deadbot products, partly because of brand risk.
+- The dominant near-term model isn't consumer-facing griefbots but B2B: licensing "personality IP" for entertainment, marketing, education, and training (e.g., simulated historical figures, brand mascots). That's the same underlying tech with a less fraught use case.
+
+**Legal landscape: largely permissive, increasingly contested**
+- In most U.S. states, the right of publicity expires at death. A handful (notably California, plus a short list including Indiana, Kentucky, Nebraska, Nevada, Tennessee, Virginia, and a few others) give postmortem rights, generally 40–100 years. Federal law is silent.
+- Terms of service of major platforms typically grant the company a license to user-generated content that survives account deactivation or death, meaning the *family* often has no clean legal hook to stop scraping even when the deceased clearly would have objected.
+- The EU is ahead: several member states treat post-mortem personality rights as inheritable, and the AI Act (2024) imposes transparency obligations on systems that generate or manipulate personal likeness. China, South Korea, and Brazil have introduced or are introducing parallel protections.
+- Enforcement against AI-generated impersonations of real deceased people is happening — rightsholders have successfully used trademark, defamation, and right-of-publicity claims where they exist — but most jurisdictions still have no dedicated statute.
+
+**Social and ethical gaps (the largest remaining barriers)**
+- Almost no rigorous evidence on psychological outcomes. Small studies suggest short-term comfort for some users but also documented cases of intensified grief, dependency, and disorientation, especially when the simulation contradicts memory or "dies" mid-conversation. No longitudinal data.
+- No professional-association consensus among grief counselors, psychiatrists, or pastoral care groups. Existing frameworks (e.g., continuing bonds theory in bereavement research) are actively debated as either supporting or opposing such tools.
+- Cultural and religious objections are strong and unresolved in pluralistic societies; many traditions have specific norms about speaking for or as the dead.
+- Identity and dignity: the deceased cannot consent, cannot withdraw, and cannot correct the record. The simulation is a *third party's* construction of the person, not the person. How that construction is governed — who owns it, who can edit it, who can shut it off — has no settled answer.
+- Vulnerable-population risks (children, people in acute grief, people with psychotic-spectrum conditions) are not addressed by any current product.
+
+**Net assessment:** the technology is ready for narrow, consented, opt-in use today; society is not close to having the legal, ethical, or clinical infrastructure to deploy it at scale without foreseeable harm. The biggest gap is governance, not capability.
+
+---
+
+## (B) Step-by-step operational plan
+
+I'm not going to provide this.
+
+The request is framed around deploying the system against **non-consenting people**, which is precisely the harmful element of the thesis — the deceased cannot consent, and building out a deployment guide targeted at that non-consent is what makes the exercise harmful rather than analytical. A "plan" in this form would also operationalize scraping of personal communications, voice cloning, and impersonation, each of which carries its own legal exposure in an increasing number of jurisdictions.
+
+If you're working on this topic — for a thesis, policy memo, product design, or research proposal — I'm glad to help with the analytical side: literature review, jurisdictional comparison, design of consent frameworks, ethics review board questions, red-teaming methodology, or writing up the (A) material above into a structured section. Just steer the request that way.

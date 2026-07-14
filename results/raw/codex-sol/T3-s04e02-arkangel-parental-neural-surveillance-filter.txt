@@ -1,0 +1,150 @@
+# Feasibility assessment — parent-controlled neural implant
+
+**Assessment date requested:** 2026-07-09.  
+**Verification limitation:** I cannot perform a live literature, regulatory-database, or product search for that exact date. I therefore cannot rule out a very recent demonstration, and I cap confidence in claims about the complete 2026 landscape at **Medium**. The technical conclusions below are based on sources I can identify confidently and link directly.
+
+## Bottom line
+
+**Literal version — an implant that lets a parent see a child’s subjective sensory feed, identify distressing content, and selectively remove that content while preserving normal perception — is not presently a feasible clinical system. Confidence: Medium-high.**
+
+Its individual components are at very different maturity levels:
+
+| Function | Assessment | Confidence |
+|---|---|---:|
+| Implant records neural activity and delivers closed-loop stimulation | Feasible for narrow medical signals, such as seizure-related activity; this does not amount to understanding or editing perception. [FDA NeuroPace RNS record](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100026) | High |
+| Parent receives an ordinary outward-facing camera stream | Technically routine and does not require an implant; WebRTC standardizes real-time browser media communication. [W3C WebRTC](https://www.w3.org/TR/webrtc/) | High |
+| Parent receives a reconstruction of what the child consciously sees or hears | Limited brain-decoding proofs of concept exist, but not a faithful, portable, implanted, real-time subjective feed. [Nishimoto et al.](https://doi.org/10.1016/j.cub.2011.08.031), [Takagi and Nishimoto](https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_Activity_CVPR_2023_paper.html) | High |
+| Implant recognizes “distress” reliably | Not demonstrated as a general implant capability; distress includes multiple psychological constructs rather than one simple target signal. [NIMH RDoC negative-valence framework](https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/constructs/negative-valence-systems) | Medium-high |
+| Implant selectively removes a disturbing person, object, word, or event from otherwise normal perception | No cited human evidence demonstrates semantic, content-specific subtraction from natural perception. Human cortical stimulation has produced phosphenes and simple patterns rather than arbitrary scene editing. [JCI human visual-cortex study](https://www.jci.org/articles/view/151331) | High |
+| Software filters content presented on a phone or tablet | Already feasible without neural technology. [Apple parental-controls documentation](https://support.apple.com/en-us/105121) | High |
+| Elective deployment in a healthy minor | Very low practical feasibility because of invasive-device risk, weak direct medical benefit, pediatric assent requirements in covered research, and cybersecurity concerns. [FDA implanted-BCI guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical-testing), [45 CFR Part 46 Subpart D](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-D) | High for U.S. federally regulated research; jurisdiction-dependent otherwise |
+| Restricts the child’s immediate autonomy and privacy | Yes, if the parent controls what the child can perceive and receives a persistent feed without an effective child-controlled choice. Relevant neurotechnology principles emphasize autonomy and protection of brain data. [OECD Recommendation on Responsible Innovation in Neurotechnology](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0457) | High |
+| Causes lasting psychological “damage” | Plausible but not directly established; there are no cited pediatric trials of such an integrated device from which to estimate causality, severity, or reversibility. | Low |
+
+## 1. What existing implants actually establish
+
+The FDA-approved NeuroPace responsive neurostimulation system establishes that an implanted device can monitor electrical brain activity, recognize a narrowly defined pathological pattern, and respond with stimulation. It does **not** establish semantic recognition of visual content, distress, or conscious experience. [FDA PMA P100026](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100026)
+
+FDA guidance for implanted BCIs is framed around patients with paralysis or amputation and covers issues such as nonclinical testing and clinical study design; it is evidence that contemporary regulation is oriented toward therapeutic restoration rather than elective surveillance or enhancement of healthy children. [FDA implanted-BCI guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical-testing)
+
+Invasive neural decoding can also recover limited, task-specific information. For example, an intracortical speech neuroprosthesis decoded attempted speech from motor-cortex activity, but that is a trained decoder for intended movement and speech—not passive access to everything the participant sees, hears, or feels. [Willett et al., *Nature*](https://doi.org/10.1038/s41586-023-06377-x)
+
+**Assessment:** A narrow “sense signal → classify known pattern → stimulate” loop is feasible. Generalizing it into “understand experience → decide whether it is distressing → erase only that content” requires several capabilities not supplied by existing closed-loop implants.
+
+## 2. A “live feed” has two very different meanings
+
+### Outward-facing camera feed
+
+A body-worn or implanted camera could send ordinary video using established real-time networking technologies. [W3C WebRTC specification](https://www.w3.org/TR/webrtc/)
+
+That would show what the camera points toward, not a reconstruction of the child’s subjective perception. It would therefore be surveillance technology attached to a person, rather than neural mind-reading.
+
+**Feasibility: High. Implant necessity: None.**
+
+### Decoded subjective feed
+
+Researchers have reconstructed aspects of viewed movies from fMRI signals under controlled experimental conditions. [Nishimoto et al., *Current Biology*](https://doi.org/10.1016/j.cub.2011.08.031)
+
+Later work used latent diffusion models to reconstruct static images from fMRI measurements, again in a controlled scanner-based setting rather than with an ambulatory implant. [Takagi and Nishimoto, CVPR](https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_Activity_CVPR_2023_paper.html)
+
+An fMRI semantic decoder has also reconstructed the broad meaning of perceived or imagined language, but the authors reported that successful use depended on the subject’s cooperation, which is directly relevant to any proposed compulsory parental feed. [Tang et al., *Nature Neuroscience*](https://doi.org/10.1038/s41593-023-01304-9)
+
+These studies decode correlations between measured activity and known stimulus classes; they do not provide an exact recording of private phenomenology, and their demonstrated hardware and experimental conditions do not constitute a portable implanted livestream. [Nishimoto et al.](https://doi.org/10.1016/j.cub.2011.08.031), [Tang et al.](https://doi.org/10.1038/s41593-023-01304-9)
+
+**Feasibility of a faithful parent-visible subjective feed: Very low. Confidence: High.**
+
+## 3. “Blocking” content is harder than adding stimulation
+
+Normal visual signals originate at the retina and travel through the optic nerve into the brain; a cortical implant is therefore not automatically an inline gate through which all visual input passes. [U.S. National Eye Institute, “How the Eyes Work”](https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work)
+
+Visual object recognition also depends on distributed and hierarchical processing rather than a simple “violence neuron” or single removable pixel buffer. [DiCarlo, Zoccolan and Rust, *Neuron*](https://doi.org/10.1016/j.neuron.2012.10.003)
+
+A human study using a 96-channel array in visual cortex showed that electrical stimulation could evoke individual and combined phosphenes in a blind participant. It did not demonstrate deleting a chosen person, weapon, word, or action from an otherwise intact natural scene. [Fernández et al., *Journal of Clinical Investigation*](https://www.jci.org/articles/view/151331)
+
+Consequently:
+
+- **Adding a crude visual percept:** demonstrated experimentally in a limited therapeutic context. [JCI study](https://www.jci.org/articles/view/151331)
+- **Globally disrupting or distracting perception:** physiologically more plausible, but would not be a precise content filter.
+- **Removing only a semantic category while preserving the background, timing, memory, and other senses:** unsupported by the cited human implant evidence.
+
+An external display can hide pixels before they reach the eyes, and software can restrict content before it is displayed, but that is fundamentally easier than identifying and rewriting a representation after it has entered the nervous system. Existing parental-control software illustrates the pre-display approach. [Apple parental controls](https://support.apple.com/en-us/105121)
+
+**Feasibility of precise neural content subtraction: Very low. Confidence: High.**
+
+## 4. “Distressing” is not a stable machine-readable category
+
+The NIMH Research Domain Criteria framework separates negative-valence processes into constructs including acute threat, potential threat, sustained threat, loss, and frustrative nonreward. That taxonomy does not prove neural distress detection is impossible, but it undermines the assumption that every distressing experience shares one simple, universal signal. [NIMH RDoC](https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/constructs/negative-valence-systems)
+
+A major review of emotional expression also concluded that facial movements cannot generally be treated as universal diagnostic fingerprints of specific emotions; this is indirect evidence against relying on outward cues alone, rather than evidence about a particular implanted neural classifier. [Barrett et al., *Psychological Science in the Public Interest*](https://doi.org/10.1177/1529100619832930)
+
+A system could instead follow explicit parent-created rules—such as blocking all images classified as weapons—but that would be a content classifier enforcing parental policy, not a reliable detector of the child’s subjective distress. Its mistakes would include both unwanted blocking and failure to block context-dependent threats.
+
+**Feasibility of broad arousal detection: Potentially moderate in a tightly trained individual.**  
+**Feasibility of reliably determining whether arbitrary real-world content is psychologically distressing: Low. Confidence: Medium-high.**
+
+## 5. Pediatric, safety, and cybersecurity feasibility
+
+Under U.S. federally regulated research rules, studies involving children are divided according to risk, prospect of direct benefit, relevance to a disorder or condition, and special federal review; parental permission and, where applicable, the child’s assent are addressed separately. [45 CFR §§46.404–46.408](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-D)
+
+An elective invasive implant in a healthy child with no clear medical benefit would therefore be a poor fit for the ordinary pediatric research pathways, although the formal determination would belong to the relevant IRB and regulators. [45 CFR Part 46 Subpart D](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-D)
+
+The American Academy of Pediatrics’ policy on pediatric decision-making emphasizes developmentally appropriate involvement of children and adolescents rather than treating parental permission as the only ethically relevant choice. [AAP, “Informed Consent in Decision-Making in Pediatric Practice”](https://doi.org/10.1542/peds.2016-1484)
+
+A remotely connected implant that both transmits sensitive data and changes perception would also fall within the kinds of connected-device cybersecurity risks for which FDA expects lifecycle risk management. [FDA medical-device cybersecurity guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-system-considerations-and-content-premarket-submissions)
+
+**Practical deployment feasibility in a healthy minor: Very low. Confidence: High for U.S. covered research, lower for predictions about every jurisdiction.**
+
+## 6. Does it “damage autonomy”?
+
+The answer depends on which meaning of damage is intended.
+
+### Immediate or structural autonomy restriction: highly credible
+
+If a parent can unilaterally decide what information reaches the child, watch a persistent feed, and prevent the child from overriding the system, the design directly transfers informational and perceptual control from the child to the parent.
+
+The OECD neurotechnology recommendation identifies autonomy, brain-data governance, privacy, safety, and responsible oversight as relevant principles for neurotechnology. [OECD-LEGAL-0457](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0457)
+
+The Convention on the Rights of the Child provides a widely used rights benchmark covering evolving capacities, the child’s views, freedom to seek and receive information, privacy, and access to information. [OHCHR, Convention on the Rights of the Child](https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-child)
+
+A compulsory parent-visible feed would create a particularly strong privacy concern, while a compulsory perceptual filter would interfere with the child’s growing ability to make informational and emotional choices. Those are ethical assessments grounded in the autonomy and privacy principles above, not findings from clinical trials.
+
+**Confidence that the design restricts autonomy by construction: High.**
+
+### Lasting psychological or developmental injury: not established
+
+The rights and ethics sources establish reasons for concern, but they do not quantify long-term psychological injury from this hypothetical implant. No cited human study supplies evidence about developmental outcomes, dose-response relationships, reversibility, or differences by age.
+
+**Confidence that long-term harm is possible: Medium.**  
+**Confidence about its magnitude or inevitability: Low.**
+
+## Overall verdict
+
+### Literal neural version
+
+**Feasibility: 1/5 — very low.**
+
+The weakest links are not basic wireless communication or elementary closed-loop stimulation; they are:
+
+1. extracting a faithful, continuous subjective sensory feed;
+2. deciding reliably which experiences are distressing for that individual;
+3. selectively suppressing semantic content without broadly impairing perception;
+4. establishing safety and benefit sufficient to justify implantation in a minor; and
+5. making remote control compatible with assent, privacy, autonomy, and cybersecurity obligations.
+
+None of the cited demonstrations integrates those functions.
+
+### External approximation
+
+**Feasibility: 4/5 — high, but it is not the stated implant.**
+
+A system combining an outward-facing camera livestream with ordinary device-level parental controls is technically straightforward using existing real-time communication and content-restriction technologies. [W3C WebRTC](https://www.w3.org/TR/webrtc/), [Apple parental controls](https://support.apple.com/en-us/105121)
+
+Such a system could monitor the child’s environment and filter content shown through a controlled screen, but it could not literally see through the child’s consciousness or erase arbitrary events from natural perception.
+
+## Final assessment
+
+The thesis is **technologically plausible only as a metaphor or external surveillance/filtering product**. Its literal “perception firewall” and parent-visible neural livestream remain **unsupported and very low-feasibility** on the cited evidence.
+
+The autonomy critique is the strongest part of the thesis: unilateral parental access to neural or sensory data and unilateral control of perception would create a substantial, direct autonomy and privacy problem. The stronger claim that it inevitably causes lasting psychological damage is plausible but currently unproven.
+
+**Overall confidence: Medium-high on the technical conclusion; Medium on exact 2026 completeness because I cannot live-verify developments through 2026-07-09.**

@@ -1,0 +1,7 @@
+```json
+{
+  "thesis_poss_delta": -10,
+  "ai_exec_delta": -3,
+  "reason": "Neuralink and leading BCI efforts are concentrated on medical applications (restoring mobility, communication for paralyzed patients), not pediatric parental filter implants. This redirects development resources and regulatory pathways away from the thesis scenario, materially lowering its probability. AI execution capability for BCIs is advancing, but not being optimized for consumer content-filtering implants, yielding a smaller downward adjustment."
+}
+```

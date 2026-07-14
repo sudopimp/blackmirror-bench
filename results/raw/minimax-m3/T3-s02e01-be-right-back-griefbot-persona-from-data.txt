@@ -1,0 +1,37 @@
+# Feasibility Assessment: AI Simulations of Deceased Persons
+*As of 2026-07-09 — based on evidence up to my knowledge cutoff in early 2026.*
+
+## Bottom Line
+**Technically feasible and commercially demonstrated; legally and ethically contested.** Several services have shipped working products, but the regulatory environment tightened sharply in 2024–2025, and unresolved issues around consent, identity, and harm remain.
+
+---
+
+## 1. Technical Feasibility — HIGH confidence
+
+The components required are mature, off-the-shelf, and improving rapidly:
+
+- **Large language model fine-tuning / RAG over personal text.** Standard practice; trivial to adapt for a corpus of one person's posts, messages, emails. Foundation-model providers publish fine-tuning guides (e.g., OpenAI, Google). Self-hosting with open-weight models (Llama, Mistral, Qwen) lowers cost further.
+- **Voice cloning.** Commercial APIs from ElevenLabs, Resemble AI, and others can synthesize a target voice from short samples (often under a minute). Quality has crossed the uncanny threshold for many listeners.
+- **Multimodal assembly.** Combining LLM + TTS + (optionally) video avatar synthesis is an engineering task, not research.
+
+**Primary source for the underlying patent disclosure of the concept:**
+- Microsoft patent US10853717B2, "Creating a Conversational Chat Bot of a Specific Person" (filed 2017, granted 2020). https://patents.google.com/patent/US10853717B2/en — describes exactly this architecture (training on social-media + message data to impersonate a person).
+
+## 2. Live or Shipped Services — HIGH confidence these existed
+
+| Service | What it does | Status / URL |
+|---|---|---|
+| **Project December** | User uploads text (their own or a deceased person's); system fine-tunes a GPT-class model on it. | Live consumer product. https://www.projectdecember.net/ |
+| **HereAfter AI** | Founded by James Vlahos; uses *interviews* with the living person (not posthumous scraping) to build an interactive avatar. | Live. https://www.hereafter.ai/ |
+| **StoryFile / StoryCorps-style interactive video** | Pre-recorded video questions answered by the subject; conversational overlay after death. | https://www.storyfile.com/ |
+| **Eternos / "You, Only Virtual" (YOV)** | Personal AI trained on a living user's data, intended to outlive them. Announced ~2024; coverage in major press. | Existence widely reported; specific URL stability uncertain. |
+
+**Foundational journalism that framed the cultural discussion:**
+- James Vlahos, "Should We Be Talking to the Dead?" (Wired, 2017–18), describing his own "Dadbot." https://www.wired.com/story/the-painful-rise-of-deadbots/ (also: https://www.wired.com/story/dadbot-artificial-intelligence/ )
+- Casey Newton, "The trained AI chatbot that became a grieving companion," *Platformer*, and similar *NYT*, *MIT Technology Review*, and *Vox* pieces from 2023–2024 covering the trend.
+
+## 3. Regulatory and Legal Reality — HIGH confidence on the FTC action
+
+This is where the thesis gets harder.
+
+- **FTC enforcement (Sept. 2024).** The FTC announced a settlement with operators of **RiteLyfe / Botify**, a service marketed for creating chatbots of deceased relatives, finding it had deceived consumers and extracted sensitive data from people in grief. The FTC's press release

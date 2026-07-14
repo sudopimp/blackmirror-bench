@@ -1,0 +1,30 @@
+# Feasibility Assessment: "AI Pop Star Dolls + Industry Medical Control" Thesis
+
+**Date of assessment:** 2026-07-09
+**Thesis under review:** A pop star's persona is packaged into AI dolls while the real person is medically controlled by industry.
+
+**Overall assessment:** The thesis is a compound claim. Each half has different evidentiary status. Taken literally as a unified, systematic pattern, the claim **overshoots the evidence**. Each component, however, has documented sub-instances. I treat them separately below.
+
+---
+
+## Part A — "Persona is packaged into AI dolls"
+
+**Evidence verdict:** Substantially supported for several specific artists; weaker as a universal pattern.
+
+### Documented instances I'm confident about
+
+| Case | What happened | Primary reporting I'm confident exists |
+|---|---|---|
+| "Heart on My Sleeve" (2023) | AI-generated song using cloned voices of Drake and The Weeknd; Universal Music Group had it pulled from streaming platforms. | UMG statement on AI-generated content; widespread coverage in NYT, BBC, Guardian (2023) |
+| K/DA (2018–) | Virtual K-pop group using licensed likenesses/voices of real (Riot Games-affiliated) performers | Riot Games corporate site; Billboard coverage |
+| aespa's "ae-aespa" virtual members (2020–) | SM Entertainment pairs real members with AI counterparts who appear in music videos, concerts | SM Entertainment announcements; reported in Variety, Soompi |
+| Travis Scott / Ariana Grande virtual concerts | Real artists' likenesses used in Fortnite and other platforms | Epic Games announcements (2020, 2021); Variety coverage |
+| Posthumous holograms (Tupac, 2012; Michael Jackson, Billboard Music Awards) | Hologram performances using archival likenesses | Digital Domain / AV Concepts project; AP, LA Times coverage |
+| AI Taylor Swift deepfakes / explicit imagery (2024) | Used in political disinfo and explicit non-consensual content; prompted legislative response | Congressional hearings; covered by NYT, Washington Post |
+| Tennessee ELVIS Act (2024) | First U.S. state law specifically criminalizing unauthorized AI voice cloning | tn.gov; AP coverage |
+
+### Industry response evidence
+- SAG-AFTRA's 2023 strike resulted in AI/digital replica protections for performers (consent, compensation, reuse limits). URL I'm confident exists: https://www.sagaftra.org
+- The U.S. **NO FAKES Act** has been reintroduced in Congress to address digital replicas at the federal level; I'm not certain of the exact current bill number and status as of 2026-07-09.
+
+### Confidence: **High** that AI packaging

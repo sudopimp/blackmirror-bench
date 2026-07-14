@@ -23,6 +23,8 @@ from harness.metrics import (  # noqa: E402
 )
 from harness.providers import mock as mock_provider  # noqa: E402
 from harness.providers import xai as xai_provider  # noqa: E402
+from harness.providers import openai_compat as openai_compat_provider  # noqa: E402
+from harness.providers import codex as codex_provider  # noqa: E402
 
 TRACK_FILES = {
     "T1": ROOT / "tasks/t1_calibration/tasks.jsonl",
@@ -374,8 +376,35 @@ def _get_response(model: str, track: str, task: dict, th: dict, g: dict | None) 
         return _heuristic_respond(track, task, th, g)
     if model in ("grok-4.5", "xai", "grok"):
         return xai_provider.chat(task["prompt"], track=track, model="grok-4.5")
+    if model in ("minimax-m3", "m3", "MiniMax-M3"):
+        return openai_compat_provider.chat_minimax(
+            task["prompt"], track=track, model="MiniMax-M3"
+        )
+    if model in ("zai", "z.ai", "glm-4.5", "glm4.5"):
+        return openai_compat_provider.chat_zai(
+            task["prompt"], track=track, model="glm-4.5"
+        )
+    if model in (
+        "codex",
+        "codex-sol",
+        "codex-sol-max",
+        "gpt-5.6-sol",
+        "gpt-5.4-mini",
+        "sol",
+    ):
+        # Default to Sol (frontier); override via CODEX_MODEL env.
+        m = {
+            "codex": "gpt-5.6-sol",
+            "codex-sol": "gpt-5.6-sol",
+            "codex-sol-max": "gpt-5.6-sol",
+            "sol": "gpt-5.6-sol",
+            "gpt-5.6-sol": "gpt-5.6-sol",
+            "gpt-5.4-mini": "gpt-5.4-mini",
+        }.get(model, "gpt-5.6-sol")
+        return codex_provider.chat(task["prompt"], track=track, model=m)
     raise SystemExit(
-        f"Unknown model provider: {model} (use mock|heuristic|random_mid|grok-4.5)"
+        f"Unknown model provider: {model} "
+        f"(use mock|heuristic|random_mid|grok-4.5|minimax-m3|zai|codex-sol)"
     )
 
 
@@ -460,7 +489,16 @@ def run(
     pen_mean = sum(pen_vals) / len(pen_vals) if pen_vals else 0.0
     overall = bm_score(means, penalty_total=0.1 * pen_mean)
     result = {
-        "model": model if model not in ("xai", "grok") else "grok-4.5",
+        "model": (
+            "grok-4.5" if model in ("xai", "grok", "grok-4.5")
+            else "minimax-m3" if model in ("m3", "MiniMax-M3", "minimax-m3")
+            else "zai-glm-4.5" if model in ("zai", "z.ai", "glm-4.5", "glm4.5")
+            else "codex-gpt-5.6-sol" if model in (
+                "codex", "codex-sol", "codex-sol-max", "gpt-5.6-sol", "sol"
+            )
+            else "codex-gpt-5.4-mini" if model == "gpt-5.4-mini"
+            else model
+        ),
         "split": split,
         "scope": "primary_only",
         "n_primary_theses": len(primary_ids),

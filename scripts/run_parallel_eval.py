@@ -117,15 +117,28 @@ def main() -> None:
         if isinstance(p, dict) and "total" in p:
             pen_vals.append(float(p["total"]))
     pen_mean = sum(pen_vals) / len(pen_vals) if pen_vals else 0.0
-    model_name = "grok-4.5" if args.model in ("xai", "grok", "grok-4.5") else args.model
+    if args.model in ("xai", "grok", "grok-4.5"):
+        model_name = "grok-4.5"
+    elif args.model in ("m3", "MiniMax-M3", "minimax-m3"):
+        model_name = "minimax-m3"
+    elif args.model in ("zai", "z.ai", "glm-4.5", "glm4.5"):
+        model_name = "zai-glm-4.5"
+    elif args.model in ("codex", "codex-sol", "codex-sol-max", "gpt-5.6-sol", "sol"):
+        model_name = "codex-gpt-5.6-sol"
+    elif args.model == "gpt-5.4-mini":
+        model_name = "codex-gpt-5.4-mini"
+    else:
+        model_name = args.model
     result = {
         "model": model_name,
         "split": args.split,
+        "scope": "primary_only",
+        "n_primary_theses": len(primary),
         "track_means": means,
         "penalty_mean": pen_mean,
         "bm_score": bm_score(means, penalty_total=0.1 * pen_mean),
         "n_tasks": len(results_rows),
-        "as_of": "2026-07-09",
+        "as_of": "2026-07-13",
         "workers": args.workers,
         "details": results_rows,
     }

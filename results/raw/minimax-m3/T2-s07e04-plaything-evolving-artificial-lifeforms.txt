@@ -1,0 +1,36 @@
+```json
+{
+  "enabling_tech": [
+    "game_engines",
+    "computer_graphics",
+    "physics_simulation",
+    "procedural_animation",
+    "cloud_computing",
+    "gpu_acceleration",
+    "edge_computing"
+  ],
+  "ai_capability_tags": [
+    "artificial_life",
+    "evolutionary_computation",
+    "genetic_algorithms",
+    "procedural_content_generation",
+    "generative_ai",
+    "agent_based_simulation",
+    "reinforcement_learning",
+    "adaptive_behavior",
+    "emergent_behavior",
+    "neuroevolution"
+  ],
+  "non_ai_enablers": [
+    "gamification",
+    "community_engagement",
+    "crowdsourcing",
+    "iot_integration",
+    "robotics_embodiment",
+    "digital_twins",
+    "cross_platform_deployment",
+    "user_generated_content",
+    "open_ecosystems"
+  ]
+}
+```

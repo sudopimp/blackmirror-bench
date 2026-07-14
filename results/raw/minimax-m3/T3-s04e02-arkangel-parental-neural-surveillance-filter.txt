@@ -1,0 +1,29 @@
+# Feasibility Assessment: "Parent-Controlled Implant" Thesis
+**As of 2026-07-09**
+
+## Overall Verdict
+**No such integrated device exists or is plausibly imminent.** Each individual capability described exists at a different level of maturity, and the integrated system raises fundamental biological, technical, regulatory, and human-rights barriers that no current actor has proposed solving. **Confidence: high.**
+
+---
+
+## 1. Component-by-Component Feasibility
+
+### A. Implanted device that "blocks distressing stimuli"
+**Current feasibility: very low (research stage, not deployed for this purpose).**
+
+- Invasive brain stimulation (e.g., deep brain stimulation for Parkinson's, OCD) modulates neural activity but does not selectively filter "distressing" sensory content. It suppresses symptoms broadly; it cannot read out a scene and gate specific inputs. Sources: WHO overview of neurological disorders — https://www.who.int/health-topics/brain-disorders ; FDA neuromodulation device classification — https://www.fda.gov/medical-devices
+- Non-invasive techniques (TMS, tDCS) exist for research use and some clinical applications (e.g., depression) but cannot perform content-specific gating. Source: NIMH — https://www.nimh.nih.gov/health/topics/brain-stimulation-therapies
+- No peer-reviewed evidence of an implanted device that interprets perceptual content and selectively suppresses it in real time. **Confidence: high** that this capability does not currently exist in humans.
+
+### B. Live feed of what a child perceives
+**Current feasibility: very low (no perceptual readout).**
+
+- External cameras with parental remote viewing already exist (consumer products) but these are *not implants*; the thesis specifies an implant.
+- Reconstructing what someone sees from brain activity is at the level of laboratory demonstrations with fMRI for static images, not real-time streams. Source: Nature collection on neural decoding — https://www.nature.com/subjects/neural-decoding (general landing). **Marked confidence: medium** for specific reconstruction claims.
+- Neuralink and Synchron have demonstrated BCIs that read motor intent (cursor control, text) in human trials; reading visual perception at usable fidelity is unsolved. Sources: Neuralink — https://www.neuralink.com ; Synchron press materials — https://synchron.com
+- **Confidence: high** that an implanted "live feed of perception" does not exist as a deployable system.
+
+### C. Content filters (digital/software gating)
+**Current feasibility: high for software, not for implants.**
+
+- Parent-controlled content filters at the OS/app level are mature commercial products (e.g., Apple Screen Time, Google Family Link). These do not require implants. Source: Apple — https://support.apple.com/en-us

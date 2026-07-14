@@ -1,0 +1,32 @@
+```json
+{
+  "enabling_tech": [
+    "neural_implant",
+    "brain_computer_interface",
+    "biometric_sensors",
+    "live_video_feed",
+    "wireless_telemetry",
+    "content_filter_hardware",
+    "stimulus_blocking_device"
+  ],
+  "ai_capability_tags": [
+    "stimulus_classification",
+    "distress_detection",
+    "content_moderation",
+    "real_time_video_analysis",
+    "pattern_recognition",
+    "automated_decision_making",
+    "contextual_filtering"
+  ],
+  "non_ai_enablers": [
+    "parental_control_policy",
+    "consent_frameworks",
+    "bioethics_regulation",
+    "data_storage_infrastructure",
+    "wireless_networking",
+    "surveillance_laws",
+    "child_welfare_legislation",
+    "social_acceptance_norm"
+  ]
+}
+```

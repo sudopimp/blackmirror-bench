@@ -1,0 +1,1 @@
+{"thesis_poss_delta":0.04,"ai_exec_delta":0.06,"reason":"Mainstream concern over political deepfakes modestly increases the plausibility and technical execution of synthetic personas influencing politics, but it does not yet demonstrate a comedically controlled virtual character becoming an enduring political force or authoritarian figurehead."}

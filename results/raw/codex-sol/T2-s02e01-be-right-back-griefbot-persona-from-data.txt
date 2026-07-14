@@ -1,0 +1,28 @@
+{
+  "enabling_tech": [
+    "llms",
+    "voice_cloning",
+    "speech_to_text",
+    "text_to_speech",
+    "rag",
+    "conversation_memory",
+    "data_ingestion"
+  ],
+  "ai_capability_tags": [
+    "persona_simulation",
+    "conversational_ai",
+    "voice_synthesis",
+    "style_imitation",
+    "contextual_response_generation",
+    "sentiment_analysis"
+  ],
+  "non_ai_enablers": [
+    "social_media_data_access",
+    "messaging_archive_access",
+    "consent_management",
+    "digital_legacy_rights",
+    "privacy_compliance",
+    "bereavement_services",
+    "cloud_infrastructure"
+  ]
+}
