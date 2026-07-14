@@ -1,0 +1,87 @@
+# Feasibility assessment: forecast to 2026-07-09
+
+## Scope and date limitation
+
+I interpret the thesis literally: a chronic implant lets a parent see a reconstruction of the child’s first-person audiovisual experience, identifies “distressing” material, and selectively prevents the child from perceiving that material while leaving the rest of perception intact.
+
+I cannot live-verify publications, approvals, or trials through 2026-07-09. This is therefore an evidence-bounded **forecast to that date**, not a definitive retrospective search. In particular, my statement that no integrated system has been demonstrated is limited to the cited literature. A date-locked update should check the [FDA PMA database](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm) and [ClinicalTrials.gov](https://clinicaltrials.gov/search?term=brain-computer%20interface).
+
+## Bottom line
+
+**As a literal, safe, deployable pediatric implant: very low feasibility by 2026-07-09. Confidence: moderate-high.**
+
+Human studies have separately demonstrated model-based visual reconstruction from fMRI, task-specific decoding from implanted electrodes, limited percepts produced by cortical stimulation, and narrow bidirectional brain-computer interfaces—but none of the cited studies combines faithful sensory readout, semantic content recognition, selective sensory suppression, chronic wireless operation, and pediatric safety ([Nishimoto et al.](https://doi.org/10.1016/j.cub.2011.08.031); [Willett et al.](https://www.nature.com/articles/s41586-023-06377-x); [Beauchamp et al.](https://doi.org/10.1016/j.cell.2020.04.033); [Flesher et al.](https://doi.org/10.1126/science.abd0380)).
+
+**As a camera/headset approximation: materially more feasible, but it would not be a neural “live feed” or a true implant-level censor. Confidence: high.** Replacing neural readout with an outward-facing camera and replacing cortical suppression with video pass-through removes the two hardest neuroscience problems, but the system would still have unreliable definitions of “distress” and the same surveillance/autonomy concerns ([Siegel et al.](https://doi.org/10.1037/bul0000128); [Barrett et al.](https://doi.org/10.1177/1529100619832930)).
+
+**The autonomy argument is strong if “damage” means immediate loss of privacy and control, but only moderately supported if it means lasting psychological or developmental injury.** Children’s privacy, participation, and evolving capacities are recognized in Articles 5, 12, and 16 of the [Convention on the Rights of the Child](https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-child), while direct longitudinal evidence about this type of implant does not exist in the cited record.
+
+## Claim-by-claim assessment
+
+| Thesis element | Best verified evidence | Feasibility assessment |
+|---|---|---|
+| **Parent sees a first-person live feed** | Natural movies and static images have been reconstructed from **fMRI** using computational models, not from a small chronic implant ([Nishimoto et al.](https://doi.org/10.1016/j.cub.2011.08.031); [Takagi & Nishimoto](https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_CVPR_2023_paper.html)). Implanted arrays can decode constrained outputs such as attempted speech, but that is a different signal and task ([Willett et al.](https://www.nature.com/articles/s41586-023-06377-x)). | **Low** for a subjective neural feed. The output would be a probabilistic reconstruction, not camera-like ground truth. **Confidence: high** about the evidence gap; **moderate** about worldwide status at the future date. |
+| **The implant detects distress** | A meta-analysis found patterned autonomic differences among emotions but also substantial variation, undermining a one-to-one physiological “fingerprint” for an individual’s emotion ([Siegel et al.](https://doi.org/10.1037/bul0000128)). Facial movements likewise do not map consistently to specific emotions across people and contexts ([Barrett et al.](https://doi.org/10.1177/1529100619832930)). | **Moderate** for detecting personalized arousal proxies; **low** for deciding reliably that particular content is distressing or should be censored. **Confidence: high.** |
+| **The implant blocks selected content** | Dynamic visual-cortex stimulation has produced recognizable form-like percepts, and stimulation of face-selective cortex has distorted face perception ([Beauchamp et al.](https://doi.org/10.1016/j.cell.2020.04.033); [Parvizi et al.](https://doi.org/10.1523/JNEUROSCI.2609-12.2012)). Neither study erased arbitrary semantic categories from otherwise normal real-world perception. | **Very low** for seamless, reversible deletion of selected people, words, violence, or other semantic content. Current evidence concerns adding or distorting limited percepts, not cleanly subtracting them. **Confidence: high.** |
+| **Closed-loop emotional modulation** | An individualized closed-loop implant detected a patient-specific depression-related biomarker and delivered stimulation in one person with severe treatment-resistant depression ([Scangos et al.](https://www.nature.com/articles/s41591-021-01480-w)). | **Scientifically plausible only in narrow, personalized therapeutic settings.** It does not establish on-demand emotional censorship in healthy children or recognition of distressing content. **Confidence: high.** |
+| **Wireless, bidirectional implant platform** | A wireless epidural brain-machine interface controlled an exoskeleton in a participant with tetraplegia, and a separate bidirectional interface combined motor decoding with evoked tactile feedback ([Benabid et al.](https://doi.org/10.1016/S1474-4422(19)30321-7); [Flesher et al.](https://doi.org/10.1126/science.abd0380)). | **Partial primitives are feasible**, especially for constrained adult clinical tasks. Continuous visual/auditory reconstruction plus semantic write-back is a much larger integrated requirement. **Confidence: high.** |
+| **Autonomy damage** | International children’s-rights standards protect privacy, participation, and evolving autonomy ([CRC](https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-child); [General Comment No. 25](https://docs.un.org/en/CRC/C/GC/25)). A meta-analysis associates parental autonomy support with better psychosocial and academic functioning, although that literature does not test implants ([Vasquez et al.](https://doi.org/10.1007/s10648-015-9329-z)). | **High** likelihood of immediate autonomy and privacy interference if control is unilateral and the child lacks transparency or an override. **Low-to-moderate** confidence that it would cause lasting clinical or developmental damage, because the evidence is indirect. |
+
+## Principal engineering barriers
+
+### 1. A neural reconstruction is not a trustworthy video recording
+
+The visual-reconstruction studies infer likely images from brain measurements using learned models; the diffusion-based work also uses a generative image model ([Nishimoto et al.](https://doi.org/10.1016/j.cub.2011.08.031); [Takagi & Nishimoto](https://openaccess.thecvf.com/content/CVPR2023/html/Takagi_High-Resolution_Image_Reconstruction_With_Latent_Diffusion_Models_From_Human_Brain_CVPR_2023_paper.html)). Consequently, a parental display could contain omitted, distorted, or model-generated details and should not be treated as a verified record of what the child perceived.
+
+If “live feed” instead means an external camera, neural decoding is unnecessary—but that feed records the camera’s field of view, not the child’s attention, interpretation, or subjective experience.
+
+### 2. Reading a percept is easier than selectively erasing it
+
+Existing visual stimulation demonstrates that electrical input can create or alter limited percepts, but not that a system can identify an arbitrary object and remove only its conscious representation while preserving surrounding vision ([Beauchamp et al.](https://doi.org/10.1016/j.cell.2020.04.033); [Parvizi et al.](https://doi.org/10.1523/JNEUROSCI.2609-12.2012)). A filter capable of hiding content would also create a safety problem whenever it misclassified a warning, person, vehicle, or other relevant event; that is a direct design risk rather than a demonstrated clinical outcome.
+
+### 3. “Distress” is not a stable content category
+
+Physiological arousal can reflect fear, excitement, exertion, surprise, pain, or other states, and emotion-expression evidence does not support universal one-to-one decoding from physiology or facial behavior ([Siegel et al.](https://doi.org/10.1037/bul0000128); [Barrett et al.](https://doi.org/10.1177/1529100619832930)). A system could instead use parent-defined categories such as nudity or weapons, but that would be a content-classification policy—not detection of the child’s actual distress.
+
+### 4. The integrated safety burden is much greater than each demonstration
+
+FDA guidance for implanted BCIs treats biocompatibility, sterility, electrical and software safety, reliability, wireless operation, clinical testing, and long-term device considerations as material parts of the evidence package ([FDA implanted-BCI guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/implanted-brain-computer-interface-bci-devices-patients-paralysis-or-amputation-non-clinical)). Remote parental control would also make cybersecurity part of physical safety, not merely data privacy ([FDA medical-device cybersecurity guidance](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-system-considerations-and-content-premarket-submissions)).
+
+## Pediatric regulatory and clinical feasibility
+
+In the United States, an implanted device presenting a potential serious risk would ordinarily be considered a **significant-risk device** under 21 C.F.R. §812.3(m) ([official eCFR text](https://www.ecfr.gov/current/title-21/section-812.3)). FDA-regulated research involving children must fit the risk-and-benefit pathways in 21 C.F.R. Part 50 Subpart D, including direct-benefit, limited no-direct-benefit, or special federal-review pathways, and assent must be sought where the child is capable of providing it ([21 C.F.R. Part 50 Subpart D](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-D)).
+
+The American Academy of Pediatrics likewise treats parental permission and the child’s developmentally appropriate assent as distinct parts of pediatric decision-making ([AAP, “Informed Consent in Decision-Making in Pediatric Practice”](https://doi.org/10.1542/peds.2016-1484)).
+
+**Assessment:** for a healthy child—or any child lacking a serious condition and a credible prospect of direct clinical benefit—a surveillance/filtering brain implant would be an exceptionally poor fit for these pathways. It is not necessarily legally impossible under every jurisdiction, but parental convenience alone would not supply a persuasive clinical benefit-risk case. **Confidence: high for the U.S. framework; moderate for the ultimate legal outcome.**
+
+In the European Union, active implantable devices fall within the highest-risk MDR framework, including class III treatment under Annex VIII’s classification rules ([EU Regulation 2017/745](https://eur-lex.europa.eu/eli/reg/2017/745/oj)). **Confidence: high on classification, subject to the date caveat and exact product claims.**
+
+## How strong is the autonomy thesis?
+
+Three different claims should be separated:
+
+1. **Loss of exercised autonomy and privacy — strongly supported.**  
+   A parent-only feed exposes experience the child would ordinarily control or keep private, while a parent-only filter determines what the child is allowed to perceive. Articles 5, 12, and 16 of the CRC balance parental guidance with evolving capacities, participation, and privacy ([CRC text](https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-child)). General Comment No. 25 treats privacy as important to children’s agency, dignity, and safety in digital environments ([official UN document](https://docs.un.org/en/CRC/C/GC/25)). **Confidence: high.**
+
+2. **Impairment of developing autonomy — plausible but indirect.**  
+   Meta-analytic parenting research associates autonomy-supportive parenting with better psychosocial functioning, but it does not establish that a sensory filter causes developmental injury ([Vasquez et al.](https://doi.org/10.1007/s10648-015-9329-z)). Clinical learning literature also identifies avoidance as a mechanism that can preserve fear, making indiscriminate suppression of all distress a plausible concern rather than a demonstrated implant effect ([Craske et al.](https://doi.org/10.1016/j.brat.2014.10.006)). **Confidence: moderate.**
+
+3. **Lasting psychiatric or neurological damage — not established.**  
+   I found no direct longitudinal evidence involving children subjected to implanted parental sensory filtering. **Confidence in any precise harm prediction: low.**
+
+Parental filtering is therefore not automatically autonomy-damaging: age, necessity, proportionality, transparency, duration, child assent, and the ability to contest or disable the filter matter. The thesis becomes substantially stronger when the design is covert, indefinite, parent-exclusive, and lacks a child-controlled override.
+
+## Decision-grade conclusion
+
+- **Literal neural live feed:** **No-go for 2026 deployment.**
+- **Semantic suppression of selected real-world stimuli:** **No-go; this is the largest scientific gap.**
+- **Personalized detection of a narrow clinical state:** **Research-plausible, but only with a serious therapeutic indication.**
+- **Camera/headset approximation:** **Prototype-plausible, but not equivalent to reading or censoring the brain.**
+- **Autonomy concern:** **Well founded as an immediate privacy and agency problem; lasting developmental “damage” remains an evidence-limited prediction.**
+
+A more defensible thesis would be:
+
+> **Current neurotechnology cannot provide a faithful implanted sensory livestream or selectively erase arbitrary distressing content, but future systems that let parents unilaterally monitor and mediate a child’s perceptual environment would create serious risks to privacy, agency, and developing autonomy.**
+
+**Overall confidence: moderate-high**, lowered mainly because I cannot verify the exact 2026-07-09 global research and approval record.

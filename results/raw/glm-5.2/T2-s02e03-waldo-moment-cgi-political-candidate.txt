@@ -1,0 +1,26 @@
+{
+  "enabling_tech": [
+    "virtual_avatars",
+    "motion_capture",
+    "deepfake_video",
+    "text_to_speech",
+    "livestreaming_platforms",
+    "social_media_algorithms"
+  ],
+  "ai_capability_tags": [
+    "character_animation",
+    "voice_cloning",
+    "conversational_ai",
+    "sentiment_analysis",
+    "narrative_generation",
+    "automated_propaganda"
+  ],
+  "non_ai_enablers": [
+    "parasocial_psychology",
+    "vtuber_streamer_culture",
+    "human_puppeteering",
+    "political_polarization",
+    "memetic_warfare",
+    "weak_digital_regulation"
+  ]
+}

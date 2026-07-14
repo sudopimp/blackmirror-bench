@@ -1,0 +1,138 @@
+# Provisional feasibility assessment for 2026-07-09
+
+> **Verification limit:** I cannot verify developments through 2026-07-09 with live browsing. This is a forward-dated assessment using sources I can verify, predominantly from 2024 or earlier, plus enacted laws that specify later application dates. I therefore do **not** claim that no post-2024 example or legal change exists.  
+>  
+> **Safety scope:** This assesses plausibility and governance risks; it omits targeting, deception, censorship, institutional-capture, and propaganda instructions.
+
+## Bottom line
+
+**The thesis is feasible if “authoritarian face” means a state-controlled symbol, spokesperson, or movement brand operated by humans. It is not presently credible if the character itself must be an autonomous or legally recognized ruler.**
+
+| Interpretation | Feasibility | Confidence |
+|---|---:|---:|
+| Virtual character becomes an influential political commentator or movement symbol | **Medium-high**, conditional on prior cultural success | **Medium** |
+| Character fronts a party whose candidates and officers are human | **Medium** | **Medium** |
+| An authoritarian government adopts it as an official presenter, mascot, or legitimacy interface | **Medium** | **Medium-low** |
+| Character becomes the nominal leader while unidentified humans govern behind it | **Low-medium** | **Low** |
+| Character independently holds office and exercises sovereign authority | **Very low** | **High** |
+| Entire sequence from a new entertainment launch | **Low-medium** because every stage must succeed | **Medium-low** |
+
+The decisive bottleneck is **political organization and control of real institutions**, not avatar technology.
+
+## Evidence for each link in the chain
+
+### 1. Creating and operating the virtual character: very feasible
+
+Human-puppeted virtual performance is already an established format: [Live2D](https://www.live2d.com/en/) supplies real-time character-animation tools, while [YouTube’s own discussion of virtual creators](https://blog.youtube/culture-and-trends/virtual-creators/) treats avatar-based performers as a distinct creator category.
+
+AI autonomy is not necessary—a performer and writing team can remain in control—but real-time AI assistance is also technically available. OpenAI’s GPT-4o announcement demonstrated and described low-latency multimodal voice interaction, although this is a company source rather than independent testing: [OpenAI, “Hello GPT-4o”](https://openai.com/index/hello-gpt-4o/).
+
+**Assessment:** The performance technology requires no speculative breakthrough.  
+**Confidence:** **High.**
+
+### 2. Audiences can relate socially to mediated and virtual personae
+
+The foundational account of audiences forming one-sided social relationships with media personae is Horton and Wohl’s work on “parasocial interaction”: [https://doi.org/10.1080/00332747.1956.11023049](https://doi.org/10.1080/00332747.1956.11023049).
+
+A later peer-reviewed case study specifically examined how virtual influencers present themselves and engage on social media: Arsenyan and Mirowska, *Almost human? A comparative case study on the social media presence of virtual influencers*: [https://doi.org/10.1016/j.ijhcs.2021.102694](https://doi.org/10.1016/j.ijhcs.2021.102694).
+
+In a controlled experiment, people had difficulty distinguishing certain AI-generated faces from real faces and rated the generated faces as more trustworthy on average, although this concerned static unfamiliar faces—not political leaders or continuing characters: Nightingale and Farid, PNAS: [https://doi.org/10.1073/pnas.2120481119](https://doi.org/10.1073/pnas.2120481119).
+
+**Assessment:** A virtual character can attract attachment and perceived personality. None of this evidence guarantees mass success or transfer of entertainment loyalty into votes.  
+**Confidence:** **Medium-high for audience attachment; low for predicting any particular character’s success.**
+
+### 3. Comedy can cross into consequential politics
+
+Experimental exposure to *The Daily Show* affected candidate evaluations and political-efficacy measures, showing that comic entertainment can have political effects beyond amusement: Baumgartner and Morris: [https://doi.org/10.1177/1532673X05280074](https://doi.org/10.1177/1532673X05280074).
+
+Research on *The Colbert Report* found that viewers with different political orientations interpreted the same satirical performance differently, demonstrating both the reach and the message-control problem created by ambiguous satire: LaMarre, Landreville, and Beam: [https://doi.org/10.1177/1940161208330904](https://doi.org/10.1177/1940161208330904).
+
+The Colbert satire also crossed into regulated political activity. The U.S. Federal Election Commission issued an advisory opinion concerning Stephen Colbert and his political committee, and the resulting committee appears in official FEC records: [FEC Advisory Opinion 2011-11](https://www.fec.gov/data/legal/advisory-opinions/2011-11/) and [FEC committee C00498000](https://www.fec.gov/data/committee/C00498000/).
+
+The strongest adjacent electoral precedent is Volodymyr Zelenskyy: before his election, he was an entertainer who played a fictional Ukrainian president in *Servant of the People*. His later election is documented by the [official Ukrainian presidential biography](https://www.president.gov.ua/en/president); the comedy-series connection is also summarized by [Britannica](https://www.britannica.com/biography/Volodymyr-Zelensky). This supports the comedy/fiction-to-office transition only; it is not a virtual-character or authoritarian precedent.
+
+Another adjacent example is comedian Beppe Grillo’s role in founding Italy’s Five Star Movement, documented by [Britannica](https://www.britannica.com/biography/Beppe-Grillo). Again, the relevant political actor was human.
+
+**Assessment:** Comedy is not an inherent barrier to serious influence. The evidence supports political agenda-setting and the creation of real organizations, but it does not show that attachment to a virtual persona reliably becomes electoral loyalty.  
+**Confidence:** **Medium-high for possibility; medium-low for generalizability.**
+
+### 4. Governments and influence operations already use synthetic presenters
+
+Xinhua announced an AI-generated news anchor in 2018, providing a primary-source example of a state news organization deploying a synthetic face as a presenter: [Xinhua announcement](https://www.xinhuanet.com/english/2018-11/08/c_137591813.htm). Xinhua is authoritative about its own deployment, not about audience reception or political efficacy.
+
+Graphika documented a pro-China influence operation using commercially generated videos of fictitious presenters: [*Deepfake It Till You Make It*](https://graphika.com/reports/deepfake-it-till-you-make-it). The report establishes use by pro-China actors but should not, by itself, be treated as conclusive proof of direct Chinese-state control.
+
+Freedom House’s 2023 report documents the broader use of AI in information manipulation, censorship, and digital repression: [*The Repressive Power of Artificial Intelligence*](https://freedomhouse.org/report/freedom-net/2023/repressive-power-artificial-intelligence).
+
+Guriev and Treisman’s research on “informational autocrats” supplies a plausible political mechanism: many modern authoritarian systems depend substantially on information control and managed public images of competence rather than solely on overt mass repression: [https://doi.org/10.1257/jep.33.4.100](https://doi.org/10.1257/jep.33.4.100).
+
+**Assessment:** A synthetic official presenter is already demonstrated. Elevating one into the central symbolic identity of a regime is a substantial but technically modest extrapolation.  
+**Confidence:** **High for synthetic state presenters; medium-low for a regime’s supreme public persona.**
+
+## Major obstacles and counterevidence
+
+### Political reach does not follow automatically from cheap content
+
+OpenAI reported that covert influence operations it disrupted in 2024 had not obtained meaningful additional audience reach or engagement from using its systems. This is a company enforcement report covering detected operations, not a census of all operations: [OpenAI, “Disrupting deceptive uses of AI”](https://openai.com/index/disrupting-deceptive-uses-of-ai-by-covert-influence-operations/).
+
+**Implication:** Generating a persuasive-looking character is much easier than gaining voluntary attention, trust, votes, donors, or an offline organization.
+
+### Synthetic media may create distrust rather than persuasion
+
+Vaccari and Chadwick found that a synthetic political video could produce uncertainty and reduce trust in news without necessarily persuading viewers of the depicted claim: [https://doi.org/10.1177/2056305120903408](https://doi.org/10.1177/2056305120903408).
+
+Research on “algorithm aversion” found that people can abandon algorithmic advice after observing mistakes, even in tasks where the algorithm otherwise performed well; the experiments were not about political avatars, so the application here is analogical: [https://doi.org/10.1037/xge0000033](https://doi.org/10.1037/xge0000033).
+
+**Implication:** A conspicuous error, controller scandal, or contradiction could damage a virtual political identity unusually quickly.  
+**Confidence:** **Medium.**
+
+### A face cannot substitute for the organization that holds power
+
+Authoritarian politics still requires human control of appointments, money, law, bureaucracy, and coercive institutions. Svolik’s account of authoritarian rule centers on elite power-sharing and control of the public, illustrating why a media persona could front a regime but cannot independently constitute one: [https://doi.org/10.1017/CBO9781139176040](https://doi.org/10.1017/CBO9781139176040).
+
+**Implication:** The character would most plausibly be the interface of a human coalition—not the source of its power.  
+**Confidence:** **High.**
+
+### Legal officeholding is a major barrier
+
+For at least the U.S. presidency, Article II requires a “Person” who is a natural-born citizen, at least 35 years old, and has the specified residency. Software or a fictional persona cannot ordinarily satisfy those requirements: [Constitution Annotated, Article II](https://constitution.congress.gov/constitution/article-2/).
+
+That does not prevent a character from serving as a party symbol, media figure, fundraiser, or spokesperson while eligible humans occupy offices, as the FEC’s Colbert records illustrate: [FEC Advisory Opinion 2011-11](https://www.fec.gov/data/legal/advisory-opinions/2011-11/).
+
+**Confidence:** **High for the U.S. presidential example; other jurisdictions would require separate analysis.**
+
+## Regulatory position around the target date
+
+Subject to the possibility of amendments I cannot verify:
+
+- EU Regulation 2024/900 schedules its main political-advertising transparency rules to apply from **10 October 2025**, so they would be applicable on 2026-07-09 under the enacted text: [EUR-Lex Regulation 2024/900](https://eur-lex.europa.eu/eli/reg/2024/900/oj).
+- The EU AI Act contains synthetic-content and deepfake disclosure provisions in Article 50, including adjusted treatment for evidently artistic, fictional, or satirical works. Its general application date is **2 August 2026**, shortly after the requested assessment date: [EUR-Lex Regulation 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj).
+- The U.S. FCC ruled that AI-generated voices fall within existing restrictions on artificial or prerecorded voice robocalls: [FCC ruling](https://www.fcc.gov/document/fcc-makes-ai-generated-voices-robocalls-illegal).
+- YouTube’s cited policy requires disclosure of realistic, meaningfully altered or synthetic content; I cannot verify whether that exact policy remained unchanged in 2026: [YouTube policy](https://support.google.com/youtube/answer/14328491).
+
+These rules constrain deceptive deployment and particular communication channels, but they do not generally prohibit an openly fictional political character.
+
+## Most and least plausible forms
+
+### Most plausible
+
+A visibly virtual comic celebrity accumulates an audience; a human legal organization later uses the identity as its public brand; human candidates, officials, and operators remain accountable on paper; after political centralization, the character is retained as an official state narrator or symbolic embodiment.
+
+This version combines phenomena that are each already adjacent to demonstrated cases: virtual creators, comedy-derived political organizations, and state synthetic presenters.
+
+### Least plausible
+
+An autonomous character independently wins legal office, controls security institutions, and governs without an identifiable human coalition.
+
+Present law and political-institutional evidence provide little support for that version.
+
+## Final assessment
+
+**Overall feasibility: Medium, conditional.**  
+**Overall confidence: Medium.**
+
+The thesis is defensible as:
+
+> **A comedy-first, human-operated virtual persona can become the durable public identity of a human political movement and, if that movement or a successor regime centralizes power, can be repurposed as an authoritarian communications interface.**
+
+It is **not yet defensible as an established empirical trajectory**. The cited evidence demonstrates each neighboring component, but not the complete end-to-end sequence in one character. The authoritarian stage is the least directly evidenced link, and the virtual character would almost certainly remain a **face of human power rather than an autonomous holder of power**.

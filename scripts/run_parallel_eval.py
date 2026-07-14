@@ -121,9 +121,13 @@ def main() -> None:
         model_name = "grok-4.5"
     elif args.model in ("m3", "MiniMax-M3", "minimax-m3"):
         model_name = "minimax-m3"
-    elif args.model in ("zai", "z.ai", "glm-4.5", "glm4.5"):
+    elif args.model in ("zai", "z.ai", "glm-5.2", "glm5.2"):
+        model_name = "zai-glm-5.2"
+    elif args.model in ("glm-4.5", "glm4.5"):
         model_name = "zai-glm-4.5"
-    elif args.model in ("codex", "codex-sol", "codex-sol-max", "gpt-5.6-sol", "sol"):
+    elif args.model in ("codex-sol-max", "gpt-5.6-sol-max"):
+        model_name = "codex-gpt-5.6-sol-max"
+    elif args.model in ("codex", "codex-sol", "gpt-5.6-sol", "sol"):
         model_name = "codex-gpt-5.6-sol"
     elif args.model == "gpt-5.4-mini":
         model_name = "codex-gpt-5.4-mini"

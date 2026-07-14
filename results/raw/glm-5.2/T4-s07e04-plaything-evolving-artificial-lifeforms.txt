@@ -1,0 +1,3 @@
+```json
+{"thesis_poss_delta": 0, "ai_exec_delta": 0, "reason": "The IMDB link points to a fictional TV episode about a 1990s game with evolving artificial lifeforms — this is cultural/entertainment precedent, not real-world technical evidence. It neither advances nor undermines the actual feasibility of digital creatures achieving real-world AI impact. No change to either score."}
+```

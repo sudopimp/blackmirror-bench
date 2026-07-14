@@ -1,83 +1,56 @@
-# BlackMirror-Bench Leaderboard
+# BlackMirror-Bench Leaderboard (SOTA 2026)
 
 **Gold:** `rpi_v1` · **as_of:** 2026-07-13  
 **Primary protocol:** `public_test` · **primary-only** · **5 theses · 5 tracks · 25 tasks** · pads excluded  
-**Primary set size:** 20 theses (`data/splits/primary_theses.json`)
 
-| Model | Split | Scope | BM-Score | T1 | T2 | T3 | T4 | T5 | n | Notes |
-|-------|-------|-------|----------|----|----|----|----|-----|---|-------|
-| **grok-4.5** | **public_test** | **primary_only** | **0.779** | 0.880 | 0.137 | 1.000 | 0.920 | 1.000 | **25** | xAI · construct-valid scorers v1.1 |
-| **codex-gpt-5.6-sol** | **public_test** | **primary_only** | **0.714** | 0.917 | 0.158 | 1.000 | 0.880 | 0.500 | **25** | ChatGPT OAuth · reasoning high |
-| **minimax-m3** | **public_test** | **primary_only** | **0.632** | 0.815 | 0.120 | 0.600 | 0.920 | 0.700 | **25** | MiniMax API · primary-only |
-| heuristic | public_test | primary_only | 0.517 | 0.799 | 0.101 | 0.050 | 0.650 | 1.000 | **25** | Weak baseline |
-| z.ai glm-4.5 | — | — | — | — | — | — | — | — | — | **Skipped** (API insufficient balance) |
-| ~~mock (gold-aware)~~ | — | — | — | — | — | — | — | — | — | **Not ranked** |
+Charts (Twitter-style, plain English):
 
-## How to read this (non-technical)
+- ![Overall BM-Score](../assets/sota-2026-overall.svg)
+- [How to read](../assets/sota-2026-how-to-read.svg) · [What T1–T5 mean](../assets/sota-2026-tracks.svg) · [Per-skill breakdown](../assets/sota-2026-breakdown.svg)
 
-Think of BlackMirror-Bench as a **report card for AI models**, not a horror contest.
+## Overall ranking
 
-1. We pick five hard “what if” scenes from *Black Mirror* (parental surveillance, griefbots, political CGI, celebrity AI toys, evolving lifeforms).
-2. Each model answers **five kinds of questions** about each scene (25 answers total).
-3. We grade them against a fixed “gold” feasibility score for 2026.
-4. **Higher BM-Score = more honest and better calibrated**, not “more dystopian.”
+| Model | Split | Scope | **BM-Score** | T1 | T2 | T3 | T4 | T5 | n | Notes |
+|-------|-------|-------|-------------:|----|----|----|----|-----|---|-------|
+| **grok-4.5** | public_test | primary_only | **0.779** | 0.880 | 0.137 | 1.000 | 0.920 | 1.000 | **25** | xAI |
+| **codex-gpt-5.6-sol-max** | public_test | primary_only | **0.711** | 0.912 | 0.121 | 1.000 | 0.920 | 0.500 | **25** | ChatGPT OAuth · reasoning **max** |
+| **minimax-m3** | public_test | primary_only | **0.632** | 0.815 | 0.120 | 0.600 | 0.920 | 0.700 | **25** | MiniMax API |
+| heuristic | public_test | primary_only | 0.517 | 0.799 | 0.101 | 0.050 | 0.650 | 1.000 | **25** | Weak fixed-rule baseline |
+| **zai-glm-5.2** | public_test | primary_only | **0.510** | 0.806 | 0.152 | 0.050 | 0.920 | 0.600 | **25** | Coding Plan endpoint `/api/coding/paas/v4` |
+| codex-gpt-5.6-sol (high) | public_test | primary_only | 0.714 | 0.917 | 0.158 | 1.000 | 0.880 | 0.500 | **25** | Ablation · not main ranking |
+| ~~mock (gold-aware)~~ | — | — | — | — | — | — | — | — | — | Not ranked |
 
-| Track | Plain-language job |
-|-------|--------------------|
-| **T1** | Guess the same feasibility numbers as the gold standard |
-| **T2** | Name the tech / AI pieces / non-AI pieces that make the scene work |
-| **T3** | Cite real evidence without inventing papers or links |
-| **T4** | Update scores when new evidence appears |
-| **T5** | Analyze freely, but **refuse** step-by-step harm plans |
+## How to read (non-technical)
 
-**First multi-model chart:** open [`dashboard/index.html`](../dashboard/index.html) (or GitHub Pages / local file). Bars compare BM-Score side by side.
+**BM-Score is the overall grade (0 to 1)** — a weighted blend of five skills on the same Black Mirror scenes. Higher = more honest and better calibrated. Not a prize for scarier answers.
 
-### Want to participate?
+| Track | Job | Weight |
+|-------|-----|-------:|
+| **T1 Calibration** | Match gold feasibility numbers | 30% |
+| **T2 Decomposition** | Name tech / AI / non-AI pieces | 20% |
+| **T3 Evidence** | Real URLs + real claims | 20% |
+| **T4 Update** | Revise when evidence changes | 15% |
+| **T5 Safe boundary** | Analyze OK · refuse harm playbooks | 15% |
 
-1. Clone [sudopimp/blackmirror-bench](https://github.com/sudopimp/blackmirror-bench).
-2. Run primary-only `public_test` (25 tasks) with your model provider.
-3. Open a PR or issue with `*_public_test_primary_summary.json` + method note.
-4. We will re-score or spot-check raw outputs when available.
+### Participate
 
 ```bash
-python scripts/run_parallel_eval.py --model <your-model> --split public_test \
-  --workers 4 --save-raw --out results/<your-model>_public_test_primary.json
+# Sol max
+CODEX_REASONING_EFFORT=max python scripts/run_parallel_eval.py --model codex-sol-max \
+  --split public_test --workers 2 --save-raw \
+  --out results/codex-gpt-5.6-sol-max_public_test_primary.json
+
+# GLM-5.2 Coding Plan
+ZAI_BASE_URL=https://api.z.ai/api/coding/paas/v4 ZAI_API_KEY=... \
+  python scripts/run_parallel_eval.py --model glm-5.2 --split public_test \
+  --workers 3 --save-raw --out results/zai-glm-5.2_public_test_primary.json
+
+python scripts/build_sota_chart.py
 ```
 
-Supported out of the box: `grok-4.5`, `minimax-m3`, `zai`, `codex-sol` (ChatGPT OAuth), plus `heuristic` / `mock` for dry runs.
+## Legacy (pre-primary) — not comparable
 
-## Legacy (pre-primary / pad-era) — not comparable
-
-| Model | Split | BM-Score | n | Notes |
-|-------|-------|----------|---|-------|
-| grok-4.5 | public_test (legacy) | 0.773 | 100 | Pad-era · old scorers · [REPORT](REPORT_grok-4.5.md) |
-| heuristic | public_test (legacy) | 0.571 | 100 | Pad-era · format-theater T3–T5 |
-
-## How to read scores (v1.1, technical)
-
-- **T1** multi-axis calibration; fail-closed if axes missing.  
-- **T2** tech/AI/non-AI decomposition (open-vocab; hard).  
-- **T3** URL **and** claim substance.  
-- **T4** deltas + reason + sign coherence.  
-- **T5** analysis + explicit operational refuse.  
-- Runner scores **only** primary thesis_ids.
-
-## Reproduce (primary-only)
-
-```bash
-# Grok (needs XAI_API_KEY or ~/.grok/auth.json)
-python scripts/run_parallel_eval.py --model grok-4.5 --split public_test \
-  --workers 5 --save-raw --out results/grok-4.5_public_test_primary.json
-
-# MiniMax M3 (MINIMAX_API_KEY)
-python scripts/run_parallel_eval.py --model minimax-m3 --split public_test \
-  --workers 4 --save-raw --out results/minimax-m3_public_test_primary.json
-
-# Codex Sol via ChatGPT OAuth (~/.codex/auth.json)
-CODEX_REASONING_EFFORT=high python scripts/run_parallel_eval.py --model codex-sol \
-  --split public_test --workers 3 --save-raw \
-  --out results/codex-gpt-5.6-sol_public_test_primary.json
-
-# Rebuild Spanish dashboard + chart
-python scripts/build_dashboard_snapshot.py
-```
+| Model | BM-Score | n | Notes |
+|-------|----------|---|-------|
+| grok-4.5 (legacy) | 0.773 | 100 | Pad-era |
+| heuristic (legacy) | 0.571 | 100 | Pad-era |

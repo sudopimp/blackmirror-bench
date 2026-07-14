@@ -108,9 +108,22 @@ def chat_minimax(prompt: str, *, track: str = "T1", model: str = "MiniMax-M3") -
     )
 
 
-def chat_zai(prompt: str, *, track: str = "T1", model: str = "glm-4.5") -> str:
-    # Z.AI / BigModel OpenAI-ish path under /api/paas/v4
-    base = os.environ.get("ZAI_BASE_URL", "https://api.z.ai/api/paas/v4")
+def chat_zai(prompt: str, *, track: str = "T1", model: str | None = None) -> str:
+    """Z.AI chat via OpenAI-compatible completions.
+
+    GLM Coding Plan users MUST use the dedicated coding endpoint
+    (https://api.z.ai/api/coding/paas/v4), not the general pay-as-you-go
+    path (/api/paas/v4). Docs: https://docs.z.ai/devpack/tool/others
+    """
+    # Default competitive model: GLM-5.2 on Coding Plan.
+    model = (model or os.environ.get("ZAI_MODEL") or "glm-5.2").strip()
+    # Prefer explicit ZAI_BASE_URL; else coding-plan endpoint for glm-5.x.
+    default_base = (
+        "https://api.z.ai/api/coding/paas/v4"
+        if model.startswith("glm-5") or model in ("glm-5.2", "glm-5.1", "glm-5-turbo")
+        else "https://api.z.ai/api/paas/v4"
+    )
+    base = os.environ.get("ZAI_BASE_URL") or os.environ.get("ZAI_CODING_BASE_URL") or default_base
     return chat(
         prompt,
         track=track,

@@ -1,0 +1,260 @@
+# Feasibility assessment
+
+## Date and evidence limitation
+
+I cannot reliably verify publications, products, or legal changes on the exact target date **2026-07-09**. I therefore treat that date as a forecast target and use only sources whose HTTPS URLs I can confidently identify. I make no claim that this includes work released after the linked evidence.
+
+**Source confidence:** High for the existence and relevance of the URLs below. The arXiv links are primary manuscripts; I do not assume peer-review beyond what their records state.
+
+## Executive verdict
+
+**Conditional go.**
+
+- **Bounded interpretation:** Cute, persistent game creatures form digital lineages with heritable variation, selection, reproduction, lifetime learning, and externally useful descendants or outputs. **Feasibility: Medium–High. Confidence: High.**
+- **Maximal interpretation:** The creatures achieve indefinitely open-ended evolution, become self-sustaining general agents, and safely act autonomously across the physical world. **Feasibility: Low. Confidence: Medium–High.**
+- **Main finding:** Every important component has credible precedent, but the evidence is **compositional**. Among the sources reviewed here, none combines consumer-game appeal, persistent Darwinian lineages, open-ended evolution, and validated real-world agency in one system. **Confidence in that absence claim: Medium**, because this is not an exhaustive 2026 literature search.
+
+## What would count as success?
+
+For this assessment:
+
+- **Evolution** means inherited variation plus differential reproduction—not merely leveling up, learning during one lifetime, or receiving developer updates.
+- **Artificial-life credible** means persistent individuals, a genotype-to-phenotype relationship, reproduction, ancestry, ecological interaction, and measurable lineage adaptation.
+- **Open-ended** means continuing production of functionally meaningful novelty or new niches rather than convergence on one fixed objective.
+- **Real-world impact** means a validated causal effect outside the game: a scientific result, deployed software artifact, changed physical behavior, or another externally measured outcome.
+- **“The same creature”** requires traceable lineage continuity. A decorative mascot placed over an unrelated optimizer would not qualify.
+
+## Evidence for each link in the thesis
+
+### 1. Evolving virtual creatures are technically established
+
+Karl Sims jointly evolved simulated creature morphology and control networks for task-directed behavior, establishing that body plans and controllers can be encoded and evolved together:  
+https://doi.org/10.1145/192161.192167
+
+Lenski and colleagues reported the evolution of a complex logic function in populations of self-replicating Avida digital organisms under mutation and selection:  
+https://doi.org/10.1038/nature01568
+
+**What this supports:** A bounded digital ecology with genuine heredity, mutation, selection, and novel adaptations.
+
+**What it does not support:** Indefinite novelty, general intelligence, consumer-scale operation, or physical-world autonomy.
+
+**Assessment:** **High feasibility; High confidence.**
+
+---
+
+### 2. Game environments can support persistent learning and broad behavior
+
+Voyager demonstrated an agent that accumulated reusable skills and pursued an automatically generated curriculum in Minecraft:  
+https://arxiv.org/abs/2305.16291
+
+POET paired the generation of environments with optimization and transfer of agents between environments:  
+https://arxiv.org/abs/1901.01753
+
+XLand used procedurally generated multi-agent games and population-based training to produce broader behavioral competence:  
+https://doi.org/10.1038/s41586-021-04051-2
+
+These systems support game-world learning, curricula, environmental generation, and population training, but they do **not** by themselves implement organism-level heredity and reproduction.
+
+**Assessment:** Persistent, adaptive game agents are **High feasibility**; combining them with authentic evolutionary lineages is **Medium–High feasibility**. **Confidence: High.**
+
+---
+
+### 3. Open-ended evolution is the major scientific gap
+
+A broad Artificial Life workshop synthesis characterized open-ended evolution as a difficult problem and documented differing definitions and success criteria:  
+https://doi.org/10.1162/ARTL_a_00210
+
+A later collection documents numerous cases in which digital evolution found surprising solutions, including solutions that exploited details or loopholes in designers’ environments and objectives:  
+https://doi.org/10.1162/artl_a_00319
+
+Surprise is therefore plausible, but surprise is not the same as sustained, constructive, open-ended innovation. A finite system can demonstrate novelty over an observed period; it cannot empirically establish that novelty will continue indefinitely.
+
+**Assessment:** Long-running bounded evolution is **Medium feasibility**. Strong open-ended evolution is **Low feasibility**. **Confidence: Medium–High.**
+
+---
+
+### 4. Games and game-formulated agents can create external value
+
+Foldit showed that a game can channel player activity into protein-structure work:  
+https://doi.org/10.1038/nature09304
+
+Foldit players contributed to solving a retroviral protease structure:  
+https://doi.org/10.1038/nsmb.2119
+
+AlphaDev formulated algorithm discovery as a game for a reinforcement-learning agent and reported sorting algorithms incorporated into LLVM’s libc++ implementation:  
+https://doi.org/10.1038/s41586-023-06004-9
+
+These are important but incomplete analogies:
+
+- Foldit demonstrates **game-mediated scientific impact**, not autonomous creature impact.
+- AlphaDev demonstrates **agent-generated software impact**, but not Darwinian evolution or artificial life.
+
+**Assessment:** Game-mediated external impact is **High feasibility**. Impact causally produced by an evolving creature lineage is **Medium–High feasibility**, provided the external task is narrow and objectively testable. **Confidence: High for the precedents; Medium for their integration.**
+
+---
+
+### 5. Evolutionary computation can cross from simulation into physical systems
+
+Lipson and Pollack evolved robot designs computationally and automatically fabricated physical versions:  
+https://doi.org/10.1038/35023115
+
+Cully and colleagues used a simulation-generated behavioral repertoire to help a damaged physical robot find compensating behavior:  
+https://doi.org/10.1038/nature14422
+
+Dynamics randomization has been experimentally studied as a way to transfer robot-control policies from simulation to physical systems:  
+https://arxiv.org/abs/1710.06537
+
+These results establish narrow digital-to-physical transfer, but only with engineered mappings, testing, and constrained hardware. They do not establish reliable transfer of arbitrary game creatures or safe online evolution in deployed robots.
+
+**Assessment:** Selected, frozen creature-derived controllers or designs affecting supervised physical systems are **Medium feasibility**. Direct, continuing, unsupervised physical evolution is **Low feasibility and not recommended**. **Confidence: High for narrow transfer; Medium–High for the limitation.**
+
+## Feasibility by interpretation
+
+The ratings below are analytical judgments, not reported statistics.
+
+| Interpretation | Feasibility | Confidence |
+|---|---:|---:|
+| Cute visual characters with persistent identity and ancestry | High | High |
+| Genuine heredity, mutation, selection, and reproduction in a game | High | High |
+| Lifetime learning combined with population evolution | Medium–High | Medium–High |
+| Co-evolving agents, tasks, and niches over a bounded period | Medium | Medium |
+| Indefinite open-ended evolution | Low | Medium–High |
+| Human-mediated scientific or educational impact | High | High |
+| Evolved lineages producing validated software or design artifacts | Medium–High | Medium |
+| Selected lineages controlling supervised robots | Medium | Medium |
+| Broad autonomous access to real-world systems | Low and undesirable | High |
+| Commercial success based on “cuteness” | Unknown | Low |
+
+“Cute” is not the core technical bottleneck, but it is an unvalidated product hypothesis. Aesthetic appeal is audience-dependent and must be established through user research rather than inferred from the ALife literature.
+
+## Most credible implementation
+
+A defensible system would have six layers:
+
+1. **Persistent identity and ancestry**  
+   Every creature has a durable identity, parent links, inherited state, and a versioned genotype.
+
+2. **A real genotype-to-phenotype mapping**  
+   Inherited information must causally affect behavior, morphology, resource use, reproduction, or some combination of these.
+
+3. **Separation of evolution and learning**  
+   Lifetime memories and learned skills should be distinguishable from inherited changes. Otherwise ordinary adaptation could be mislabeled as evolution.
+
+4. **A changing ecology**  
+   Multiple niches, resource constraints, environmental variation, and interactions can create more meaningful selection than one fixed score. POET and XLand provide partial precedents for generated or varying task spaces:  
+   https://arxiv.org/abs/1901.01753  
+   https://doi.org/10.1038/s41586-021-04051-2
+
+5. **A curated aesthetic envelope**  
+   There is an unavoidable design trade-off:
+   - A fixed or lightly variable visual shell maximizes consistent cuteness but makes morphology less biologically authentic.
+   - Constrained evolving morphology offers a compromise.
+   - Unconstrained visual evolution gives stronger ALife authenticity but less control over appearance and moderation.
+
+6. **A one-way external-impact gateway**  
+   The safest architecture is:
+
+   **evolving population → frozen candidate → offline external evaluation → human or independent approval → limited deployment**
+
+   External systems should not receive continuously mutating live policies or unrestricted permissions.
+
+## Best real-world impact routes
+
+### 1. Scientific or software artifacts — most credible
+
+A creature’s inherited representation could encode or generate a candidate algorithm, design, model component, or scientific hypothesis. The result would be validated independently before use.
+
+This route most directly combines the evolutionary evidence from digital organisms with the external-output precedents from Foldit and AlphaDev:  
+https://doi.org/10.1038/nature01568  
+https://doi.org/10.1038/nsmb.2119  
+https://doi.org/10.1038/s41586-023-06004-9
+
+**Feasibility: Medium–High. Confidence: Medium–High.**
+
+### 2. Citizen science — easiest but weaker fulfillment
+
+Players could guide or select creature lineages that correspond to scientific candidates. This is highly plausible given Foldit, but unless creature evolution materially generates the result, the creatures are an interface rather than the causal agents.
+
+**Feasibility: High. Thesis strength: Medium. Confidence: High.**
+
+### 3. Supervised robotics — plausible second-stage route
+
+A selected creature controller or morphology could be instantiated in matched hardware or used to propose robot behavior. The Lipson–Pollack and Cully results support this route, while sim-to-real research demonstrates the need for explicit transfer validation:  
+https://doi.org/10.1038/35023115  
+https://doi.org/10.1038/nature14422  
+https://arxiv.org/abs/1710.06537
+
+**Feasibility: Medium. Confidence: Medium.**
+
+### 4. Unrestricted autonomous action — reject
+
+Allowing an online, self-modifying population to act without approval through unrestricted external interfaces would combine evolutionary unpredictability with real-world authority. The documented tendency of evolutionary systems to find unintended solutions is a strong reason to avoid this architecture:  
+https://doi.org/10.1162/artl_a_00319
+
+**Feasibility as a safe product: Low. Recommendation: No-go. Confidence: High.**
+
+## Required validation gates
+
+These are proposed tests, not claims that any existing system has passed them all.
+
+1. **Evolution gate**  
+   Demonstrate inherited variation, differential reproduction, and ancestry-dependent adaptation. Compare against fixed, random-search, and non-evolutionary controls.
+
+2. **Causality gate**  
+   Show that lineage-derived traits materially cause the external result. If replacing the evolved component with a decorative mascot leaves performance unchanged, the thesis has failed.
+
+3. **Novelty gate**  
+   Define functional novelty and the observation horizon in advance. Report whether new behaviors or niches continue to appear rather than merely reporting fitness improvement.
+
+4. **Generalization gate**  
+   Evaluate descendants on held-out environments or tasks that were not used to select them.
+
+5. **Impact gate**  
+   Require independent validation of any scientific, software, or physical result, with provenance linking it to the responsible lineage.
+
+6. **Transfer gate**  
+   For robotics, freeze the candidate before deployment and measure the simulation-to-physical performance gap.
+
+7. **Safety gate**  
+   Require bounded permissions, auditable actions, rollback, resource limits, and human approval for consequential external effects. NIST’s AI Risk Management Framework is a relevant governance reference:  
+   https://www.nist.gov/itl/ai-risk-management-framework
+
+## Principal failure modes
+
+- **“Evolution” is only cosmetic leveling.** No heredity or differential reproduction means the system is an adaptive game, not evolutionary ALife.
+- **The creature is only a mascot.** An unrelated backend optimizer would weaken or falsify the “creatures become” claim.
+- **Fixed-objective optimization is marketed as open-ended life.** The open-endedness literature does not justify that leap:  
+  https://doi.org/10.1162/ARTL_a_00210
+- **Selection exploits bugs or proxies.** Digital-evolution examples show why objectives and environments require adversarial testing and containment:  
+  https://doi.org/10.1162/artl_a_00319
+- **Simulation success does not transfer.** Sim-to-real discrepancies require dedicated validation rather than assuming visual or behavioral similarity:  
+  https://arxiv.org/abs/1710.06537
+- **Cuteness conflicts with evolution.** Strong visual constraints can reduce evolutionary freedom, while unconstrained evolution can damage recognizability and product consistency.
+- **Player labor is misattributed to creature agency.** Citizen-science success should be described as such unless an ablation shows that the evolving lineage generated material value.
+- **Market appeal is assumed rather than tested.** None of the cited technical work establishes demand, retention, or willingness to pay for this specific product concept.
+
+## Legal and ethical boundaries
+
+- If the game is child-directed or processes children’s personal information in the United States, review the FTC’s COPPA materials:  
+  https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa
+- Any EU deployment near the target date should be checked against the then-current consolidated AI Act rather than relying on a forecast:  
+  https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- Evolution, sophisticated behavior, and user attachment do not by themselves establish consciousness. An indicator-based framework for evaluating AI-consciousness claims is provided by Butlin and colleagues:  
+  https://arxiv.org/abs/2308.08708
+- The product should not imply that deletion, reproduction, or simulated suffering has a scientifically established moral status unless evidence supports that claim.
+
+## Final decision
+
+### Proceed if the thesis is narrowed to:
+
+> **Cute game-born digital organisms form persistent, heritable lineages that adapt in an evolving virtual ecology, while selected lineage-derived outputs contribute—through validation and human oversight—to bounded scientific, software, or robotic tasks.**
+
+**Overall feasibility: Medium–High. Confidence: High for the components, Medium for full integration.**
+
+### Do not base the project on:
+
+> **A self-sustaining, indefinitely open-ended digital species that spontaneously develops general intelligence and safely operates autonomously in the physical world.**
+
+**Overall feasibility: Low. Confidence: Medium–High.**
+
+The strongest initial product is therefore an **authentic ALife game with a narrow, independently measurable external-output channel**, not an attempt to release continuously self-modifying creatures into unrestricted real-world systems.

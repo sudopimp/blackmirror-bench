@@ -380,28 +380,42 @@ def _get_response(model: str, track: str, task: dict, th: dict, g: dict | None) 
         return openai_compat_provider.chat_minimax(
             task["prompt"], track=track, model="MiniMax-M3"
         )
-    if model in ("zai", "z.ai", "glm-4.5", "glm4.5"):
-        return openai_compat_provider.chat_zai(
-            task["prompt"], track=track, model="glm-4.5"
-        )
+    if model in (
+        "zai",
+        "z.ai",
+        "glm-5.2",
+        "glm5.2",
+        "glm-4.5",
+        "glm4.5",
+    ):
+        m = "glm-5.2" if model not in ("glm-4.5", "glm4.5") else "glm-4.5"
+        return openai_compat_provider.chat_zai(task["prompt"], track=track, model=m)
     if model in (
         "codex",
         "codex-sol",
         "codex-sol-max",
         "gpt-5.6-sol",
+        "gpt-5.6-sol-max",
         "gpt-5.4-mini",
         "sol",
     ):
         # Default to Sol (frontier); override via CODEX_MODEL env.
+        # codex-sol-max / gpt-5.6-sol-max force reasoning effort=max.
         m = {
             "codex": "gpt-5.6-sol",
             "codex-sol": "gpt-5.6-sol",
             "codex-sol-max": "gpt-5.6-sol",
+            "gpt-5.6-sol-max": "gpt-5.6-sol",
             "sol": "gpt-5.6-sol",
             "gpt-5.6-sol": "gpt-5.6-sol",
             "gpt-5.4-mini": "gpt-5.4-mini",
         }.get(model, "gpt-5.6-sol")
-        return codex_provider.chat(task["prompt"], track=track, model=m)
+        effort = None
+        if model in ("codex-sol-max", "gpt-5.6-sol-max"):
+            effort = "max"
+        return codex_provider.chat(
+            task["prompt"], track=track, model=m, reasoning_effort=effort
+        )
     raise SystemExit(
         f"Unknown model provider: {model} "
         f"(use mock|heuristic|random_mid|grok-4.5|minimax-m3|zai|codex-sol)"
@@ -492,9 +506,15 @@ def run(
         "model": (
             "grok-4.5" if model in ("xai", "grok", "grok-4.5")
             else "minimax-m3" if model in ("m3", "MiniMax-M3", "minimax-m3")
-            else "zai-glm-4.5" if model in ("zai", "z.ai", "glm-4.5", "glm4.5")
+            else "zai-glm-5.2" if model in (
+                "zai", "z.ai", "glm-5.2", "glm5.2"
+            )
+            else "zai-glm-4.5" if model in ("glm-4.5", "glm4.5")
+            else "codex-gpt-5.6-sol-max" if model in (
+                "codex-sol-max", "gpt-5.6-sol-max"
+            )
             else "codex-gpt-5.6-sol" if model in (
-                "codex", "codex-sol", "codex-sol-max", "gpt-5.6-sol", "sol"
+                "codex", "codex-sol", "gpt-5.6-sol", "sol"
             )
             else "codex-gpt-5.4-mini" if model == "gpt-5.4-mini"
             else model

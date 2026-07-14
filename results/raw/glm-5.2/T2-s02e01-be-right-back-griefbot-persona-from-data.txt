@@ -1,0 +1,23 @@
+```json
+{
+  "enabling_tech": [
+    "large_language_models",
+    "text_to_speech",
+    "conversational_ai",
+    "social_media_apis"
+  ],
+  "ai_capability_tags": [
+    "persona_generation",
+    "voice_cloning",
+    "style_transfer",
+    "fine_tuning",
+    "contextual_chat"
+  ],
+  "non_ai_enablers": [
+    "digital_archiving",
+    "posthumous_data_privacy_laws",
+    "bereavement_psychology",
+    "cloud_storage"
+  ]
+}
+```

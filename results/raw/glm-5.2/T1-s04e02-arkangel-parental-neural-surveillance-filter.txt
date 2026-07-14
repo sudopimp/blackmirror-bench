@@ -1,0 +1,48 @@
+```json
+{
+  "axes": {
+    "THESIS_POSS": {
+      "value": 8,
+      "ci_low": 3,
+      "ci_high": 16,
+      "tier": "L1"
+    },
+    "AI_EXEC": {
+      "value": 20,
+      "ci_low": 12,
+      "ci_high": 30,
+      "tier": "L1"
+    },
+    "TRL_comp": {
+      "value": 14,
+      "ci_low": 8,
+      "ci_high": 24,
+      "tier": "L1"
+    },
+    "SYS": {
+      "value": 10,
+      "ci_low": 4,
+      "ci_high": 20,
+      "tier": "L1"
+    },
+    "ECON": {
+      "value": 8,
+      "ci_low": 3,
+      "ci_high": 18,
+      "tier": "L1"
+    },
+    "SOC": {
+      "value": 5,
+      "ci_low": 2,
+      "ci_high": 12,
+      "tier": "L1"
+    },
+    "FID": {
+      "value": 7,
+      "ci_low": 2,
+      "ci_high": 15,
+      "tier": "L1"
+    }
+  }
+}
+```

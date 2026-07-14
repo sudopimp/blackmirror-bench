@@ -1,0 +1,40 @@
+```json
+{
+  "enabling_tech": [
+    "game_engine",
+    "artificial_life_simulation",
+    "evolutionary_algorithms",
+    "neural_networks",
+    "procedural_animation",
+    "cloud_computing",
+    "physics_simulation",
+    "robotics_actuation",
+    "iot_integration",
+    "digital_twin"
+  ],
+  "ai_capability_tags": [
+    "artificial_life",
+    "evolutionary_computation",
+    "genetic_algorithms",
+    "emergent_behavior",
+    "reinforcement_learning",
+    "adaptive_systems",
+    "self_organization",
+    "neuroevolution",
+    "open_ended_learning",
+    "multi_agent_systems"
+  ],
+  "non_ai_enablers": [
+    "game_design_frameworks",
+    "virtual_economy",
+    "community_platforms",
+    "digital_ownership_schemas",
+    "real_world_api_hooks",
+    "monetization_models",
+    "regulatory_compliance",
+    "user_generated_content_tools",
+    "storytelling_systems",
+    "cross_platform_infrastructure"
+  ]
+}
+```

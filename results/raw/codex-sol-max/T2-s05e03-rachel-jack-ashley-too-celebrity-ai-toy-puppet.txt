@@ -1,0 +1,27 @@
+{
+  "enabling_tech": [
+    "humanoid_robotics",
+    "digital_twins",
+    "voice_cloning",
+    "synthetic_media",
+    "biometric_monitoring",
+    "connected_dolls"
+  ],
+  "ai_capability_tags": [
+    "persona_simulation",
+    "behavior_cloning",
+    "conversational_ai",
+    "speech_synthesis",
+    "affective_computing",
+    "multimodal_interaction"
+  ],
+  "non_ai_enablers": [
+    "likeness_licensing",
+    "celebrity_branding",
+    "doll_manufacturing",
+    "coercive_contracts",
+    "medical_coercion",
+    "pharmaceutical_control",
+    "industry_gatekeeping"
+  ]
+}

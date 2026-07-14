@@ -1,0 +1,1 @@
+{"thesis_poss_delta":0.05,"ai_exec_delta":0.12,"reason":"Commercial AI personas make packaging a celebrity likeness into AI-enabled products more plausible and executable, but the evidence does not support the separate claim that the real person is medically controlled by the industry."}

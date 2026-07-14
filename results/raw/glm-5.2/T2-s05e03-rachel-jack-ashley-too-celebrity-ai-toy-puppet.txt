@@ -1,0 +1,28 @@
+```json
+{
+  "enabling_tech": [
+    "animatronics",
+    "voice_synthesis",
+    "hologram_displays",
+    "biometric_sensors",
+    "medical_implants",
+    "wearable_monitors"
+  ],
+  "ai_capability_tags": [
+    "persona_modeling",
+    "voice_cloning",
+    "deepfake_generation",
+    "conversational_ai",
+    "behavior_emulation",
+    "predictive_analytics"
+  ],
+  "non_ai_enablers": [
+    "coercive_contracts",
+    "intellectual_property_rights",
+    "pharmaceutical_regulation",
+    "industry_monopolies",
+    "legal_guardianship",
+    "surveillance_infrastructure"
+  ]
+}
+```

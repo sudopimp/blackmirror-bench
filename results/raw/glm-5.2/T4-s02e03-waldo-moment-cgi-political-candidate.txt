@@ -1,0 +1,1 @@
+{"thesis_poss_delta": 2, "ai_exec_delta": 1, "reason": "Mainstream political deepfake concern modestly increases plausibility of synthetic/fake political personas gaining influence, and slightly supports AI execution since the core manipulation technology is already viable; but it does not yet demonstrate a comedically controlled character becoming a real political force."}

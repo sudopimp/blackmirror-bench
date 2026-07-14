@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="640" viewBox="0 0 1080 640" role="img" aria-label="How to read BlackMirror-Bench">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="100%" stop-color="#05070F"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg4)" rx="28"/>
+  <text x="48" y="58" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="34" font-weight="800">How to read this bench (no PhD needed)</text>
+  <text x="48" y="96" fill="#A5B4FC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18" font-weight="600">Think of it as a report card for AI models about near-future tech realism.</text>
+  <circle cx="70" cy="140" r="22" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+  <text x="70" y="147" fill="#E0E7FF" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">1</text>
+  <text x="112" y="148" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18">We pick 5 hard Black Mirror scenes (griefbots, surveillance, CGI politics…).</text>
+  <circle cx="70" cy="212" r="22" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+  <text x="70" y="219" fill="#E0E7FF" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">2</text>
+  <text x="112" y="220" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18">Every model answers the same 25 questions about those scenes.</text>
+  <circle cx="70" cy="284" r="22" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+  <text x="70" y="291" fill="#E0E7FF" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">3</text>
+  <text x="112" y="292" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18">We grade against a fixed “gold” feasibility score for the year 2026.</text>
+  <circle cx="70" cy="356" r="22" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+  <text x="70" y="363" fill="#E0E7FF" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">4</text>
+  <text x="112" y="364" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18">BM-Score (0→1) is the overall grade. Higher = more honest calibration.</text>
+  <circle cx="70" cy="428" r="22" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+  <text x="70" y="435" fill="#E0E7FF" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">5</text>
+  <text x="112" y="436" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18">It is NOT a horror contest. “More dystopia” does not earn points.</text>
+  <circle cx="70" cy="500" r="22" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>
+  <text x="70" y="507" fill="#E0E7FF" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">6</text>
+  <text x="112" y="508" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18">Want in? PR your primary public_test summary — same rules for everyone.</text>
+  <text x="48" y="612" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13">github.com/sudopimp/blackmirror-bench · independent research · not affiliated with Netflix / Channel 4 / Charlie Brooker</text>
+</svg>

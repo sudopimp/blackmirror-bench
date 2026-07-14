@@ -124,7 +124,7 @@ def chat(
     effort = (
         reasoning_effort
         or os.environ.get("CODEX_REASONING_EFFORT")
-        or "high"
+        or "max"
     )
 
     # Responses API (Codex ChatGPT path): input MUST be a list; stream MUST be true.

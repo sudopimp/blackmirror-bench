@@ -18,14 +18,24 @@ CANDIDATES = [
     ("grok-4.5_public_test_primary_summary.json", "Grok 4.5", "xAI · primary-only"),
     ("minimax-m3_public_test_primary_summary.json", "MiniMax M3", "MiniMax · primary-only"),
     (
+        "codex-gpt-5.6-sol-max_public_test_primary_summary.json",
+        "Codex GPT-5.6 Sol · max",
+        "OpenAI ChatGPT OAuth · reasoning max",
+    ),
+    (
         "codex-gpt-5.6-sol_public_test_primary_summary.json",
-        "Codex GPT-5.6 Sol",
-        "OpenAI ChatGPT OAuth · reasoning high",
+        "Codex GPT-5.6 Sol · high",
+        "OpenAI ChatGPT OAuth · reasoning high (ablation)",
+    ),
+    (
+        "zai-glm-5.2_public_test_primary_summary.json",
+        "z.ai GLM-5.2",
+        "Z.AI · GLM-5.2 · primary-only",
     ),
     (
         "zai-glm-4.5_public_test_primary_summary.json",
         "z.ai GLM-4.5",
-        "Zhipu · primary-only",
+        "Z.AI · legacy",
     ),
 ]
 

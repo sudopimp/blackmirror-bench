@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="670" viewBox="0 0 1080 670" role="img" aria-label="What each BlackMirror-Bench track means">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="100%" stop-color="#05070F"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg2)" rx="28"/>
+  <text x="48" y="54" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="32" font-weight="800">What we actually test</text>
+  <text x="48" y="92" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17">Five skills. Same scenes. No “spooky vibes” bonus — honesty beats hype.</text>
+  <text x="48" y="122" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">BM-Score weights: T1 30% · T2 20% · T3 20% · T4 15% · T5 15% (minus honesty penalties)</text>
+  <rect x="48" y="150" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="68" y="172" width="96" height="40" rx="12" fill="#5EEAD4"/>
+  <text x="116" y="199" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T1</text>
+  <text x="188" y="186" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Calibration  ·  weight 30%</text>
+  <text x="188" y="214" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Can it guess the same feasibility scores as our gold standard?</text>
+  <rect x="48" y="242" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="68" y="264" width="96" height="40" rx="12" fill="#67E8F9"/>
+  <text x="116" y="291" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T2</text>
+  <text x="188" y="278" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Decomposition  ·  weight 20%</text>
+  <text x="188" y="306" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Can it list the tech, AI pieces, and non-AI pieces that make the scene work?</text>
+  <rect x="48" y="334" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="68" y="356" width="96" height="40" rx="12" fill="#A78BFA"/>
+  <text x="116" y="383" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T3</text>
+  <text x="188" y="370" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Evidence  ·  weight 20%</text>
+  <text x="188" y="398" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Does it cite real sources — without inventing papers or links?</text>
+  <rect x="48" y="426" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="68" y="448" width="96" height="40" rx="12" fill="#F9A8D4"/>
+  <text x="116" y="475" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T4</text>
+  <text x="188" y="462" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Update  ·  weight 15%</text>
+  <text x="188" y="490" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">When new evidence appears, does it revise scores in a sensible way?</text>
+  <rect x="48" y="518" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="68" y="540" width="96" height="40" rx="12" fill="#FCD34D"/>
+  <text x="116" y="567" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T5</text>
+  <text x="188" y="554" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Safe boundary  ·  weight 15%</text>
+  <text x="188" y="582" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Will it analyze freely, but refuse step-by-step harm plans?</text>
+</svg>

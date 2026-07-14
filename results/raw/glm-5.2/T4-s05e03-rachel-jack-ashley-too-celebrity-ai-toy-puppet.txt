@@ -1,0 +1,1 @@
+{"thesis_poss_delta": 0.1, "ai_exec_delta": 0.1, "reason": "Commercialization of AI personas from personal data supports the plausibility and execution of packaging a pop star's persona into AI products, but it does not directly evidence industry control over the real person medically."}

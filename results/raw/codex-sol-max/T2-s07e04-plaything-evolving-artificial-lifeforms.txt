@@ -1,0 +1,31 @@
+{
+  "enabling_tech": [
+    "game_engines",
+    "agent_runtime",
+    "evolutionary_computation",
+    "multi_agent_simulation",
+    "persistent_identity",
+    "cloud_infrastructure",
+    "real_world_api_integration",
+    "iot_robotics_interfaces"
+  ],
+  "ai_capability_tags": [
+    "autonomous_agents",
+    "continual_learning",
+    "adaptive_behavior",
+    "emergent_behavior",
+    "self_evolution",
+    "social_interaction",
+    "environmental_reasoning"
+  ],
+  "non_ai_enablers": [
+    "character_ip",
+    "compelling_creature_design",
+    "game_distribution",
+    "player_community",
+    "virtual_economy",
+    "creator_ecosystem",
+    "cross_platform_partnerships",
+    "governance_and_safety"
+  ]
+}

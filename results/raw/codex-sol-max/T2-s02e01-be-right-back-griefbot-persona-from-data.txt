@@ -1,0 +1,27 @@
+{
+  "enabling_tech": [
+    "large_language_models",
+    "retrieval_augmented_generation",
+    "vector_databases",
+    "automatic_speech_recognition",
+    "text_to_speech",
+    "voice_cloning",
+    "conversation_memory"
+  ],
+  "ai_capability_tags": [
+    "conversational_ai",
+    "persona_simulation",
+    "style_imitation",
+    "contextual_response_generation",
+    "voice_synthesis",
+    "multimodal_interaction"
+  ],
+  "non_ai_enablers": [
+    "digital_legacy_data_access",
+    "estate_authorization",
+    "consent_management",
+    "privacy_security",
+    "platform_data_portability",
+    "grief_support_protocols"
+  ]
+}

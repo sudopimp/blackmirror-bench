@@ -1,0 +1,17 @@
+{
+  "model": "zai-glm-5.2",
+  "split": "public_test",
+  "bm_score": 0.5100590961501777,
+  "track_means": {
+    "T1": 0.8057142857142857,
+    "T2": 0.15172405217946014,
+    "T3": 0.05,
+    "T4": 0.9199999999999999,
+    "T5": 0.6
+  },
+  "penalty_mean": 0.0,
+  "n_tasks": 25,
+  "as_of": "2026-07-13",
+  "workers": 3,
+  "scope": "primary_only"
+}

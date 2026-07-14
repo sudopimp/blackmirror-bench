@@ -1,0 +1,28 @@
+```json
+{
+  "enabling_tech": [
+    "neural_implant",
+    "brain_computer_interface",
+    "real_time_video_feed",
+    "content_filtering_system",
+    "parental_control_interface",
+    "sensory_modulation_hardware"
+  ],
+  "ai_capability_tags": [
+    "distressing_stimuli_detection",
+    "content_classification",
+    "real_time_filtering",
+    "visual_recognition",
+    "sentiment_analysis",
+    "autonomy_modeling"
+  ],
+  "non_ai_enablers": [
+    "parental_consent_framework",
+    "implant_hardware",
+    "regulatory_compliance",
+    "child_safety_policy",
+    "device_pairing_infrastructure",
+    "data_streaming_pipeline"
+  ]
+}
+```

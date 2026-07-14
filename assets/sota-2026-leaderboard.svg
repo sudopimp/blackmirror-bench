@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="756" viewBox="0 0 1200 756" role="img" aria-label="BlackMirror-Bench SOTA 2026 overall score chart">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#0A0F1C"/>
+      <stop offset="100%" stop-color="#04060C"/>
+    </linearGradient>
+    <filter id="soft" x="-8%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)" rx="32"/>
+  <text x="44" y="52" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="40" font-weight="800" letter-spacing="-0.8">BlackMirror-Bench</text>
+  <text x="44" y="96" fill="#A5B4FC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="26" font-weight="800">SOTA 2026 · Overall BM-Score</text>
+  <text x="44" y="130" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17">Same 25 questions for every model. Higher = more honest &amp; better calibrated — not “more dystopian.”</text>
+  <text x="44" y="156" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">primary public_test · 5 theses × 5 tracks · gold rpi_v1 · 2026-07-13</text>
+  <line x1="344.0" y1="164" x2="344.0" y2="174" stroke="#334155" stroke-width="2"/>
+  <text x="344.0" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">0</text>
+  <line x1="514.5" y1="164" x2="514.5" y2="174" stroke="#334155" stroke-width="2"/>
+  <text x="514.5" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">.25</text>
+  <line x1="685.0" y1="164" x2="685.0" y2="174" stroke="#334155" stroke-width="2"/>
+  <text x="685.0" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">.50</text>
+  <line x1="855.5" y1="164" x2="855.5" y2="174" stroke="#334155" stroke-width="2"/>
+  <text x="855.5" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">.75</text>
+  <line x1="1026.0" y1="164" x2="1026.0" y2="174" stroke="#334155" stroke-width="2"/>
+  <text x="1026.0" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">1.0 perfect</text>
+  <text x="44" y="220.2" fill="#FDE68A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">🥇</text>
+  <text x="96" y="220.2" fill="#FFFFFF" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">Grok 4.5</text>
+  <rect x="344" y="178" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="344" y="178" width="531.5" height="64" rx="18" fill="#5EEAD4" filter="url(#soft)" opacity="0.96"/>
+  <text x="1156" y="220.2" fill="#5EEAD4" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.779</text>
+  <text x="44" y="302.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">🥈</text>
+  <text x="96" y="302.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">Codex Sol (max)</text>
+  <rect x="344" y="260" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="344" y="260" width="484.8" height="64" rx="18" fill="#C4B5FD" filter="url(#soft)" opacity="0.96"/>
+  <text x="1156" y="302.2" fill="#C4B5FD" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.711</text>
+  <text x="44" y="384.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">🥉</text>
+  <text x="96" y="384.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">MiniMax M3</text>
+  <rect x="344" y="342" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="344" y="342" width="430.7" height="64" rx="18" fill="#86EFAC" filter="url(#soft)" opacity="0.96"/>
+  <text x="1156" y="384.2" fill="#86EFAC" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.632</text>
+  <text x="44" y="466.2" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">#4</text>
+  <text x="96" y="466.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">Heuristic baseline</text>
+  <rect x="344" y="424" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="344" y="424" width="352.8" height="64" rx="18" fill="#94A3B8" filter="url(#soft)" opacity="0.96"/>
+  <text x="1156" y="466.2" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.517</text>
+  <text x="44" y="548.2" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">#5</text>
+  <text x="96" y="548.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">z.ai GLM-5.2 (Coding Plan)</text>
+  <rect x="344" y="506" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <rect x="344" y="506" width="347.9" height="64" rx="18" fill="#FCD34D" filter="url(#soft)" opacity="0.96"/>
+  <text x="1156" y="548.2" fill="#FCD34D" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.510</text>
+  <rect x="44" y="632" width="1112" height="108" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+  <text x="72" y="664" fill="#F1F5F9" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18" font-weight="800">What is BM-Score?</text>
+  <text x="72" y="692" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">One overall grade from 0→1. Weighted blend of five skills (T1–T5) about Black Mirror scenes in 2026.</text>
+  <text x="72" y="716" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">T1 30% · T2 20% · T3 20% · T4 15% · T5 15%  ·  inventing papers / hype loses points  ·  invite open</text>
+</svg>

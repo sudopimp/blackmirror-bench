@@ -1,0 +1,36 @@
+{
+  "enabling_tech": [
+    "virtual_avatar_platforms",
+    "real_time_animation",
+    "motion_capture",
+    "facial_tracking",
+    "virtual_production",
+    "live_streaming",
+    "social_media_platforms",
+    "broadcast_media"
+  ],
+  "ai_capability_tags": [
+    "generative_ai",
+    "conversational_ai",
+    "speech_synthesis",
+    "voice_cloning",
+    "facial_animation",
+    "persona_simulation",
+    "content_generation",
+    "sentiment_analysis",
+    "audience_targeting",
+    "persuasive_messaging"
+  ],
+  "non_ai_enablers": [
+    "human_puppeteering",
+    "comedic_performance",
+    "satire",
+    "political_branding",
+    "media_virality",
+    "celebrity_culture",
+    "campaign_organization",
+    "propaganda_apparatus",
+    "institutional_capture",
+    "authoritarian_governance"
+  ]
+}
