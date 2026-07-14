@@ -7,7 +7,7 @@
 |-------|-------|----------|----|----|----|----|----|---|-------|
 | **grok-4.5** | **public_test** | **0.773** | **0.856** | 0.203 | **0.950** | **0.900** | **1.000** | 100 | xAI API · [REPORT](REPORT_grok-4.5.md) |
 | heuristic | public_test | 0.571 | 0.737 | 0.124 | 0.200 | 0.900 | 1.000 | 100 | Midpoint + keyword baseline |
-| mock (gold-aware) | public_dev | ~0.98 | 1.00 | 1.00 | 0.95 | 0.90 | 1.00 | 340 | Harness smoke ceiling — **not** a real model |
+| ~~mock (gold-aware)~~ | — | — | — | — | — | — | — | — | **Not ranked** — gold-oracle harness ceiling only |
 | heuristic | public_dev (partial) | ~0.58 | ~0.78 | ~0.10 | 0.20 | 0.90 | 1.00 | — | Legacy partial run |
 | random_mid | public_test (partial) | ~0.57 | ~0.74 | ~0.11 | 0.20 | 0.90 | 1.00 | — | Legacy partial run |
 
@@ -29,3 +29,10 @@ python scripts/run_parallel_eval.py --model grok-4.5 --split public_test \
 
 Full write-up: **[REPORT_grok-4.5.md](REPORT_grok-4.5.md)**  
 Raw machine results: `grok-4.5_public_test.json` · `grok-4.5_public_test_summary.json`
+
+
+## Construct validity note (v1.1)
+
+- **Primary thesis set:** `data/splits/primary_theses.json` (excludes isomorphic pad clones).
+- **T1** fail-closed (no silent axis=50). **T3–T5** require substance, not format keywords alone.
+- Gold remains `provenance: deepresearch-agent` (agent-draft), not multi-lab human panel.

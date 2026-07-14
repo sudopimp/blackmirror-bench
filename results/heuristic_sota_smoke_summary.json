@@ -1,0 +1,16 @@
+{
+  "model": "heuristic",
+  "split": "public_test",
+  "bm_score": 0.5135038351370852,
+  "track_means": {
+    "T1": 0.7997707142857143,
+    "T2": 0.08225685425685428,
+    "T3": 0.05,
+    "T4": 0.65,
+    "T5": 1.0
+  },
+  "penalty_mean": 0.0037875,
+  "n_tasks": 50,
+  "as_of": "2026-07-09",
+  "out": "results/heuristic_sota_smoke.json"
+}

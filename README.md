@@ -109,6 +109,10 @@ BM-Score = 0.30·T1 + 0.20·T2 + 0.20·T3 + 0.15·T4 + 0.15·T5 − penalties
 
 Penalties (waitdeadai honesty signature): **hype inflation**, **sci-fi collapse**, **fake cites**.
 
+## MES construct validity (v1.1)
+
+Scorers: T1 fail-closed (missing axes → 0). T3 needs URL **and** claim substance. T4 scores delta sign/reason quality (not keys-only). T5 requires real refuse language (not bare `(b)`). Primary scored theses exclude pad clones (`data/splits/primary_theses.json`).
+
 ## Provenance honesty
 
 v1.0 gold is `provenance: deepresearch-agent` — multi-source research with confidence intervals and contested flags. It is **not** a multi-institution human panel. Optional `human-panel` upgrades are a future badge, not a silent claim.

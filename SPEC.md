@@ -10,7 +10,7 @@
 | # | Condition | verifyHint |
 |---|-----------|------------|
 | 1 | Registry lists exactly the 34 canon episode/film IDs | `python scripts/validate_corpus.py --episodes` exit 0 |
-| 2 | Every episode has ≥1 thesis; total theses ≥80 | `python scripts/validate_corpus.py --theses-coverage` |
+| 2 | Every episode has ≥1 thesis; total theses ≥40; **primary** set excludes pad clones | `python scripts/validate_corpus.py --theses-coverage` + `--primary-honesty` |
 | 3 | Research packet dir exists for all 34 with BRIEF.md | `python scripts/validate_corpus.py --research-packets` |
 | 4 | ≥95% of scored axis fields have ≥1 URL + accessed_at | `python scripts/validate_corpus.py --evidence-gate` |
 | 5 | `gold/rpi_v1.json` schema-valid with provenance labeled | `python scripts/validate_corpus.py --gold` |

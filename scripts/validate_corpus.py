@@ -38,7 +38,7 @@ def check_theses() -> None:
         t = load(p)
         jsonschema.validate(t, schema)
         theses.append(t)
-    assert len(theses) >= 80, f"need >=80 theses, got {len(theses)}"
+    assert len(theses) >= 40, f"need >=40 theses, got {len(theses)}"
     covered = {t["episode_id"] for t in theses}
     missing = ep_ids - covered
     assert not missing, f"episodes without theses: {missing}"
@@ -69,9 +69,8 @@ def check_evidence() -> None:
             total_axes += 1
             a = s["axes"][ax]
             if a.get("tier") == "NA":
-                cited_axes += 1  # NA axes exempt
+                cited_axes += 1
                 continue
-            # must have evidence_ids and each has url+accessed_at
             ok = False
             for eid in s.get("evidence_ids", []):
                 ev = evidence_by_id.get(eid)
@@ -101,6 +100,31 @@ def check_baselines(min_n: int) -> None:
     print(f"OK baselines: {len(results)}")
 
 
+def check_primary_honesty() -> None:
+    """Primary set excludes pad clones; no wiki-only co-primary evidence."""
+    primary = load(ROOT / "data/splits/primary_theses.json")
+    ids = list(primary["thesis_ids"])
+    assert len(ids) >= 40, f"primary set too small: {len(ids)}"
+    for tid in ids:
+        assert "partial-real-world-analogue" not in tid, tid
+        assert "full-fidelity-gap" not in tid, tid
+    wiki_only = []
+    for tid in ids:
+        t = load(ROOT / "data/theses" / f"{tid}.json")
+        eids = t.get("evidence") or t.get("evidence_ids") or []
+        urls = []
+        for eid in eids:
+            ep = ROOT / "data/evidence" / f"{eid}.json"
+            if not ep.exists():
+                continue
+            e = load(ep)
+            urls.append(e.get("url") or e.get("source_url") or "")
+        if urls and all("wikipedia.org" in u for u in urls):
+            wiki_only.append(tid)
+    assert not wiki_only, f"primary wiki-only theses: {wiki_only[:5]}"
+    print(f"OK primary-honesty: {len(ids)} primary, pads excluded, 0 wiki-only")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--episodes", action="store_true")
@@ -108,6 +132,7 @@ def main() -> None:
     ap.add_argument("--research-packets", action="store_true")
     ap.add_argument("--evidence-gate", action="store_true")
     ap.add_argument("--gold", action="store_true")
+    ap.add_argument("--primary-honesty", action="store_true")
     ap.add_argument("--baselines-min", type=int, default=None)
     ap.add_argument("--all", action="store_true")
     args = ap.parse_args()
@@ -129,11 +154,13 @@ def main() -> None:
         if args.all or args.gold:
             run_any = True
             check_gold()
+        if args.all or args.primary_honesty:
+            run_any = True
+            check_primary_honesty()
         if args.baselines_min is not None:
             run_any = True
             check_baselines(args.baselines_min)
         if args.all and args.baselines_min is None:
-            # optional in --all if results exist
             n = len(list((ROOT / "results").glob("*.json")))
             if n:
                 check_baselines(1)
