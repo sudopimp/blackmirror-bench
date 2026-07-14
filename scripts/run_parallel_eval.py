@@ -19,6 +19,7 @@ from harness.runner import (  # noqa: E402
     _score_response,
     load_gold,
     load_jsonl,
+    load_primary_thesis_ids,
     load_theses,
 )
 from harness.metrics import bm_score  # noqa: E402
@@ -43,8 +44,14 @@ def main() -> None:
         raw_dir.mkdir(parents=True, exist_ok=True)
 
     jobs = []
+    primary = load_primary_thesis_ids()
     for track, path in TRACK_FILES.items():
-        tasks = [t for t in load_jsonl(path) if t.get("split") == args.split or args.split == "all"]
+        tasks = [
+            t
+            for t in load_jsonl(path)
+            if (t.get("split") == args.split or args.split == "all")
+            and t.get("thesis_id") in primary
+        ]
         if args.limit:
             tasks = tasks[: args.limit]
         for task in tasks:
