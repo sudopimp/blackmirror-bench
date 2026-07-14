@@ -1,128 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1230" viewBox="0 0 1080 1230" role="img" aria-label="BlackMirror-Bench track breakdown by model">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1154" viewBox="0 0 1200 1154" role="img" aria-label="BlackMirror-Bench track breakdown by model">
   <defs>
-    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0B1020"/>
-      <stop offset="100%" stop-color="#05070F"/>
+    <linearGradient id="bg-bd" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#0C1222"/>
+      <stop offset="55%" stop-color="#080C16"/>
+      <stop offset="100%" stop-color="#05070E"/>
     </linearGradient>
+    <radialGradient id="glowL-bd" cx="12%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="rgba(125,211,252,0.14)"/>
+      <stop offset="100%" stop-color="rgba(125,211,252,0)"/>
+    </radialGradient>
+    <radialGradient id="glowR-bd" cx="92%" cy="8%" r="45%">
+      <stop offset="0%" stop-color="rgba(167,139,250,0.12)"/>
+      <stop offset="100%" stop-color="rgba(167,139,250,0)"/>
+    </radialGradient>
+    <linearGradient id="bar-teal-bd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+    <linearGradient id="bar-violet-bd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <linearGradient id="card-shine-bd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.04)"/>
+      <stop offset="40%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <filter id="soft-bd" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft-sm-bd" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="100%" height="100%" fill="url(#bg3)" rx="28"/>
-  <text x="40" y="52" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="32" font-weight="800">How each model scored (T1–T5)</text>
-  <text x="40" y="88" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="16">Thick bars = strength on that skill. Overall BM-Score is the weighted blend of these five.</text>
-  <text x="40" y="116" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">Tip: a model can crush evidence (T3) and still lose if calibration (T1) or safe boundary (T5) is weak.</text>
-  <rect x="40" y="140" width="1000" height="194" rx="22" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <text x="64" y="176" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">#1  Grok 4.5</text>
-  <text x="1016" y="176" fill="#5EEAD4" text-anchor="end" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="22" font-weight="800">BM 0.779</text>
-  <text x="64" y="213" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T1</text>
-  <rect x="170" y="196" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="196" width="703.8" height="22" rx="10" fill="#5EEAD4"/>
-  <text x="982" y="213" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">88%</text>
-  <text x="64" y="243" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T2</text>
-  <rect x="170" y="226" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="226" width="109.9" height="22" rx="10" fill="#67E8F9"/>
-  <text x="982" y="243" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">14%</text>
-  <text x="64" y="273" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T3</text>
-  <rect x="170" y="256" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="256" width="800.0" height="22" rx="10" fill="#A78BFA"/>
-  <text x="982" y="273" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">100%</text>
-  <text x="64" y="303" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T4</text>
-  <rect x="170" y="286" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="286" width="736.0" height="22" rx="10" fill="#F9A8D4"/>
-  <text x="982" y="303" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">92%</text>
-  <text x="64" y="333" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T5</text>
-  <rect x="170" y="316" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="316" width="800.0" height="22" rx="10" fill="#FCD34D"/>
-  <text x="982" y="333" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">100%</text>
-  <rect x="40" y="350" width="1000" height="194" rx="22" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <text x="64" y="386" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">#2  Codex Sol (max)</text>
-  <text x="1016" y="386" fill="#C4B5FD" text-anchor="end" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="22" font-weight="800">BM 0.711</text>
-  <text x="64" y="423" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T1</text>
-  <rect x="170" y="406" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="406" width="729.8" height="22" rx="10" fill="#5EEAD4"/>
-  <text x="982" y="423" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">91%</text>
-  <text x="64" y="453" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T2</text>
-  <rect x="170" y="436" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="436" width="96.9" height="22" rx="10" fill="#67E8F9"/>
-  <text x="982" y="453" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">12%</text>
-  <text x="64" y="483" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T3</text>
-  <rect x="170" y="466" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="466" width="800.0" height="22" rx="10" fill="#A78BFA"/>
-  <text x="982" y="483" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">100%</text>
-  <text x="64" y="513" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T4</text>
-  <rect x="170" y="496" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="496" width="736.0" height="22" rx="10" fill="#F9A8D4"/>
-  <text x="982" y="513" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">92%</text>
-  <text x="64" y="543" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T5</text>
-  <rect x="170" y="526" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="526" width="400.0" height="22" rx="10" fill="#FCD34D"/>
-  <text x="982" y="543" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">50%</text>
-  <rect x="40" y="560" width="1000" height="194" rx="22" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <text x="64" y="596" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">#3  MiniMax M3</text>
-  <text x="1016" y="596" fill="#86EFAC" text-anchor="end" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="22" font-weight="800">BM 0.632</text>
-  <text x="64" y="633" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T1</text>
-  <rect x="170" y="616" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="616" width="652.1" height="22" rx="10" fill="#5EEAD4"/>
-  <text x="982" y="633" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">82%</text>
-  <text x="64" y="663" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T2</text>
-  <rect x="170" y="646" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="646" width="96.1" height="22" rx="10" fill="#67E8F9"/>
-  <text x="982" y="663" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">12%</text>
-  <text x="64" y="693" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T3</text>
-  <rect x="170" y="676" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="676" width="480.0" height="22" rx="10" fill="#A78BFA"/>
-  <text x="982" y="693" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">60%</text>
-  <text x="64" y="723" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T4</text>
-  <rect x="170" y="706" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="706" width="736.0" height="22" rx="10" fill="#F9A8D4"/>
-  <text x="982" y="723" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">92%</text>
-  <text x="64" y="753" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T5</text>
-  <rect x="170" y="736" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="736" width="560.0" height="22" rx="10" fill="#FCD34D"/>
-  <text x="982" y="753" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">70%</text>
-  <rect x="40" y="770" width="1000" height="194" rx="22" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <text x="64" y="806" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">#4  Heuristic baseline</text>
-  <text x="1016" y="806" fill="#94A3B8" text-anchor="end" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="22" font-weight="800">BM 0.517</text>
-  <text x="64" y="843" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T1</text>
-  <rect x="170" y="826" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="826" width="639.3" height="22" rx="10" fill="#5EEAD4"/>
-  <text x="982" y="843" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">80%</text>
-  <text x="64" y="873" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T2</text>
-  <rect x="170" y="856" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="856" width="80.5" height="22" rx="10" fill="#67E8F9"/>
-  <text x="982" y="873" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">10%</text>
-  <text x="64" y="903" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T3</text>
-  <rect x="170" y="886" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="886" width="40.0" height="22" rx="10" fill="#A78BFA"/>
-  <text x="982" y="903" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">5%</text>
-  <text x="64" y="933" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T4</text>
-  <rect x="170" y="916" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="916" width="520.0" height="22" rx="10" fill="#F9A8D4"/>
-  <text x="982" y="933" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">65%</text>
-  <text x="64" y="963" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T5</text>
-  <rect x="170" y="946" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="946" width="800.0" height="22" rx="10" fill="#FCD34D"/>
-  <text x="982" y="963" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">100%</text>
-  <rect x="40" y="980" width="1000" height="194" rx="22" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <text x="64" y="1016" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">#5  z.ai GLM-5.2 (Coding Plan)</text>
-  <text x="1016" y="1016" fill="#FCD34D" text-anchor="end" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="22" font-weight="800">BM 0.510</text>
-  <text x="64" y="1053" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T1</text>
-  <rect x="170" y="1036" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="1036" width="644.6" height="22" rx="10" fill="#5EEAD4"/>
-  <text x="982" y="1053" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">81%</text>
-  <text x="64" y="1083" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T2</text>
-  <rect x="170" y="1066" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="1066" width="121.4" height="22" rx="10" fill="#67E8F9"/>
-  <text x="982" y="1083" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">15%</text>
-  <text x="64" y="1113" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T3</text>
-  <rect x="170" y="1096" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="1096" width="40.0" height="22" rx="10" fill="#A78BFA"/>
-  <text x="982" y="1113" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">5%</text>
-  <text x="64" y="1143" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T4</text>
-  <rect x="170" y="1126" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="1126" width="736.0" height="22" rx="10" fill="#F9A8D4"/>
-  <text x="982" y="1143" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">92%</text>
-  <text x="64" y="1173" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">T5</text>
-  <rect x="170" y="1156" width="800" height="22" rx="10" fill="#111827"/>
-  <rect x="170" y="1156" width="480.0" height="22" rx="10" fill="#FCD34D"/>
-  <text x="982" y="1173" fill="#E2E8F0" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">60%</text>
+  <rect width="100%" height="100%" fill="url(#bg-bd)" rx="28"/>
+  <rect width="100%" height="100%" fill="url(#glowL-bd)" rx="28"/>
+  <rect width="100%" height="100%" fill="url(#glowR-bd)" rx="28"/>
+  <rect x="1" y="1" width="1198" height="1.5" fill="rgba(255,255,255,0.06)" rx="1"/>
+  <text x="44" y="44" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="800" text-anchor="start">How each model scored (T1–T5)</text>
+  <text x="44" y="76" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="500" text-anchor="start">Thick bars = strength on that skill. Overall BM-Score blends these five.</text>
+  <text x="44" y="102" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">Tip: strong evidence (T3) can still lose if calibration (T1) or safe boundary (T5) is weak.</text>
+  <rect x="44" y="128" width="1112" height="184" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="44" y="128" width="5" height="184" rx="2" fill="#2DD4BF"/>
+  <text x="66" y="160" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">#1  Grok 4.5</text>
+  <text x="1134" y="160" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="18" font-weight="800" text-anchor="end">BM  0.779</text>
+  <text x="66" y="193" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T1  Calibration</text>
+  <rect x="192" y="178" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="178" width="784.7" height="18" rx="9" fill="#2DD4BF" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="193" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">88%</text>
+  <text x="66" y="219" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T2  Decomposition</text>
+  <rect x="192" y="204" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="204" width="122.6" height="18" rx="9" fill="#38BDF8" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="219" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">14%</text>
+  <text x="66" y="245" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T3  Evidence</text>
+  <rect x="192" y="230" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="230" width="892.0" height="18" rx="9" fill="#A78BFA" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="245" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">100%</text>
+  <text x="66" y="271" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T4  Update</text>
+  <rect x="192" y="256" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="256" width="820.6" height="18" rx="9" fill="#F472B6" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="271" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">92%</text>
+  <text x="66" y="297" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T5  Safe boundary</text>
+  <rect x="192" y="282" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="282" width="892.0" height="18" rx="9" fill="#FBBF24" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="297" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">100%</text>
+  <rect x="44" y="326" width="1112" height="184" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="66" y="358" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">#2  Codex Sol (max)</text>
+  <text x="1134" y="358" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="18" font-weight="800" text-anchor="end">BM  0.711</text>
+  <text x="66" y="391" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T1  Calibration</text>
+  <rect x="192" y="376" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="376" width="813.8" height="18" rx="9" fill="#2DD4BF" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="391" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">91%</text>
+  <text x="66" y="417" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T2  Decomposition</text>
+  <rect x="192" y="402" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="402" width="108.0" height="18" rx="9" fill="#38BDF8" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="417" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">12%</text>
+  <text x="66" y="443" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T3  Evidence</text>
+  <rect x="192" y="428" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="428" width="892.0" height="18" rx="9" fill="#A78BFA" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="443" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">100%</text>
+  <text x="66" y="469" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T4  Update</text>
+  <rect x="192" y="454" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="454" width="820.6" height="18" rx="9" fill="#F472B6" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="469" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">92%</text>
+  <text x="66" y="495" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T5  Safe boundary</text>
+  <rect x="192" y="480" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="480" width="446.0" height="18" rx="9" fill="#FBBF24" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="495" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">50%</text>
+  <rect x="44" y="524" width="1112" height="184" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="66" y="556" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">#3  MiniMax M3</text>
+  <text x="1134" y="556" fill="#4ADE80" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="18" font-weight="800" text-anchor="end">BM  0.632</text>
+  <text x="66" y="589" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T1  Calibration</text>
+  <rect x="192" y="574" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="574" width="727.1" height="18" rx="9" fill="#2DD4BF" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="589" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">82%</text>
+  <text x="66" y="615" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T2  Decomposition</text>
+  <rect x="192" y="600" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="600" width="107.2" height="18" rx="9" fill="#38BDF8" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="615" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">12%</text>
+  <text x="66" y="641" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T3  Evidence</text>
+  <rect x="192" y="626" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="626" width="535.2" height="18" rx="9" fill="#A78BFA" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="641" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">60%</text>
+  <text x="66" y="667" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T4  Update</text>
+  <rect x="192" y="652" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="652" width="820.6" height="18" rx="9" fill="#F472B6" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="667" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">92%</text>
+  <text x="66" y="693" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T5  Safe boundary</text>
+  <rect x="192" y="678" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="678" width="624.4" height="18" rx="9" fill="#FBBF24" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="693" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">70%</text>
+  <rect x="44" y="722" width="1112" height="184" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="66" y="754" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">#4  Heuristic baseline</text>
+  <text x="1134" y="754" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="18" font-weight="800" text-anchor="end">BM  0.517</text>
+  <text x="66" y="787" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T1  Calibration</text>
+  <rect x="192" y="772" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="772" width="712.8" height="18" rx="9" fill="#2DD4BF" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="787" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">80%</text>
+  <text x="66" y="813" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T2  Decomposition</text>
+  <rect x="192" y="798" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="798" width="89.8" height="18" rx="9" fill="#38BDF8" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="813" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">10%</text>
+  <text x="66" y="839" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T3  Evidence</text>
+  <rect x="192" y="824" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="824" width="44.6" height="18" rx="9" fill="#A78BFA" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="839" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">5%</text>
+  <text x="66" y="865" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T4  Update</text>
+  <rect x="192" y="850" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="850" width="579.8" height="18" rx="9" fill="#F472B6" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="865" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">65%</text>
+  <text x="66" y="891" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T5  Safe boundary</text>
+  <rect x="192" y="876" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="876" width="892.0" height="18" rx="9" fill="#FBBF24" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="891" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">100%</text>
+  <rect x="44" y="920" width="1112" height="184" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="66" y="952" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">#5  z.ai GLM-5.2</text>
+  <text x="1134" y="952" fill="#FBBF24" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="18" font-weight="800" text-anchor="end">BM  0.510</text>
+  <text x="66" y="985" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T1  Calibration</text>
+  <rect x="192" y="970" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="970" width="718.7" height="18" rx="9" fill="#2DD4BF" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="985" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">81%</text>
+  <text x="66" y="1011" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T2  Decomposition</text>
+  <rect x="192" y="996" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="996" width="135.3" height="18" rx="9" fill="#38BDF8" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="1011" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">15%</text>
+  <text x="66" y="1037" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T3  Evidence</text>
+  <rect x="192" y="1022" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="1022" width="44.6" height="18" rx="9" fill="#A78BFA" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="1037" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">5%</text>
+  <text x="66" y="1063" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T4  Update</text>
+  <rect x="192" y="1048" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="1048" width="820.6" height="18" rx="9" fill="#F472B6" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="1063" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">92%</text>
+  <text x="66" y="1089" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">T5  Safe boundary</text>
+  <rect x="192" y="1074" width="892" height="18" rx="9" fill="#151C2C"/>
+  <rect x="192" y="1074" width="535.2" height="18" rx="9" fill="#FBBF24" filter="url(#soft-sm-bd)"/>
+  <text x="1098" y="1089" fill="#E2E8F0" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="start">60%</text>
 </svg>

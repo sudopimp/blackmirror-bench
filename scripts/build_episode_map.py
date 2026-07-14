@@ -1,58 +1,63 @@
 #!/usr/bin/env python3
-"""Build assets/sota-2026-episode-map.svg from gold RPI + public_test theses.
-
-Layer A (episode reality panorama) — not model scores.
-"""
+"""Build refined assets/sota-2026-episode-map.svg (Layer A · episode reality)."""
 
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from chart_theme import (  # noqa: E402
+    ACCENT,
+    ACCENT_2,
+    CARD,
+    CARD_EDGE,
+    FAINT,
+    MUTED,
+    RAIL,
+    TEAL,
+    TEXT,
+    W,
+    canvas,
+    esc,
+    text,
+)
+
 OUT = ROOT / "assets" / "sota-2026-episode-map.svg"
 SPLIT = ROOT / "data" / "splits" / "public_test.json"
 GOLD = ROOT / "gold" / "rpi_v1.json"
 THESES = ROOT / "data" / "theses"
 
-# Display names for non-technical readers (episode + plain thesis).
 DISPLAY = {
     "s02e01-be-right-back-griefbot-persona-from-data": {
-        "episode": "Be Right Back (S2E1)",
+        "episode": "Be Right Back",
+        "code": "S2E1",
         "short": "Griefbot from your data",
-        "color": "#5EEAD4",
     },
     "s02e03-waldo-moment-cgi-political-candidate": {
-        "episode": "The Waldo Moment (S2E3)",
-        "short": "CGI/AI political candidate",
-        "color": "#A78BFA",
+        "episode": "The Waldo Moment",
+        "code": "S2E3",
+        "short": "CGI / AI political candidate",
     },
     "s04e02-arkangel-parental-neural-surveillance-filter": {
-        "episode": "Arkangel (S4E2)",
+        "episode": "Arkangel",
+        "code": "S4E2",
         "short": "Parental neural surveillance filter",
-        "color": "#F9A8D4",
     },
     "s05e03-rachel-jack-ashley-too-celebrity-ai-toy-puppet": {
-        "episode": "Rachel, Jack and Ashley Too (S5E3)",
+        "episode": "Rachel, Jack and Ashley Too",
+        "code": "S5E3",
         "short": "Celebrity AI toy / puppet",
-        "color": "#FCD34D",
     },
     "s07e04-plaything-evolving-artificial-lifeforms": {
-        "episode": "Plaything (S7E4)",
+        "episode": "Plaything",
+        "code": "S7E4",
         "short": "Evolving artificial lifeforms",
-        "color": "#86EFAC",
     },
 }
-
-
-def esc(s: str) -> str:
-    return (
-        str(s)
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
 
 
 def load_rows() -> list[dict]:
@@ -68,110 +73,148 @@ def load_rows() -> list[dict]:
             {
                 "thesis_id": tid,
                 "episode": meta["episode"],
+                "code": meta["code"],
                 "short": meta["short"],
                 "statement": thesis.get("thesis_statement") or thesis.get("title") or "",
                 "thesis_poss": float(axes["THESIS_POSS"]["value"]),
                 "ai_exec": float(axes["AI_EXEC"]["value"]),
-                "color": meta["color"],
             }
         )
     return rows
 
 
-def build_svg(rows: list[dict]) -> str:
-    w = 1200
-    pad = 44
-    header_h = 150
-    row_h = 108
-    h = header_h + len(rows) * row_h + 90
-    bar_max = 320
+def public_test_snapshot() -> list[dict]:
+    return load_rows()
 
-    lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-        f'viewBox="0 0 {w} {h}" role="img" '
-        'aria-label="BlackMirror-Bench episode reality map 2026">',
-        """  <defs>
-    <linearGradient id="bgE" x1="0" y1="0" x2="0.2" y2="1">
-      <stop offset="0%" stop-color="#0A0F1C"/>
-      <stop offset="100%" stop-color="#04060C"/>
-    </linearGradient>
-  </defs>""",
-        f'  <rect width="100%" height="100%" fill="url(#bgE)" rx="32"/>',
-        f'  <text x="{pad}" y="48" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="34" font-weight="800">Layer A · How close is each case to 2026 reality?</text>',
-        f'  <text x="{pad}" y="84" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="16">Not a model ranking. Each row is one Black Mirror thesis with research gold scores (0–100).</text>',
-        f'  <text x="{pad}" y="112" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="14">Executable now = can the outcome system ship with 2026 tech/capital/orgs · '
-        f'AI already = how much of that is current AI · gold rpi_v1 · research draft, not a human panel</text>',
-        # legend
-        f'  <rect x="{pad}" y="124" width="18" height="14" rx="4" fill="#5EEAD4"/>',
-        f'  <text x="{pad + 26}" y="136" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="13">Executable now (THESIS_POSS)</text>',
-        f'  <rect x="{pad + 260}" y="124" width="18" height="14" rx="4" fill="#A78BFA"/>',
-        f'  <text x="{pad + 286}" y="136" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="13">AI already (AI_EXEC)</text>',
+
+def _bar(x: float, y: float, max_w: float, value: float, fill: str, uid: str) -> list[str]:
+    bw = max(10.0, (value / 100.0) * max_w)
+    return [
+        f'  <rect x="{x}" y="{y}" width="{max_w}" height="14" rx="7" fill="{RAIL}"/>',
+        f'  <rect x="{x}" y="{y}" width="{bw:.1f}" height="14" rx="7" fill="{fill}" '
+        f'filter="url(#soft-sm-{uid})"/>',
+    ]
+
+
+def build_svg(rows: list[dict]) -> str:
+    uid = "ep"
+    w = W
+    pad = 44
+    header_h = 148
+    row_h = 118
+    h = header_h + len(rows) * row_h + 72
+    bar_max = 300
+
+    lines = canvas(w, h, uid, "BlackMirror-Bench episode reality map 2026")
+    lines += [
+        text(pad, 44, "Layer A · Episode reality 2026", size=32, weight="800"),
+        text(
+            pad,
+            76,
+            "Not a model ranking. Each row is one Black Mirror thesis with research gold scores (0–100).",
+            size=15,
+            fill=MUTED,
+            weight="500",
+        ),
+        # legend chips
+        f'  <rect x="{pad}" y="96" width="14" height="14" rx="4" fill="{TEAL}"/>',
+        text(pad + 22, 108, "Executable now — can the full outcome system ship in 2026?", size=13, fill=MUTED, weight="500"),
+        f'  <rect x="{pad + 520}" y="96" width="14" height="14" rx="4" fill="{ACCENT_2}"/>',
+        text(pad + 542, 108, "AI already — how much of that is current AI?", size=13, fill=MUTED, weight="500"),
+        text(
+            pad,
+            132,
+            "gold rpi_v1 · research draft with confidence intervals · not a human panel · not Netflix",
+            size=12,
+            fill=FAINT,
+            weight="500",
+        ),
     ]
 
     for i, r in enumerate(rows):
         y = header_h + i * row_h
+        card_h = row_h - 14
         lines.append(
-            f'  <rect x="{pad}" y="{y}" width="{w - 2 * pad}" height="{row_h - 14}" rx="18" '
-            f'fill="#0F172A" stroke="#1E293B" stroke-width="2"/>'
+            f'  <rect x="{pad}" y="{y}" width="{w - 2 * pad}" height="{card_h}" rx="20" '
+            f'fill="{CARD}" stroke="{CARD_EDGE}" stroke-width="1"/>'
+        )
+        # left accent by “how real”
+        accent = TEAL if r["thesis_poss"] >= 70 else (ACCENT if r["thesis_poss"] >= 50 else ACCENT_2)
+        lines.append(
+            f'  <rect x="{pad}" y="{y}" width="5" height="{card_h}" rx="2" fill="{accent}"/>'
+        )
+        # episode code pill
+        lines.append(
+            f'  <rect x="{pad + 22}" y="{y + 18}" width="52" height="24" rx="8" '
+            f'fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.25)" stroke-width="1"/>'
         )
         lines.append(
-            f'  <text x="{pad + 22}" y="{y + 30}" fill="#F8FAFC" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18" font-weight="800">'
-            f'{esc(r["episode"])}</text>'
+            text(
+                pad + 48,
+                y + 35,
+                r["code"],
+                size=12,
+                fill=ACCENT,
+                mono=True,
+                weight="800",
+                anchor="middle",
+            )
         )
         lines.append(
-            f'  <text x="{pad + 22}" y="{y + 52}" fill="#CBD5E1" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">'
-            f'{esc(r["short"])} — {esc(r["statement"][:110])}{"…" if len(r["statement"]) > 110 else ""}</text>'
-        )
-        # dual bars
-        bx = pad + 22
-        by1 = y + 64
-        by2 = y + 82
-        w1 = max(8.0, (r["thesis_poss"] / 100.0) * bar_max)
-        w2 = max(8.0, (r["ai_exec"] / 100.0) * bar_max)
-        lines.append(
-            f'  <rect x="{bx}" y="{by1}" width="{bar_max}" height="12" rx="6" fill="#111827"/>'
+            text(pad + 86, y + 36, r["episode"], size=18, weight="800")
         )
         lines.append(
-            f'  <rect x="{bx}" y="{by1}" width="{w1:.1f}" height="12" rx="6" fill="#5EEAD4"/>'
+            text(pad + 22, y + 58, r["short"], size=14, fill="#CBD5E1", weight="600")
+        )
+        stmt = r["statement"]
+        if len(stmt) > 96:
+            stmt = stmt[:93] + "…"
+        lines.append(
+            text(pad + 22, y + 80, stmt, size=13, fill=MUTED, weight="500")
+        )
+
+        # dual metric column on the right (bars + big numbers only — no mid clutter)
+        mx = pad + 580
+        bar_w = 260
+        lines += _bar(mx, y + 34, bar_w, r["thesis_poss"], TEAL, uid)
+        lines += _bar(mx, y + 62, bar_w, r["ai_exec"], ACCENT_2, uid)
+        lines.append(
+            text(
+                w - pad - 20,
+                y + 48,
+                f'{r["thesis_poss"]:.0f}',
+                size=30,
+                fill=TEAL,
+                mono=True,
+                weight="800",
+                anchor="end",
+            )
         )
         lines.append(
-            f'  <text x="{bx + bar_max + 12}" y="{by1 + 11}" fill="#5EEAD4" '
-            f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">'
-            f'Executable {r["thesis_poss"]:.0f}/100</text>'
-        )
-        lines.append(
-            f'  <rect x="{bx}" y="{by2}" width="{bar_max}" height="12" rx="6" fill="#111827"/>'
-        )
-        lines.append(
-            f'  <rect x="{bx}" y="{by2}" width="{w2:.1f}" height="12" rx="6" fill="#A78BFA"/>'
-        )
-        lines.append(
-            f'  <text x="{bx + bar_max + 12}" y="{by2 + 11}" fill="#A78BFA" '
-            f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">'
-            f'AI already {r["ai_exec"]:.0f}/100</text>'
+            text(
+                w - pad - 20,
+                y + 78,
+                f'{r["ai_exec"]:.0f}',
+                size=22,
+                fill=ACCENT_2,
+                mono=True,
+                weight="700",
+                anchor="end",
+            )
         )
 
     lines.append(
-        f'  <text x="{pad}" y="{h - 28}" fill="#64748B" '
-        f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13">'
-        f'Primary public_test · 5 theses · Layer B (model BM-Score) is a separate chart: '
-        f'does the AI recover these judgments honestly?</text>'
+        text(
+            pad,
+            h - 28,
+            "Primary public_test · 5 theses  ·  Layer B (model BM-Score) asks: do AIs recover these judgments honestly?",
+            size=12,
+            fill=FAINT,
+            weight="500",
+        )
     )
     lines.append("</svg>\n")
     return "\n".join(lines)
-
-
-def public_test_snapshot() -> list[dict]:
-    """Structured rows for tests / README generators."""
-    return load_rows()
 
 
 def main() -> None:

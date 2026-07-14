@@ -1,38 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="670" viewBox="0 0 1080 670" role="img" aria-label="What each BlackMirror-Bench track means">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="626" viewBox="0 0 1200 626" role="img" aria-label="What each BlackMirror-Bench track means">
   <defs>
-    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0B1020"/>
-      <stop offset="100%" stop-color="#05070F"/>
+    <linearGradient id="bg-tr" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#0C1222"/>
+      <stop offset="55%" stop-color="#080C16"/>
+      <stop offset="100%" stop-color="#05070E"/>
     </linearGradient>
+    <radialGradient id="glowL-tr" cx="12%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="rgba(125,211,252,0.14)"/>
+      <stop offset="100%" stop-color="rgba(125,211,252,0)"/>
+    </radialGradient>
+    <radialGradient id="glowR-tr" cx="92%" cy="8%" r="45%">
+      <stop offset="0%" stop-color="rgba(167,139,250,0.12)"/>
+      <stop offset="100%" stop-color="rgba(167,139,250,0)"/>
+    </radialGradient>
+    <linearGradient id="bar-teal-tr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+    <linearGradient id="bar-violet-tr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <linearGradient id="card-shine-tr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.04)"/>
+      <stop offset="40%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <filter id="soft-tr" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft-sm-tr" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="100%" height="100%" fill="url(#bg2)" rx="28"/>
-  <text x="48" y="54" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="32" font-weight="800">What we actually test</text>
-  <text x="48" y="92" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17">Five skills. Same scenes. No “spooky vibes” bonus — honesty beats hype.</text>
-  <text x="48" y="122" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">BM-Score weights: T1 30% · T2 20% · T3 20% · T4 15% · T5 15% (minus honesty penalties)</text>
-  <rect x="48" y="150" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="68" y="172" width="96" height="40" rx="12" fill="#5EEAD4"/>
-  <text x="116" y="199" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T1</text>
-  <text x="188" y="186" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Calibration  ·  weight 30%</text>
-  <text x="188" y="214" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Can it guess the same feasibility scores as our gold standard?</text>
-  <rect x="48" y="242" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="68" y="264" width="96" height="40" rx="12" fill="#67E8F9"/>
-  <text x="116" y="291" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T2</text>
-  <text x="188" y="278" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Decomposition  ·  weight 20%</text>
-  <text x="188" y="306" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Can it list the tech, AI pieces, and non-AI pieces that make the scene work?</text>
-  <rect x="48" y="334" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="68" y="356" width="96" height="40" rx="12" fill="#A78BFA"/>
-  <text x="116" y="383" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T3</text>
-  <text x="188" y="370" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Evidence  ·  weight 20%</text>
-  <text x="188" y="398" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Does it cite real sources — without inventing papers or links?</text>
-  <rect x="48" y="426" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="68" y="448" width="96" height="40" rx="12" fill="#F9A8D4"/>
-  <text x="116" y="475" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T4</text>
-  <text x="188" y="462" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Update  ·  weight 15%</text>
-  <text x="188" y="490" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">When new evidence appears, does it revise scores in a sensible way?</text>
-  <rect x="48" y="518" width="984" height="78" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="68" y="540" width="96" height="40" rx="12" fill="#FCD34D"/>
-  <text x="116" y="567" fill="#0B1020" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">T5</text>
-  <text x="188" y="554" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">Safe boundary  ·  weight 15%</text>
-  <text x="188" y="582" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">Will it analyze freely, but refuse step-by-step harm plans?</text>
+  <rect width="100%" height="100%" fill="url(#bg-tr)" rx="28"/>
+  <rect width="100%" height="100%" fill="url(#glowL-tr)" rx="28"/>
+  <rect width="100%" height="100%" fill="url(#glowR-tr)" rx="28"/>
+  <rect x="1" y="1" width="1198" height="1.5" fill="rgba(255,255,255,0.06)" rx="1"/>
+  <text x="48" y="46" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="32" font-weight="800" text-anchor="start">What we actually test</text>
+  <text x="48" y="78" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="500" text-anchor="start">Five skills. Same scenes. Honesty beats hype — no “spooky vibes” bonus.</text>
+  <text x="48" y="104" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">BM-Score weights · minus honesty penalties</text>
+  <rect x="48" y="138" width="1104" height="76" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="138" width="5" height="76" rx="2" fill="#2DD4BF"/>
+  <rect x="72" y="160" width="72" height="36" rx="11" fill="#2DD4BF"/>
+  <text x="108" y="184" fill="#0B1020" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="16" font-weight="800" text-anchor="middle">T1</text>
+  <text x="160" y="174" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="750" text-anchor="start">Calibration  ·  30%</text>
+  <text x="160" y="198" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Match the gold “how real is this?” numbers</text>
+  <rect x="48" y="226" width="1104" height="76" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="226" width="5" height="76" rx="2" fill="#38BDF8"/>
+  <rect x="72" y="248" width="72" height="36" rx="11" fill="#38BDF8"/>
+  <text x="108" y="272" fill="#0B1020" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="16" font-weight="800" text-anchor="middle">T2</text>
+  <text x="160" y="262" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="750" text-anchor="start">Decomposition  ·  20%</text>
+  <text x="160" y="286" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">List tech, AI pieces, and non-AI pieces that make the scene work</text>
+  <rect x="48" y="314" width="1104" height="76" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="314" width="5" height="76" rx="2" fill="#A78BFA"/>
+  <rect x="72" y="336" width="72" height="36" rx="11" fill="#A78BFA"/>
+  <text x="108" y="360" fill="#0B1020" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="16" font-weight="800" text-anchor="middle">T3</text>
+  <text x="160" y="350" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="750" text-anchor="start">Evidence  ·  20%</text>
+  <text x="160" y="374" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Cite real sources — no invented papers or links</text>
+  <rect x="48" y="402" width="1104" height="76" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="402" width="5" height="76" rx="2" fill="#F472B6"/>
+  <rect x="72" y="424" width="72" height="36" rx="11" fill="#F472B6"/>
+  <text x="108" y="448" fill="#0B1020" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="16" font-weight="800" text-anchor="middle">T4</text>
+  <text x="160" y="438" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="750" text-anchor="start">Update  ·  15%</text>
+  <text x="160" y="462" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Revise scores sensibly when new evidence appears</text>
+  <rect x="48" y="490" width="1104" height="76" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="490" width="5" height="76" rx="2" fill="#FBBF24"/>
+  <rect x="72" y="512" width="72" height="36" rx="11" fill="#FBBF24"/>
+  <text x="108" y="536" fill="#0B1020" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="16" font-weight="800" text-anchor="middle">T5</text>
+  <text x="160" y="526" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="750" text-anchor="start">Safe boundary  ·  15%</text>
+  <text x="160" y="550" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Analyze freely; refuse step-by-step harm plans</text>
 </svg>

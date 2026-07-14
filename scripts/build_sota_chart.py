@@ -1,33 +1,56 @@
 #!/usr/bin/env python3
-"""Build Twitter-style SOTA 2026 chart SVGs (thick bars, plain English)."""
+"""Build refined SOTA 2026 chart SVGs (Twitter-ready, thick bars, plain English)."""
 
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from chart_theme import (  # noqa: E402
+    ACCENT,
+    AMBER,
+    CARD,
+    CARD_EDGE,
+    FAINT,
+    FONT,
+    GOLD,
+    MONO,
+    MUTED,
+    RAIL,
+    TEAL,
+    TEXT,
+    TRACK_COLORS,
+    W,
+    canvas,
+    esc,
+    model_bar_gradient,
+    text,
+)
+
 RESULTS = ROOT / "results"
 ASSETS = ROOT / "assets"
 
-# Prefer Sol max over Sol high for the public SOTA chart.
 CANDIDATES = [
-    ("grok-4.5_public_test_primary_summary.json", "Grok 4.5", "#5EEAD4"),
+    ("grok-4.5_public_test_primary_summary.json", "Grok 4.5", "#2DD4BF"),
     (
         "codex-gpt-5.6-sol-max_public_test_primary_summary.json",
         "Codex Sol (max)",
-        "#C4B5FD",
+        "#A78BFA",
     ),
     (
         "codex-gpt-5.6-sol_public_test_primary_summary.json",
         "Codex Sol (high)",
-        "#A78BFA",
+        "#8B5CF6",
     ),
-    ("minimax-m3_public_test_primary_summary.json", "MiniMax M3", "#86EFAC"),
+    ("minimax-m3_public_test_primary_summary.json", "MiniMax M3", "#4ADE80"),
     (
         "zai-glm-5.2_public_test_primary_summary.json",
-        "z.ai GLM-5.2 (Coding Plan)",
-        "#FCD34D",
+        "z.ai GLM-5.2",
+        "#FBBF24",
     ),
     (
         "zai-glm-4.5_public_test_primary_summary.json",
@@ -41,49 +64,39 @@ TRACK_META = [
     {
         "id": "T1",
         "name": "Calibration",
-        "plain": "Can it guess the same feasibility scores as our gold standard?",
+        "plain": "Match the gold “how real is this?” numbers",
         "weight": "30%",
-        "color": "#5EEAD4",
+        "color": TRACK_COLORS["T1"],
     },
     {
         "id": "T2",
         "name": "Decomposition",
-        "plain": "Can it list the tech, AI pieces, and non-AI pieces that make the scene work?",
+        "plain": "List tech, AI pieces, and non-AI pieces that make the scene work",
         "weight": "20%",
-        "color": "#67E8F9",
+        "color": TRACK_COLORS["T2"],
     },
     {
         "id": "T3",
         "name": "Evidence",
-        "plain": "Does it cite real sources — without inventing papers or links?",
+        "plain": "Cite real sources — no invented papers or links",
         "weight": "20%",
-        "color": "#A78BFA",
+        "color": TRACK_COLORS["T3"],
     },
     {
         "id": "T4",
         "name": "Update",
-        "plain": "When new evidence appears, does it revise scores in a sensible way?",
+        "plain": "Revise scores sensibly when new evidence appears",
         "weight": "15%",
-        "color": "#F9A8D4",
+        "color": TRACK_COLORS["T4"],
     },
     {
         "id": "T5",
         "name": "Safe boundary",
-        "plain": "Will it analyze freely, but refuse step-by-step harm plans?",
+        "plain": "Analyze freely; refuse step-by-step harm plans",
         "weight": "15%",
-        "color": "#FCD34D",
+        "color": TRACK_COLORS["T5"],
     },
 ]
-
-
-def esc(s: str) -> str:
-    return (
-        str(s)
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
 
 
 def load_rows() -> list[dict]:
@@ -110,8 +123,6 @@ def load_rows() -> list[dict]:
                     k: float(tracks.get(k, 0.0))
                     for k in ("T1", "T2", "T3", "T4", "T5")
                 },
-                "model_id": data.get("model", name),
-                "as_of": data.get("as_of") or "",
             }
         )
         if "Codex Sol" in name:
@@ -121,7 +132,7 @@ def load_rows() -> list[dict]:
 
 
 def _pct(x: float) -> str:
-    return f"{x * 100:.0f}"
+    return f"{x * 100:.0f}%"
 
 
 def _score(x: float) -> str:
@@ -129,306 +140,399 @@ def _score(x: float) -> str:
 
 
 def build_overall_chart(rows: list[dict]) -> str:
-    """Twitter/X-style overall BM-Score leaderboard — fat bars, bold numbers."""
+    uid = "ov"
     n = max(len(rows), 1)
-    w = 1200
-    pad_x = 44
-    top = 178
-    bar_h = 64  # thick "Twitter bench" bars
-    gap = 18
-    label_w = 300
-    score_w = 130
-    plot_left = pad_x + label_w
-    plot_right = w - pad_x - score_w
-    plot_w = plot_right - plot_left
-    h = top + n * (bar_h + gap) + 168
-    scale = 1.0
+    w = W
+    pad = 48
+    top = 168
+    bar_h = 58
+    gap = 16
+    label_w = 280
+    score_w = 118
+    plot_left = pad + label_w
+    plot_w = w - pad - score_w - plot_left
+    h = top + n * (bar_h + gap) + 148
 
-    lines: list[str] = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-        f'viewBox="0 0 {w} {h}" role="img" '
-        'aria-label="BlackMirror-Bench SOTA 2026 overall score chart">',
-        """  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0.2" y2="1">
-      <stop offset="0%" stop-color="#0A0F1C"/>
-      <stop offset="100%" stop-color="#04060C"/>
-    </linearGradient>
-    <filter id="soft" x="-8%" y="-40%" width="120%" height="180%">
-      <feGaussianBlur stdDeviation="8" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>""",
-        f'  <rect width="100%" height="100%" fill="url(#bg)" rx="32"/>',
-        f'  <text x="{pad_x}" y="52" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="40" font-weight="800" letter-spacing="-0.8">BlackMirror-Bench</text>',
-        f'  <text x="{pad_x}" y="96" fill="#A5B4FC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="26" font-weight="800">SOTA 2026 · Overall BM-Score</text>',
-        f'  <text x="{pad_x}" y="130" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="17">Same 25 questions for every model. Higher = more honest &amp; better calibrated — '
-        f'not “more dystopian.”</text>',
-        f'  <text x="{pad_x}" y="156" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="14">primary public_test · 5 theses × 5 tracks · gold rpi_v1 · 2026-07-13</text>',
+    extra_grads = []
+    fills = []
+    for i, r in enumerate(rows):
+        defn, fill = model_bar_gradient(r["name"], uid, i)
+        extra_grads.append(defn)
+        fills.append(fill)
+
+    lines = canvas(w, h, uid, "BlackMirror-Bench SOTA 2026 overall BM-Score")
+    # inject model gradients into defs — splice after first defs open is hard;
+    # append defs block for model grads
+    lines.insert(
+        3,
+        "  <defs>\n" + "\n".join(extra_grads) + "\n  </defs>",
+    )
+
+    lines += [
+        text(pad, 46, "BlackMirror-Bench", size=36, weight="800"),
+        text(pad, 82, "Layer B · Overall BM-Score", size=22, fill=ACCENT, weight="700"),
+        text(
+            pad,
+            112,
+            "Each bar = one model. Higher = more honest calibration — not “more dystopian.”",
+            size=15,
+            fill=MUTED,
+            weight="500",
+        ),
+        text(
+            pad,
+            136,
+            "primary public_test · 5 theses × 5 tracks · 25 tasks · gold rpi_v1",
+            size=13,
+            fill=FAINT,
+            weight="500",
+        ),
     ]
 
-    tick_y = top - 14
-    for t, lab in ((0.0, "0"), (0.25, ".25"), (0.5, ".50"), (0.75, ".75"), (1.0, "1.0 perfect")):
+    # scale ticks
+    tick_y = top - 12
+    for t, lab in ((0, "0"), (0.25, ".25"), (0.5, ".50"), (0.75, ".75"), (1.0, "1.0")):
         x = plot_left + t * plot_w
         lines.append(
-            f'  <line x1="{x:.1f}" y1="{tick_y}" x2="{x:.1f}" y2="{tick_y + 10}" '
-            f'stroke="#334155" stroke-width="2"/>'
+            f'  <line x1="{x:.1f}" y1="{tick_y}" x2="{x:.1f}" y2="{tick_y + 8}" '
+            f'stroke="rgba(148,163,184,0.35)" stroke-width="1.5"/>'
         )
         lines.append(
-            f'  <text x="{x:.1f}" y="{tick_y - 6}" fill="#64748B" text-anchor="middle" '
-            f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">{lab}</text>'
+            text(x, tick_y - 6, lab, size=11, fill=FAINT, mono=True, anchor="middle", weight="600")
         )
 
     for i, r in enumerate(rows):
         y = top + i * (bar_h + gap)
-        bw = max(22.0, (r["score"] / scale) * plot_w)
+        bw = max(20.0, r["score"] * plot_w)
         is_top = i == 0
-        rank_fill = "#FDE68A" if is_top else ("#E2E8F0" if i < 3 else "#64748B")
-        name_fill = "#FFFFFF" if is_top else "#E2E8F0"
-        medal = {0: "🥇", 1: "🥈", 2: "🥉"}.get(i, "")
-        rank_label = f"#{i + 1}" if not medal else f"{medal}"
-        # Rank
+        # rank pill
+        pill_w, pill_h = 40, 28
+        pill_y = y + (bar_h - pill_h) / 2
+        pill_fill = "rgba(251,191,36,0.18)" if is_top else "rgba(255,255,255,0.06)"
+        pill_stroke = GOLD if is_top else "rgba(255,255,255,0.1)"
+        rank_c = GOLD if is_top else MUTED
         lines.append(
-            f'  <text x="{pad_x}" y="{y + bar_h * 0.66:.1f}" fill="{rank_fill}" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">'
-            f'{rank_label}</text>'
+            f'  <rect x="{pad}" y="{pill_y:.1f}" width="{pill_w}" height="{pill_h}" rx="9" '
+            f'fill="{pill_fill}" stroke="{pill_stroke}" stroke-width="1.2"/>'
         )
-        # Name (wrap-safe single line)
         lines.append(
-            f'  <text x="{pad_x + 52}" y="{y + bar_h * 0.66:.1f}" fill="{name_fill}" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" '
-            f'font-weight="{"800" if is_top else "700"}">{esc(r["name"])}</text>'
+            text(
+                pad + pill_w / 2,
+                pill_y + 19,
+                f"#{i + 1}",
+                size=13,
+                fill=rank_c,
+                mono=True,
+                weight="800",
+                anchor="middle",
+            )
         )
-        # Rail
+        # name
         lines.append(
-            f'  <rect x="{plot_left}" y="{y}" width="{plot_w}" height="{bar_h}" rx="18" '
-            f'fill="#0F172A" stroke="#1E293B" stroke-width="2"/>'
+            text(
+                pad + 52,
+                y + bar_h * 0.62,
+                r["name"],
+                size=18,
+                fill=TEXT if is_top else "#E2E8F0",
+                weight="800" if is_top else "650",
+            )
         )
-        # Fat bar
+        # rail + bar
         lines.append(
-            f'  <rect x="{plot_left}" y="{y}" width="{bw:.1f}" height="{bar_h}" rx="18" '
-            f'fill="{r["color"]}" filter="url(#soft)" opacity="0.96"/>'
+            f'  <rect x="{plot_left}" y="{y}" width="{plot_w}" height="{bar_h}" rx="16" '
+            f'fill="{RAIL}" stroke="{CARD_EDGE}" stroke-width="1"/>'
         )
-        # Score
         lines.append(
-            f'  <text x="{w - pad_x}" y="{y + bar_h * 0.66:.1f}" fill="{r["color"]}" '
-            f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" '
-            f'text-anchor="end">{_score(r["score"])}</text>'
+            f'  <rect x="{plot_left}" y="{y}" width="{bw:.1f}" height="{bar_h}" rx="16" '
+            f'fill="{fills[i]}" filter="url(#soft-{uid})" opacity="0.95"/>'
+        )
+        # score
+        sc = r["color"] if not is_top else TEAL
+        if is_top:
+            sc = TEAL
+        lines.append(
+            text(
+                w - pad,
+                y + bar_h * 0.64,
+                _score(r["score"]),
+                size=26,
+                fill=sc,
+                mono=True,
+                weight="800",
+                anchor="end",
+            )
         )
 
-    fy = h - 100
+    # footer card
+    fy = h - 112
     lines.append(
-        f'  <rect x="{pad_x}" y="{fy - 24}" width="{w - 2 * pad_x}" height="108" rx="20" '
-        f'fill="#0F172A" stroke="#1E293B" stroke-width="2"/>'
+        f'  <rect x="{pad}" y="{fy}" width="{w - 2 * pad}" height="88" rx="18" '
+        f'fill="{CARD}" stroke="{CARD_EDGE}" stroke-width="1"/>'
     )
     lines.append(
-        f'  <text x="{pad_x + 28}" y="{fy + 8}" fill="#F1F5F9" '
-        f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18" font-weight="800">'
-        f'What is BM-Score?</text>'
+        f'  <rect x="{pad}" y="{fy}" width="{w - 2 * pad}" height="88" rx="18" '
+        f'fill="url(#card-shine-{uid})"/>'
     )
-    lines.append(
-        f'  <text x="{pad_x + 28}" y="{fy + 36}" fill="#94A3B8" '
-        f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">'
-        f'One overall grade from 0→1. Weighted blend of five skills (T1–T5) about Black Mirror scenes in 2026.</text>'
-    )
-    lines.append(
-        f'  <text x="{pad_x + 28}" y="{fy + 60}" fill="#64748B" '
-        f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">'
-        f'T1 30% · T2 20% · T3 20% · T4 15% · T5 15%  ·  inventing papers / hype loses points  ·  invite open</text>'
-    )
+    lines += [
+        text(pad + 24, fy + 32, "What is BM-Score?", size=16, weight="800"),
+        text(
+            pad + 24,
+            fy + 56,
+            "One grade from 0→1: weighted blend of T1–T5 on the same Black Mirror cases. Fake papers & hype lose points.",
+            size=13,
+            fill=MUTED,
+            weight="500",
+        ),
+        text(
+            pad + 24,
+            fy + 76,
+            "T1 30% · T2 20% · T3 20% · T4 15% · T5 15%   ·   invite open",
+            size=12,
+            fill=FAINT,
+            weight="500",
+            mono=True,
+        ),
+    ]
     lines.append("</svg>\n")
     return "\n".join(lines)
 
 
 def build_tracks_legend() -> str:
-    """What each track means — thick colored chips, plain English."""
-    w = 1080
+    uid = "tr"
+    w = W
     pad = 48
-    row_h = 92
-    top = 150
-    h = top + len(TRACK_META) * row_h + 60
-    lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-        f'viewBox="0 0 {w} {h}" role="img" '
-        'aria-label="What each BlackMirror-Bench track means">',
-        """  <defs>
-    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0B1020"/>
-      <stop offset="100%" stop-color="#05070F"/>
-    </linearGradient>
-  </defs>""",
-        f'  <rect width="100%" height="100%" fill="url(#bg2)" rx="28"/>',
-        f'  <text x="{pad}" y="54" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="32" font-weight="800">What we actually test</text>',
-        f'  <text x="{pad}" y="92" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="17">Five skills. Same scenes. No “spooky vibes” bonus — honesty beats hype.</text>',
-        f'  <text x="{pad}" y="122" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="14">BM-Score weights: T1 30% · T2 20% · T3 20% · T4 15% · T5 15% (minus honesty penalties)</text>',
+    row_h = 88
+    top = 138
+    h = top + len(TRACK_META) * row_h + 48
+    lines = canvas(w, h, uid, "What each BlackMirror-Bench track means")
+    lines += [
+        text(pad, 46, "What we actually test", size=32, weight="800"),
+        text(
+            pad,
+            78,
+            "Five skills. Same scenes. Honesty beats hype — no “spooky vibes” bonus.",
+            size=15,
+            fill=MUTED,
+            weight="500",
+        ),
+        text(
+            pad,
+            104,
+            "BM-Score weights · minus honesty penalties",
+            size=13,
+            fill=FAINT,
+            weight="500",
+        ),
     ]
     for i, t in enumerate(TRACK_META):
         y = top + i * row_h
         lines.append(
-            f'  <rect x="{pad}" y="{y}" width="{w - 2 * pad}" height="{row_h - 14}" rx="20" '
-            f'fill="#0F172A" stroke="#1E293B" stroke-width="2"/>'
-        )
-        # Fat color pill
-        lines.append(
-            f'  <rect x="{pad + 20}" y="{y + 22}" width="96" height="40" rx="12" fill="{t["color"]}"/>'
+            f'  <rect x="{pad}" y="{y}" width="{w - 2 * pad}" height="{row_h - 12}" rx="18" '
+            f'fill="{CARD}" stroke="{CARD_EDGE}" stroke-width="1"/>'
         )
         lines.append(
-            f'  <text x="{pad + 68}" y="{y + 49}" fill="#0B1020" text-anchor="middle" '
-            f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">'
-            f'{t["id"]}</text>'
+            f'  <rect x="{pad}" y="{y}" width="5" height="{row_h - 12}" rx="2" fill="{t["color"]}"/>'
+        )
+        # pill
+        lines.append(
+            f'  <rect x="{pad + 24}" y="{y + 22}" width="72" height="36" rx="11" fill="{t["color"]}"/>'
         )
         lines.append(
-            f'  <text x="{pad + 140}" y="{y + 36}" fill="#F8FAFC" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="750">'
-            f'{esc(t["name"])}  ·  weight {t["weight"]}</text>'
+            text(
+                pad + 60,
+                y + 46,
+                t["id"],
+                size=16,
+                fill="#0B1020",
+                mono=True,
+                weight="800",
+                anchor="middle",
+            )
         )
         lines.append(
-            f'  <text x="{pad + 140}" y="{y + 64}" fill="#94A3B8" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">'
-            f'{esc(t["plain"])}</text>'
+            text(
+                pad + 112,
+                y + 36,
+                f'{t["name"]}  ·  {t["weight"]}',
+                size=18,
+                weight="750",
+            )
+        )
+        lines.append(
+            text(pad + 112, y + 60, t["plain"], size=14, fill=MUTED, weight="500")
         )
     lines.append("</svg>\n")
     return "\n".join(lines)
 
 
 def build_breakdown_chart(rows: list[dict]) -> str:
-    """Per-model T1–T5 fat bars — how the overall score is built."""
-    if not rows:
-        rows = []
-    # Show top models (all we have)
+    uid = "bd"
     models = rows[:6]
-    w = 1080
-    pad = 40
-    header_h = 140
-    model_block = 210
-    h = header_h + max(len(models), 1) * model_block + 40
+    w = W
+    pad = 44
+    header_h = 128
+    model_block = 198
+    h = header_h + max(len(models), 1) * model_block + 36
     track_ids = ["T1", "T2", "T3", "T4", "T5"]
-    colors = {t["id"]: t["color"] for t in TRACK_META}
     names = {t["id"]: t["name"] for t in TRACK_META}
 
-    lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-        f'viewBox="0 0 {w} {h}" role="img" '
-        'aria-label="BlackMirror-Bench track breakdown by model">',
-        """  <defs>
-    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0B1020"/>
-      <stop offset="100%" stop-color="#05070F"/>
-    </linearGradient>
-  </defs>""",
-        f'  <rect width="100%" height="100%" fill="url(#bg3)" rx="28"/>',
-        f'  <text x="{pad}" y="52" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="32" font-weight="800">How each model scored (T1–T5)</text>',
-        f'  <text x="{pad}" y="88" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="16">Thick bars = strength on that skill. Overall BM-Score is the weighted blend of these five.</text>',
-        f'  <text x="{pad}" y="116" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="14">Tip: a model can crush evidence (T3) and still lose if calibration (T1) or safe boundary (T5) is weak.</text>',
+    lines = canvas(w, h, uid, "BlackMirror-Bench track breakdown by model")
+    lines += [
+        text(pad, 44, "How each model scored (T1–T5)", size=30, weight="800"),
+        text(
+            pad,
+            76,
+            "Thick bars = strength on that skill. Overall BM-Score blends these five.",
+            size=15,
+            fill=MUTED,
+            weight="500",
+        ),
+        text(
+            pad,
+            102,
+            "Tip: strong evidence (T3) can still lose if calibration (T1) or safe boundary (T5) is weak.",
+            size=13,
+            fill=FAINT,
+            weight="500",
+        ),
     ]
 
-    label_w = 130
-    bar_max = w - pad * 2 - label_w - 70
-    bar_h = 22
+    label_w = 148
+    bar_max = w - pad * 2 - label_w - 72
+    bar_h = 18
     bar_gap = 8
 
     for mi, m in enumerate(models):
         by = header_h + mi * model_block
         lines.append(
-            f'  <rect x="{pad}" y="{by}" width="{w - 2 * pad}" height="{model_block - 16}" '
-            f'rx="22" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>'
+            f'  <rect x="{pad}" y="{by}" width="{w - 2 * pad}" height="{model_block - 14}" '
+            f'rx="20" fill="{CARD}" stroke="{CARD_EDGE}" stroke-width="1"/>'
+        )
+        # accent strip for rank 1
+        if mi == 0:
+            lines.append(
+                f'  <rect x="{pad}" y="{by}" width="5" height="{model_block - 14}" rx="2" fill="{TEAL}"/>'
+            )
+        lines.append(
+            text(
+                pad + 22,
+                by + 32,
+                f'#{mi + 1}  {m["name"]}',
+                size=18,
+                weight="800",
+            )
         )
         lines.append(
-            f'  <text x="{pad + 24}" y="{by + 36}" fill="#F8FAFC" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">'
-            f'#{mi + 1}  {esc(m["name"])}</text>'
-        )
-        lines.append(
-            f'  <text x="{w - pad - 24}" y="{by + 36}" fill="{m["color"]}" text-anchor="end" '
-            f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="22" font-weight="800">'
-            f'BM {_score(m["score"])}</text>'
+            text(
+                w - pad - 22,
+                by + 32,
+                f'BM  {_score(m["score"])}',
+                size=18,
+                fill=m["color"],
+                mono=True,
+                weight="800",
+                anchor="end",
+            )
         )
         for ti, tid in enumerate(track_ids):
             val = m["tracks"].get(tid, 0.0)
-            y = by + 56 + ti * (bar_h + bar_gap)
-            bw = max(10.0, val * bar_max)
+            y = by + 50 + ti * (bar_h + bar_gap)
+            bw = max(8.0, val * bar_max)
+            col = TRACK_COLORS[tid]
             lines.append(
-                f'  <text x="{pad + 24}" y="{y + bar_h - 5}" fill="#94A3B8" '
-                f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">'
-                f'{tid}</text>'
+                text(
+                    pad + 22,
+                    y + bar_h - 3,
+                    f"{tid}  {names[tid]}",
+                    size=12,
+                    fill=MUTED,
+                    mono=True,
+                    weight="700",
+                )
             )
             lines.append(
-                f'  <rect x="{pad + label_w}" y="{y}" width="{bar_max}" height="{bar_h}" rx="10" '
-                f'fill="#111827"/>'
+                f'  <rect x="{pad + label_w}" y="{y}" width="{bar_max}" height="{bar_h}" rx="9" '
+                f'fill="{RAIL}"/>'
             )
             lines.append(
-                f'  <rect x="{pad + label_w}" y="{y}" width="{bw:.1f}" height="{bar_h}" rx="10" '
-                f'fill="{colors[tid]}"/>'
+                f'  <rect x="{pad + label_w}" y="{y}" width="{bw:.1f}" height="{bar_h}" rx="9" '
+                f'fill="{col}" filter="url(#soft-sm-{uid})"/>'
             )
             lines.append(
-                f'  <text x="{pad + label_w + bar_max + 12}" y="{y + bar_h - 5}" fill="#E2E8F0" '
-                f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="13" font-weight="700">'
-                f'{_pct(val)}%</text>'
+                text(
+                    pad + label_w + bar_max + 14,
+                    y + bar_h - 3,
+                    _pct(val),
+                    size=12,
+                    fill="#E2E8F0",
+                    mono=True,
+                    weight="700",
+                )
             )
-            # tiny skill name on first model only? skip to keep clean
-            _ = names
 
     lines.append("</svg>\n")
     return "\n".join(lines)
 
 
 def build_how_to_read() -> str:
-    """Single shareable card: how to read the bench in plain English."""
-    w, h = 1080, 640
+    uid = "ht"
+    w, h = W, 620
     pad = 48
     bullets = [
-        ("1", "We pick 5 hard Black Mirror scenes (griefbots, surveillance, CGI politics…)."),
-        ("2", "Every model answers the same 25 questions about those scenes."),
-        ("3", "We grade against a fixed “gold” feasibility score for the year 2026."),
-        ("4", "BM-Score (0→1) is the overall grade. Higher = more honest calibration."),
-        ("5", "It is NOT a horror contest. “More dystopia” does not earn points."),
+        ("1", "Layer A: how close each Black Mirror thesis is to 2026 reality."),
+        ("2", "Layer B: every model answers the same 25 questions about those cases."),
+        ("3", "We grade models against fixed gold feasibility scores (research draft)."),
+        ("4", "BM-Score (0→1) is the overall grade — higher = more honest calibration."),
+        ("5", "Not a horror contest: “more dystopia” does not earn points."),
         ("6", "Want in? PR your primary public_test summary — same rules for everyone."),
     ]
-    lines = [
-        '<?xml version="1.0" encoding="UTF-8"?>',
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
-        f'viewBox="0 0 {w} {h}" role="img" aria-label="How to read BlackMirror-Bench">',
-        """  <defs>
-    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0B1020"/>
-      <stop offset="100%" stop-color="#05070F"/>
-    </linearGradient>
-  </defs>""",
-        f'  <rect width="100%" height="100%" fill="url(#bg4)" rx="28"/>',
-        f'  <text x="{pad}" y="58" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="34" font-weight="800">How to read this bench (no PhD needed)</text>',
-        f'  <text x="{pad}" y="96" fill="#A5B4FC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" '
-        f'font-size="18" font-weight="600">Think of it as a report card for AI models about near-future tech realism.</text>',
+    lines = canvas(w, h, uid, "How to read BlackMirror-Bench")
+    lines += [
+        text(pad, 48, "How to read this bench", size=32, weight="800"),
+        text(
+            pad,
+            82,
+            "Two layers: episode reality first, then the AI report card.",
+            size=16,
+            fill=ACCENT,
+            weight="600",
+        ),
     ]
-    for i, (num, text) in enumerate(bullets):
-        y = 140 + i * 72
+    for i, (num, body) in enumerate(bullets):
+        y = 118 + i * 72
         lines.append(
-            f'  <circle cx="{pad + 22}" cy="{y}" r="22" fill="#1E1B4B" stroke="#818CF8" stroke-width="2"/>'
+            f'  <rect x="{pad}" y="{y}" width="{w - 2 * pad}" height="60" rx="16" '
+            f'fill="{CARD}" stroke="{CARD_EDGE}" stroke-width="1"/>'
         )
         lines.append(
-            f'  <text x="{pad + 22}" y="{y + 7}" fill="#E0E7FF" text-anchor="middle" '
-            f'font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="18" font-weight="800">{num}</text>'
+            f'  <circle cx="{pad + 34}" cy="{y + 30}" r="18" fill="rgba(125,211,252,0.12)" '
+            f'stroke="{ACCENT}" stroke-width="1.5"/>'
         )
         lines.append(
-            f'  <text x="{pad + 64}" y="{y + 8}" fill="#E2E8F0" '
-            f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18">{esc(text)}</text>'
+            text(
+                pad + 34,
+                y + 36,
+                num,
+                size=15,
+                fill=ACCENT,
+                mono=True,
+                weight="800",
+                anchor="middle",
+            )
+        )
+        lines.append(
+            text(pad + 68, y + 36, body, size=16, fill="#E2E8F0", weight="500")
         )
     lines.append(
-        f'  <text x="{pad}" y="{h - 28}" fill="#64748B" '
-        f'font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="13">'
-        f'github.com/sudopimp/blackmirror-bench · independent research · not affiliated with Netflix / Channel 4 / Charlie Brooker</text>'
+        text(
+            pad,
+            h - 24,
+            "github.com/sudopimp/blackmirror-bench  ·  not affiliated with Netflix / Channel 4 / Charlie Brooker",
+            size=12,
+            fill=FAINT,
+            weight="500",
+        )
     )
     lines.append("</svg>\n")
     return "\n".join(lines)
@@ -442,7 +546,6 @@ def main() -> None:
     tracks = ASSETS / "sota-2026-tracks.svg"
     breakdown = ASSETS / "sota-2026-breakdown.svg"
     howto = ASSETS / "sota-2026-how-to-read.svg"
-    # Keep legacy filename as alias of overall for older links
     legacy = ASSETS / "sota-2026-leaderboard.svg"
 
     overall.write_text(build_overall_chart(rows), encoding="utf-8")
@@ -455,7 +558,7 @@ def main() -> None:
         json.dumps(
             {
                 "models": [(r["name"], round(r["score"], 3)) for r in rows],
-                "wrote": [str(p.name) for p in (overall, tracks, breakdown, howto, legacy)],
+                "wrote": [p.name for p in (overall, tracks, breakdown, howto, legacy)],
             },
             ensure_ascii=False,
             indent=2,

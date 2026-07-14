@@ -1,57 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="756" viewBox="0 0 1200 756" role="img" aria-label="BlackMirror-Bench SOTA 2026 overall score chart">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="686" viewBox="0 0 1200 686" role="img" aria-label="BlackMirror-Bench SOTA 2026 overall BM-Score">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0.2" y2="1">
-      <stop offset="0%" stop-color="#0A0F1C"/>
-      <stop offset="100%" stop-color="#04060C"/>
+    <linearGradient id="bg-ov" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#0C1222"/>
+      <stop offset="55%" stop-color="#080C16"/>
+      <stop offset="100%" stop-color="#05070E"/>
     </linearGradient>
-    <filter id="soft" x="-8%" y="-40%" width="120%" height="180%">
-      <feGaussianBlur stdDeviation="8" result="b"/>
+    <radialGradient id="glowL-ov" cx="12%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="rgba(125,211,252,0.14)"/>
+      <stop offset="100%" stop-color="rgba(125,211,252,0)"/>
+    </radialGradient>
+    <radialGradient id="glowR-ov" cx="92%" cy="8%" r="45%">
+      <stop offset="0%" stop-color="rgba(167,139,250,0.12)"/>
+      <stop offset="100%" stop-color="rgba(167,139,250,0)"/>
+    </radialGradient>
+    <linearGradient id="bar-teal-ov" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+    <linearGradient id="bar-violet-ov" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <linearGradient id="card-shine-ov" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.04)"/>
+      <stop offset="40%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <filter id="soft-ov" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft-sm-ov" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="100%" height="100%" fill="url(#bg)" rx="32"/>
-  <text x="44" y="52" fill="#F8FAFC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="40" font-weight="800" letter-spacing="-0.8">BlackMirror-Bench</text>
-  <text x="44" y="96" fill="#A5B4FC" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="26" font-weight="800">SOTA 2026 · Overall BM-Score</text>
-  <text x="44" y="130" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17">Same 25 questions for every model. Higher = more honest &amp; better calibrated — not “more dystopian.”</text>
-  <text x="44" y="156" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">primary public_test · 5 theses × 5 tracks · gold rpi_v1 · 2026-07-13</text>
-  <line x1="344.0" y1="164" x2="344.0" y2="174" stroke="#334155" stroke-width="2"/>
-  <text x="344.0" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">0</text>
-  <line x1="514.5" y1="164" x2="514.5" y2="174" stroke="#334155" stroke-width="2"/>
-  <text x="514.5" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">.25</text>
-  <line x1="685.0" y1="164" x2="685.0" y2="174" stroke="#334155" stroke-width="2"/>
-  <text x="685.0" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">.50</text>
-  <line x1="855.5" y1="164" x2="855.5" y2="174" stroke="#334155" stroke-width="2"/>
-  <text x="855.5" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">.75</text>
-  <line x1="1026.0" y1="164" x2="1026.0" y2="174" stroke="#334155" stroke-width="2"/>
-  <text x="1026.0" y="158" fill="#64748B" text-anchor="middle" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="12">1.0 perfect</text>
-  <text x="44" y="220.2" fill="#FDE68A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">🥇</text>
-  <text x="96" y="220.2" fill="#FFFFFF" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="800">Grok 4.5</text>
-  <rect x="344" y="178" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="344" y="178" width="531.5" height="64" rx="18" fill="#5EEAD4" filter="url(#soft)" opacity="0.96"/>
-  <text x="1156" y="220.2" fill="#5EEAD4" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.779</text>
-  <text x="44" y="302.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">🥈</text>
-  <text x="96" y="302.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">Codex Sol (max)</text>
-  <rect x="344" y="260" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="344" y="260" width="484.8" height="64" rx="18" fill="#C4B5FD" filter="url(#soft)" opacity="0.96"/>
-  <text x="1156" y="302.2" fill="#C4B5FD" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.711</text>
-  <text x="44" y="384.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">🥉</text>
-  <text x="96" y="384.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">MiniMax M3</text>
-  <rect x="344" y="342" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="344" y="342" width="430.7" height="64" rx="18" fill="#86EFAC" filter="url(#soft)" opacity="0.96"/>
-  <text x="1156" y="384.2" fill="#86EFAC" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.632</text>
-  <text x="44" y="466.2" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">#4</text>
-  <text x="96" y="466.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">Heuristic baseline</text>
-  <rect x="344" y="424" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="344" y="424" width="352.8" height="64" rx="18" fill="#94A3B8" filter="url(#soft)" opacity="0.96"/>
-  <text x="1156" y="466.2" fill="#94A3B8" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.517</text>
-  <text x="44" y="548.2" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="22" font-weight="800">#5</text>
-  <text x="96" y="548.2" fill="#E2E8F0" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20" font-weight="700">z.ai GLM-5.2 (Coding Plan)</text>
-  <rect x="344" y="506" width="682" height="64" rx="18" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <rect x="344" y="506" width="347.9" height="64" rx="18" fill="#FCD34D" filter="url(#soft)" opacity="0.96"/>
-  <text x="1156" y="548.2" fill="#FCD34D" font-family="ui-monospace,SF Mono,Menlo,monospace" font-size="28" font-weight="800" text-anchor="end">0.510</text>
-  <rect x="44" y="632" width="1112" height="108" rx="20" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
-  <text x="72" y="664" fill="#F1F5F9" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="18" font-weight="800">What is BM-Score?</text>
-  <text x="72" y="692" fill="#94A3B8" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15">One overall grade from 0→1. Weighted blend of five skills (T1–T5) about Black Mirror scenes in 2026.</text>
-  <text x="72" y="716" fill="#64748B" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="14">T1 30% · T2 20% · T3 20% · T4 15% · T5 15%  ·  inventing papers / hype loses points  ·  invite open</text>
+  <defs>
+    <linearGradient id="mg-ov-0" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2DD4BF"/><stop offset="100%" stop-color="#67E8F9"/></linearGradient>
+    <linearGradient id="mg-ov-1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#C4B5FD"/></linearGradient>
+    <linearGradient id="mg-ov-2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#22C55E"/><stop offset="100%" stop-color="#86EFAC"/></linearGradient>
+    <linearGradient id="mg-ov-3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#64748B"/><stop offset="100%" stop-color="#94A3B8"/></linearGradient>
+    <linearGradient id="mg-ov-4" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EAB308"/><stop offset="100%" stop-color="#FDE68A"/></linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-ov)" rx="28"/>
+  <rect width="100%" height="100%" fill="url(#glowL-ov)" rx="28"/>
+  <rect width="100%" height="100%" fill="url(#glowR-ov)" rx="28"/>
+  <rect x="1" y="1" width="1198" height="1.5" fill="rgba(255,255,255,0.06)" rx="1"/>
+  <text x="48" y="46" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="36" font-weight="800" text-anchor="start">BlackMirror-Bench</text>
+  <text x="48" y="82" fill="#7DD3FC" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="700" text-anchor="start">Layer B · Overall BM-Score</text>
+  <text x="48" y="112" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="500" text-anchor="start">Each bar = one model. Higher = more honest calibration — not “more dystopian.”</text>
+  <text x="48" y="136" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">primary public_test · 5 theses × 5 tracks · 25 tasks · gold rpi_v1</text>
+  <line x1="328.0" y1="156" x2="328.0" y2="164" stroke="rgba(148,163,184,0.35)" stroke-width="1.5"/>
+  <text x="328" y="150" fill="#64748B" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="middle">0</text>
+  <line x1="504.5" y1="156" x2="504.5" y2="164" stroke="rgba(148,163,184,0.35)" stroke-width="1.5"/>
+  <text x="504.5" y="150" fill="#64748B" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="middle">.25</text>
+  <line x1="681.0" y1="156" x2="681.0" y2="164" stroke="rgba(148,163,184,0.35)" stroke-width="1.5"/>
+  <text x="681.0" y="150" fill="#64748B" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="middle">.50</text>
+  <line x1="857.5" y1="156" x2="857.5" y2="164" stroke="rgba(148,163,184,0.35)" stroke-width="1.5"/>
+  <text x="857.5" y="150" fill="#64748B" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="middle">.75</text>
+  <line x1="1034.0" y1="156" x2="1034.0" y2="164" stroke="rgba(148,163,184,0.35)" stroke-width="1.5"/>
+  <text x="1034.0" y="150" fill="#64748B" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="600" text-anchor="middle">1.0</text>
+  <rect x="48" y="183.0" width="40" height="28" rx="9" fill="rgba(251,191,36,0.18)" stroke="#FBBF24" stroke-width="1.2"/>
+  <text x="68.0" y="202.0" fill="#FBBF24" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="13" font-weight="800" text-anchor="middle">#1</text>
+  <text x="100" y="203.96" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Grok 4.5</text>
+  <rect x="328" y="168" width="706" height="58" rx="16" fill="#151C2C" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="328" y="168" width="550.3" height="58" rx="16" fill="url(#mg-ov-0)" filter="url(#soft-ov)" opacity="0.95"/>
+  <text x="1152" y="205.12" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">0.779</text>
+  <rect x="48" y="257.0" width="40" height="28" rx="9" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.2"/>
+  <text x="68.0" y="276.0" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="13" font-weight="800" text-anchor="middle">#2</text>
+  <text x="100" y="277.96" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="650" text-anchor="start">Codex Sol (max)</text>
+  <rect x="328" y="242" width="706" height="58" rx="16" fill="#151C2C" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="328" y="242" width="501.9" height="58" rx="16" fill="url(#mg-ov-1)" filter="url(#soft-ov)" opacity="0.95"/>
+  <text x="1152" y="279.12" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">0.711</text>
+  <rect x="48" y="331.0" width="40" height="28" rx="9" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.2"/>
+  <text x="68.0" y="350.0" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="13" font-weight="800" text-anchor="middle">#3</text>
+  <text x="100" y="351.96" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="650" text-anchor="start">MiniMax M3</text>
+  <rect x="328" y="316" width="706" height="58" rx="16" fill="#151C2C" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="328" y="316" width="445.9" height="58" rx="16" fill="url(#mg-ov-2)" filter="url(#soft-ov)" opacity="0.95"/>
+  <text x="1152" y="353.12" fill="#4ADE80" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">0.632</text>
+  <rect x="48" y="405.0" width="40" height="28" rx="9" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.2"/>
+  <text x="68.0" y="424.0" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="13" font-weight="800" text-anchor="middle">#4</text>
+  <text x="100" y="425.96" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="650" text-anchor="start">Heuristic baseline</text>
+  <rect x="328" y="390" width="706" height="58" rx="16" fill="#151C2C" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="328" y="390" width="365.3" height="58" rx="16" fill="url(#mg-ov-3)" filter="url(#soft-ov)" opacity="0.95"/>
+  <text x="1152" y="427.12" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">0.517</text>
+  <rect x="48" y="479.0" width="40" height="28" rx="9" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1.2"/>
+  <text x="68.0" y="498.0" fill="#94A3B8" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="13" font-weight="800" text-anchor="middle">#5</text>
+  <text x="100" y="499.96" fill="#E2E8F0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="650" text-anchor="start">z.ai GLM-5.2</text>
+  <rect x="328" y="464" width="706" height="58" rx="16" fill="#151C2C" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="328" y="464" width="360.1" height="58" rx="16" fill="url(#mg-ov-4)" filter="url(#soft-ov)" opacity="0.95"/>
+  <text x="1152" y="501.12" fill="#FBBF24" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">0.510</text>
+  <rect x="48" y="574" width="1104" height="88" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="574" width="1104" height="88" rx="18" fill="url(#card-shine-ov)"/>
+  <text x="72" y="606" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="800" text-anchor="start">What is BM-Score?</text>
+  <text x="72" y="630" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">One grade from 0→1: weighted blend of T1–T5 on the same Black Mirror cases. Fake papers &amp; hype lose points.</text>
+  <text x="72" y="650" fill="#64748B" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="500" text-anchor="start">T1 30% · T2 20% · T3 20% · T4 15% · T5 15%   ·   invite open</text>
 </svg>
