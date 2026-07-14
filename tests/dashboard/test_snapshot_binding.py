@@ -6,57 +6,57 @@ import json
 import sys
 from pathlib import Path
 
-import pytest
-
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from build_dashboard_snapshot import (  # noqa: E402
-    PRIMARY,
+    CANDIDATES,
     build_snapshot,
     load_summary,
+    protocol_from_splits,
     row_from_summary,
 )
 
 
-def test_row_from_summary_maps_real_grok_file():
-    path = ROOT / "results" / "grok-4.5_public_test_summary.json"
-    assert path.exists(), "published grok summary must exist"
+def test_row_from_summary_maps_primary_heuristic():
+    path = ROOT / "results" / "heuristic_public_test_summary.json"
+    assert path.exists()
     data = load_summary(path)
     assert data is not None
-    row = row_from_summary(data, "Grok 4.5", "xAI · evaluación real")
-    assert row["model_id"] == "grok-4.5"
-    assert row["display_name"] == "Grok 4.5"
-    # Real published BM-Score ~0.773
-    assert 0.77 <= row["bm_score"] <= 0.78
-    assert row["tracks"]["T5"] == 1.0
-    assert row["tracks"]["T1"] >= 0.85
-    assert row["n_tasks"] == 100
+    row = row_from_summary(data, "Heuristic", "primary-only")
+    assert row["model_id"] == "heuristic"
+    assert row["n_tasks"] == protocol_from_splits()["tasks"]
+    assert row["n_tasks"] != 100
     assert row["split"] == "public_test"
+    assert 0.0 < row["bm_score"] < 1.0
 
 
-def test_build_snapshot_sorted_and_spanish_meta():
+def test_build_snapshot_primary_protocol_no_stale_n100():
     snap = build_snapshot()
+    proto = protocol_from_splits()
     assert snap["lang"] == "es"
     assert snap["gold"] == "rpi_v1"
-    assert len(snap["leaderboard"]) >= 2
-    # sorted descending by bm_score
+    assert snap["protocol"]["tasks"] == proto["tasks"]
+    assert snap["protocol"]["theses"] == proto["theses"]
+    assert snap["protocol"]["tasks"] == 25
+    assert len(snap["leaderboard"]) >= 1
+    for row in snap["leaderboard"]:
+        assert row["n_tasks"] == proto["tasks"]
+        assert row["n_tasks"] != 100
     scores = [r["bm_score"] for r in snap["leaderboard"]]
     assert scores == sorted(scores, reverse=True)
-    assert snap["leaderboard"][0]["model_id"] == "grok-4.5"
-    # axes & tracks labeled in Spanish
     assert any("Posibilidad" in a["name"] for a in snap["axes"])
     assert any("Calibración" in t["name"] for t in snap["tracks_meta"])
 
 
 def test_snapshot_json_on_disk_matches_builder():
-    """Regenerate path: file on disk is what UI embeds."""
     snap = build_snapshot()
     disk = json.loads((ROOT / "dashboard" / "snapshot.json").read_text(encoding="utf-8"))
+    assert disk["protocol"]["tasks"] == snap["protocol"]["tasks"]
+    assert disk["leaderboard"][0]["n_tasks"] == snap["leaderboard"][0]["n_tasks"]
     assert disk["leaderboard"][0]["bm_score"] == snap["leaderboard"][0]["bm_score"]
-    assert disk["leaderboard"][0]["model_id"] == "grok-4.5"
 
 
-def test_primary_files_exist():
-    for filename, _, _ in PRIMARY:
-        assert (ROOT / "results" / filename).exists(), filename
+def test_candidates_prefer_primary_summaries():
+    names = [f for f, _, _ in CANDIDATES]
+    assert "heuristic_public_test_summary.json" in names

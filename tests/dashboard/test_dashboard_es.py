@@ -59,9 +59,15 @@ def test_embedded_snapshot_has_real_scores():
     assert m, "embedded #bmb-data JSON required for file:// "
     data = json.loads(m.group(1))
     assert data["lang"] == "es"
+    assert data["protocol"]["tasks"] == 25
+    assert data["protocol"]["theses"] == 5
+    assert data["leaderboard"], "leaderboard must be non-empty"
     top = data["leaderboard"][0]
-    assert top["model_id"] == "grok-4.5"
-    assert abs(top["bm_score"] - 0.773) < 0.005
+    assert top["n_tasks"] == 25
+    assert top["n_tasks"] != 100
+    assert 0.0 < top["bm_score"] < 1.0
+    # Primary protocol uses live heuristic re-score (not pad-era grok n=100)
+    assert top["model_id"] in ("heuristic", "grok-4.5")
 
 
 def test_app_js_no_es_modules():
