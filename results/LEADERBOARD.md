@@ -1,14 +1,20 @@
 # BlackMirror-Bench Leaderboard (SOTA 2026)
 
+**Two layers:** (A) how close each *Black Mirror* thesis is to **2026 reality** · (B) how well models recover that judgment (BM-Score).  
+This page is mostly **layer B**. Episode panorama (layer A): [README](../README.md#layer-a--episode-reality-panorama-public-test) · [episode map](../assets/sota-2026-episode-map.svg).
+
 **Gold:** `rpi_v1` · **as_of:** 2026-07-13  
 **Primary protocol:** `public_test` · **primary-only** · **5 theses · 5 tracks · 25 tasks** · pads excluded  
 
+**Public-test cases (layer A):** Be Right Back (griefbot) · Waldo Moment (CGI politics) · Arkangel (parental surveillance) · Ashley Too (celebrity AI toy) · Plaything (evolving lifeforms).
+
 Charts (Twitter-style, plain English):
 
-- ![Overall BM-Score](../assets/sota-2026-overall.svg)
+- ![Episode reality map](../assets/sota-2026-episode-map.svg) (layer A)
+- ![Overall BM-Score](../assets/sota-2026-overall.svg) (layer B — each bar = one model)
 - [How to read](../assets/sota-2026-how-to-read.svg) · [What T1–T5 mean](../assets/sota-2026-tracks.svg) · [Per-skill breakdown](../assets/sota-2026-breakdown.svg)
 
-## Overall ranking
+## Overall ranking (layer B — models)
 
 | Model | Split | Scope | **BM-Score** | T1 | T2 | T3 | T4 | T5 | n | Notes |
 |-------|-------|-------|-------------:|----|----|----|----|-----|---|-------|
