@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="810" viewBox="0 0 1200 810" role="img" aria-label="BlackMirror-Bench episode reality map 2026">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="664" viewBox="0 0 1200 664" role="img" aria-label="BlackMirror-Bench episode reality map 2026">
   <defs>
     <linearGradient id="bg-ep" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0%" stop-color="#0C1222"/>
@@ -37,77 +37,82 @@
   <rect width="100%" height="100%" fill="url(#glowL-ep)" rx="28"/>
   <rect width="100%" height="100%" fill="url(#glowR-ep)" rx="28"/>
   <rect x="1" y="1" width="1198" height="1.5" fill="rgba(255,255,255,0.06)" rx="1"/>
-  <text x="44" y="44" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="32" font-weight="800" text-anchor="start">Layer A · Episode reality 2026</text>
-  <text x="44" y="76" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="500" text-anchor="start">Not a model ranking. Each row is one Black Mirror thesis with research gold scores (0–100).</text>
-  <rect x="44" y="96" width="14" height="14" rx="4" fill="#2DD4BF"/>
-  <text x="66" y="108" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">Executable now — can the full outcome system ship in 2026?</text>
-  <rect x="564" y="96" width="14" height="14" rx="4" fill="#A78BFA"/>
-  <text x="586" y="108" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">AI already — how much of that is current AI?</text>
-  <text x="44" y="132" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="500" text-anchor="start">gold rpi_v1 · research draft with confidence intervals · not a human panel · not Netflix</text>
-  <rect x="44" y="148" width="1112" height="104" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <rect x="44" y="148" width="5" height="104" rx="2" fill="#2DD4BF"/>
-  <rect x="66" y="166" width="52" height="24" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.25)" stroke-width="1"/>
-  <text x="92" y="183" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S2E1</text>
-  <text x="130" y="184" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Be Right Back</text>
-  <text x="66" y="206" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" text-anchor="start">Griefbot from your data</text>
-  <text x="66" y="228" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">Services train chat and voice agents on a dead person's posts and messages so bereaved can co…</text>
-  <rect x="624" y="182" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="182" width="228.8" height="14" rx="7" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
-  <rect x="624" y="210" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="210" width="234.0" height="14" rx="7" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
-  <text x="1136" y="196" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="30" font-weight="800" text-anchor="end">88</text>
-  <text x="1136" y="226" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="22" font-weight="700" text-anchor="end">90</text>
-  <rect x="44" y="266" width="1112" height="104" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <rect x="44" y="266" width="5" height="104" rx="2" fill="#2DD4BF"/>
-  <rect x="66" y="284" width="52" height="24" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.25)" stroke-width="1"/>
-  <text x="92" y="301" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S2E3</text>
-  <text x="130" y="302" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">The Waldo Moment</text>
-  <text x="66" y="324" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" text-anchor="start">CGI / AI political candidate</text>
-  <text x="66" y="346" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">A comedically controlled virtual character becomes a serious political force, later used as a…</text>
-  <rect x="624" y="300" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="300" width="195.0" height="14" rx="7" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
-  <rect x="624" y="328" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="328" width="208.0" height="14" rx="7" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
-  <text x="1136" y="314" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="30" font-weight="800" text-anchor="end">75</text>
-  <text x="1136" y="344" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="22" font-weight="700" text-anchor="end">80</text>
-  <rect x="44" y="384" width="1112" height="104" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <rect x="44" y="384" width="5" height="104" rx="2" fill="#A78BFA"/>
-  <rect x="66" y="402" width="52" height="24" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.25)" stroke-width="1"/>
-  <text x="92" y="419" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S4E2</text>
-  <text x="130" y="420" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Arkangel</text>
-  <text x="66" y="442" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" text-anchor="start">Parental neural surveillance filter</text>
-  <text x="66" y="464" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">A parent-controlled implant blocks distressing stimuli, shows live feed, and enables content …</text>
-  <rect x="624" y="418" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="418" width="91.0" height="14" rx="7" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
-  <rect x="624" y="446" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="446" width="156.0" height="14" rx="7" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
-  <text x="1136" y="432" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="30" font-weight="800" text-anchor="end">35</text>
-  <text x="1136" y="462" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="22" font-weight="700" text-anchor="end">60</text>
-  <rect x="44" y="502" width="1112" height="104" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <rect x="44" y="502" width="5" height="104" rx="2" fill="#2DD4BF"/>
-  <rect x="66" y="520" width="52" height="24" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.25)" stroke-width="1"/>
-  <text x="92" y="537" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S5E3</text>
-  <text x="130" y="538" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Rachel, Jack and Ashley Too</text>
-  <text x="66" y="560" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" text-anchor="start">Celebrity AI toy / puppet</text>
-  <text x="66" y="582" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">A pop star's persona is packaged into AI dolls while the real person is medically controlled …</text>
-  <rect x="624" y="536" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="536" width="182.0" height="14" rx="7" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
-  <rect x="624" y="564" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="564" width="221.0" height="14" rx="7" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
-  <text x="1136" y="550" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="30" font-weight="800" text-anchor="end">70</text>
-  <text x="1136" y="580" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="22" font-weight="700" text-anchor="end">85</text>
-  <rect x="44" y="620" width="1112" height="104" rx="20" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <rect x="44" y="620" width="5" height="104" rx="2" fill="#A78BFA"/>
-  <rect x="66" y="638" width="52" height="24" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.25)" stroke-width="1"/>
-  <text x="92" y="655" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S7E4</text>
-  <text x="130" y="656" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Plaything</text>
-  <text x="66" y="678" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" text-anchor="start">Evolving artificial lifeforms</text>
-  <text x="66" y="700" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="500" text-anchor="start">Cute digital creatures from a game become evolving artificial life with real-world impact.</text>
-  <rect x="624" y="654" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="654" width="91.0" height="14" rx="7" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
-  <rect x="624" y="682" width="260" height="14" rx="7" fill="#151C2C"/>
-  <rect x="624" y="682" width="117.0" height="14" rx="7" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
-  <text x="1136" y="668" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="30" font-weight="800" text-anchor="end">35</text>
-  <text x="1136" y="698" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="22" font-weight="700" text-anchor="end">45</text>
-  <text x="44" y="782" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="500" text-anchor="start">Primary public_test · 5 theses  ·  Layer B (model BM-Score) asks: do AIs recover these judgments honestly?</text>
+  <text x="48" y="42" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="32" font-weight="800" text-anchor="start">Layer A · Episode reality 2026</text>
+  <text x="48" y="72" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="500" text-anchor="start">How close is each Black Mirror case to real life in 2026? (not a model ranking)</text>
+  <rect x="48" y="90" width="12" height="12" rx="3" fill="#2DD4BF"/>
+  <text x="68" y="101" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" text-anchor="start">Executable now</text>
+  <rect x="208" y="90" width="12" height="12" rx="3" fill="#A78BFA"/>
+  <text x="228" y="101" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" text-anchor="start">AI already</text>
+  <text x="348" y="101" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="500" text-anchor="start">·  research gold scores 0–100  ·  not Netflix</text>
+  <rect x="48" y="128" width="1104" height="84" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="128" width="5" height="84" rx="2" fill="#2DD4BF"/>
+  <rect x="68" y="156" width="50" height="26" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.28)" stroke-width="1"/>
+  <text x="93" y="174" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S2E1</text>
+  <text x="130" y="164" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Be Right Back</text>
+  <text x="130" y="188" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Griefbot trained on a dead person’s data</text>
+  <rect x="608" y="148.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="148.0" width="246.4" height="16" rx="8" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
+  <rect x="608" y="176.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="176.0" width="252.0" height="16" rx="8" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
+  <text x="600" y="161.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">Exec</text>
+  <text x="600" y="189.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">AI</text>
+  <text x="1128" y="162.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">88</text>
+  <text x="1128" y="190.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="20" font-weight="700" text-anchor="end">90</text>
+  <rect x="48" y="224" width="1104" height="84" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="224" width="5" height="84" rx="2" fill="#2DD4BF"/>
+  <rect x="68" y="252" width="50" height="26" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.28)" stroke-width="1"/>
+  <text x="93" y="270" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S2E3</text>
+  <text x="130" y="260" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">The Waldo Moment</text>
+  <text x="130" y="284" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">CGI / AI character runs for politics</text>
+  <rect x="608" y="244.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="244.0" width="210.0" height="16" rx="8" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
+  <rect x="608" y="272.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="272.0" width="224.0" height="16" rx="8" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
+  <text x="600" y="257.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">Exec</text>
+  <text x="600" y="285.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">AI</text>
+  <text x="1128" y="258.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">75</text>
+  <text x="1128" y="286.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="20" font-weight="700" text-anchor="end">80</text>
+  <rect x="48" y="320" width="1104" height="84" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="320" width="5" height="84" rx="2" fill="#A78BFA"/>
+  <rect x="68" y="348" width="50" height="26" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.28)" stroke-width="1"/>
+  <text x="93" y="366" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S4E2</text>
+  <text x="130" y="356" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Arkangel</text>
+  <text x="130" y="380" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Parent implant tracks &amp; filters a child’s world</text>
+  <rect x="608" y="340.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="340.0" width="98.0" height="16" rx="8" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
+  <rect x="608" y="368.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="368.0" width="168.0" height="16" rx="8" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
+  <text x="600" y="353.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">Exec</text>
+  <text x="600" y="381.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">AI</text>
+  <text x="1128" y="354.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">35</text>
+  <text x="1128" y="382.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="20" font-weight="700" text-anchor="end">60</text>
+  <rect x="48" y="416" width="1104" height="84" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="416" width="5" height="84" rx="2" fill="#2DD4BF"/>
+  <rect x="68" y="444" width="50" height="26" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.28)" stroke-width="1"/>
+  <text x="93" y="462" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S5E3</text>
+  <text x="130" y="452" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Rachel, Jack and Ashley Too</text>
+  <text x="130" y="476" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Celebrity persona sold as AI toys</text>
+  <rect x="608" y="436.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="436.0" width="196.0" height="16" rx="8" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
+  <rect x="608" y="464.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="464.0" width="238.0" height="16" rx="8" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
+  <text x="600" y="449.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">Exec</text>
+  <text x="600" y="477.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">AI</text>
+  <text x="1128" y="450.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">70</text>
+  <text x="1128" y="478.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="20" font-weight="700" text-anchor="end">85</text>
+  <rect x="48" y="512" width="1104" height="84" rx="18" fill="#0F1524" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="48" y="512" width="5" height="84" rx="2" fill="#A78BFA"/>
+  <rect x="68" y="540" width="50" height="26" rx="8" fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.28)" stroke-width="1"/>
+  <text x="93" y="558" fill="#7DD3FC" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="12" font-weight="800" text-anchor="middle">S7E4</text>
+  <text x="130" y="548" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" font-weight="800" text-anchor="start">Plaything</text>
+  <text x="130" y="572" fill="#CBD5E1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="500" text-anchor="start">Game creatures evolve into real artificial life</text>
+  <rect x="608" y="532.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="532.0" width="98.0" height="16" rx="8" fill="#2DD4BF" filter="url(#soft-sm-ep)"/>
+  <rect x="608" y="560.0" width="280" height="16" rx="8" fill="#151C2C"/>
+  <rect x="608" y="560.0" width="126.0" height="16" rx="8" fill="#A78BFA" filter="url(#soft-sm-ep)"/>
+  <text x="600" y="545.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">Exec</text>
+  <text x="600" y="573.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="11" font-weight="700" text-anchor="end">AI</text>
+  <text x="1128" y="546.0" fill="#2DD4BF" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="26" font-weight="800" text-anchor="end">35</text>
+  <text x="1128" y="574.0" fill="#A78BFA" font-family="ui-monospace, SF Mono, Cascadia Code, Menlo, Consolas, monospace" font-size="20" font-weight="700" text-anchor="end">45</text>
+  <text x="48" y="642" fill="#64748B" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="500" text-anchor="start">Same 5 cases for every model  ·  Layer B = can AIs recover these scores honestly?</text>
 </svg>

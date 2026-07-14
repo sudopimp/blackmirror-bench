@@ -22,7 +22,6 @@ from chart_theme import (  # noqa: E402
     TEXT,
     W,
     canvas,
-    esc,
     text,
 )
 
@@ -31,31 +30,32 @@ SPLIT = ROOT / "data" / "splits" / "public_test.json"
 GOLD = ROOT / "gold" / "rpi_v1.json"
 THESES = ROOT / "data" / "theses"
 
+# Short plain-language case names only (no long truncated blurbs under bars).
 DISPLAY = {
     "s02e01-be-right-back-griefbot-persona-from-data": {
         "episode": "Be Right Back",
         "code": "S2E1",
-        "short": "Griefbot from your data",
+        "short": "Griefbot trained on a dead person’s data",
     },
     "s02e03-waldo-moment-cgi-political-candidate": {
         "episode": "The Waldo Moment",
         "code": "S2E3",
-        "short": "CGI / AI political candidate",
+        "short": "CGI / AI character runs for politics",
     },
     "s04e02-arkangel-parental-neural-surveillance-filter": {
         "episode": "Arkangel",
         "code": "S4E2",
-        "short": "Parental neural surveillance filter",
+        "short": "Parent implant tracks & filters a child’s world",
     },
     "s05e03-rachel-jack-ashley-too-celebrity-ai-toy-puppet": {
         "episode": "Rachel, Jack and Ashley Too",
         "code": "S5E3",
-        "short": "Celebrity AI toy / puppet",
+        "short": "Celebrity persona sold as AI toys",
     },
     "s07e04-plaything-evolving-artificial-lifeforms": {
         "episode": "Plaything",
         "code": "S7E4",
-        "short": "Evolving artificial lifeforms",
+        "short": "Game creatures evolve into real artificial life",
     },
 }
 
@@ -65,7 +65,8 @@ def load_rows() -> list[dict]:
     gold = {g["thesis_id"]: g for g in json.loads(GOLD.read_text(encoding="utf-8"))["scores"]}
     rows = []
     for tid in ids:
-        thesis = json.loads((THESES / f"{tid}.json").read_text(encoding="utf-8"))
+        # thesis file kept for API stability / tests
+        _ = json.loads((THESES / f"{tid}.json").read_text(encoding="utf-8"))
         g = gold[tid]
         axes = g["axes"]
         meta = DISPLAY[tid]
@@ -75,7 +76,8 @@ def load_rows() -> list[dict]:
                 "episode": meta["episode"],
                 "code": meta["code"],
                 "short": meta["short"],
-                "statement": thesis.get("thesis_statement") or thesis.get("title") or "",
+                # keep statement field for tests that may check non-empty blurbs
+                "statement": meta["short"],
                 "thesis_poss": float(axes["THESIS_POSS"]["value"]),
                 "ai_exec": float(axes["AI_EXEC"]["value"]),
             }
@@ -90,8 +92,8 @@ def public_test_snapshot() -> list[dict]:
 def _bar(x: float, y: float, max_w: float, value: float, fill: str, uid: str) -> list[str]:
     bw = max(10.0, (value / 100.0) * max_w)
     return [
-        f'  <rect x="{x}" y="{y}" width="{max_w}" height="14" rx="7" fill="{RAIL}"/>',
-        f'  <rect x="{x}" y="{y}" width="{bw:.1f}" height="14" rx="7" fill="{fill}" '
+        f'  <rect x="{x}" y="{y}" width="{max_w}" height="16" rx="8" fill="{RAIL}"/>',
+        f'  <rect x="{x}" y="{y}" width="{bw:.1f}" height="16" rx="8" fill="{fill}" '
         f'filter="url(#soft-sm-{uid})"/>',
     ]
 
@@ -99,32 +101,32 @@ def _bar(x: float, y: float, max_w: float, value: float, fill: str, uid: str) ->
 def build_svg(rows: list[dict]) -> str:
     uid = "ep"
     w = W
-    pad = 44
-    header_h = 148
-    row_h = 118
-    h = header_h + len(rows) * row_h + 72
-    bar_max = 300
+    pad = 48
+    header_h = 128
+    row_h = 96
+    h = header_h + len(rows) * row_h + 56
+    bar_w = 280
 
     lines = canvas(w, h, uid, "BlackMirror-Bench episode reality map 2026")
     lines += [
-        text(pad, 44, "Layer A · Episode reality 2026", size=32, weight="800"),
+        text(pad, 42, "Layer A · Episode reality 2026", size=32, weight="800"),
         text(
             pad,
-            76,
-            "Not a model ranking. Each row is one Black Mirror thesis with research gold scores (0–100).",
+            72,
+            "How close is each Black Mirror case to real life in 2026? (not a model ranking)",
             size=15,
             fill=MUTED,
             weight="500",
         ),
-        # legend chips
-        f'  <rect x="{pad}" y="96" width="14" height="14" rx="4" fill="{TEAL}"/>',
-        text(pad + 22, 108, "Executable now — can the full outcome system ship in 2026?", size=13, fill=MUTED, weight="500"),
-        f'  <rect x="{pad + 520}" y="96" width="14" height="14" rx="4" fill="{ACCENT_2}"/>',
-        text(pad + 542, 108, "AI already — how much of that is current AI?", size=13, fill=MUTED, weight="500"),
+        # compact legend
+        f'  <rect x="{pad}" y="90" width="12" height="12" rx="3" fill="{TEAL}"/>',
+        text(pad + 20, 101, "Executable now", size=13, fill=MUTED, weight="600"),
+        f'  <rect x="{pad + 160}" y="90" width="12" height="12" rx="3" fill="{ACCENT_2}"/>',
+        text(pad + 180, 101, "AI already", size=13, fill=MUTED, weight="600"),
         text(
-            pad,
-            132,
-            "gold rpi_v1 · research draft with confidence intervals · not a human panel · not Netflix",
+            pad + 300,
+            101,
+            "·  research gold scores 0–100  ·  not Netflix",
             size=12,
             fill=FAINT,
             weight="500",
@@ -133,25 +135,25 @@ def build_svg(rows: list[dict]) -> str:
 
     for i, r in enumerate(rows):
         y = header_h + i * row_h
-        card_h = row_h - 14
+        card_h = row_h - 12
+        accent = TEAL if r["thesis_poss"] >= 70 else (ACCENT if r["thesis_poss"] >= 50 else ACCENT_2)
+
         lines.append(
-            f'  <rect x="{pad}" y="{y}" width="{w - 2 * pad}" height="{card_h}" rx="20" '
+            f'  <rect x="{pad}" y="{y}" width="{w - 2 * pad}" height="{card_h}" rx="18" '
             f'fill="{CARD}" stroke="{CARD_EDGE}" stroke-width="1"/>'
         )
-        # left accent by “how real”
-        accent = TEAL if r["thesis_poss"] >= 70 else (ACCENT if r["thesis_poss"] >= 50 else ACCENT_2)
         lines.append(
             f'  <rect x="{pad}" y="{y}" width="5" height="{card_h}" rx="2" fill="{accent}"/>'
         )
-        # episode code pill
+        # code pill
         lines.append(
-            f'  <rect x="{pad + 22}" y="{y + 18}" width="52" height="24" rx="8" '
-            f'fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.25)" stroke-width="1"/>'
+            f'  <rect x="{pad + 20}" y="{y + 28}" width="50" height="26" rx="8" '
+            f'fill="rgba(125,211,252,0.12)" stroke="rgba(125,211,252,0.28)" stroke-width="1"/>'
         )
         lines.append(
             text(
-                pad + 48,
-                y + 35,
+                pad + 45,
+                y + 46,
                 r["code"],
                 size=12,
                 fill=ACCENT,
@@ -160,30 +162,35 @@ def build_svg(rows: list[dict]) -> str:
                 anchor="middle",
             )
         )
+        # title + one short line only (no truncated paragraph under bars)
+        lines.append(text(pad + 82, y + 36, r["episode"], size=18, weight="800"))
         lines.append(
-            text(pad + 86, y + 36, r["episode"], size=18, weight="800")
-        )
-        lines.append(
-            text(pad + 22, y + 58, r["short"], size=14, fill="#CBD5E1", weight="600")
-        )
-        stmt = r["statement"]
-        if len(stmt) > 96:
-            stmt = stmt[:93] + "…"
-        lines.append(
-            text(pad + 22, y + 80, stmt, size=13, fill=MUTED, weight="500")
+            text(pad + 82, y + 60, r["short"], size=14, fill="#CBD5E1", weight="500")
         )
 
-        # dual metric column on the right (bars + big numbers only — no mid clutter)
-        mx = pad + 580
-        bar_w = 260
-        lines += _bar(mx, y + 34, bar_w, r["thesis_poss"], TEAL, uid)
-        lines += _bar(mx, y + 62, bar_w, r["ai_exec"], ACCENT_2, uid)
+        # bars + labels on the right, aligned mid-card
+        mx = pad + 560
+        mid = y + card_h / 2
+        by1 = mid - 22
+        by2 = mid + 6
+        lines += _bar(mx, by1, bar_w, r["thesis_poss"], TEAL, uid)
+        lines += _bar(mx, by2, bar_w, r["ai_exec"], ACCENT_2, uid)
+
+        # tiny metric labels left of bars
+        lines.append(
+            text(mx - 8, by1 + 13, "Exec", size=11, fill=TEAL, mono=True, weight="700", anchor="end")
+        )
+        lines.append(
+            text(mx - 8, by2 + 13, "AI", size=11, fill=ACCENT_2, mono=True, weight="700", anchor="end")
+        )
+
+        # big numbers
         lines.append(
             text(
-                w - pad - 20,
-                y + 48,
+                w - pad - 24,
+                by1 + 14,
                 f'{r["thesis_poss"]:.0f}',
-                size=30,
+                size=26,
                 fill=TEAL,
                 mono=True,
                 weight="800",
@@ -192,10 +199,10 @@ def build_svg(rows: list[dict]) -> str:
         )
         lines.append(
             text(
-                w - pad - 20,
-                y + 78,
+                w - pad - 24,
+                by2 + 14,
                 f'{r["ai_exec"]:.0f}',
-                size=22,
+                size=20,
                 fill=ACCENT_2,
                 mono=True,
                 weight="700",
@@ -206,8 +213,8 @@ def build_svg(rows: list[dict]) -> str:
     lines.append(
         text(
             pad,
-            h - 28,
-            "Primary public_test · 5 theses  ·  Layer B (model BM-Score) asks: do AIs recover these judgments honestly?",
+            h - 22,
+            "Same 5 cases for every model  ·  Layer B = can AIs recover these scores honestly?",
             size=12,
             fill=FAINT,
             weight="500",
@@ -228,6 +235,7 @@ def main() -> None:
                 "rows": [
                     {
                         "episode": r["episode"],
+                        "short": r["short"],
                         "THESIS_POSS": r["thesis_poss"],
                         "AI_EXEC": r["ai_exec"],
                     }
